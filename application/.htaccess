@@ -1,6 +1,4 @@
-Deny from all
-
-#order allow,deny 
-#deny from xxx.xxx.xxx.xxx 
-#deny from yyy.yyy.yyy.yyy 
-#alow from all 
+RewriteEngine on
+ RewriteCond $1 !^(index\.php|images|robots\.txt)
+ RewriteRule ^(.*)$ /index.php/$1 [L]
+ #Deny from all
