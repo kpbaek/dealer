@@ -39,6 +39,16 @@ class Client extends CI_Controller {
 		$this->load->view('/admin/client/body');
 	}
 	
+	public function tab01()
+	{
+		$this->load->view('/admin/client/tab01');
+	}
+	
+	public function tab02()
+	{
+		$this->load->view('/admin/client/tab02');
+	}
+	
 	
 }
 

@@ -20,18 +20,14 @@
 
 <body>
 
-<h3><a href="/admin/client?countrytabs=0">Dealer</a></h3>
+<h3><a href="/admin/client?countrytabs=0">신청서</a></h3>
 
 <ul id="countrytabs" class="shadetabs">
-<li><a href="/external1.htm" rel="#default" class="selected">Tab 1</a></li>
-<li><a href="/external2.htm" rel="countrycontainer">Tab 2</a></li>
-<li><a href="/external3.htm" rel="countrycontainer">Tab 3</a></li>
-<li><a href="/external4.htm" rel="#iframe">Tab 4</a></li>
-<li><a href="/user_guide/index.html" rel="countrycontainer">process</a></li>
+<li><a href="/admin/client/tab01" rel="countrycontainer" class="selected">Find a Dealer</a></li>
+<li><a href="/admin/client/tab02" rel="countrycontainer">To be a Dealer</a></li>
 </ul>
 
 <div id="countrydivcontainer" style="border:1px solid gray; width:750px; height:450px; margin-bottom: 1em; padding: 10px;overflow: scroll;">
-<p>This is some default tab content, embedded directly inside this space and not via Ajax. It can be shown when no tabs are automatically selected, or associated with a certain tab, in this case, the first tab.</p>
 </div>
 
 <script type="text/javascript">

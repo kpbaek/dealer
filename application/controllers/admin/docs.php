@@ -39,6 +39,20 @@ class Docs extends CI_Controller {
 		$this->load->view('/admin/docs/body');
 	}
 	
+	public function tab01()
+	{
+		$this->load->view('/admin/docs/tab01');
+	}
+	
+	public function tab02()
+	{
+		$this->load->view('/admin/docs/tab02');
+	}
+	
+	public function tab03()
+	{
+		$this->load->view('/admin/docs/tab03');
+	}
 	
 }
 

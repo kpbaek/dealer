@@ -20,18 +20,14 @@
 
 <body>
 
-<h3><a href="http://www.dynamicdrive.com/dynamicindex17/ajaxtabscontent/">order</a></h3>
+<h3><a href="/admin/order?countrytabs=0">주문서</a></h3>
 
 <ul id="countrytabs" class="shadetabs">
-<li><a href="#" rel="#default" class="selected">Tab 1</a></li>
-<li><a href="/admin/main/external2.htm" rel="countrycontainer">Tab 2</a></li>
-<li><a href="/external3.htm" rel="countrycontainer">Tab 3</a></li>
-<li><a href="/external4.htm" rel="#iframe">Tab 4</a></li>
-<li><a href="/user_guide/index.html" rel="#iframe">process</a></li>
+<li><a href="/admin/order/tab01" rel="countrycontainer" class="selected">부품</a></li>
+<li><a href="/admin/order/tab02" rel="countrycontainer">장비</a></li>
 </ul>
 
-<div id="countrydivcontainer" style="border:1px solid gray; width:750px; height:500px; margin-bottom: 1em; padding: 10px">
-<p>This is some default tab content, embedded directly inside this space and not via Ajax. It can be shown when no tabs are automatically selected, or associated with a certain tab, in this case, the first tab.</p>
+<div id="countrydivcontainer" style="border:1px solid gray; width:750px; height:450px; margin-bottom: 1em; padding: 10px;overflow: scroll;">
 </div>
 
 <script type="text/javascript">
@@ -43,7 +39,7 @@ countries.init()
 
 </script>
 
-<p><a href="/admin/client?countrytabs=0">Reload page and select 1nd tab using URL parameter</a> | <a href="javascript: countries.expandit(3)">Dynamically select last Tab</a></p>
+<p><a href="/admin/order?countrytabs=0">Reload page and select 1nd tab using URL parameter</a> | <a href="javascript: countries.expandit(3)">Dynamically select last Tab</a></p>
 
 <hr />
 
