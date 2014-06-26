@@ -21,10 +21,15 @@ class Main extends CI_Controller {
 	{
 		$this->load->view('welcome_message');
 	}
-
+	
 	public function excel()
 	{
 		$this->load->view('/test/excel');
+	}
+	
+	public function excelSimple()
+	{
+		$this->load->view('/test/excelSimple');
 	}
 
 	public function excel2()
