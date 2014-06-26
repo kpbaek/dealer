@@ -42,6 +42,11 @@ class Main extends CI_Controller {
 		$this->load->view('/test/testMail');
 	}
 
+	public function phpGrid()
+	{
+		$this->load->view('/test/phpGrid');
+	}
+
 	public function tab01($grid = 'none')
 	{
 		$this->single();
