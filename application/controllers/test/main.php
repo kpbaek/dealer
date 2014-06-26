@@ -47,14 +47,16 @@ class Main extends CI_Controller {
 		$this->load->view('/test/phpGrid');
 	}
 
-	public function tab01($grid = 'none')
+	public function carboGrid($grid = 'none')
 	{
 		$this->single();
 		// Pass grid to the view
 		$data = array('page' => '/admin/grid_single',
 					  'page_grid' => $this->carbogrid->render()
 		);
-		$this->load->view('/admin/gridContent', $data);
+#		$this->load->view('/admin/gridContent', $data);
+
+		$this->load->view('/test/carboGrid', $data);
 	}
 	
 	public function single($grid = 'none')
@@ -157,7 +159,7 @@ class Main extends CI_Controller {
 				'id' => 'users',
 				'table' => 'user',
 #				'url' => 'sample/single',
-				'url' => 'main/single',
+				'url' => 'test/main/single',
 				'uri_param' => $grid,
 				'columns' => $columns,
 				//'columns_visible' => array(0,2,3,4),
@@ -182,7 +184,7 @@ class Main extends CI_Controller {
 		
 #		$this->load->view('/admin/order/tab01', $data);
 	}
-
+	
 }
 
 /* End of file welcome.php */
