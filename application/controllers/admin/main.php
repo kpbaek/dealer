@@ -25,20 +25,14 @@ class Main extends CI_Controller {
 	function test()
 	{
 	
-		$arr = array(array('a'=>1),array('b'=>2),array('c'=>3));
-		//$arr = array('a','b','c');
-		var_dump($arr);
-		echo "<BR><BR>";
-		$d = shuffle($arr);
-		var_dump($arr);
-	
+		$this->load->view('/admin/test');
+			
 	}
 	
 	public function body()
 	{
 		$this->load->view('/admin/body');
 	}
-	
 	
 }
 
