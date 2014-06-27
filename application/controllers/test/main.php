@@ -22,10 +22,41 @@ class Main extends CI_Controller {
 		$this->load->view('welcome_message');
 	}
 	
+	public function test()
+	{
+		$this->load->view('/test/test');
+	}
+	
+	public function server()
+	{
+		$this->load->view('/test/server');
+	}
+	
+	public function excelToHtml()
+	{
+		$this->load->view('/test/excelToHtml.php');
+	}
+	
 	public function excel()
 	{
 		$this->load->view('/test/excel');
 	}
+	
+	public function excelReader()
+	{
+		$this->load->view('/test/07reader.php');
+	}
+
+	public function excelRead00()
+	{
+		$this->load->view('/test/14excel5.php');
+	}
+	
+	public function excelRead()
+	{
+		$this->load->view('/test/20readexcel5.php');
+	}
+
 	
 	public function excelSimple()
 	{

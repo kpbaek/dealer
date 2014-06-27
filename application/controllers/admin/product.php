@@ -38,10 +38,15 @@ class Product extends CI_Controller {
 	{
 		$this->load->view('/admin/product/body');
 	}
-	
+
 	public function tab01()
 	{
 		$this->load->view('/admin/product/tab01');
+	}
+	
+	public function tab03()
+	{
+		$this->load->view('/admin/product/tab03');
 	}
 	
 	public function tab02($grid = 'none')
