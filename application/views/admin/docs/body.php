@@ -23,12 +23,12 @@
 <h3><a href="/admin/docs?countrytabs=0">사내문서</a></h3>
 
 <ul id="countrytabs" class="shadetabs">
-<li><a href="/admin/docs/tab01" rel="countrycontainer" class="selected">부품출고</a></li>
-<li><a href="/admin/docs/tab02" rel="countrycontainer">생산의뢰서</a></li>
-<li><a href="/admin/docs/tab03" rel="countrycontainer">출고전표</a></li>
+<li><a href="/admin/docs/tab01" rel="countrycontainer" class="selected">생산의뢰서</a></li>
+<li><a href="/admin/docs/tab02" rel="countrycontainer">출고전표</a></li>
+<li><a href="/admin/docs/tab03" rel="countrycontainer">부품출고</a></li>
 </ul>
 
-<div id="countrydivcontainer" style="border:1px solid gray; width:750px; height:450px; margin-bottom: 1em; padding: 10px;overflow: scroll;">
+<div id="countrydivcontainer" style="border:1px solid gray; width:970px; height:450px; margin-bottom: 1em; padding: 10px;overflow: scroll;">
 </div>
 
 <script type="text/javascript">

@@ -23,11 +23,11 @@
 <h3><a href="/admin/order?countrytabs=0">주문서</a></h3>
 
 <ul id="countrytabs" class="shadetabs">
-<li><a href="/admin/order/tab01" rel="countrycontainer" class="selected">부품</a></li>
-<li><a href="/admin/order/tab02" rel="countrycontainer">장비</a></li>
+<li><a href="/admin/order/tab01" rel="countrycontainer">장비</a></li>
+<li><a href="/admin/order/tab02" rel="countrycontainer" class="selected">부품</a></li>
 </ul>
 
-<div id="countrydivcontainer" style="border:1px solid gray; width:750px; height:450px; margin-bottom: 1em; padding: 10px;overflow: scroll;">
+<div id="countrydivcontainer" style="border:1px solid gray; width:970px; height:450px; margin-bottom: 1em; padding: 10px;overflow: scroll;">
 </div>
 
 <script type="text/javascript">

@@ -16,7 +16,7 @@ include("/include/admin/left.php");
 		
 		</div>
 	</td>
-	<td style="width:800px;align:center; vertical-align:middle">
+	<td style="width:900px;align:center; vertical-align:middle">
 		<div id="body">
 <?php 
 include("body.php");
