@@ -31,7 +31,7 @@ error_reporting(E_ALL);
 /** Include PHPExcel */
 require_once APPPATH."/third_party/PHPExcel.php";
 
-if (!file_exists($_SERVER["DOCUMENT_ROOT"]."/application/views/test/packing.xlsx")) {
+if (!file_exists($_SERVER["DOCUMENT_ROOT"]."/application/views/test/client_01.xlsx")) {
 	exit("Please run 05featuredemo.php first." . EOL);
 }
 
@@ -40,5 +40,5 @@ $callStartTime = microtime(true);
 
 
 echo date('H:i:s') , " Create new PHPExcel object" , EOL;
-$objPHPExcel = PHPExcel_IOFactory::load($_SERVER["DOCUMENT_ROOT"]."/application/views/test/packing.xlsx");
+$objPHPExcel = PHPExcel_IOFactory::load($_SERVER["DOCUMENT_ROOT"]."/application/views/test/client_02.xlsx");
 
