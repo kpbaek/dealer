@@ -31,7 +31,7 @@
 	var targetUrl = "/admin/product/listPart";
 	jQuery("#list2").jqGrid({
 	   	//url:'/test/main/server',
-	   	url:'/admin/product/listPart',
+	   	url:targetUrl,
 	   	datatype: "json",
 	   	//colNames:['Inv No','Date', 'Client', 'Amount','Tax','Total','Notes'],
 	   	colNames:['Model', 'S/N', 'CODE', 'Part Name', 'IMAGE', 'Remark', 'Recommend', 'Spare Part', 'Wear Parts',  'Without Warranty'],
@@ -71,18 +71,26 @@
         jQuery("#list2").jqGrid('setGridParam', {url:targetUrl,page:page}).trigger("reloadGrid");
     }
 
+    function test_detail(list, id) {
+        var chk_data = jQuery(list).jqGrid('getRowData',id);
+        var targetUrl = '/admin/product/viewPart?id=' + chk_data.id;
+        $.post(targetUrl, function(data, status){
+            alert("data:" + data + "\nStatus: " + status);
+	    });
+    }
+    
     function view_detail(list, id) {
         var chk_data = jQuery(list).jqGrid('getRowData',id);
         var targetUrl = '/admin/product/viewPart?id=' + chk_data.id;
         $.getJSON(targetUrl, function(result){
-            $.each(result, function(i, field){
+        $.each(result, function(i, field){
             	document.getElementById("id").value = field.id;
                 document.getElementById("invdate").value = result['viewPart']['invdate'];
             });
 	    });
     }
     
-    function view_detail2(list, id) {
+    function ajax_detail(list, id) {
         var chk_data = jQuery(list).jqGrid('getRowData',id);
         targetUrl = "/admin/product/viewPart?id=" + chk_data.id;
         $.ajax({
