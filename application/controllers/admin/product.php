@@ -61,6 +61,16 @@ class Product extends CI_Controller {
 		$this->load->view('/admin/product/tab02', $data);
 	}
 	
+	public function listPart()
+	{
+		$this->load->view('/admin/product/listPart');
+	}
+	
+	public function viewPart()
+	{
+		$this->load->view('/admin/product/viewPart');
+	}
+	
 	public function single($grid = 'none')
 	{
 		$columns = array(
