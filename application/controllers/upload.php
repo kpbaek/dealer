@@ -36,7 +36,7 @@ class Upload extends CI_Controller {
 			
 			
 			$file = $data['upload_data']['file_name'];                               // set the file variable
-			$imgName = "dexter_".$data['upload_data']['file_ext'];                    //renaming file
+			$imgName = $data['upload_data']['raw_name'].$data['upload_data']['file_ext'];                    //renaming file
 			#basic php rename call, rename my upload now that upload finished
 			$filenew = rename($config['upload_path'] . $file, $config['upload_path'] . $imgName);
 			
@@ -54,7 +54,8 @@ class Upload extends CI_Controller {
 			$this->image_lib->resize();
 						
 
-			$this->load->view('upload_success', $data);
+//			$this->load->view('upload_success', $data);
+			$this->load->view('/common/thumbnail', $data);
 		}
 	}
 }
