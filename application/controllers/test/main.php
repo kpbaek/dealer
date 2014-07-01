@@ -78,6 +78,16 @@ class Main extends CI_Controller {
 		$this->load->view('/test/testMail');
 	}
 
+	public function upload_form()
+	{
+		$this->load->view('/upload_form.php');
+	}
+
+	public function simpleUpload()
+	{
+		$this->load->view('/test/form-simple-upload.php');
+	}
+
 	public function phpGrid()
 	{
 		$this->load->view('/test/phpGrid');
