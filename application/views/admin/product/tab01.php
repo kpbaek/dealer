@@ -16,20 +16,39 @@
 <a href="javascript:gridReload();" id="search">page</a>
 </form>
 </div>
-<table id="list2"></table>
+<table id="list"></table>
 <div id="pager2"></div>
 <div id="myDiv">
-<form name="viewForm">
-<input type="text" id="id">
-<input type="text" id="invdate">
+<form id="viewForm">
+<input type="text" id="id" name="id">
+<input type="text" id="invdate" name="invdate">
 </form>
 </div>
+<span id="postdata"></span>
+<?php #echo form_open_multipart('upload/do_upload');?>
+<form name="addForm" method="post" accept-charset="utf-8" enctype="multipart/form-data">
+<table width="400" border="0">
+    <tr>
+        <td width="350" align="left">
+			<input type="file" name="userfile" size="20" />
+        </td>
+        <td width="50" align="left" valign=absmiddle>
+            <iframe name="ifUpload" scrolling="no" marginheight="0" marginwidth="0" frameborder="0" width="50" height=50></iframe>
+        </td>
+    </tr>
+    <tr>
+        <td colspan=2 align="left">
+			<input type="button" value="upload" onclick="javascript:createData();"/>
+        </td>
+    </tr>
+    </table>
+</form>
 
 
 <script type="text/javascript">
 
 	var targetUrl = "/admin/product/listPart";
-	jQuery("#list2").jqGrid({
+	jQuery("#list").jqGrid({
 	   	//url:'/test/main/server',
 	   	url:targetUrl,
 	   	datatype: "json",
@@ -38,7 +57,7 @@
    	              //, '(1CIS)', '(2CIS)', 'Q(Per 1Unit)', 'Order Price', 'Amount'
 	   	colModel:[
 	   		{name:'id',index:'id', width:70, align:"right"},
-	   		{name:'id',index:'invdate', width:70},
+	   		{name:'invdate',index:'invdate', width:70},
 	   		{name:'id',index:'name asc, invdate', width:70},
 	   		{name:'id',index:'amount', width:70, align:"right"},
 	   		{name:'id',index:'tax', width:70, align:"right"},		
@@ -49,7 +68,7 @@
 	   		{name:'id',index:'note', width:70, sortable:false}		
 		],
         onSelectRow: function(id) {
-            view_detail("#list2",id);
+            view_detail("#list",id);
         },
 		mtype: "POST",
 	   	rowNum:10,
@@ -63,12 +82,12 @@
 	    sortorder: "desc",
 	    caption:"부품관리"
 	});
-	jQuery("#list2").jqGrid('navGrid','#pager2',{edit:false,add:false,del:false,search:false});
+	jQuery("#list").jqGrid('navGrid','#pager2',{edit:false,add:false,del:false,search:false});
 
 
     function gridReload() {
         var page = document.searchForm.page.value;
-        jQuery("#list2").jqGrid('setGridParam', {url:targetUrl,page:page}).trigger("reloadGrid");
+        jQuery("#list").jqGrid('setGridParam', {url:targetUrl,page:page}).trigger("reloadGrid");
     }
 
     function test_detail(list, id) {
@@ -83,7 +102,7 @@
         var chk_data = jQuery(list).jqGrid('getRowData',id);
         var targetUrl = '/admin/product/viewPart?id=' + chk_data.id;
         $.getJSON(targetUrl, function(result){
-        $.each(result, function(i, field){
+	        $.each(result, function(i, field){
             	document.getElementById("id").value = field.id;
                 document.getElementById("invdate").value = result['viewPart']['invdate'];
             });
@@ -110,6 +129,34 @@
         });
     }
     
+    function printData(params) {
+        var targetUrl = "/admin/product/viewPart?id=2";
+    	$.get(targetUrl, function(data, status){
+            alert("data:" + data + "\nStatus: " + status);
+            $("#postdata").append(data);
+		});
+	}
+
+    function createData() {
+		var f = document.addForm;
+		f.target ="ifUpload";
+		f.action = "/upload/do_upload";
+		f.submit();
+    }
+
+
+    function checkValue(){
+		if($("#id").val().length == 0){
+    		$("#id").focus();
+    		return false;
+		}else if($("#invdate").val().length == 0){
+    		$("#invdate").focus();
+    		return false;
+		}
+		
+		return true;
+    }
+
     var timeoutHnd;
     var flAuto = false;
 
