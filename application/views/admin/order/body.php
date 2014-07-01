@@ -27,7 +27,7 @@
 <li><a href="/admin/order/tab02" rel="countrycontainer" class="selected">부품</a></li>
 </ul>
 
-<div id="countrydivcontainer" style="border:1px solid gray; width:970px; height:450px; margin-bottom: 1em; padding: 10px;overflow: scroll;">
+<div id="countrydivcontainer" style="border:1px solid gray; width:970px; height:550px; margin-bottom: 1em; padding: 10px;overflow: scroll;">
 </div>
 
 <script type="text/javascript">

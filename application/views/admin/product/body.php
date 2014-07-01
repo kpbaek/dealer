@@ -26,7 +26,7 @@
 <li><a href="/admin/product/tab01" rel="#iframe" class="selected">부품관리</a></li>
 </ul>
 
-<div id="productDiv" style="border:1px solid gray; width:970px; height: 500px; padding: 5px; margin-bottom:1em">
+<div id="productDiv" style="border:1px solid gray; width:970px; height: 550px; padding: 5px; margin-bottom:1em">
 </div>
 
 <script type="text/javascript">
@@ -36,8 +36,6 @@ products.setpersist(false);
 products.setselectedClassTarget("link"); //"link" or "linkparent"
 products.init();
 </script>
-
-<p><a href="/admin/product?countrytabs=0">Reload page and select 1nd tab using URL parameter</a> | <a href="javascript: countries.expandit(3)">Dynamically select last Tab</a></p>
 
 <hr />
 
