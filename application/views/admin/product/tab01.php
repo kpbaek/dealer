@@ -9,6 +9,7 @@
 	<script src="/lib/js/jqgrid/js/i18n/grid.locale-en.js" type="text/javascript"></script>
 	<script src="/lib/js/jqgrid/js/jquery.jqGrid.min.js" type="text/javascript"></script>	
 	<script src="/lib/js/themes/jquery-ui.custom.min.js" type="text/javascript"></script>
+	<script src="/lib/js/jquery.form.js" type="text/javascript"></script>
 	
 	<style type="text/css">
 	  html { font-family:Calibri, Arial, Helvetica, sans-serif; font-size:11pt; background-color:white }
@@ -20,6 +21,7 @@
 	  .inlineStr { text-align:left }
 	  .n { text-align:right }
 	  .s { text-align:left }
+	  td.style01 { vertical-align:middle; text-align:left; padding-left:0px; border-bottom:none #000000; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:none #000000; font-weight:bold; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:#A0A0A0 }
 	  td.style0 { vertical-align:bottom; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:white }
 	  td.style1 { vertical-align:bottom; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:white }
 	  td.style2 { vertical-align:bottom; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; font-weight:bold; text-decoration:underline; color:#000000; font-family:'Candara'; font-size:20pt; background-color:white }
@@ -52,8 +54,8 @@
 	  table.sheet0 col.col4 { width:42pt }
 	  table.sheet0 col.col5 { width:42pt }
 	  table.sheet0 col.col6 { width:42pt }
-	  table.sheet0 col.col7 { width:42pt }
-	  table.sheet0 col.col8 { width:42pt }
+	  table.sheet0 col.col7 { width:82pt }
+	  table.sheet0 col.col8 { width:82pt }
 	  table.sheet0 tr { height:15pt }
 	</style>	
 </head>
@@ -72,15 +74,15 @@
 <tr>
     <td align=right>
 		<input type="button" value="test" onclick="javascript:printData();"/>
-    	<input type="button" value="신규" onclick="javascript:displayDiv(formDiv);"/>
+    	<input type="button" id="btnNew" value="신규" onclick="javascript:newForm();"/>
     </td>
 </tr>
 </table>
 </div>
 <span id="postdata"></span>
 
-<div id="formDiv" style="display:">
-<form name="addForm" method="post" accept-charset="utf-8" enctype="multipart/form-data">
+<div id="formDiv" style="display:none">
+<form id="addForm" name="addForm" method="post" accept-charset="utf-8" enctype="multipart/form-data">
 <table border="1" cellpadding="0" cellspacing="0" id="sheet0" width="950">
 		<col class="col0">
 		<col class="col1">
@@ -92,39 +94,35 @@
 		<col class="col7">
 		<col class="col8">
 		<tbody>
-		<tr class="row2" style="background-color:#A0A0A0">
-			<td class="column0 style20 null">Model</td>
-			<td class="column1 style20 null">S/N</td>
-			<td class="column2 style20 null">CODE</td>
-			<td class="column3 style20 s">Part Name</td>
-		</tr>
 		<tr>
+			<td class="style01">Model</td>
 			<td><input type="text" id="id" name="id" size=5 style="border-style: none;"></td>
+			<td class="style01">S/N</td>
 			<td><input type="text" id="invdate" name="invdate" size=12 style="border-style: none;"></td>
-			<td></td>
-			<td></td>
-		</tr>
-		<tr class="row2" style="background-color:#A0A0A0">
-			<td class="column5 style20" colspan=3>IMAGE</td>
-			<td class="column5 style20">Remark</td>
+			<td class="column2 style20 null">CODE</td>
+			<td><input type="text" id="code" name="code" size=12 style="border-style: none;"></td>
+			</tr>
+		<tr>
+			<td class="style01">Part Name</td>
+			<td colspan=5></td>
 		</tr>
 		<tr>
-			<td colspan=3><input type="file" name="userfile" size="20">
-			<iframe name="ifUpload" scrolling="no" marginheight="0" marginwidth="0" frameborder="0" width="50" height=50></iframe></td>
-			<td><textarea rows="3" cols="70"></textarea></td>
-		</tr>
+			<td class="style01">IMAGE</td>
+			<td><input type="file" name="userfile" size="20">
+			<div id="thumbDiv"></div>
+			<!-- <iframe name="ifUpload" scrolling="no" marginheight="0" marginwidth="0" frameborder="0" width="50" height=50></iframe> -->
+			</td>
+		<td class="style01">Remark</td>
+			<td colspan=5><textarea rows="3" cols="65"></textarea></td>
+			</tr>
 		<tr>
-			<td class="column6 style20 null">Recommend</td>
-			<td class="column7 style20 null">Spare Part</td>
-			<td class="column8 style20 null">Wear Parts</td>
-			<td class="column9 style20 null">Without Warranty</td>
-		</tr>
-		  <tr>
+			<td class="style01">Recommend</td>
 			<td><input type="text" id="Recommend" name="id" size=5 style="border-style: none;"></td>
+			<td class="style01" width=80>Spare Part</td>
 			<td><input type="text" id="SparePart" name="id" size=5 style="border-style: none;"></td>
+			<td class="style01">Wear Parts</td>
 			<td><input type="text" id="WearParts" name="id" size=5 style="border-style: none;"></td>
-			<td><input type="text" id="Warranty" name="id" size=5 style="border-style: none;"></td>
-		  </tr>
+			</tr>
 		</tbody>
 	</table>
 	<div id="btnSubDiv">
@@ -141,10 +139,10 @@
 
 </div>
 
-
 <script type="text/javascript">
 
-	var targetUrl = "/admin/product/listPart";
+
+    var targetUrl = "/admin/product/listPart";
 	jQuery("#list").jqGrid({
 	   	//url:'/test/main/server',
 	   	url:targetUrl,
@@ -196,12 +194,18 @@
     }
     
     function view_detail(list, id) {
+    	displayDiv(formDiv);
+    	document.getElementById("btnNew").disabled = false;
+		var f = document.addForm;
+    	f.reset();
+    	
         var chk_data = jQuery(list).jqGrid('getRowData',id);
         var targetUrl = '/admin/product/viewPart?id=' + chk_data.id;
         $.getJSON(targetUrl, function(result){
 	        $.each(result, function(i, field){
             	document.getElementById("id").value = field.id;
                 document.getElementById("invdate").value = result['viewPart']['invdate'];
+            	$("#thumbDiv").html("<img src='/uploads/" + result['viewPart']['invdate'] + "' width=50>");
             });
 	    });
     }
@@ -229,7 +233,8 @@
     function printData() {
         var targetUrl = "/admin/product/viewPart?id=2";
     	$.get(targetUrl, function(data, status){
-            $("#postdata").append("data:" + data + "\nStatus: " + status);
+            $("#postdata").html("data:" + data + "\nStatus: " + status);
+//    	$("#postdata").append("data:" + data + "\nStatus: " + status);
 		});
 	}
 
@@ -239,11 +244,33 @@
        }
 	}
 
+    function newForm() {
+    	displayDiv(formDiv);
+    	var f = document.addForm;
+    	f.reset();
+    	document.getElementById("btnNew").disabled = true;
+    	$("#thumbDiv").html("");
+	}
+
     function createData() {
 		var f = document.addForm;
-		f.target ="ifUpload";
+//		f.target ="ifUpload";
 		f.action = "/upload/do_upload";
-		f.submit();
+		var options = {
+					type:"POST",
+					dataType:"text",
+			        beforeSubmit: function(formData, jqForm, options) {
+			        },
+			        success: function(responseText, statusText, xhr, $form) {
+			            if(statusText == 'success'){		            	
+				        	alert("저장되었습니다");
+				        	$("#thumbDiv").html(responseText);
+				        	document.getElementById("btnNew").disabled = false;
+				        	gridReload();
+			            }
+			        }
+			    };
+		$("#addForm").ajaxSubmit(options);
     }
 
 
