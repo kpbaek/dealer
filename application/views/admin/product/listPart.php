@@ -15,6 +15,11 @@ $limit = "10"; // get how many rows we want to have into the grid
 if(isset($_REQUEST["rows"])){
 	$limit = $_REQUEST["rows"];
 }
+//search param
+$id = "1";
+if(isset($_REQUEST["id"])){
+	$id = $_REQUEST["id"];
+}
 
 // include db config
 include_once("/config.php");
@@ -34,7 +39,10 @@ if( $count >0 ) {
 }
 if ($page > $total_pages) $page=$total_pages;
 $start = $limit*$page - $limit; // do not put $limit*($page - 1)
-$SQL = "SELECT a.id, a.invdate, b.name, a.amount,a.tax,a.total,a.note FROM invheader a, clients b WHERE a.client_id=b.client_id ORDER BY "
+$SQL = "SELECT a.id, a.invdate, b.name, a.amount,a.tax,a.total,a.note FROM invheader a, clients b 
+		WHERE a.client_id=b.client_id 
+		and id LIKE concat('%%', " .$id. ")
+		ORDER BY "
 		 . $sidx . " " . $sord . " LIMIT " . $start . "," . $limit;
 $result = mysql_query( $SQL ) or die("Couldn t execute query.".mysql_error());
 /**
