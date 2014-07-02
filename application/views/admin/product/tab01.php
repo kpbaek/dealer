@@ -22,31 +22,6 @@
 	  .n { text-align:right }
 	  .s { text-align:left }
 	  td.style01 { vertical-align:middle; text-align:left; padding-left:0px; border-bottom:none #000000; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:none #000000; font-weight:bold; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:#A0A0A0 }
-	  td.style0 { vertical-align:bottom; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:white }
-	  td.style1 { vertical-align:bottom; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:white }
-	  td.style2 { vertical-align:bottom; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; font-weight:bold; text-decoration:underline; color:#000000; font-family:'Candara'; font-size:20pt; background-color:white }
-	  td.style3 { vertical-align:bottom; text-align:right; padding-right:0px; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:white }
-	  td.style4 { vertical-align:middle; text-align:justify; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:white }
-	  td.style5 { vertical-align:bottom; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:white }
-	  td.style6 { vertical-align:bottom; border-bottom:none #000000; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:none #000000; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:white }
-	  td.style7 { vertical-align:bottom; border-bottom:none #000000; border-top:none #000000; border-left:1px solid #000000 !important; border-right:none #000000; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:white }
-	  td.style8 { vertical-align:bottom; border-bottom:1px solid #000000 !important; border-top:none #000000; border-left:1px solid #000000 !important; border-right:none #000000; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:white }
-	  td.style9 { vertical-align:bottom; border-bottom:none #000000; border-top:1px solid #000000 !important; border-left:none #000000; border-right:none #000000; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:white }
-	  td.style10 { vertical-align:bottom; border-bottom:1px solid #000000 !important; border-top:none #000000; border-left:none #000000; border-right:none #000000; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:white }
-	  td.style11 { vertical-align:bottom; border-bottom:none #000000; border-top:1px solid #000000 !important; border-left:none #000000; border-right:1px solid #000000 !important; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:white }
-	  td.style12 { vertical-align:bottom; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:1px solid #000000 !important; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:white }
-	  td.style13 { vertical-align:bottom; border-bottom:1px solid #000000 !important; border-top:none #000000; border-left:none #000000; border-right:1px solid #000000 !important; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:white }
-	  td.style14 { vertical-align:bottom; text-align:right; padding-right:0px; border-bottom:3px solid #993300 !important; border-top:3px solid #993300 !important; border-left:3px solid #993300 !important; border-right:none #000000; font-weight:bold; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:white }
-	  td.style15 { vertical-align:bottom; border-bottom:3px solid #993300 !important; border-top:3px solid #993300 !important; border-left:none #000000; border-right:3px solid #993300 !important; font-weight:bold; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:white }
-	  td.style16 { vertical-align:bottom; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:#808080 }
-	  td.style17 { vertical-align:bottom; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; color:#FFFFFF; font-family:'Calibri'; font-size:11pt; background-color:#808080 }
-	  td.style18 { vertical-align:bottom; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; color:#FFFFFF; font-family:'Calibri'; font-size:11pt; background-color:#808080 }
-	  td.style19 { vertical-align:bottom; text-align:right; padding-right:0px; border-bottom:none #000000; border-top:1px solid #000000 !important; border-left:none #000000; border-right:none #000000; font-weight:bold; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:#A0A0A0 }
-	  td.style20 { vertical-align:bottom; text-align:left; padding-left:0px; border-bottom:none #000000; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:none #000000; font-weight:bold; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:#A0A0A0 }
-	  td.style21 { vertical-align:bottom; text-align:left; padding-left:0px; border-bottom:none #000000; border-top:1px solid #000000 !important; border-left:none #000000; border-right:none #000000; font-weight:bold; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:#A0A0A0 }
-	  td.style22 { vertical-align:bottom; text-align:right; padding-right:0px; border-bottom:none #000000; border-top:1px solid #000000 !important; border-left:none #000000; border-right:1px solid #000000 !important; font-weight:bold; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:#A0A0A0 }
-	  td.style23 { vertical-align:bottom; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; font-weight:bold; text-decoration:underline; color:#FFFFFF; font-family:'Candara'; font-size:20pt; background-color:#808080 }
-	  td.style24 { vertical-align:bottom; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; color:#000000; font-family:'Calibri'; font-size:8pt; background-color:white }
 	  table.sheet0 col.col0 { width:42pt }
 	  table.sheet0 col.col1 { width:42pt }
 	  table.sheet0 col.col2 { width:42pt }
@@ -80,7 +55,7 @@
 </table>
 </div>
 <span id="postdata"></span>
-
+<p>
 <div id="formDiv" style="display:none">
 <form id="addForm" name="addForm" method="post" accept-charset="utf-8" enctype="multipart/form-data">
 <table border="1" cellpadding="0" cellspacing="0" id="sheet0" width="950">
@@ -96,10 +71,18 @@
 		<tbody>
 		<tr>
 			<td class="style01">Model</td>
-			<td><input type="text" id="id" name="id" size=5 style="border-style: none;"></td>
+			<td><input type="text" id="id" name="id" size=5 style="border-style: none;">
+			<select name="cdGrp" onchange="javascript:getCodeList(this.value);">
+			<option value="">-------------------</option>
+			<option value="0.00">0.00</option>
+			<option value="40.00">40.00</option>
+			</select>
+			<select name="cdDtl">
+			</select>
+			</td>
 			<td class="style01">S/N</td>
 			<td><input type="text" id="invdate" name="invdate" size=12 style="border-style: none;"></td>
-			<td class="column2 style20 null">CODE</td>
+			<td class="style01">CODE</td>
 			<td><input type="text" id="code" name="code" size=12 style="border-style: none;"></td>
 			</tr>
 		<tr>
@@ -141,44 +124,85 @@
 
 <script type="text/javascript">
 
+	function getCodeList(cdGrp) {
+		var f = document.addForm;
+		var selObj = f.cdDtl;
+	    if (cdGrp == "") {
+	        deleteOptionElements(selObj);
+	        addOptionElement(selObj, "", "------");
+	        return;
+	    }
+		var targetUrl = '/common/main/listCode?cdGrp=' + cdGrp;
+	    $.getJSON(targetUrl, function(result){
+	    	$('#postdata').append(result['cdGrp']['name'] + ":" + cdGrp);
+	    	deleteOptionElements(selObj);
+	        for(var i=0; i<result['cdDtl'].length; i++){
+            	addOptionElement(selObj, result['cdDtl'][i]['value'], result['cdDtl'][i]['text']); 
+			}
+	    });
+	}
+	
+	function deleteOptionElements(slbObj){ 
+		 for(i=slbObj.length-1;i>-1;i--){ 
+		 	slbObj.remove(i); 
+		 } 
+	} 
+	
+	function addOptionElement(slbObj,value,text){ 
+		 slbObj.add(new Option(text, value, false)); 
+	} 
+		 
+	//선택 옵션항목을 제거 
+	function deleteOptionSelElements(sel){ 
+	    sel.options[sel.selectedIndex]=null; 
+	}
+	
+	function setCodeList(xml, combo_id) {
+	    deleteOptionElements(combo_id);
+	    addOptionKind(xml, combo_id);
+	
+	}
 
-    var targetUrl = "/admin/product/listPart";
-	jQuery("#list").jqGrid({
-	   	//url:'/test/main/server',
-	   	url:targetUrl,
-	   	datatype: "json",
-	   	//colNames:['Inv No','Date', 'Client', 'Amount','Tax','Total','Notes'],
-	   	colNames:['Model', 'S/N', 'CODE', 'Part Name', 'IMAGE', 'Recommend', 'Spare Part', 'Wear Parts',  'Without Warranty', 'Remark'],
-   	              //, '(1CIS)', '(2CIS)', 'Q(Per 1Unit)', 'Order Price', 'Amount'
-	   	colModel:[
-	   		{name:'id',index:'id', width:70, align:"right"},
-	   		{name:'invdate',index:'invdate', width:70},
-	   		{name:'id',index:'name asc, invdate', width:70},
-	   		{name:'id',index:'amount', width:100, align:"right"},
-	   		{name:'id',index:'tax', width:50, align:"right"},		
-	   		{name:'id',index:'total', width:70,align:"right"},		
-	   		{name:'id',index:'note', width:70, sortable:false},		
-	   		{name:'id',index:'note', width:70, sortable:false},		
-	   		{name:'id',index:'note', width:70, sortable:false},		
-	   		{name:'id',index:'note', width:70, sortable:false}		
-		],
-        onSelectRow: function(id) {
-            view_detail("#list",id);
-        },
-		mtype: "POST",
-	   	rowNum:10,
-	   	rowList:[10,20,30],
-	   	pager: '#pager',
-	    viewrecords: true,
-	    autowidth: false,
-	    width:950,
-	    height:230,
-	    sortname: 'id',
-	    sortorder: "desc",
-	    caption:"부품관리"
-	});
-	jQuery("#list").jqGrid('navGrid','#pager',{edit:false,add:false,del:false,search:false});
-
+	jQuery().ready(function () {
+		var targetUrl = "/admin/product/listPart";
+		jQuery("#list").jqGrid({
+		   	//url:'/test/main/server',
+		   	url:targetUrl,
+		   	datatype: "json",
+		   	//colNames:['Inv No','Date', 'Client', 'Amount','Tax','Total','Notes'],
+		   	colNames:['Model', 'S/N', 'CODE', 'Part Name', 'IMAGE', 'Recommend', 'Spare Part', 'Wear Parts',  'Without Warranty', 'Remark'],
+	   	              //, '(1CIS)', '(2CIS)', 'Q(Per 1Unit)', 'Order Price', 'Amount'
+		   	colModel:[
+		   		{name:'id',index:'id', width:70, align:"right"},
+		   		{name:'invdate',index:'invdate', width:70},
+		   		{name:'tax',index:'tax asc, invdate', width:70},
+		   		{name:'id',index:'amount', width:100, align:"right"},
+		   		{name:'id',index:'tax', width:50, align:"right"},		
+		   		{name:'id',index:'total', width:70,align:"right"},		
+		   		{name:'id',index:'note', width:70, sortable:false},		
+		   		{name:'id',index:'note', width:70, sortable:false},		
+		   		{name:'id',index:'note', width:70, sortable:false},		
+		   		{name:'id',index:'note', width:70, sortable:false}		
+			],
+	        onSelectRow: function(id) {
+	            view_detail("#list",id);
+	        },
+			mtype: "POST",
+		   	rowNum:10,
+		   	rowList:[10,20,30],
+		   	pager: '#pager',
+		    viewrecords: true,
+		    autowidth: false,
+		    width:950,
+		    height:230,
+		    sortname: 'id',
+		    sortorder: "desc",
+		    caption:"부품관리"
+		});
+		jQuery("#list").jqGrid('navGrid','#pager',{edit:false,add:false,del:false,search:false});
+		newForm();
+	})
+	
 
     function gridReload() {
         var page = document.searchForm.page.value;
