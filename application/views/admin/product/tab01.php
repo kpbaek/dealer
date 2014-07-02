@@ -48,7 +48,6 @@
 <table border="0" cellpadding="0" cellspacing="0" style="width:950px;align:center; vertical-align:middle">
 <tr>
     <td align=right>
-		<input type="button" value="test" onclick="javascript:printData();"/>
     	<input type="button" id="btnNew" value="신규" onclick="javascript:newForm();"/>
     </td>
 </tr>
@@ -71,11 +70,11 @@
 		<tbody>
 		<tr>
 			<td class="style01">Model</td>
-			<td><input type="text" id="id" name="id" size=5 style="border-style: none;">
-			<select name="cdGrp" onchange="javascript:getCodeList(this.value);">
+			<td>
+			<select name="cdGrp" onchange="javascript:getCodeCombo(this.value, document.addForm.cdDtl);" style="display: none">
 			<option value="">-------------------</option>
-			<option value="0.00">0.00</option>
-			<option value="40.00">40.00</option>
+			<option value="01">01</option>
+			<option value="02">02</option>
 			</select>
 			<select name="cdDtl">
 			</select>
@@ -83,7 +82,7 @@
 			<td class="style01">S/N</td>
 			<td><input type="text" id="invdate" name="invdate" size=12 style="border-style: none;"></td>
 			<td class="style01">CODE</td>
-			<td><input type="text" id="code" name="code" size=12 style="border-style: none;"></td>
+			<td><input type="text" id="id" name="id" size=5 style="border-style: none;"></td>
 			</tr>
 		<tr>
 			<td class="style01">Part Name</td>
@@ -100,11 +99,20 @@
 			</tr>
 		<tr>
 			<td class="style01">Recommend</td>
-			<td><input type="text" id="Recommend" name="id" size=5 style="border-style: none;"></td>
+			<td>
+				<select name="recommend">
+				</select>
+			</td>
 			<td class="style01" width=80>Spare Part</td>
-			<td><input type="text" id="SparePart" name="id" size=5 style="border-style: none;"></td>
+			<td>
+				<select name="spare">
+				</select>
+			</td>
 			<td class="style01">Wear Parts</td>
-			<td><input type="text" id="WearParts" name="id" size=5 style="border-style: none;"></td>
+			<td>
+				<select name="wear">
+				</select>
+			</td>
 			</tr>
 		</tbody>
 	</table>
@@ -124,19 +132,18 @@
 
 <script type="text/javascript">
 
-	function getCodeList(cdGrp) {
-		var f = document.addForm;
-		var selObj = f.cdDtl;
+	function getCodeCombo(cdGrp, selObj) {
 	    if (cdGrp == "") {
 	        deleteOptionElements(selObj);
-	        addOptionElement(selObj, "", "------");
+	        addOptionElement(selObj, "", "----------------");
 	        return;
 	    }
 		var targetUrl = '/common/main/listCode?cdGrp=' + cdGrp;
 	    $.getJSON(targetUrl, function(result){
-	    	$('#postdata').append(result['cdGrp']['name'] + ":" + cdGrp);
+//	    	$('#postdata').append(result['cdGrp']['name'] + ":" + cdGrp);
 	    	deleteOptionElements(selObj);
-	        for(var i=0; i<result['cdDtl'].length; i++){
+	        addOptionElement(selObj, "", "----------------");
+	    	for(var i=0; i<result['cdDtl'].length; i++){
             	addOptionElement(selObj, result['cdDtl'][i]['value'], result['cdDtl'][i]['text']); 
 			}
 	    });
@@ -165,7 +172,7 @@
 
 	jQuery().ready(function () {
 		var targetUrl = "/admin/product/listPart";
-		jQuery("#list").jqGrid({
+		var mygrid = jQuery("#list").jqGrid({
 		   	//url:'/test/main/server',
 		   	url:targetUrl,
 		   	datatype: "json",
@@ -176,8 +183,8 @@
 		   		{name:'id',index:'id', width:70, align:"right"},
 		   		{name:'invdate',index:'invdate', width:70},
 		   		{name:'tax',index:'tax asc, invdate', width:70},
-		   		{name:'id',index:'amount', width:100, align:"right"},
-		   		{name:'id',index:'tax', width:50, align:"right"},		
+		   		{name:'amount',index:'amount', width:100, align:"right"},
+		   		{name:'tax',index:'tax', width:50, align:"right"},		
 		   		{name:'id',index:'total', width:70,align:"right"},		
 		   		{name:'id',index:'note', width:70, sortable:false},		
 		   		{name:'id',index:'note', width:70, sortable:false},		
@@ -185,7 +192,9 @@
 		   		{name:'id',index:'note', width:70, sortable:false}		
 			],
 	        onSelectRow: function(id) {
-	            view_detail("#list",id);
+	            var params = {id:id};
+	            view_detail("#list",params);
+	            printData(params);
 	        },
 			mtype: "POST",
 		   	rowNum:10,
@@ -197,16 +206,49 @@
 		    height:230,
 		    sortname: 'id',
 		    sortorder: "desc",
-		    caption:"부품관리"
+			toolbar: [false,"top"],
+//		    hiddengrid: true,
+			caption:"부품관리"
 		});
 		jQuery("#list").jqGrid('navGrid','#pager',{edit:false,add:false,del:false,search:false});
-		newForm();
+/**
+		jQuery("#list").jqGrid('filterToolbar',{stringResult: true,searchOnEnter : true});
+		jQuery("#list").jqGrid('navButtonAdd',"#pager",{caption:"Toggle",title:"Toggle Search Toolbar", buttonicon :'ui-icon-pin-s',
+			onClickButton:function(){
+				mygrid[0].toggleToolbar();
+			} 
+		});
+		jQuery("#list").jqGrid('navButtonAdd',"#pager",{caption:"Clear",title:"Clear Search",buttonicon :'ui-icon-refresh',
+			onClickButton:function(){
+				mygrid[0].clearToolbar();
+			} 
+		});
+*/				
+/**
+		$("#t_list").append("<input type='button' id='btnNew' value='신규' style='height:20px;font-size:-3'/>");
+		$("input","#t_list").click(function(){
+			newForm();
+		});
+*/		
+		initForm();
 	})
 	
-
+	
+	function initForm() {
+		var f = document.addForm;
+		getCodeCombo("02", f.cdDtl);
+		getCodeCombo("01", f.recommend);
+		getCodeCombo("01", f.spare);
+		getCodeCombo("01", f.wear);
+		newForm();
+    }
+	
     function gridReload() {
-        var page = document.searchForm.page.value;
-        jQuery("#list").jqGrid('setGridParam', {url:targetUrl,page:page}).trigger("reloadGrid");
+		var targetUrl = "/admin/product/listPart";
+    	var page = document.searchForm.page.value;
+//        jQuery("#list").jqGrid('setGridParam', {url:targetUrl,page:page}).trigger("reloadGrid");
+        $("#list").jqGrid('setPostData', {id:'2'});
+		jQuery("#list").jqGrid('setGridParam', {url:targetUrl}).trigger("reloadGrid");
     }
 
     function test_detail(list, id) {
@@ -217,13 +259,13 @@
 	    });
     }
     
-    function view_detail(list, id) {
+    function view_detail(list, params) {
     	displayDiv(formDiv);
     	document.getElementById("btnNew").disabled = false;
 		var f = document.addForm;
     	f.reset();
     	
-        var chk_data = jQuery(list).jqGrid('getRowData',id);
+        var chk_data = jQuery(list).jqGrid('getRowData',params.id);
         var targetUrl = '/admin/product/viewPart?id=' + chk_data.id;
         $.getJSON(targetUrl, function(result){
 	        $.each(result, function(i, field){
@@ -254,11 +296,12 @@
         });
     }
     
-    function printData() {
-        var targetUrl = "/admin/product/viewPart?id=2";
-    	$.get(targetUrl, function(data, status){
-            $("#postdata").html("data:" + data + "\nStatus: " + status);
-//    	$("#postdata").append("data:" + data + "\nStatus: " + status);
+    function printData(param) {
+//        var targetUrl = "/admin/product/viewPart?id=" + param.id;
+        var targetUrl = "/admin/product/viewPart";
+        $.post(targetUrl, param, function(data, status){
+            $("#postdata").html("param:" + param.id + "<br>");
+    		$("#postdata").append("data:" + data + "\nStatus: " + status);
 		});
 	}
 
@@ -274,6 +317,7 @@
     	f.reset();
     	document.getElementById("btnNew").disabled = true;
     	$("#thumbDiv").html("");
+    	gridReload();
 	}
 
     function createData() {
@@ -290,7 +334,7 @@
 				        	alert("저장되었습니다");
 				        	$("#thumbDiv").html(responseText);
 				        	document.getElementById("btnNew").disabled = false;
-				        	gridReload();
+				        	newForm();
 			            }
 			        }
 			    };
@@ -306,7 +350,6 @@
     		$("#invdate").focus();
     		return false;
 		}
-		
 		return true;
     }
 
