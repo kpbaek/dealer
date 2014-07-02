@@ -16,7 +16,7 @@ if(isset($_REQUEST["rows"])){
 	$limit = $_REQUEST["rows"];
 }
 //search param
-$id = "1";
+$id = "";
 if(isset($_REQUEST["id"])){
 	$id = $_REQUEST["id"];
 }
