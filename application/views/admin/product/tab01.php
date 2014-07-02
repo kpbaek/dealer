@@ -197,7 +197,8 @@
 	            printData(params);
 	        },
 			mtype: "POST",
-		   	rowNum:10,
+			postData:{id:'1'},
+			rowNum:10,
 		   	rowList:[10,20,30],
 		   	pager: '#pager',
 		    viewrecords: true,
