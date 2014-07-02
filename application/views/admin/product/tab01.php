@@ -248,7 +248,7 @@
 		var targetUrl = "/admin/product/listPart";
     	var page = document.searchForm.page.value;
 //        jQuery("#list").jqGrid('setGridParam', {url:targetUrl,page:page}).trigger("reloadGrid");
-        $("#list").jqGrid('setPostData', {id:'2'});
+//        $("#list").jqGrid('setPostData', {id:'3'});
 		jQuery("#list").jqGrid('setGridParam', {url:targetUrl}).trigger("reloadGrid");
     }
 
