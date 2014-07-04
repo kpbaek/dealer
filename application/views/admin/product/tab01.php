@@ -3,13 +3,19 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<link rel="stylesheet" type="text/css" media="screen" href="/lib/js/themes/redmond/jquery-ui.custom.css"></link>	
-	<link rel="stylesheet" type="text/css" media="screen" href="/lib/js/jqgrid/css/ui.jqgrid.css"></link>	
+	<link rel="stylesheet" type="text/css" media="screen" href="/lib/jquery.jqGrid-4.6.0/plugins/ui.multiselect.css"></link>	
+	<link rel="stylesheet" type="text/css" media="screen" href="/lib/jquery.jqGrid-4.6.0/css/ui.jqgrid.css"></link>	
+	<link rel="stylesheet" type="text/css" media="screen" href="/lib/jquery.jqGrid-4.6.0/plugins/searchFilter.css"></link>	
  
-	<script src="/lib/js/jquery.min.js" type="text/javascript"></script>
-	<script src="/lib/js/jqgrid/js/i18n/grid.locale-en.js" type="text/javascript"></script>
-	<script src="/lib/js/jqgrid/js/jquery.jqGrid.min.js" type="text/javascript"></script>	
-	<script src="/lib/js/themes/jquery-ui.custom.min.js" type="text/javascript"></script>
+	<script src="/lib/jquery.jqGrid-4.6.0/js/jquery-1.11.0.min.js" type="text/javascript"></script>
+	<script src="/lib/jquery.jqGrid-4.6.0/js/i18n/grid.locale-en.js" type="text/javascript"></script>
+	<script src="/lib/jquery.jqGrid-4.6.0/js/jquery.jqGrid.min.js" type="text/javascript"></script>	
+	<script src="/lib/jquery.jqGrid-4.6.0/plugins/grid.postext.js" type="text/javascript"></script>
+	<script src="/lib/jquery.jqGrid-4.6.0/plugins/grid.addons.js" type="text/javascript"></script>
 	<script src="/lib/js/jquery.form.js" type="text/javascript"></script>
+	<script src="/lib/jquery.jqGrid-4.6.0/plugins/jquery.searchFilter.js" type="text/javascript"></script>
+	<script src="/lib/jquery.jqGrid-4.6.0/plugins/ui.multiselect.js" type="text/javascript"></script>
+	<script src="/js/cmn/common.js" type="text/javascript"></script>
 	
 	<style type="text/css">
 	  html { font-family:Calibri, Arial, Helvetica, sans-serif; font-size:11pt; background-color:white }
@@ -21,7 +27,7 @@
 	  .inlineStr { text-align:left }
 	  .n { text-align:right }
 	  .s { text-align:left }
-	  td.style01 { vertical-align:middle; text-align:left; padding-left:0px; border-bottom:none #000000; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:none #000000; font-weight:bold; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:#A0A0A0 }
+	  td.style01 { vertical-align:middle; text-align:center; padding-left:0px; border-bottom:none #000000; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:none #000000; font-weight:bold; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:#A0A0A0 }
 	  table.sheet0 col.col0 { width:42pt }
 	  table.sheet0 col.col1 { width:42pt }
 	  table.sheet0 col.col2 { width:42pt }
@@ -34,17 +40,17 @@
 	  table.sheet0 tr { height:15pt }
 	</style>	
 </head>
-<div id="searchDiv" style="display:none">
+<div id="searchDiv" style="display:">
 <form name="searchForm">
-<input type="text" name="page">
-<a href="javascript:gridReload();" id="search">page</a>
+<input type="text" name="page" style="display: none">
+searchId<input type="text" name="searchId">
+<input type="button" id="btnSearch" value="Search" onclick="javascript:gridReload();"/>
 </form>
 </div>
-<div id="myDiv">
+<div id="gridDiv">
 <table id="list"></table>
 <div id="pager"></div>
 </div>
-<div id="btnDiv">
 <table border="0" cellpadding="0" cellspacing="0" style="width:950px;align:center; vertical-align:middle">
 <tr>
     <td align=right>
@@ -53,7 +59,7 @@
 </tr>
 </table>
 </div>
-<span id="postdata"></span>
+<div id="postdata"></div>
 <p>
 <div id="formDiv" style="display:none">
 <form id="addForm" name="addForm" method="post" accept-charset="utf-8" enctype="multipart/form-data">
@@ -71,7 +77,7 @@
 		<tr>
 			<td class="style01">Model</td>
 			<td>
-			<select name="cdGrp" onchange="javascript:getCodeCombo(this.value, document.addForm.cdDtl);" style="display: none">
+			<select name="cdGrp" onchange="javascript:getCodeCombo(this.value, document.addForm.cdDtl);" style="display:">
 			<option value="">-------------------</option>
 			<option value="01">01</option>
 			<option value="02">02</option>
@@ -94,9 +100,9 @@
 			<div id="thumbDiv"></div>
 			<!-- <iframe name="ifUpload" scrolling="no" marginheight="0" marginwidth="0" frameborder="0" width="50" height=50></iframe> -->
 			</td>
-		<td class="style01">Remark</td>
+			<td>Remark</td>
 			<td colspan=5><textarea rows="3" cols="65"></textarea></td>
-			</tr>
+		</tr>
 		<tr>
 			<td class="style01">Recommend</td>
 			<td>
@@ -113,13 +119,13 @@
 				<select name="wear">
 				</select>
 			</td>
-			</tr>
+		</tr>
 		</tbody>
 	</table>
 	<div id="btnSubDiv">
 	<table border="0" cellpadding="0" cellspacing="0" style="width:950px;align:center; vertical-align:middle">
 	<tr>
-	    <td align=right>
+		<td align=right>
 			<input type="button" value="저장" onclick="javascript:createData();"/>
 	    </td>
 	</tr>
@@ -132,44 +138,6 @@
 
 <script type="text/javascript">
 
-	function getCodeCombo(cdGrp, selObj) {
-	    if (cdGrp == "") {
-	        deleteOptionElements(selObj);
-	        addOptionElement(selObj, "", "----------------");
-	        return;
-	    }
-		var targetUrl = '/common/main/listCode?cdGrp=' + cdGrp;
-	    $.getJSON(targetUrl, function(result){
-//	    	$('#postdata').append(result['cdGrp']['name'] + ":" + cdGrp);
-	    	deleteOptionElements(selObj);
-	        addOptionElement(selObj, "", "----------------");
-	    	for(var i=0; i<result['cdDtl'].length; i++){
-            	addOptionElement(selObj, result['cdDtl'][i]['value'], result['cdDtl'][i]['text']); 
-			}
-	    });
-	}
-	
-	function deleteOptionElements(slbObj){ 
-		 for(i=slbObj.length-1;i>-1;i--){ 
-		 	slbObj.remove(i); 
-		 } 
-	} 
-	
-	function addOptionElement(slbObj,value,text){ 
-		 slbObj.add(new Option(text, value, false)); 
-	} 
-		 
-	//선택 옵션항목을 제거 
-	function deleteOptionSelElements(sel){ 
-	    sel.options[sel.selectedIndex]=null; 
-	}
-	
-	function setCodeList(xml, combo_id) {
-	    deleteOptionElements(combo_id);
-	    addOptionKind(xml, combo_id);
-	
-	}
-
 	jQuery().ready(function () {
 		var targetUrl = "/admin/product/listPart";
 		var mygrid = jQuery("#list").jqGrid({
@@ -177,19 +145,20 @@
 		   	url:targetUrl,
 		   	datatype: "json",
 		   	//colNames:['Inv No','Date', 'Client', 'Amount','Tax','Total','Notes'],
-		   	colNames:['Model', 'S/N', 'CODE', 'Part Name', 'IMAGE', 'Recommend', 'Spare Part', 'Wear Parts',  'Without Warranty', 'Remark'],
+		   	colNames:['id', 'model', 'S/N', 'CODE', 'Part Name', 'IMAGE', 'Recommend', 'Spare Part', 'Wear Parts',  'Without Warranty', 'Remark'],
 	   	              //, '(1CIS)', '(2CIS)', 'Q(Per 1Unit)', 'Order Price', 'Amount'
 		   	colModel:[
-		   		{name:'id',index:'id', width:70, align:"right"},
-		   		{name:'invdate',index:'invdate', width:70},
-		   		{name:'tax',index:'tax asc, invdate', width:70},
-		   		{name:'amount',index:'amount', width:100, align:"right"},
-		   		{name:'tax',index:'tax', width:50, align:"right"},		
-		   		{name:'id',index:'total', width:70,align:"right"},		
-		   		{name:'id',index:'note', width:70, sortable:false},		
-		   		{name:'id',index:'note', width:70, sortable:false},		
-		   		{name:'id',index:'note', width:70, sortable:false},		
-		   		{name:'id',index:'note', width:70, sortable:false}		
+		   	    {name:'id', index:'id', width:55,hidden:false,search:true}, 
+		        {name:'model',index:'id', width:70, align:"right",search:true},
+		   		{name:'invdate',index:'invdate', width:70,search:true},
+		   		{name:'amount',index:'tax asc, invdate', width:70,search:true},
+		   		{name:'amount',index:'amount', width:100, align:"right",search:true},
+		   		{name:'tax',index:'tax', width:50, align:"right",search:true},		
+		   		{name:'total',index:'total', width:70,align:"right",search:true},		
+		   		{name:'total',index:'note', width:70, sortable:false,search:true},		
+		   		{name:'total',index:'note', width:70, sortable:false,search:true},		
+		   		{name:'total',index:'note', width:70, sortable:false,search:true},		
+		   		{name:'total',index:'note', width:70, sortable:false,search:true}		
 			],
 	        onSelectRow: function(id) {
 	            var params = {id:id};
@@ -197,43 +166,63 @@
 	            printData(params);
 	        },
 			mtype: "POST",
-			postData:{id:'1'},
+//			postData:{id:'2'},
+            gridComplete: function(){
+                var ids = jQuery("#list").jqGrid('getDataIDs');
+                for(var i=0;i < ids.length;i++){
+                    var cl = ids[i];
+                    var rowData = jQuery("#list").jqGrid('getRowData',cl);
+                    var cl_id = rowData.id;
+                    be = "<img src='/images/ci_logo.jpg' height='20'>";
+                    jQuery("#list").jqGrid('setRowData',ids[i],{tax:be});
+                }
+            },	            
+            
 			rowNum:10,
 		   	rowList:[10,20,30],
 		   	pager: '#pager',
 		    viewrecords: true,
 		    autowidth: false,
 		    width:950,
-		    height:230,
+		    height:240,
 		    sortname: 'id',
 		    sortorder: "desc",
-			toolbar: [false,"top"],
-//		    hiddengrid: true,
+			toolbar: [true,"top"],
+		    hiddengrid: true,
 			caption:"부품관리"
 		});
 		jQuery("#list").jqGrid('navGrid','#pager',{edit:false,add:false,del:false,search:false});
 /**
-		jQuery("#list").jqGrid('filterToolbar',{stringResult: true,searchOnEnter : true});
+		jQuery("#list").jqGrid('filterToolbar',{stringResult: true,searchOnEnter : false, defaultSearch : "cn"});
 		jQuery("#list").jqGrid('navButtonAdd',"#pager",{caption:"Toggle",title:"Toggle Search Toolbar", buttonicon :'ui-icon-pin-s',
 			onClickButton:function(){
 				mygrid[0].toggleToolbar();
 			} 
 		});
-		jQuery("#list").jqGrid('navButtonAdd',"#pager",{caption:"Clear",title:"Clear Search",buttonicon :'ui-icon-refresh',
-			onClickButton:function(){
-				mygrid[0].clearToolbar();
-			} 
-		});
-*/				
-/**
-		$("#t_list").append("<input type='button' id='btnNew' value='신규' style='height:20px;font-size:-3'/>");
-		$("input","#t_list").click(function(){
-			newForm();
-		});
 */		
+		jQuery("#list").jqGrid('navButtonAdd',"#pager",{caption:"Search",title:"Toggle Search",
+			onClickButton:function(){ 
+				if(jQuery("#t_list").css("display")=="none") {
+					jQuery("#t_list").css("display","");
+				} else {
+					jQuery("#t_list").css("display","none");
+				}
+				
+			} 
+		});		
+		$("#t_list").append(searchDiv);
+		
 		initForm();
 	})
 	
+    function printPostData(){
+    	var pd = $("#list").jqGrid('getPostData');
+        var r = "";
+        $.each(pd, function(i) {
+            r += i + ": " + pd[i] + ",";
+            $("#postdata").html(r);
+        })
+    }
 	
 	function initForm() {
 		var f = document.addForm;
@@ -247,10 +236,11 @@
     function gridReload() {
 		var targetUrl = "/admin/product/listPart";
     	var page = document.searchForm.page.value;
-//        jQuery("#list").jqGrid('setGridParam', {url:targetUrl,page:page}).trigger("reloadGrid");
-//        $("#list").jqGrid('setPostData', {id:'3'});
-		jQuery("#list").jqGrid('setGridParam', {url:targetUrl}).trigger("reloadGrid");
-    }
+    	var searchId = document.searchForm.searchId.value;
+        $("#list").jqGrid('setPostData', {test:'aa',searchId:searchId});
+    	jQuery("#list").jqGrid('setGridParam', {url:targetUrl,page:'1'}).trigger("reloadGrid");
+		printPostData();
+	}
 
     function test_detail(list, id) {
         var chk_data = jQuery(list).jqGrid('getRowData',id);
@@ -301,7 +291,7 @@
 //        var targetUrl = "/admin/product/viewPart?id=" + param.id;
         var targetUrl = "/admin/product/viewPart";
         $.post(targetUrl, param, function(data, status){
-            $("#postdata").html("param:" + param.id + "<br>");
+        	$("#postdata").append("param:" + param.id + "<br>");
     		$("#postdata").append("data:" + data + "\nStatus: " + status);
 		});
 	}
@@ -318,7 +308,7 @@
     	f.reset();
     	document.getElementById("btnNew").disabled = true;
     	$("#thumbDiv").html("");
-    	gridReload();
+    	$("#list").jqGrid('resetSelection');
 	}
 
     function createData() {
@@ -335,6 +325,7 @@
 				        	alert("저장되었습니다");
 				        	$("#thumbDiv").html(responseText);
 				        	document.getElementById("btnNew").disabled = false;
+				        	gridReload();
 				        	newForm();
 			            }
 			        }
@@ -354,18 +345,6 @@
 		return true;
     }
 
-    var timeoutHnd;
-    var flAuto = false;
-
-
-    function doSearch(ev) {
-        if (!flAuto)
-            return;
-        //	var elem = ev.target||ev.srcElement;
-        if (timeoutHnd)
-            clearTimeout(timeoutHnd)
-        timeoutHnd = setTimeout(gridReload, 500)
-    }
 
 </script>
 
