@@ -16,27 +16,36 @@
 
 </script>
 
+	<script src="/lib/jquery.jqGrid-4.6.0/js/i18n/grid.locale-en.js" type="text/javascript"></script>
+	<script src="/lib/jquery.jqGrid-4.6.0/js/jquery.jqGrid.min.js" type="text/javascript"></script>	
+	<script src="/lib/jquery.jqGrid-4.6.0/plugins/grid.postext.js" type="text/javascript"></script>
+	<script src="/lib/jquery.jqGrid-4.6.0/plugins/grid.addons.js" type="text/javascript"></script>
+	<script src="/lib/js/jquery.form.js" type="text/javascript"></script>
+	<script src="/lib/jquery.jqGrid-4.6.0/plugins/jquery.searchFilter.js" type="text/javascript"></script>
+	<script src="/lib/jquery.jqGrid-4.6.0/plugins/ui.multiselect.js" type="text/javascript"></script>
+	<script src="/js/cmn/common.js" type="text/javascript"></script>
+	
+
 </head>
 
 <body>
 
 <h3><a href="/admin/client?countrytabs=0">신청서</a></h3>
 
-<ul id="countrytabs" class="shadetabs">
-<li><a href="/admin/client/tab01" rel="countrycontainer" class="selected">Find a Dealer</a></li>
-<li><a href="/admin/client/tab02" rel="countrycontainer">To be a Dealer</a></li>
+<ul id="clientTabs" class="shadetabs">
+<li><a href="/admin/client/tab01" rel="#iframe" class="selected">Find a Dealer</a></li>
+<li><a href="/admin/client/tab02" rel="#iframe" class="selected">To be a Dealer</a></li>
 </ul>
 
-<div id="countrydivcontainer" style="border:1px solid gray; width:970px; height:550px; margin-bottom: 1em; padding: 10px;overflow: scroll;">
+<div id="clientDiv" style="border:1px solid gray; width:970px; height: 550px; padding: 5px; margin-bottom:1em">
 </div>
 
 <script type="text/javascript">
 
-var countries=new ddajaxtabs("countrytabs", "countrydivcontainer")
-countries.setpersist(true)
-countries.setselectedClassTarget("link") //"link" or "linkparent"
-countries.init()
-
+var products=new ddajaxtabs("clientTabs", "clientDiv");
+products.setpersist(false);
+products.setselectedClassTarget("link"); //"link" or "linkparent"
+products.init();
 </script>
 
 <p><a href="/admin/client?countrytabs=0">Reload page and select 1nd tab using URL parameter</a> | <a href="javascript: countries.expandit(3)">Dynamically select last Tab</a></p>
