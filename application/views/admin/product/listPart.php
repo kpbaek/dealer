@@ -16,9 +16,9 @@ if(isset($_REQUEST["rows"])){
 	$limit = $_REQUEST["rows"];
 }
 //search param
-$id = "";
-if(isset($_REQUEST["id"])){
-	$id = $_REQUEST["id"];
+$searchId = "";
+if(isset($_REQUEST["searchId"])){
+	$searchId = $_REQUEST["searchId"];
 }
 
 // include db config
@@ -41,7 +41,7 @@ if ($page > $total_pages) $page=$total_pages;
 $start = $limit*$page - $limit; // do not put $limit*($page - 1)
 $SQL = "SELECT a.id, a.invdate, b.name, a.amount,a.tax,a.total,a.note FROM invheader a, clients b 
 		WHERE a.client_id=b.client_id 
-		and id LIKE concat('%%', " .$id. ")
+		and id LIKE concat('%%', '" .$searchId. "')
 		ORDER BY "
 		 . $sidx . " " . $sord . " LIMIT " . $start . "," . $limit;
 $result = mysql_query( $SQL ) or die("Couldn t execute query.".mysql_error());
