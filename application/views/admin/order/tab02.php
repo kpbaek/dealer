@@ -85,7 +85,7 @@ searchModel<select name="searchModel"></select>
 		   	colNames:['chk','id', 'model', 'S/N', 'CODE', 'Part Name', 'IMAGE', 'Price', 'qty', 'Qty', 'Amount', 'Recommend', 'Spare Part', 'Wear Parts',  'Without Warranty', 'Remark'],
 	   	              //, '(1CIS)', '(2CIS)', 'Q(Per 1Unit)', 'Order Price', 'Amount'
 		   	colModel:[
-		   		{name:'chk', index:'id', width:55,hidden:false,search:true,formatter:'checkbox', editoptions:{value:'1:0'}, formatoptions:{disabled:true}}, 
+		   		{name:'chk', index:'chk', width:55,hidden:false,search:true,formatter:'checkbox', editoptions:{value:'1:0'}, formatoptions:{disabled:true}}, 
 		   		{name:'id', index:'id', width:55,hidden:false,search:true}, 
 		        {name:'model',index:'model', width:70, align:"right",search:true},
 		   		{name:'sn',index:'sn', width:70,search:true},
@@ -93,8 +93,8 @@ searchModel<select name="searchModel"></select>
 		   		{name:'part_name',index:'part_name', width:70,search:true},
 		   		{name:'c_image',index:'tax', width:50, align:"right",search:true},		
 		   		{name:'price',index:'price', width:70, sortable:false,search:true,formatter:'currency', formatoptions:{prefix:"$"}},		
-		   		{name:'qty',index:'qty', width:70, sortable:false,search:true,hidden:false,editable:false,editrules:{number:true}},		
-		   		{name:'c_qty',index:'qty', width:70, sortable:false,search:true},		
+		   		{name:'qty',index:'qty', width:70, sortable:false,search:true,hidden:false,editable:true,editrules:{number:true,minValue:0}},		
+		   		{name:'c_qty',index:'qty', width:70, sortable:false,search:true,hidden:true},		
 		   		{name:'amount',index:'amount', width:70, sortable:false,search:true,formatter:'currency', formatoptions:{prefix:"$"}},		
 		   		{name:'recomYN',index:'recomYN', width:70, sortable:false,search:true},		
 		   		{name:'spareYN',index:'spareYN', width:70, sortable:false,search:true},		
@@ -102,9 +102,10 @@ searchModel<select name="searchModel"></select>
 		   		{name:'withoutWRT',index:'withoutWRT', width:70, sortable:false,search:true},		
 		   		{name:'remark',index:'remark', width:70, sortable:false,search:true}		
 			],
-	        onSelectRow: function(id) {
-	            var params = {id:id};
-	            view_detail("#list",params);
+	        onSelectRow: function(rowid) {
+	            var params = $("#list").jqGrid('getRowData',rowid);
+//		        var params = {id:rowid};
+//	            view_detail("#list",params);
 	            printData(params);
 	        },
 			mtype: "POST",
@@ -114,7 +115,7 @@ searchModel<select name="searchModel"></select>
                 for(var i=0;i < ids.length;i++){
                     var rowData = jQuery("#list").jqGrid('getRowData',ids[i]);
                     c_image = "<img src='/images/ci_logo.jpg' height='20'>";
-                    c_qty = "<input type=text size=6 height='20' name='c_qty' value='" + rowData.qty + "' onChange='javascript:calcAmt(" + i + ", this.value);'>";
+                    c_qty = "<input type=text size=6 height='20' name='c_qty' value='" + rowData.qty + "' onChange='javascript:calcAmt(" + (i+1) + ", this.value);'>";
                     jQuery("#list").jqGrid('setRowData',ids[i],{c_image:c_image});
                     jQuery("#list").jqGrid('setRowData',ids[i],{c_qty:c_qty});
                     if(rowData.qty > 0){
@@ -124,8 +125,9 @@ searchModel<select name="searchModel"></select>
                     }
 
 //                    jQuery("#list").jqGrid('setSelection',(i+1));
-                    jQuery('#list').editRow('qty');
+//                    jQuery('#list').editRow('qty');
                 }
+                jQuery("#list").jqGrid('editRow','qty',false);
 			},	            
             
 			rowNum:1000,
@@ -134,7 +136,7 @@ searchModel<select name="searchModel"></select>
 		    viewrecords: true,
 		    autowidth: false,
 		    width:950,
-		    height:340,
+		    height:140,
 		    sortname: 'id',
 		    sortorder: "desc",
 			toolbar: [true,"top"],
@@ -142,13 +144,13 @@ searchModel<select name="searchModel"></select>
 		    footerrow : true,
 			userDataOnFooter : true,
 			cellEdit: true,
-			/**
 			cellsubmit: 'clientArray',
 			afterSaveCell : function (id,name,val,iRow,iCol){
 				if(name=='qty') {
-					alert(iRow);
+					calcAmt(iRow, val);
 				}
 			},
+			/**
 			multiselect: true,
 			*/		
 			caption:"To order spare parts, please input quantity and send us this form."
@@ -304,18 +306,17 @@ searchModel<select name="searchModel"></select>
 		return true;
     }
 
-    function calcAmt(rowId, qty){
+    function calcAmt(rowid, qty){
         var ids = jQuery("#list").jqGrid('getDataIDs');
-        var rowData = jQuery("#list").jqGrid('getRowData',ids[rowId]);
-
         if(parseInt(qty) > 0){
-            jQuery("#list").jqGrid('setRowData',ids[rowId],{chk:'1'});
+            jQuery("#list").jqGrid('setRowData',ids[rowid-1],{chk:'1'});
 		}else{
-            jQuery("#list").jqGrid('setRowData',ids[rowId],{chk:'0'});
+            jQuery("#list").jqGrid('setRowData',ids[rowid-1],{chk:'0'});
         }
         
+        var rowData = jQuery("#list").jqGrid('getRowData',ids[rowid-1]);
         var amt = qty * rowData.price;
-    	jQuery("#list").jqGrid('setRowData',ids[rowId],{qty:qty, amount:amt});
+    	jQuery("#list").jqGrid('setRowData',ids[rowid-1],{qty:qty, amount:amt});
 
     	var qty_ft = 0;
     	var amount_ft = 0;
@@ -326,7 +327,7 @@ searchModel<select name="searchModel"></select>
         }
 //        alert(amount_ft);
     	var udata = $("#list").jqGrid('getUserData');
-		udata.c_qty= qty_ft;
+		udata.qty= qty_ft;
 		udata.amount= amount_ft;
 		$("#list").jqGrid("footerData","set",udata,true);
 	}
