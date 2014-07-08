@@ -79,9 +79,11 @@ while($row = mysql_fetch_array($result,MYSQL_ASSOC)) {
 	$responce['rows'][$i]['sn'] = $row['sn'];
 	$responce['rows'][$i]['code'] = $row['code'];
 	$responce['rows'][$i]['part_name'] = $row['part_name'];
-	$responce['rows'][$i]['qty'] = $row['qty'];
 	$responce['rows'][$i]['price'] = $row['price'];
-	$responce['rows'][$i]['amount'] = $row['amount'];
+//	$responce['rows'][$i]['qty'] = $row['qty'];
+//	$responce['rows'][$i]['amount'] = $row['amount'];
+	$responce['rows'][$i]['qty'] = 0;
+	$responce['rows'][$i]['amount'] = 0;
 	$responce['rows'][$i]['tax'] = $row['tax'];
 	$responce['rows'][$i]['total'] = $row['total'];
 	$responce['rows'][$i]['note'] = $row['note'];
@@ -91,9 +93,11 @@ while($row = mysql_fetch_array($result,MYSQL_ASSOC)) {
 	$responce['rows'][$i]['withoutWRT'] = $row['withoutWRT'];
 	$responce['rows'][$i]['remark'] = $row['remark'];
 	
-	$qtytot += $row['qty'];
-	$amttot += $row['amount'];
-		
+//	$qtytot += $row['qty'];
+//	$amttot += $row['amount'];
+	$qtytot += 0;
+	$amttot += 0;
+	
 #    echo $row['id'];
     $i++;
 }  
