@@ -58,7 +58,7 @@ searchModel<select name="searchModel"></select>
 <table border="0" cellpadding="0" cellspacing="0" style="width:950px;align:center; vertical-align:middle">
 <tr>
     <td align=right>
-    	<input type="button" id="btnNew" value="신규" onclick="javascript:newForm();"/>
+    	<input type="button" id="btnNew" value="confirm" onclick="javascript:newForm();"/>
     </td>
 </tr>
 </table>
