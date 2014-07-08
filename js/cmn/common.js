@@ -36,3 +36,24 @@
 	    });
 	}
 	
+	function fncOnlyNumber() { 
+		if((event.keyCode<48)||(event.keyCode>57))event.returnValue =false;
+	}
+
+
+	function fncOnlyNumberVal(val)
+	{
+		return String(val).replace(/\..*|[^\d]/g,'');
+	}
+
+	function fncSetNumberFormat(obj)
+	{
+		var pre = '';
+		if(obj.value.length>0)
+		{
+			if(obj.value.charAt(0)=='-') pre = '-';
+		}
+		obj.value = pre+(obj.value.replace(/\..*|[^\d]/g,'')).toCommify();
+		alert(obj.value);
+	}
+	
