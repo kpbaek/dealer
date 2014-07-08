@@ -58,7 +58,7 @@ searchModel<select name="searchModel"></select>
 <table border="0" cellpadding="0" cellspacing="0" style="width:950px;align:center; vertical-align:middle">
 <tr>
     <td align=right>
-    	<input type="button" id="btnNew" value="confirm" onclick="javascript:newForm();"/>
+    	<input type="button" id="btnConfirm" value="confirm" onclick="javascript:orderConfirm();"/>
     </td>
 </tr>
 </table>
@@ -82,18 +82,20 @@ searchModel<select name="searchModel"></select>
 		   	url:targetUrl,
 		   	datatype: "json",
 		   	//colNames:['Inv No','Date', 'Client', 'Amount','Tax','Total','Notes'],
-		   	colNames:['id', 'model', 'S/N', 'CODE', 'Part Name', 'IMAGE', 'Price', 'Qty', 'Amount', 'Recommend', 'Spare Part', 'Wear Parts',  'Without Warranty', 'Remark'],
+		   	colNames:['chk','id', 'model', 'S/N', 'CODE', 'Part Name', 'IMAGE', 'Price', 'qty', 'Qty', 'Amount', 'Recommend', 'Spare Part', 'Wear Parts',  'Without Warranty', 'Remark'],
 	   	              //, '(1CIS)', '(2CIS)', 'Q(Per 1Unit)', 'Order Price', 'Amount'
 		   	colModel:[
-		   	    {name:'id', index:'id', width:55,hidden:false,search:true}, 
+		   		{name:'chk', index:'id', width:55,hidden:false,search:true,formatter:'checkbox', editoptions:{value:'1:0'}, formatoptions:{disabled:true}}, 
+		   		{name:'id', index:'id', width:55,hidden:false,search:true}, 
 		        {name:'model',index:'model', width:70, align:"right",search:true},
 		   		{name:'sn',index:'sn', width:70,search:true},
 		   		{name:'code',index:'name', width:100, align:"right",search:true},
 		   		{name:'part_name',index:'part_name', width:70,search:true},
-		   		{name:'tax',index:'tax', width:50, align:"right",search:true},		
-		   		{name:'price',index:'price', width:70, sortable:false,search:true},		
-		   		{name:'qty',index:'qty', width:70, sortable:false,search:true},		
-		   		{name:'amount',index:'amount', width:70, sortable:false,search:true},		
+		   		{name:'c_image',index:'tax', width:50, align:"right",search:true},		
+		   		{name:'price',index:'price', width:70, sortable:false,search:true,formatter:'currency', formatoptions:{prefix:"$"}},		
+		   		{name:'qty',index:'qty', width:70, sortable:false,search:true,hidden:false,editable:false,editrules:{number:true}},		
+		   		{name:'c_qty',index:'qty', width:70, sortable:false,search:true},		
+		   		{name:'amount',index:'amount', width:70, sortable:false,search:true,formatter:'currency', formatoptions:{prefix:"$"}},		
 		   		{name:'recomYN',index:'recomYN', width:70, sortable:false,search:true},		
 		   		{name:'spareYN',index:'spareYN', width:70, sortable:false,search:true},		
 		   		{name:'wearpartYN',index:'wearpartYN', width:70,align:"right",search:true},		
@@ -110,16 +112,21 @@ searchModel<select name="searchModel"></select>
             gridComplete: function(){
                 var ids = jQuery("#list").jqGrid('getDataIDs');
                 for(var i=0;i < ids.length;i++){
-                    var cl = ids[i];
-                    var rowData = jQuery("#list").jqGrid('getRowData',cl);
-                    var cl_id = rowData.id;
-                    var cl_qty = rowData.qty;
-                    be = "<img src='/images/ci_logo.jpg' height='20'>";
-                    qty_cl = "<input type=text size=6 height='20' name='qty_cl' value='" + cl_qty + "' onChange='javascript:calcAmt(" + i + ", this.value);'>";
-                    jQuery("#list").jqGrid('setRowData',ids[i],{tax:be});
-                    jQuery("#list").jqGrid('setRowData',ids[i],{qty:qty_cl});
+                    var rowData = jQuery("#list").jqGrid('getRowData',ids[i]);
+                    c_image = "<img src='/images/ci_logo.jpg' height='20'>";
+                    c_qty = "<input type=text size=6 height='20' name='c_qty' value='" + rowData.qty + "' onChange='javascript:calcAmt(" + i + ", this.value);'>";
+                    jQuery("#list").jqGrid('setRowData',ids[i],{c_image:c_image});
+                    jQuery("#list").jqGrid('setRowData',ids[i],{c_qty:c_qty});
+                    if(rowData.qty > 0){
+	                    jQuery("#list").jqGrid('setRowData',ids[i],{chk:'1'});
+					}else{
+	                    jQuery("#list").jqGrid('setRowData',ids[i],{chk:'0'});
+                    }
+
+//                    jQuery("#list").jqGrid('setSelection',(i+1));
+                    jQuery('#list').editRow('qty');
                 }
-            },	            
+			},	            
             
 			rowNum:1000,
 		   	rowList:[1000],
@@ -134,7 +141,17 @@ searchModel<select name="searchModel"></select>
 		    hiddengrid: false,
 		    footerrow : true,
 			userDataOnFooter : true,
-		    caption:"To order spare parts, please input quantity and send us this form."
+			cellEdit: true,
+			/**
+			cellsubmit: 'clientArray',
+			afterSaveCell : function (id,name,val,iRow,iCol){
+				if(name=='qty') {
+					alert(iRow);
+				}
+			},
+			multiselect: true,
+			*/		
+			caption:"To order spare parts, please input quantity and send us this form."
 		});
 		jQuery("#list").jqGrid('navGrid','#pager',{edit:false,add:false,del:false,search:false});
 /**
@@ -290,12 +307,69 @@ searchModel<select name="searchModel"></select>
     function calcAmt(rowId, qty){
         var ids = jQuery("#list").jqGrid('getDataIDs');
         var rowData = jQuery("#list").jqGrid('getRowData',ids[rowId]);
-        var amt = qty * rowData.price;
+
+        if(parseInt(qty) > 0){
+            jQuery("#list").jqGrid('setRowData',ids[rowId],{chk:'1'});
+		}else{
+            jQuery("#list").jqGrid('setRowData',ids[rowId],{chk:'0'});
+        }
         
-    	jQuery("#list").jqGrid('setRowData',ids[rowId],{amount:amt});
+        var amt = qty * rowData.price;
+    	jQuery("#list").jqGrid('setRowData',ids[rowId],{qty:qty, amount:amt});
+
+    	var qty_ft = 0;
+    	var amount_ft = 0;
+        for(var i=0;i < ids.length;i++){
+            var rowData = jQuery("#list").jqGrid('getRowData',ids[i]);
+            qty_ft += parseInt(rowData.qty);
+            amount_ft += parseInt(rowData.amount);
+        }
+//        alert(amount_ft);
+    	var udata = $("#list").jqGrid('getUserData');
+		udata.c_qty= qty_ft;
+		udata.amount= amount_ft;
+		$("#list").jqGrid("footerData","set",udata,true);
+	}
+
+    function chkQty(rowId, qty){
+        var ids = jQuery("#list").jqGrid('getDataIDs');
+        var rowData = jQuery("#list").jqGrid('getRowData',ids[rowId]);
+        var amt = qty * rowData.price;
+    	jQuery("#list").jqGrid('setRowData',ids[rowId],{qty:qty, amount:amt});
+
+    	var qty_ft = 0;
+    	var amount_ft = 0;
+        for(var i=0;i < ids.length;i++){
+            var rowData = jQuery("#list").jqGrid('getRowData',ids[i]);
+            qty_ft += parseInt(rowData.qty);
+            amount_ft += parseInt(rowData.amount);
+        }
+//        alert(amount_ft);
+    	var udata = $("#list").jqGrid('getUserData');
+		udata.c_qty= qty_ft;
+		udata.amount= amount_ft;
+		$("#list").jqGrid("footerData","set",udata,true);
+	}
+	
+	function orderConfirm() {
+        var f = document.searchForm;
+        var chk = jQuery("#list").jqGrid('getGridParam','selarrrow');
+        if( chk.length==0 ){
+            alert("Please Select Row to order!");
+            return;
+        }
+        var chk_ids = "";
+        for(i=0; i<chk.length; i++){
+            ret = jQuery("#list").jqGrid('getRowData',chk[i]);
+            chk_ids += ret.id + ",";
+        }
+        alert(chk_ids);
+        
+        if(confirm("test")){
+            $("#list").jqGrid('setPostData', {method:'confirm',chk_addr_seq:chk_addr_seq,deptName:deptName, name:name});
+            $("#list").jqGrid('setGridParam', {url:"/admin/order/tab02"}).trigger("reloadGrid");
+        }
     }
-
-
 </script>
 
 </html>
