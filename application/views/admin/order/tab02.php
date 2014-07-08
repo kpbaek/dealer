@@ -54,15 +54,19 @@ searchModel<select name="searchModel"></select>
 <table id="list"></table>
 <div id="pager"></div>
 </div>
+<p>
+<table id="list_d"></table>
+<div id="pager_d"></div>
 
 <table border="0" cellpadding="0" cellspacing="0" style="width:950px;align:center; vertical-align:middle">
 <tr>
     <td align=right>
-    	<input type="button" id="btnConfirm" value="confirm" onclick="javascript:orderConfirm();"/>
+    	<input type="button" id="btnConfirm" value="confirm" onclick="javascript:order();"/>
     </td>
 </tr>
 </table>
-</div>
+
+
 <div id="postdata"></div>
 <p>
 <div id="formDiv" style="display:none">
@@ -330,6 +334,8 @@ searchModel<select name="searchModel"></select>
 		udata.qty= qty_ft;
 		udata.amount= amount_ft;
 		$("#list").jqGrid("footerData","set",udata,true);
+
+		orderConfirm();
 	}
 
     function chkQty(rowId, qty){
@@ -353,10 +359,26 @@ searchModel<select name="searchModel"></select>
 	}
 	
 	function orderConfirm() {
+        var ids = jQuery("#list").jqGrid('getDataIDs');
+        for(var i=0;i < ids.length;i++){
+    		jQuery("#list_d").jqGrid('delRowData',i);
+        }
+        for(var i=0;i < ids.length;i++){
+            var rowData = jQuery("#list").jqGrid('getRowData',ids[i]);
+            if(rowData.qty > 0){
+	            jQuery("#list_d").jqGrid('addRowData',i,rowData);
+            }
+        }
+    	var udata = $("#list").jqGrid('getUserData');
+		$("#list_d").jqGrid("footerData","set",udata,true);
+	}
+	
+	function order() {
+		
         var f = document.searchForm;
         var chk = jQuery("#list").jqGrid('getGridParam','selarrrow');
         if( chk.length==0 ){
-            alert("Please Select Row to order!");
+            alert("we are ready to order!");
             return;
         }
         var chk_ids = "";
@@ -371,6 +393,61 @@ searchModel<select name="searchModel"></select>
             $("#list").jqGrid('setGridParam', {url:"/admin/order/tab02"}).trigger("reloadGrid");
         }
     }
+
+	jQuery("#list_d").jqGrid({
+		height: 100,
+//	   	url:"/admin/order/listPart",
+	   	datatype: "json",
+	   	//colNames:['Inv No','Date', 'Client', 'Amount','Tax','Total','Notes'],
+	   	colNames:['id', 'model', 'S/N', 'CODE', 'Part Name', 'IMAGE', 'Price', 'qty', 'Qty', 'Amount'],
+   	              //, '(1CIS)', '(2CIS)', 'Q(Per 1Unit)', 'Order Price', 'Amount'
+	   	colModel:[
+	   		{name:'id', index:'id', width:55,hidden:false,search:true}, 
+	        {name:'model',index:'model', width:70, align:"right",search:true},
+	   		{name:'sn',index:'sn', width:70,search:true},
+	   		{name:'code',index:'name', width:100, align:"right",search:true},
+	   		{name:'part_name',index:'part_name', width:70,search:true},
+	   		{name:'c_image',index:'tax', width:50, align:"right",search:true},		
+	   		{name:'price',index:'price', width:70, sortable:false,search:true,formatter:'currency', formatoptions:{prefix:"$"}},		
+	   		{name:'qty',index:'qty', width:70, sortable:false,search:true,hidden:false,editable:true,editrules:{number:true,minValue:0}},		
+	   		{name:'c_qty',index:'qty', width:70, sortable:false,search:true,hidden:true},		
+	   		{name:'amount',index:'amount', width:70, sortable:false,search:true,formatter:'currency', formatoptions:{prefix:"$"}}		
+		],
+		
+		mtype: "POST",
+//		postData:{searchModel:''},
+        gridComplete: function(){
+            var ids = jQuery("#list").jqGrid('getDataIDs');
+            for(var i=0;i < ids.length;i++){
+                var rowData = jQuery("#list").jqGrid('getRowData',ids[i]);
+                c_image = "<img src='/images/ci_logo.jpg' height='20'>";
+                c_qty = "<input type=text size=6 height='20' name='c_qty' value='" + rowData.qty + "' onChange='javascript:calcAmt(" + (i+1) + ", this.value);'>";
+                jQuery("#list").jqGrid('setRowData',ids[i],{c_image:c_image});
+                jQuery("#list").jqGrid('setRowData',ids[i],{c_qty:c_qty});
+
+//                jQuery("#list").jqGrid('setSelection',(i+1));
+//                jQuery('#list').editRow('qty');
+            }
+            jQuery("#list").jqGrid('editRow','qty',false);
+		},	            
+        
+		rowNum:1000,
+	   	rowList:[1000],
+	   	pager: '#pager_d',
+	    viewrecords: true,
+	    autowidth: false,
+	    width:950,
+	    height:100,
+	    sortname: 'id',
+	    sortorder: "desc",
+		toolbar: [true,"top"],
+	    hiddengrid: false,
+	    footerrow : true,
+		userDataOnFooter : true,
+		
+//		multiselect: true,
+		caption:"Parts Order Confirmation"
+	}).navGrid('#pager_d',{add:false,edit:false,del:false});    
 </script>
 
 </html>
