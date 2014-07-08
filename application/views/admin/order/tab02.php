@@ -54,7 +54,7 @@ searchModel<select name="searchModel"></select>
 <table id="list"></table>
 <div id="pager"></div>
 </div>
-<p>
+<br>
 <table id="list_d"></table>
 <div id="pager_d"></div>
 
@@ -135,9 +135,12 @@ searchModel<select name="searchModel"></select>
 			},	            
             
 			rowNum:1000,
-		   	rowList:[1000],
+//		   	rowList:[1000],
 		   	pager: '#pager',
-		    viewrecords: true,
+		   	pgbuttons: false,
+		   	pgtext: false,
+		   	pginput:false,	
+		   	viewrecords: true,
 		    autowidth: false,
 		    width:950,
 		    height:140,
@@ -432,7 +435,7 @@ searchModel<select name="searchModel"></select>
 		},	            
         
 		rowNum:1000,
-	   	rowList:[1000],
+//	   	rowList:[1000],
 	   	pager: '#pager_d',
 	    viewrecords: true,
 	    autowidth: false,
@@ -444,10 +447,12 @@ searchModel<select name="searchModel"></select>
 	    hiddengrid: false,
 	    footerrow : true,
 		userDataOnFooter : true,
-		
+	   	pgbuttons: false,
+	   	pgtext: false,
+	   	pginput:false,	
 //		multiselect: true,
 		caption:"Parts Order Confirmation"
-	}).navGrid('#pager_d',{add:false,edit:false,del:false});    
+	})//.navGrid('#pager_d',{add:false,edit:false,del:false,search:false});    
 </script>
 
 </html>
