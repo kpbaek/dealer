@@ -22,24 +22,22 @@
 
 <h3><a href="/admin/order?countrytabs=0">주문서</a></h3>
 
-<ul id="countrytabs" class="shadetabs">
-<li><a href="/admin/order/tab01" rel="countrycontainer">장비</a></li>
-<li><a href="/admin/order/tab02" rel="countrycontainer" class="selected">부품</a></li>
+<ul id="ordertabs" class="shadetabs">
+<li><a href="/admin/order/tab01" rel="#iframe" class="selected">장비</a></li>
+<li><a href="/admin/order/tab02" rel="#iframe">부품</a></li>
 </ul>
 
-<div id="countrydivcontainer" style="border:1px solid gray; width:970px; height:550px; margin-bottom: 1em; padding: 10px;overflow: scroll;">
+<div id="orderDiv" style="border:1px solid gray; width:970px; height:550px; margin-bottom: 1em; padding: 10px;overflow: scroll;">
 </div>
 
 <script type="text/javascript">
 
-var countries=new ddajaxtabs("countrytabs", "countrydivcontainer")
-countries.setpersist(true)
-countries.setselectedClassTarget("link") //"link" or "linkparent"
-countries.init()
+var order=new ddajaxtabs("ordertabs", "orderDiv")
+order.setpersist(true)
+order.setselectedClassTarget("link") //"link" or "linkparent"
+order.init()
 
 </script>
-
-<p><a href="/admin/order?countrytabs=0">Reload page and select 1nd tab using URL parameter</a> | <a href="javascript: countries.expandit(3)">Dynamically select last Tab</a></p>
 
 <hr />
 
