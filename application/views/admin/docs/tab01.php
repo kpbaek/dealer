@@ -15,140 +15,8 @@
 	  .inlineStr { text-align:left }
 	  .n { text-align:right }
 	  .s { text-align:left }
-	  td.style0 { vertical-align:middle; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; color:#000000; font-family:'맑은 고딕'; font-size:11pt; background-color:white }
-	  td.style1 { vertical-align:middle; text-align:center; border-bottom:1px solid #000000 !important; border-top:2px solid #000000 !important; border-left:2px solid #000000 !important; border-right:1px solid #000000 !important; font-weight:bold; color:#000000; font-family:'굴림'; font-size:26pt; background-color:white }
-	  td.style2 { vertical-align:middle; text-align:center; border-bottom:1px solid #000000 !important; border-top:2px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; font-weight:bold; color:#000000; font-family:'굴림'; font-size:26pt; background-color:white }
-	  td.style3 { vertical-align:middle; text-align:center; border-bottom:1px solid #000000 !important; border-top:2px solid #000000 !important; border-left:1px solid #000000 !important; border-right:none #000000; font-weight:bold; color:#000000; font-family:'굴림'; font-size:26pt; background-color:white }
-	  td.style4 { vertical-align:middle; text-align:center; border-bottom:1px solid #000000 !important; border-top:2px solid #000000 !important; border-left:2px solid #000000 !important; border-right:1px solid #000000 !important; font-weight:bold; color:#000000; font-family:'굴림'; font-size:10pt; background-color:white }
-	  td.style5 { vertical-align:middle; text-align:center; border-bottom:1px solid #000000 !important; border-top:2px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; font-weight:bold; color:#000000; font-family:'굴림'; font-size:10pt; background-color:white }
-	  td.style6 { vertical-align:middle; text-align:center; border-bottom:1px solid #000000 !important; border-top:2px solid #000000 !important; border-left:1px solid #000000 !important; border-right:2px solid #000000 !important; font-weight:bold; color:#000000; font-family:'굴림'; font-size:10pt; background-color:white }
-	  td.style7 { vertical-align:middle; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; color:#000000; font-family:'굴림'; font-size:10pt; background-color:#FFFFFF }
-	  td.style8 { vertical-align:middle; text-align:center; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:2px solid #000000 !important; border-right:1px solid #000000 !important; font-weight:bold; color:#000000; font-family:'굴림'; font-size:26pt; background-color:white }
-	  td.style9 { vertical-align:middle; text-align:center; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; font-weight:bold; color:#000000; font-family:'굴림'; font-size:26pt; background-color:white }
-	  td.style10 { vertical-align:middle; text-align:center; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:none #000000; font-weight:bold; color:#000000; font-family:'굴림'; font-size:26pt; background-color:white }
-	  td.style11 { vertical-align:middle; text-align:center; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:2px solid #000000 !important; border-right:1px solid #000000 !important; font-weight:bold; color:#000000; font-family:'굴림'; font-size:10pt; background-color:white }
-	  td.style12 { vertical-align:middle; text-align:center; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; font-weight:bold; color:#000000; font-family:'굴림'; font-size:10pt; background-color:white }
-	  td.style13 { vertical-align:middle; text-align:center; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:2px solid #000000 !important; font-weight:bold; color:#000000; font-family:'굴림'; font-size:10pt; background-color:white }
-	  td.style14 { vertical-align:middle; text-align:center; border-bottom:2px solid #000000 !important; border-top:1px solid #000000 !important; border-left:2px solid #000000 !important; border-right:1px solid #000000 !important; font-weight:bold; color:#000000; font-family:'굴림'; font-size:26pt; background-color:white }
-	  td.style15 { vertical-align:middle; text-align:center; border-bottom:2px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; font-weight:bold; color:#000000; font-family:'굴림'; font-size:26pt; background-color:white }
-	  td.style16 { vertical-align:middle; text-align:center; border-bottom:2px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:none #000000; font-weight:bold; color:#000000; font-family:'굴림'; font-size:26pt; background-color:white }
-	  td.style17 { vertical-align:middle; text-align:center; border-bottom:2px solid #000000 !important; border-top:1px solid #000000 !important; border-left:2px solid #000000 !important; border-right:1px solid #000000 !important; font-weight:bold; color:#000000; font-family:'굴림'; font-size:10pt; background-color:white }
-	  td.style18 { vertical-align:middle; text-align:center; border-bottom:2px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; font-weight:bold; color:#000000; font-family:'굴림'; font-size:10pt; background-color:white }
-	  td.style19 { vertical-align:middle; text-align:center; border-bottom:2px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:2px solid #000000 !important; font-weight:bold; color:#000000; font-family:'굴림'; font-size:10pt; background-color:white }
-	  td.style20 { vertical-align:middle; text-align:center; border-bottom:1px solid #000000 !important; border-top:none #000000; border-left:2px solid #000000 !important; border-right:1px solid #000000 !important; font-weight:bold; color:#000000; font-family:'굴림'; font-size:10pt; background-color:#CCCCFF }
-	  td.style21 { vertical-align:middle; text-align:center; border-bottom:1px solid #000000 !important; border-top:none #000000; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; font-weight:bold; color:#000000; font-family:'굴림'; font-size:10pt; background-color:#CCCCFF }
-	  td.style22 { vertical-align:middle; text-align:center; border-bottom:1px solid #000000 !important; border-top:none #000000; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; font-weight:bold; color:#000000; font-family:'굴림'; font-size:10pt; background-color:white }
-	  td.style23 { vertical-align:middle; text-align:center; border-bottom:1px solid #000000 !important; border-top:none #000000; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; font-weight:bold; color:#000000; font-family:'굴림'; font-size:10pt; background-color:white }
-	  td.style24 { vertical-align:middle; text-align:center; border-bottom:1px solid #000000 !important; border-top:none #000000; border-left:1px solid #000000 !important; border-right:2px solid #000000 !important; font-weight:bold; color:#000000; font-family:'굴림'; font-size:10pt; background-color:white }
-	  td.style25 { vertical-align:middle; text-align:center; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:2px solid #000000 !important; border-right:1px solid #000000 !important; font-weight:bold; color:#000000; font-family:'굴림'; font-size:10pt; background-color:#CCCCFF }
-	  td.style26 { vertical-align:middle; text-align:center; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; font-weight:bold; color:#000000; font-family:'굴림'; font-size:10pt; background-color:#CCCCFF }
-	  td.style27 { vertical-align:middle; text-align:center; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; font-weight:bold; color:#000000; font-family:'굴림'; font-size:10pt; background-color:white }
-	  td.style28 { vertical-align:middle; text-align:center; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:2px solid #000000 !important; font-weight:bold; color:#000000; font-family:'굴림'; font-size:10pt; background-color:white }
-	  td.style29 { vertical-align:middle; text-align:center; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:2px solid #000000 !important; font-weight:bold; color:#000000; font-family:'굴림'; font-size:10pt; background-color:#CCCCFF }
-	  td.style30 { vertical-align:middle; text-align:center; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:none #000000; font-weight:bold; color:#000000; font-family:'굴림'; font-size:10pt; background-color:white }
-	  td.style31 { vertical-align:middle; text-align:center; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:none #000000; border-right:none #000000; font-weight:bold; color:#000000; font-family:'굴림'; font-size:10pt; background-color:white }
-	  td.style32 { vertical-align:middle; text-align:center; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; font-weight:bold; color:#000000; font-family:'굴림'; font-size:10pt; background-color:white }
-	  td.style33 { vertical-align:middle; text-align:center; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:2px solid #000000 !important; font-weight:bold; color:#000000; font-family:'굴림'; font-size:10pt; background-color:white }
-	  td.style34 { vertical-align:middle; text-align:center; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:2px solid #000000 !important; border-right:none #000000; font-weight:bold; color:#000000; font-family:'굴림'; font-size:10pt; background-color:#CCCCFF }
-	  td.style35 { vertical-align:middle; text-align:center; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:none #000000; border-right:none #000000; font-weight:bold; color:#000000; font-family:'굴림'; font-size:10pt; background-color:#CCCCFF }
-	  td.style36 { vertical-align:middle; text-align:center; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:none #000000; border-right:1px solid #000000 !important; font-weight:bold; color:#000000; font-family:'굴림'; font-size:10pt; background-color:#CCCCFF }
-	  td.style37 { vertical-align:middle; text-align:center; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:none #000000; border-right:1px solid #000000 !important; font-weight:bold; color:#000000; font-family:'굴림'; font-size:10pt; background-color:white }
-	  td.style38 { vertical-align:middle; text-align:center; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:none #000000; font-weight:bold; color:#000000; font-family:'굴림'; font-size:10pt; background-color:#CCCCFF }
-	  td.style39 { vertical-align:middle; text-align:center; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:none #000000; border-right:2px solid #000000 !important; font-weight:bold; color:#000000; font-family:'굴림'; font-size:10pt; background-color:#CCCCFF }
-	  td.style40 { vertical-align:middle; text-align:center; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:none #000000; border-right:2px solid #000000 !important; font-weight:bold; color:#000000; font-family:'굴림'; font-size:10pt; background-color:white }
-	  td.style41 { vertical-align:middle; text-align:center; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:2px solid #000000 !important; border-right:1px solid #000000 !important; font-weight:bold; color:#000000; font-family:'굴림'; font-size:10pt; background-color:#CCCCFF }
-	  td.style42 { vertical-align:middle; text-align:center; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; font-weight:bold; color:#000000; font-family:'굴림'; font-size:10pt; background-color:#CCCCFF }
-	  td.style43 { vertical-align:middle; text-align:center; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:2px solid #000000 !important; font-weight:bold; color:#000000; font-family:'굴림'; font-size:10pt; background-color:#CCCCFF }
-	  td.style44 { vertical-align:middle; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; color:#000000; font-family:'굴림'; font-size:10pt; background-color:#FFFFFF }
-	  td.style45 { vertical-align:middle; text-align:center; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; font-weight:bold; color:#000000; font-family:'굴림'; font-size:10pt; background-color:white }
-	  td.style46 { vertical-align:middle; text-align:center; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:2px solid #000000 !important; font-weight:bold; color:#000000; font-family:'굴림'; font-size:10pt; background-color:white }
-	  td.style47 { vertical-align:middle; text-align:center; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:none #000000; font-weight:bold; color:#000000; font-family:'굴림'; font-size:9pt; background-color:#CCCCFF }
-	  td.style48 { vertical-align:middle; text-align:center; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:none #000000; border-right:none #000000; font-weight:bold; color:#000000; font-family:'굴림'; font-size:9pt; background-color:#CCCCFF }
-	  td.style49 { vertical-align:middle; text-align:center; border-bottom:none #000000; border-top:1px solid #000000 !important; border-left:2px solid #000000 !important; border-right:none #000000; font-weight:bold; color:#000000; font-family:'굴림'; font-size:10pt; background-color:#CCCCFF }
-	  td.style50 { vertical-align:middle; text-align:center; border-bottom:none #000000; border-top:1px solid #000000 !important; border-left:none #000000; border-right:none #000000; font-weight:bold; color:#000000; font-family:'굴림'; font-size:10pt; background-color:#CCCCFF }
-	  td.style51 { vertical-align:middle; text-align:center; border-bottom:none #000000; border-top:1px solid #000000 !important; border-left:none #000000; border-right:1px solid #000000 !important; font-weight:bold; color:#000000; font-family:'굴림'; font-size:10pt; background-color:#CCCCFF }
-	  td.style52 { vertical-align:middle; text-align:center; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:none #000000; font-weight:bold; color:#000000; font-family:'굴림'; font-size:10pt; background-color:#CCCCFF }
-	  td.style53 { vertical-align:middle; text-align:center; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:none #000000; border-right:none #000000; font-weight:bold; color:#000000; font-family:'굴림'; font-size:10pt; background-color:#CCCCFF }
-	  td.style54 { vertical-align:middle; text-align:center; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:none #000000; border-right:1px solid #000000 !important; font-weight:bold; color:#000000; font-family:'굴림'; font-size:10pt; background-color:#CCCCFF }
-	  td.style55 { vertical-align:middle; text-align:center; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:none #000000; font-weight:bold; color:#000000; font-family:'굴림'; font-size:10pt; background-color:white }
-	  td.style56 { vertical-align:middle; text-align:center; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:none #000000; border-right:none #000000; font-weight:bold; color:#000000; font-family:'굴림'; font-size:10pt; background-color:white }
-	  td.style57 { vertical-align:middle; text-align:center; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:none #000000; border-right:2px solid #000000 !important; font-weight:bold; color:#000000; font-family:'굴림'; font-size:10pt; background-color:white }
-	  td.style58 { vertical-align:middle; text-align:center; border-bottom:none #000000; border-top:none #000000; border-left:2px solid #000000 !important; border-right:none #000000; font-weight:bold; color:#000000; font-family:'굴림'; font-size:10pt; background-color:#CCCCFF }
-	  td.style59 { vertical-align:middle; text-align:center; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; font-weight:bold; color:#000000; font-family:'굴림'; font-size:10pt; background-color:#CCCCFF }
-	  td.style60 { vertical-align:middle; text-align:center; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:1px solid #000000 !important; font-weight:bold; color:#000000; font-family:'굴림'; font-size:10pt; background-color:#CCCCFF }
-	  td.style61 { vertical-align:middle; text-align:center; border-bottom:none #000000; border-top:none #000000; border-left:1px solid #000000 !important; border-right:none #000000; font-weight:bold; color:#000000; font-family:'굴림'; font-size:10pt; background-color:#CCCCFF }
-	  td.style62 { vertical-align:middle; text-align:center; border-bottom:none #000000; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:none #000000; font-weight:bold; color:#000000; font-family:'굴림'; font-size:10pt; background-color:#CCCCFF }
-	  td.style63 { vertical-align:middle; text-align:center; border-bottom:none #000000; border-top:1px solid #000000 !important; border-left:none #000000; border-right:none #000000; font-weight:bold; color:#000000; font-family:'굴림'; font-size:10pt; background-color:#CCCCFF }
-	  td.style64 { vertical-align:middle; text-align:center; border-bottom:1px solid #000000 !important; border-top:none #000000; border-left:1px solid #000000 !important; border-right:none #000000; font-weight:bold; color:#000000; font-family:'굴림'; font-size:10pt; background-color:#CCCCFF }
-	  td.style65 { vertical-align:middle; text-align:center; border-bottom:1px solid #000000 !important; border-top:none #000000; border-left:none #000000; border-right:none #000000; font-weight:bold; color:#000000; font-family:'굴림'; font-size:10pt; background-color:#CCCCFF }
-	  td.style66 { vertical-align:middle; text-align:center; border-bottom:1px solid #000000 !important; border-top:none #000000; border-left:1px solid #000000 !important; border-right:none #000000; font-weight:bold; color:#000000; font-family:'굴림'; font-size:10pt; background-color:#CCCCFF }
-	  td.style67 { vertical-align:middle; text-align:center; border-bottom:1px solid #000000 !important; border-top:none #000000; border-left:none #000000; border-right:none #000000; font-weight:bold; color:#000000; font-family:'굴림'; font-size:10pt; background-color:#CCCCFF }
-	  td.style68 { vertical-align:middle; text-align:center; border-bottom:1px solid #000000 !important; border-top:none #000000; border-left:none #000000; border-right:1px solid #000000 !important; font-weight:bold; color:#000000; font-family:'굴림'; font-size:10pt; background-color:#CCCCFF }
-	  td.style69 { vertical-align:middle; text-align:center; border-bottom:none #000000; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:none #000000; font-weight:bold; color:#000000; font-family:'굴림'; font-size:10pt; background-color:#CCCCFF }
-	  td.style70 { vertical-align:middle; text-align:center; border-bottom:none #000000; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:none #000000; font-weight:bold; color:#000000; font-family:'굴림'; font-size:10pt; background-color:white }
-	  td.style71 { vertical-align:middle; text-align:center; border-bottom:none #000000; border-top:1px solid #000000 !important; border-left:none #000000; border-right:none #000000; font-weight:bold; color:#000000; font-family:'굴림'; font-size:10pt; background-color:white }
-	  td.style72 { vertical-align:middle; text-align:center; border-bottom:none #000000; border-top:1px solid #000000 !important; border-left:none #000000; border-right:2px solid #000000 !important; font-weight:bold; color:#000000; font-family:'굴림'; font-size:10pt; background-color:white }
-	  td.style73 { vertical-align:middle; text-align:center; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:none #000000; font-weight:bold; color:#000000; font-family:'굴림'; font-size:10pt; background-color:#CCCCFF }
-	  td.style74 { vertical-align:middle; text-align:center; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:none #000000; border-right:none #000000; font-weight:bold; color:#000000; font-family:'굴림'; font-size:10pt; background-color:#CCCCFF }
-	  td.style75 { vertical-align:middle; text-align:center; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:none #000000; border-right:1px solid #000000 !important; font-weight:bold; color:#000000; font-family:'굴림'; font-size:10pt; background-color:#CCCCFF }
-	  td.style76 { vertical-align:middle; text-align:center; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:none #000000; font-weight:bold; color:#000000; font-family:'굴림'; font-size:10pt; background-color:white }
-	  td.style77 { vertical-align:middle; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:none #000000; border-right:none #000000; font-weight:bold; color:#000000; font-family:'굴림'; font-size:11pt; background-color:white }
-	  td.style78 { vertical-align:middle; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:none #000000; border-right:1px solid #000000 !important; font-weight:bold; color:#000000; font-family:'굴림'; font-size:11pt; background-color:white }
-	  td.style79 { vertical-align:middle; text-align:center; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:none #000000; font-weight:bold; color:#000000; font-family:'굴림'; font-size:10pt; background-color:white }
-	  td.style80 { vertical-align:middle; text-align:center; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:none #000000; border-right:none #000000; font-weight:bold; color:#000000; font-family:'굴림'; font-size:10pt; background-color:white }
-	  td.style81 { vertical-align:middle; text-align:center; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:none #000000; border-right:2px solid #000000 !important; font-weight:bold; color:#000000; font-family:'굴림'; font-size:10pt; background-color:white }
-	  td.style82 { vertical-align:top; border-bottom:none #000000; border-top:2px solid #000000 !important; border-left:2px solid #000000 !important; border-right:none #000000; font-weight:bold; color:#000000; font-family:'굴림'; font-size:10pt; background-color:white }
-	  td.style83 { vertical-align:top; border-bottom:none #000000; border-top:2px solid #000000 !important; border-left:none #000000; border-right:none #000000; font-weight:bold; color:#000000; font-family:'굴림'; font-size:10pt; background-color:white }
-	  td.style84 { vertical-align:top; border-bottom:none #000000; border-top:2px solid #000000 !important; border-left:none #000000; border-right:2px solid #000000 !important; font-weight:bold; color:#000000; font-family:'굴림'; font-size:10pt; background-color:white }
-	  td.style85 { vertical-align:top; border-bottom:none #000000; border-top:none #000000; border-left:2px solid #000000 !important; border-right:none #000000; font-weight:bold; color:#000000; font-family:'굴림'; font-size:10pt; background-color:white }
-	  td.style86 { vertical-align:top; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; font-weight:bold; color:#000000; font-family:'굴림'; font-size:10pt; background-color:white }
-	  td.style87 { vertical-align:top; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:2px solid #000000 !important; font-weight:bold; color:#000000; font-family:'굴림'; font-size:10pt; background-color:white }
-	  td.style88 { vertical-align:top; border-bottom:none #000000; border-top:none #000000; border-left:2px solid #000000 !important; border-right:none #000000; font-weight:bold; color:#000000; font-family:'굴림'; font-size:10pt; background-color:white }
-	  td.style89 { vertical-align:middle; text-align:center; border-bottom:1px solid #000000 !important; border-top:none #000000; border-left:2px solid #000000 !important; border-right:1px solid #000000 !important; font-weight:bold; color:#000000; font-family:'굴림'; font-size:10pt; background-color:white }
-	  td.style90 { vertical-align:top; border-bottom:2px solid #000000 !important; border-top:none #000000; border-left:2px solid #000000 !important; border-right:none #000000; font-weight:bold; color:#000000; font-family:'굴림'; font-size:10pt; background-color:white }
-	  td.style91 { vertical-align:top; border-bottom:2px solid #000000 !important; border-top:none #000000; border-left:none #000000; border-right:none #000000; font-weight:bold; color:#000000; font-family:'굴림'; font-size:10pt; background-color:white }
-	  td.style92 { vertical-align:top; border-bottom:2px solid #000000 !important; border-top:none #000000; border-left:none #000000; border-right:2px solid #000000 !important; font-weight:bold; color:#000000; font-family:'굴림'; font-size:10pt; background-color:white }
-	  td.style93 { vertical-align:middle; text-align:left; padding-left:0px; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; font-weight:bold; color:#000000; font-family:'굴림'; font-size:10pt; background-color:#FFFFFF }
-	  td.style94 { vertical-align:middle; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; font-weight:bold; color:#000000; font-family:'굴림'; font-size:10pt; background-color:#FFFFFF }
-	  td.style95 { vertical-align:middle; border-bottom:none #000000; border-top:2px solid #000000 !important; border-left:none #000000; border-right:none #000000; font-weight:bold; color:#000000; font-family:'굴림'; font-size:10pt; background-color:#FFFFFF }
-	  td.style96 { vertical-align:top; text-align:right; padding-right:0px; border-bottom:none #000000; border-top:2px solid #000000 !important; border-left:none #000000; border-right:none #000000; font-weight:bold; color:#000000; font-family:'굴림'; font-size:10pt; background-color:white }
-	  td.style97 { vertical-align:middle; border-bottom:none #000000; border-top:2px solid #000000 !important; border-left:none #000000; border-right:none #000000; font-weight:bold; color:#000000; font-family:'굴림'; font-size:10pt; background-color:white }
-	  td.style98 { vertical-align:middle; border-bottom:none #000000; border-top:2px solid #000000 !important; border-left:none #000000; border-right:none #000000; color:#000000; font-family:'굴림'; font-size:10pt; background-color:white }
-	  td.style99 { vertical-align:middle; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; font-weight:bold; color:#000000; font-family:'굴림'; font-size:10pt; background-color:#FFFFFF }
-	  td.style100 { vertical-align:middle; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; font-weight:bold; color:#000000; font-family:'굴림'; font-size:10pt; background-color:#FFFFFF }
-	  td.style101 { vertical-align:middle; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; font-weight:bold; color:#000000; font-family:'굴림'; font-size:10pt; background-color:white }
-	  table.sheet0 col.col0 { width:14.91111094pt }
-	  table.sheet0 col.col1 { width:14.91111094pt }
-	  table.sheet0 col.col2 { width:14.91111094pt }
-	  table.sheet0 col.col3 { width:14.91111094pt }
-	  table.sheet0 col.col4 { width:14.91111094pt }
-	  table.sheet0 col.col5 { width:14.23333317pt }
-	  table.sheet0 col.col6 { width:14.91111094pt }
-	  table.sheet0 col.col7 { width:14.91111094pt }
-	  table.sheet0 col.col8 { width:14.91111094pt }
-	  table.sheet0 col.col9 { width:14.91111094pt }
-	  table.sheet0 col.col10 { width:14.91111094pt }
-	  table.sheet0 col.col11 { width:14.91111094pt }
-	  table.sheet0 col.col12 { width:14.91111094pt }
-	  table.sheet0 col.col13 { width:14.91111094pt }
-	  table.sheet0 col.col14 { width:14.91111094pt }
-	  table.sheet0 col.col15 { width:14.91111094pt }
-	  table.sheet0 col.col16 { width:16.94444425pt }
-	  table.sheet0 col.col17 { width:16.94444425pt }
-	  table.sheet0 col.col18 { width:16.94444425pt }
-	  table.sheet0 col.col19 { width:16.94444425pt }
-	  table.sheet0 col.col20 { width:16.94444425pt }
-	  table.sheet0 col.col21 { width:16.94444425pt }
-	  table.sheet0 col.col22 { width:16.94444425pt }
-	  table.sheet0 col.col23 { width:16.94444425pt }
-	  table.sheet0 col.col24 { width:14.91111094pt }
-	  table.sheet0 tr { height:15pt }
-	  table.sheet0 tr.row3 { height:17.25pt }
-	  table.sheet0 tr.row33 { height:17.25pt }
-	  table.sheet0 tr.row37 { height:17.25pt }
-	  table.sheet0 tr.row40 { height:17.25pt }
-	  table.sheet0 tr.row44 { height:17.25pt }
-	  table.sheet0 tr.row48 { height:17.25pt }
+	  td.style01 { vertical-align:middle; text-align:center; border-bottom:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; font-weight:bold; color:#000000; font-family:'굴림'; font-size:10pt; background-color:#CCCCFF }
+	  
 	</style>
   </head>
 
@@ -157,7 +25,7 @@
 @page { left-margin: 0.7in; right-margin: 0.7in; top-margin: 0.75in; bottom-margin: 0.75in; }
 body { left-margin: 0.7in; right-margin: 0.7in; top-margin: 0.75in; bottom-margin: 0.75in; }
 </style>
-	<table border="0" cellpadding="0" cellspacing="0" id="sheet0" class="sheet0 gridlines">
+	<table border="1" cellpadding="0" cellspacing="0" id="sheet0" style="width: 210mm;">
 		<col class="col0">
 		<col class="col1">
 		<col class="col2">
@@ -184,595 +52,274 @@ body { left-margin: 0.7in; right-margin: 0.7in; top-margin: 0.75in; bottom-margi
 		<col class="col23">
 		<col class="col24">
 		<tbody>
-		  <tr class="row0">
-			<td class="column0 style5 s style5" colspan="15" rowspan="4">생산의뢰서</td>
-			<td class="column15 style4 s style6" rowspan="4">의<br />
+		  <tr>
+			<td align=center colspan="10" rowspan="2" width="55%"><b>생산의뢰서</b></td>
+			<td width=5% rowspan="2">의<br />
 뢰</td>
-			<td class="column16 style5 s style5" colspan="2">담당</td>
-			<td class="column18 style5 s style5" colspan="2">팀장</td>
-			<td class="column20 style5 s style5" colspan="2">이사</td>
-			<td class="column22 style5 s style6" colspan="2">대표이사</td>
-			<td class="column24 style7 null"></td>
+			<td colspan="2" width=10%>담당</td>
+			<td colspan="2" width=10%>팀장</td>
+			<td colspan="2" width=10%>이사</td>
+			<td colspan="2" width=10%>대표이사</td>
 		  </tr>
-		  <tr class="row1">
-			<td class="column16 style12 null style18" colspan="2" rowspan="3"></td>
-			<td class="column18 style12 null style18" colspan="2" rowspan="3"></td>
-			<td class="column20 style12 null style18" colspan="2" rowspan="3"></td>
-			<td class="column22 style12 null style19" colspan="2" rowspan="3"></td>
-			<td class="column24 style7 null"></td>
+		  <tr height=70px>
+		  	<td colspan="2">1</td>
+			<td colspan="2">1</td>
+			<td colspan="2">1</td>
+			<td colspan="2">1</td>
 		  </tr>
-		  <tr class="row2">
-			<td class="column24 style7 null"></td>
+		  <tr>
+			<td colspan="3" width=15% class="style01">문서번호</td>
+			<td colspan="5" width="25%"></td>
+			<td colspan="2" width=10%>P/I NO. </td>
+			<td colspan="3"></td>
+			<td colspan="2">작성일</td>
+			<td colspan="4"></td>
 		  </tr>
-		  <tr class="row3">
-			<td class="column24 style7 null"></td>
+		  <tr>
+			<td colspan="3" width=10%>바이어</td>
+			<td colspan="10" width="30%"></td>
+			<td colspan="2">P/O NO.</td>
+			<td colspan="4"></td>
 		  </tr>
-		  <tr class="row4">
-			<td class="column0 style20 s style21" colspan="3">문서번호</td>
-			<td class="column3 style22 f style22" colspan="6"></td>
-			<td class="column9 style21 s style21" colspan="3">P/I NO. </td>
-			<td class="column12 style23 f style23" colspan="5"></td>
-			<td class="column17 style21 s style21" colspan="3">작성일</td>
-			<td class="column20 style23 f style24" colspan="4">06-27-14</td>
-			<td class="column24 style7 null"></td>
+		  <tr>
+			<td colspan="3" width=10%>MODEL</td>
+			<td colspan="10" width="30%"></td>
+			<td colspan="2">Q'TY</td>
+			<td colspan="4"></td>
 		  </tr>
-		  <tr class="row5">
-			<td class="column0 style25 s style26" colspan="3">바이어 </td>
-			<td class="column3 style12 f style12" colspan="9"></td>
-			<td class="column12 style26 s style26" colspan="3">P/O NO.</td>
-			<td class="column15 style12 f style13" colspan="9"></td>
-			<td class="column24 style7 null"></td>
+		  <tr>
+			<td rowspan=2 colspan="3">CURRENCY</td>
+			<td>C1</td>
+			<td>C2</td>
+			<td width=5%>C3</td>
+			<td width=5%>C4</td>
+			<td width=5%>C5</td>
+			<td width=5%>C6</td>
+			<td width=5%>C7</td>
+			<td width=5%>C8</td>
+			<td width=5%>C9</td>
+			<td>C10</td>
+			<td>C11</td>
+			<td>C12</td>
+			<td>C13</td>
+			<td>C14</td>
+			<td>C15</td>
+			<td>기타</td>
 		  </tr>
-		  <tr class="row6">
-			<td class="column0 style25 s style26" colspan="3">MODEL</td>
-			<td class="column3 style12 f style12" colspan="9"></td>
-			<td class="column12 style26 s style26" colspan="3">Q'TY</td>
-			<td class="column15 style27 f style28" colspan="9">0</td>
-			<td class="column24 style7 null"></td>
+			<td>RSD</td>
+			<td>EUR</td>
+			<td width=5%>USD</td>
+			<td width=5%>GBP</td>
+			<td width=5%>CHF</td>
+			<td width=5%></td>
+			<td width=5%></td>
+			<td width=5%></td>
+			<td width=5%></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
 		  </tr>
-		  <tr class="row7">
-			<td class="column0 style25 s style26" colspan="6" rowspan="2">CURRENCY</td>
-			<td class="column6 style26 s style26" colspan="2">C1</td>
-			<td class="column8 style26 s style26" colspan="2">C2</td>
-			<td class="column10 style26 s style26" colspan="2">C3</td>
-			<td class="column12 style26 s style26" colspan="2">C4</td>
-			<td class="column14 style26 s style26" colspan="2">C5</td>
-			<td class="column16 style26 s style26" colspan="2">C6</td>
-			<td class="column18 style26 s style26" colspan="2">C7</td>
-			<td class="column20 style26 s style26" colspan="2">C8</td>
-			<td class="column22 style26 s style29" colspan="2">기타</td>
-			<td class="column24 style7 null"></td>
+		  <tr>
+			<td colspan="3">Fitness</td>
+			<td>X</td>
+			<td>X</td>
+			<td>X</td>
+			<td>X</td>
+			<td>X</td>
+			<td>X</td>
+			<td>X</td>
+			<td>X</td>
+			<td>X</td>
+			<td>X</td>
+			<td>X</td>
+			<td>X</td>
+			<td>X</td>
+			<td>X</td>
+			<td>X</td>
+			<td></td>
 		  </tr>
-		  <tr class="row8">
-			<td class="column6 style30 f style31" colspan="2"></td>
-			<td class="column8 style30 f style31" colspan="2"></td>
-			<td class="column10 style30 f style31" colspan="2"></td>
-			<td class="column12 style30 f style31" colspan="2"></td>
-			<td class="column14 style30 f style31" colspan="2"></td>
-			<td class="column16 style30 f style31" colspan="2">0</td>
-			<td class="column18 style30 f style31" colspan="2">0</td>
-			<td class="column20 style32 f style32" colspan="2"></td>
-			<td class="column22 style32 null style33" colspan="2"></td>
-			<td class="column24 style7 null"></td>
+		  <tr>
+			<td rowspan=2 colspan="3">SERIAL NUMBER</td>
+			<td colspan=2>SRL</td>
+			<td colspan=2>P-OCR</td>
+			<td colspan=2>S-OCR</td>
+			<td>C1</td>
+			<td>C2</td>
+			<td>C3</td>
+			<td>C4</td>
+			<td>C5</td>
+			<td colspan=5>기타</td>
 		  </tr>
-		  <tr class="row9">
-			<td class="column0 style34 s style36" colspan="6">Fitness</td>
-			<td class="column6 style30 f style37" colspan="2">0</td>
-			<td class="column8 style30 f style37" colspan="2">0</td>
-			<td class="column10 style30 f style37" colspan="2">0</td>
-			<td class="column12 style30 f style37" colspan="2">0</td>
-			<td class="column14 style30 f style37" colspan="2">0</td>
-			<td class="column16 style30 f style37" colspan="2">0</td>
-			<td class="column18 style30 f style37" colspan="2">0</td>
-			<td class="column20 style32 null style32" colspan="2"></td>
-			<td class="column22 style32 null style33" colspan="2"></td>
-			<td class="column24 style7 null"></td>
+		  <tr>
+			<td colspan=2>X</td>
+			<td colspan=2>X</td>
+			<td colspan=2>X</td>
+			<td>X</td>
+			<td>X</td>
+			<td>X</td>
+			<td>X</td>
+			<td>X</td>
+			<td colspan=5></td>
 		  </tr>
-		  <tr class="row10">
-			<td class="column0 style25 s style26" colspan="6" rowspan="2">CURRENCY</td>
-			<td class="column6 style26 s style26" colspan="2">C9</td>
-			<td class="column8 style26 s style26" colspan="2">C10</td>
-			<td class="column10 style26 s style26" colspan="2">C11</td>
-			<td class="column12 style26 s style26" colspan="2">C12</td>
-			<td class="column14 style26 s style26" colspan="2">C13</td>
-			<td class="column16 style26 s style26" colspan="2">C14</td>
-			<td class="column18 style26 s style26" colspan="2">C15</td>
-			<td class="column20 style38 s style39" colspan="4">기타</td>
-			<td class="column24 style7 null"></td>
+		  <tr>
+			<td rowspan=2 colspan="3">CF DETECTOR</td>
+		    <td colspan=2>UV</td>
+			<td colspan=2>MG</td>
+			<td colspan=2>MRA</td>
+			<td colspan=2>IR</td>
+			<td colspan=3>Tape Detector</td>
+			<td colspan=5>기타</td>
 		  </tr>
-		  <tr class="row11">
-			<td class="column6 style30 f style31" colspan="2"></td>
-			<td class="column8 style30 f style31" colspan="2"></td>
-			<td class="column10 style30 f style31" colspan="2"></td>
-			<td class="column12 style30 f style31" colspan="2"></td>
-			<td class="column14 style30 f style31" colspan="2"></td>
-			<td class="column16 style30 f style31" colspan="2">0</td>
-			<td class="column18 style30 f style31" colspan="2">0</td>
-			<td class="column20 style30 f style40" colspan="4"></td>
-			<td class="column24 style7 null"></td>
+		  <tr>
+		    <td colspan=2>X</td>
+			<td colspan=2>X</td>
+			<td colspan=2>X</td>
+			<td colspan=2>X</td>
+			<td colspan=3>X</td>
+			<td colspan=5></td>
 		  </tr>
-		  <tr class="row12">
-			<td class="column0 style34 s style36" colspan="6">Fitness</td>
-			<td class="column6 style30 f style37" colspan="2">0</td>
-			<td class="column8 style30 f style37" colspan="2">0</td>
-			<td class="column10 style30 f style37" colspan="2">0</td>
-			<td class="column12 style30 f style37" colspan="2">0</td>
-			<td class="column14 style30 f style37" colspan="2">0</td>
-			<td class="column16 style30 f style37" colspan="2">0</td>
-			<td class="column18 style30 f style37" colspan="2">0</td>
-			<td class="column20 style30 null style40" colspan="4"></td>
-			<td class="column24 style7 null"></td>
+		  <tr>
+			<td rowspan=10 colspan="2">OPTION</td>
+			<td rowspan=2>SW</td>
+			<td colspan=4>ISSUE</td>
+			<td colspan=12></td>
 		  </tr>
-		  <tr class="row13">
-			<td class="column0 style41 s style42" colspan="6" rowspan="2">SERIAL NUMBER</td>
-			<td class="column6 style42 s style42" colspan="2">SRL</td>
-			<td class="column8 style42 s style42" colspan="2">P-OCR</td>
-			<td class="column10 style42 s style42" colspan="2">S-OCR</td>
-			<td class="column12 style42 s style42" colspan="2">C1</td>
-			<td class="column14 style42 s style42" colspan="2">C2</td>
-			<td class="column16 style42 s style42" colspan="2">C3</td>
-			<td class="column18 style42 s style42" colspan="2">C4</td>
-			<td class="column20 style42 s style42" colspan="2">C5</td>
-			<td class="column22 style42 s style43" colspan="2">기타</td>
-			<td class="column24 style44 null"></td>
+		  <tr>
+			<td colspan=4>SNC</td>
+			<td colspan=12></td>
 		  </tr>
-		  <tr class="row14">
-			<td class="column6 style45 f style45" colspan="2">0</td>
-			<td class="column8 style45 f style45" colspan="2">0</td>
-			<td class="column10 style45 f style45" colspan="2">0</td>
-			<td class="column12 style45 f style45" colspan="2">0</td>
-			<td class="column14 style45 f style45" colspan="2">0</td>
-			<td class="column16 style45 f style45" colspan="2">0</td>
-			<td class="column18 style45 f style45" colspan="2">0</td>
-			<td class="column20 style45 f style45" colspan="2">0</td>
-			<td class="column22 style45 null style46" colspan="2"></td>
-			<td class="column24 style44 null"></td>
+		  <tr>
+			<td rowspan=7>HW</td>
+			<td colspan=4>CIS</td>
+			<td colspan=12></td>
 		  </tr>
-		  <tr class="row15">
-			<td class="column0 style25 s style26" colspan="6" rowspan="2">CF DETECTOR</td>
-			<td class="column6 style26 s style26" colspan="3">UV</td>
-			<td class="column9 style26 s style26" colspan="3">MG</td>
-			<td class="column12 style26 s style26" colspan="3">MRA</td>
-			<td class="column15 style26 s style26" colspan="3">IR</td>
-			<td class="column18 style47 s style48" colspan="4">Tape Detector</td>
-			<td class="column22 style38 s style39" colspan="2">기타</td>
-			<td class="column24 style7 null"></td>
+		  <tr>
+			<td colspan=4>LAN</td>
+			<td colspan=12></td>
 		  </tr>
-		  <tr class="row16">
-			<td class="column6 style32 f style32" colspan="3">0</td>
-			<td class="column9 style32 f style32" colspan="3">0</td>
-			<td class="column12 style32 f style32" colspan="3">0</td>
-			<td class="column15 style32 f style32" colspan="3">0</td>
-			<td class="column18 style30 f style31" colspan="4">0</td>
-			<td class="column22 style30 null style40" colspan="2"></td>
-			<td class="column24 style7 null"></td>
+		  <tr>
+			<td rowspan=2 colspan=2>Reject <br />Pocket</td>
+			<td colspan=2>Old Type</td>
+			<td colspan=12></td>
 		  </tr>
-		  <tr class="row17">
-			<td class="column0 style49 s style60" colspan="3" rowspan="10">OPTION</td>
-			<td class="column3 style42 s style42" colspan="3" rowspan="2">SW</td>
-			<td class="column6 style52 s style54" colspan="6">ISSUE</td>
-			<td class="column12 style55 f style57" colspan="12">0</td>
-			<td class="column24 style44 null"></td>
+		  <tr>
+			<td colspan=2>New Type</td>
+			<td colspan=12></td>
 		  </tr>
-		  <tr class="row18">
-			<td class="column6 style52 s style54" colspan="6">SNC</td>
-			<td class="column12 style45 f style46" colspan="12">0</td>
-			<td class="column24 style44 null"></td>
+		  <tr>
+			<td colspan=4>Printer</td>
+			<td colspan=12></td>
 		  </tr>
-		  <tr class="row19">
-			<td class="column3 style61 s style68" colspan="3" rowspan="7">HW</td>
-			<td class="column6 style42 s style42" colspan="6">CIS</td>
-			<td class="column12 style45 f style46" colspan="12">0</td>
-			<td class="column24 style44 null"></td>
+		  <tr>
+			<td colspan=4>SV-200</td>
+			<td colspan=12></td>
 		  </tr>
-		  <tr class="row20">
-			<td class="column6 style42 s style42" colspan="6">LAN</td>
-			<td class="column12 style45 f style46" colspan="12">0</td>
-			<td class="column24 style44 null"></td>
+		  <tr>
+			<td colspan=4>SDP-7</td>
+			<td colspan=12></td>
 		  </tr>
-		  <tr class="row21">
-			<td class="column6 style62 s style65" colspan="3" rowspan="2">Reject <br />
-Pocket</td>
-			<td class="column9 style52 s style54" colspan="3">Old Type</td>
-			<td class="column12 style45 f style46" colspan="12">0</td>
-			<td class="column24 style44 null"></td>
+		  <tr>
+			<td>기타</td>
+			<td colspan=4>특이사항</td>
+			<td colspan=12></td>
 		  </tr>
-		  <tr class="row22">
-			<td class="column9 style52 s style54" colspan="3">New Type</td>
-			<td class="column12 style45 f style46" colspan="12">0</td>
-			<td class="column24 style44 null"></td>
+		  <tr>
+			<td rowspan=5 colspan="3">USER OPTION</td>
+		    <td colspan=4>Language (LCD)</td>
+			<td colspan=13></td>
 		  </tr>
-		  <tr class="row23">
-			<td class="column6 style42 s style42" colspan="6">Printer</td>
-			<td class="column12 style45 f style46" colspan="12">0</td>
-			<td class="column24 style44 null"></td>
+		  <tr>
+		    <td colspan=4>Out Box</td>
+			<td colspan=13></td>
 		  </tr>
-		  <tr class="row24">
-			<td class="column6 style42 s style42" colspan="6">SV-200</td>
-			<td class="column12 style45 f style46" colspan="12">0</td>
-			<td class="column24 style44 null"></td>
+		  <tr>
+		    <td colspan=4>Label</td>
+			<td colspan=13></td>
 		  </tr>
-		  <tr class="row25">
-			<td class="column6 style42 s style42" colspan="6">SDP-7</td>
-			<td class="column12 style45 f style46" colspan="12">0</td>
-			<td class="column24 style44 null"></td>
+		  <tr>
+		    <td colspan=4>PWR/                  Printer Power Cable</td>
+			<td colspan=13></td>
 		  </tr>
-		  <tr class="row26">
-			<td class="column3 style69 s style51" colspan="3">기타</td>
-			<td class="column6 style69 s style51" colspan="6">특이사항</td>
-			<td class="column12 style70 f style72" colspan="12">0</td>
-			<td class="column24 style44 null"></td>
+		  <tr>
+		    <td colspan=4>User's Manual</td>
+			<td colspan=13></td>
 		  </tr>
-		  <tr class="row27">
-			<td class="column0 style25 s style26" colspan="6" rowspan="5">USER OPTION</td>
-			<td class="column6 style26 s style26" colspan="6">Language (LCD)</td>
-			<td class="column12 style30 f style40" colspan="12"></td>
-			<td class="column24 style7 null"></td>
+		  <tr>
+			<td colspan="3">기본 악세서리</td>
+		    <td colspan=16>Cleaning Brush, Clean Cloth, PC Cable</td>
 		  </tr>
-		  <tr class="row28">
-			<td class="column6 style26 s style26" colspan="6">Out Box</td>
-			<td class="column12 style30 f style40" colspan="12"></td>
-			<td class="column24 style7 null"></td>
+		  <tr>
+			<td colspan="3">품질 이관일</td>
+		    <td colspan=6></td>
+			<td colspan="3">품질 출하일</td>
+		    <td colspan=7></td>
 		  </tr>
-		  <tr class="row29">
-			<td class="column6 style26 s style26" colspan="6">Label</td>
-			<td class="column12 style30 f style40" colspan="12"></td>
-			<td class="column24 style7 null"></td>
+		  <tr>
+			<td align=center colspan="10" rowspan="2" width="55%"></td>
+			<td width=5% rowspan="2">품<br/>질</td>
+			<td colspan="2" width=10%>담당</td>
+			<td colspan="2" width=10%>차장</td>
+			<td colspan="2" width=10%>부장</td>
+			<td colspan="2" width=10%>팀장</td>
 		  </tr>
-		  <tr class="row30">
-			<td class="column6 style73 s style75" colspan="6">PWR/                  Printer Power Cable</td>
-			<td class="column12 style32 f style33" colspan="12"></td>
-			<td class="column24 style7 null"></td>
+		  <tr height=70px>
+		  	<td colspan="2">1</td>
+			<td colspan="2">1</td>
+			<td colspan="2">1</td>
+			<td colspan="2">1</td>
 		  </tr>
-		  <tr class="row31">
-			<td class="column6 style26 s style26" colspan="6">User's Manual</td>
-			<td class="column12 style32 f style33" colspan="12"></td>
-			<td class="column24 style7 null"></td>
+		  <tr>
+			<td align=center colspan="10" rowspan="2" width="55%"></td>
+			<td width=5% rowspan="2">연<br/>구<br/>소</td>
+			<td colspan="2" width=10%>담당</td>
+			<td colspan="2" width=10%>과장</td>
+			<td colspan="2" width=10%>부장</td>
+			<td colspan="2" width=10%>이사</td>
 		  </tr>
-		  <tr class="row32">
-			<td class="column0 style25 s style26" colspan="6">기본 악세서리</td>
-			<td class="column6 style12 s style13" colspan="18">Cleaning Brush, Clean Cloth, PC Cable</td>
-			<td class="column24 style7 null"></td>
+		  <tr height=70px>
+		  	<td colspan="2">1</td>
+			<td colspan="2">1</td>
+			<td colspan="2">1</td>
+			<td colspan="2">1</td>
 		  </tr>
-		  <tr class="row33">
-			<td class="column0 style25 s style26" colspan="6">품질 이관일</td>
-			<td class="column6 style76 f style78" colspan="8"></td>
-			<td class="column14 style35 s style35" colspan="5">품질 출하일</td>
-			<td class="column19 style79 f style81" colspan="5"></td>
-			<td class="column24 style7 null"></td>
+		  <tr>
+			<td align=center colspan="10" rowspan="2" width="55%"></td>
+			<td width=5% rowspan="2">구<br/>매</td>
+			<td colspan="2" width=10%>담당</td>
+			<td colspan="2" width=10%>차장</td>
+			<td colspan="2" width=10%>부장</td>
+			<td colspan="2" width=10%>이사</td>
 		  </tr>
-		  <tr class="row34">
-			<td class="column0 style82 null"></td>
-			<td class="column1 style83 null"></td>
-			<td class="column2 style83 null"></td>
-			<td class="column3 style83 null"></td>
-			<td class="column4 style83 null"></td>
-			<td class="column5 style83 null"></td>
-			<td class="column6 style83 null"></td>
-			<td class="column7 style83 null"></td>
-			<td class="column8 style83 null"></td>
-			<td class="column9 style83 null"></td>
-			<td class="column10 style83 null"></td>
-			<td class="column11 style83 null"></td>
-			<td class="column12 style83 null"></td>
-			<td class="column13 style83 null"></td>
-			<td class="column14 style84 null"></td>
-			<td class="column15 style4 s style6" rowspan="4">품<br />
-질</td>
-			<td class="column16 style5 s style5" colspan="2">담당</td>
-			<td class="column18 style5 s style5" colspan="2">차장</td>
-			<td class="column20 style5 s style5" colspan="2">부장</td>
-			<td class="column22 style5 s style6" colspan="2">팀장</td>
-			<td class="column24 style7 null"></td>
+		  <tr height=70px>
+		  	<td colspan="2">1</td>
+			<td colspan="2">1</td>
+			<td colspan="2">1</td>
+			<td colspan="2">1</td>
 		  </tr>
-		  <tr class="row35">
-			<td class="column0 style85 null"></td>
-			<td class="column1 style86 null"></td>
-			<td class="column2 style86 null"></td>
-			<td class="column3 style86 null"></td>
-			<td class="column4 style86 null"></td>
-			<td class="column5 style86 null"></td>
-			<td class="column6 style86 null"></td>
-			<td class="column7 style86 null"></td>
-			<td class="column8 style86 null"></td>
-			<td class="column9 style86 null"></td>
-			<td class="column10 style86 null"></td>
-			<td class="column11 style86 null"></td>
-			<td class="column12 style86 null"></td>
-			<td class="column13 style86 null"></td>
-			<td class="column14 style87 null"></td>
-			<td class="column16 style12 null style18" colspan="2" rowspan="3"></td>
-			<td class="column18 style12 null style18" colspan="2" rowspan="3"></td>
-			<td class="column20 style12 null style18" colspan="2" rowspan="3"></td>
-			<td class="column22 style12 null style19" colspan="2" rowspan="3"></td>
-			<td class="column24 style7 null"></td>
+		  		  <tr>
+			<td align=center colspan="10" rowspan="2" width="55%"></td>
+			<td width=5% rowspan="2">생<br/>산</td>
+			<td colspan="2" width=10%>담당</td>
+			<td colspan="2" width=10%>과장</td>
+			<td colspan="2" width=10%>부장</td>
+			<td colspan="2" width=10%>이사</td>
 		  </tr>
-		  <tr class="row36">
-			<td class="column0 style85 null"></td>
-			<td class="column1 style86 null"></td>
-			<td class="column2 style86 null"></td>
-			<td class="column3 style86 null"></td>
-			<td class="column4 style86 null"></td>
-			<td class="column5 style86 null"></td>
-			<td class="column6 style86 null"></td>
-			<td class="column7 style86 null"></td>
-			<td class="column8 style86 null"></td>
-			<td class="column9 style86 null"></td>
-			<td class="column10 style86 null"></td>
-			<td class="column11 style86 null"></td>
-			<td class="column12 style86 null"></td>
-			<td class="column13 style86 null"></td>
-			<td class="column14 style87 null"></td>
-			<td class="column24 style7 null"></td>
+		  <tr height=70px>
+		  	<td colspan="2">1</td>
+			<td colspan="2">1</td>
+			<td colspan="2">1</td>
+			<td colspan="2">1</td>
 		  </tr>
-		  <tr class="row37">
-			<td class="column0 style88 null"></td>
-			<td class="column1 style86 null"></td>
-			<td class="column2 style86 null"></td>
-			<td class="column3 style86 null"></td>
-			<td class="column4 style86 null"></td>
-			<td class="column5 style86 null"></td>
-			<td class="column6 style86 null"></td>
-			<td class="column7 style86 null"></td>
-			<td class="column8 style86 null"></td>
-			<td class="column9 style86 null"></td>
-			<td class="column10 style86 null"></td>
-			<td class="column11 style86 null"></td>
-			<td class="column12 style86 null"></td>
-			<td class="column13 style86 null"></td>
-			<td class="column14 style87 null"></td>
-			<td class="column24 style7 null"></td>
+		  <tr>
+			<td colspan="4">SBM-영업-P-701-05</td>
+		    <td colspan=12>㈜에스비엠</td>
+			<td colspan=3>A4(210 X297mm)</td>
 		  </tr>
-		  <tr class="row38">
-			<td class="column0 style85 null"></td>
-			<td class="column1 style86 null"></td>
-			<td class="column2 style86 null"></td>
-			<td class="column3 style86 null"></td>
-			<td class="column4 style86 null"></td>
-			<td class="column5 style86 null"></td>
-			<td class="column6 style86 null"></td>
-			<td class="column7 style86 null"></td>
-			<td class="column8 style86 null"></td>
-			<td class="column9 style86 null"></td>
-			<td class="column10 style86 null"></td>
-			<td class="column11 style86 null"></td>
-			<td class="column12 style86 null"></td>
-			<td class="column13 style86 null"></td>
-			<td class="column14 style87 null"></td>
-			<td class="column15 style4 s style6" rowspan="3">연구소</td>
-			<td class="column16 style5 s style5" colspan="2">담당</td>
-			<td class="column18 style5 s style5" colspan="2">과장</td>
-			<td class="column20 style5 s style5" colspan="2">부장</td>
-			<td class="column22 style5 s style6" colspan="2">이사</td>
-			<td class="column24 style7 null"></td>
-		  </tr>
-		  <tr class="row39">
-			<td class="column0 style85 null"></td>
-			<td class="column1 style86 null"></td>
-			<td class="column2 style86 null"></td>
-			<td class="column3 style86 null"></td>
-			<td class="column4 style86 null"></td>
-			<td class="column5 style86 null"></td>
-			<td class="column6 style86 null"></td>
-			<td class="column7 style86 null"></td>
-			<td class="column8 style86 null"></td>
-			<td class="column9 style86 null"></td>
-			<td class="column10 style86 null"></td>
-			<td class="column11 style86 null"></td>
-			<td class="column12 style86 null"></td>
-			<td class="column13 style86 null"></td>
-			<td class="column14 style87 null"></td>
-			<td class="column16 style12 null style18" colspan="2" rowspan="2"></td>
-			<td class="column18 style12 null style18" colspan="2" rowspan="2"></td>
-			<td class="column20 style12 null style18" colspan="2" rowspan="2"></td>
-			<td class="column22 style12 null style19" colspan="2" rowspan="2"></td>
-			<td class="column24 style7 null"></td>
-		  </tr>
-		  <tr class="row40">
-			<td class="column0 style85 null"></td>
-			<td class="column1 style86 null"></td>
-			<td class="column2 style86 null"></td>
-			<td class="column3 style86 null"></td>
-			<td class="column4 style86 null"></td>
-			<td class="column5 style86 null"></td>
-			<td class="column6 style86 null"></td>
-			<td class="column7 style86 null"></td>
-			<td class="column8 style86 null"></td>
-			<td class="column9 style86 null"></td>
-			<td class="column10 style86 null"></td>
-			<td class="column11 style86 null"></td>
-			<td class="column12 style86 null"></td>
-			<td class="column13 style86 null"></td>
-			<td class="column14 style87 null"></td>
-			<td class="column24 style7 null"></td>
-		  </tr>
-		  <tr class="row41">
-			<td class="column0 style85 null"></td>
-			<td class="column1 style86 null"></td>
-			<td class="column2 style86 null"></td>
-			<td class="column3 style86 null"></td>
-			<td class="column4 style86 null"></td>
-			<td class="column5 style86 null"></td>
-			<td class="column6 style86 null"></td>
-			<td class="column7 style86 null"></td>
-			<td class="column8 style86 null"></td>
-			<td class="column9 style86 null"></td>
-			<td class="column10 style86 null"></td>
-			<td class="column11 style86 null"></td>
-			<td class="column12 style86 null"></td>
-			<td class="column13 style86 null"></td>
-			<td class="column14 style87 null"></td>
-			<td class="column15 style4 s style6" rowspan="4">구<br />
-매</td>
-			<td class="column16 style5 s style5" colspan="2">담당</td>
-			<td class="column18 style5 s style5" colspan="2">차장</td>
-			<td class="column20 style5 s style5" colspan="2">부장</td>
-			<td class="column22 style5 s style6" colspan="2">이사</td>
-			<td class="column24 style7 null"></td>
-		  </tr>
-		  <tr class="row42">
-			<td class="column0 style85 null"></td>
-			<td class="column1 style86 null"></td>
-			<td class="column2 style86 null"></td>
-			<td class="column3 style86 null"></td>
-			<td class="column4 style86 null"></td>
-			<td class="column5 style86 null"></td>
-			<td class="column6 style86 null"></td>
-			<td class="column7 style86 null"></td>
-			<td class="column8 style86 null"></td>
-			<td class="column9 style86 null"></td>
-			<td class="column10 style86 null"></td>
-			<td class="column11 style86 null"></td>
-			<td class="column12 style86 null"></td>
-			<td class="column13 style86 null"></td>
-			<td class="column14 style87 null"></td>
-			<td class="column16 style12 null style18" colspan="2" rowspan="3"></td>
-			<td class="column18 style12 null style18" colspan="2" rowspan="3"></td>
-			<td class="column20 style12 null style18" colspan="2" rowspan="3"></td>
-			<td class="column22 style12 null style19" colspan="2" rowspan="3"></td>
-			<td class="column24 style7 null"></td>
-		  </tr>
-		  <tr class="row43">
-			<td class="column0 style85 null"></td>
-			<td class="column1 style86 null"></td>
-			<td class="column2 style86 null"></td>
-			<td class="column3 style86 null"></td>
-			<td class="column4 style86 null"></td>
-			<td class="column5 style86 null"></td>
-			<td class="column6 style86 null"></td>
-			<td class="column7 style86 null"></td>
-			<td class="column8 style86 null"></td>
-			<td class="column9 style86 null"></td>
-			<td class="column10 style86 null"></td>
-			<td class="column11 style86 null"></td>
-			<td class="column12 style86 null"></td>
-			<td class="column13 style86 null"></td>
-			<td class="column14 style87 null"></td>
-			<td class="column24 style7 null"></td>
-		  </tr>
-		  <tr class="row44">
-			<td class="column0 style85 null"></td>
-			<td class="column1 style86 null"></td>
-			<td class="column2 style86 null"></td>
-			<td class="column3 style86 null"></td>
-			<td class="column4 style86 null"></td>
-			<td class="column5 style86 null"></td>
-			<td class="column6 style86 null"></td>
-			<td class="column7 style86 null"></td>
-			<td class="column8 style86 null"></td>
-			<td class="column9 style86 null"></td>
-			<td class="column10 style86 null"></td>
-			<td class="column11 style86 null"></td>
-			<td class="column12 style86 null"></td>
-			<td class="column13 style86 null"></td>
-			<td class="column14 style87 null"></td>
-			<td class="column24 style7 null"></td>
-		  </tr>
-		  <tr class="row45">
-			<td class="column0 style85 null"></td>
-			<td class="column1 style86 null"></td>
-			<td class="column2 style86 null"></td>
-			<td class="column3 style86 null"></td>
-			<td class="column4 style86 null"></td>
-			<td class="column5 style86 null"></td>
-			<td class="column6 style86 null"></td>
-			<td class="column7 style86 null"></td>
-			<td class="column8 style86 null"></td>
-			<td class="column9 style86 null"></td>
-			<td class="column10 style86 null"></td>
-			<td class="column11 style86 null"></td>
-			<td class="column12 style86 null"></td>
-			<td class="column13 style86 null"></td>
-			<td class="column14 style87 null"></td>
-			<td class="column15 style4 s style6" rowspan="4">생<br />
-산</td>
-			<td class="column16 style22 s style22" colspan="2">담당</td>
-			<td class="column18 style22 s style22" colspan="2">과장</td>
-			<td class="column20 style22 s style22" colspan="2">부장</td>
-			<td class="column22 style22 s style24" colspan="2">이사</td>
-			<td class="column24 style7 null"></td>
-		  </tr>
-		  <tr class="row46">
-			<td class="column0 style85 null"></td>
-			<td class="column1 style86 null"></td>
-			<td class="column2 style86 null"></td>
-			<td class="column3 style86 null"></td>
-			<td class="column4 style86 null"></td>
-			<td class="column5 style86 null"></td>
-			<td class="column6 style86 null"></td>
-			<td class="column7 style86 null"></td>
-			<td class="column8 style86 null"></td>
-			<td class="column9 style86 null"></td>
-			<td class="column10 style86 null"></td>
-			<td class="column11 style86 null"></td>
-			<td class="column12 style86 null"></td>
-			<td class="column13 style86 null"></td>
-			<td class="column14 style87 null"></td>
-			<td class="column16 style12 null style18" colspan="2" rowspan="3"></td>
-			<td class="column18 style12 null style18" colspan="2" rowspan="3"></td>
-			<td class="column20 style12 null style18" colspan="2" rowspan="3"></td>
-			<td class="column22 style12 null style19" colspan="2" rowspan="3"></td>
-			<td class="column24 style7 null"></td>
-		  </tr>
-		  <tr class="row47">
-			<td class="column0 style85 null"></td>
-			<td class="column1 style86 null"></td>
-			<td class="column2 style86 null"></td>
-			<td class="column3 style86 null"></td>
-			<td class="column4 style86 null"></td>
-			<td class="column5 style86 null"></td>
-			<td class="column6 style86 null"></td>
-			<td class="column7 style86 null"></td>
-			<td class="column8 style86 null"></td>
-			<td class="column9 style86 null"></td>
-			<td class="column10 style86 null"></td>
-			<td class="column11 style86 null"></td>
-			<td class="column12 style86 null"></td>
-			<td class="column13 style86 null"></td>
-			<td class="column14 style87 null"></td>
-			<td class="column24 style7 null"></td>
-		  </tr>
-		  <tr class="row48">
-			<td class="column0 style90 null"></td>
-			<td class="column1 style91 null"></td>
-			<td class="column2 style91 null"></td>
-			<td class="column3 style91 null"></td>
-			<td class="column4 style91 null"></td>
-			<td class="column5 style91 null"></td>
-			<td class="column6 style91 null"></td>
-			<td class="column7 style91 null"></td>
-			<td class="column8 style91 null"></td>
-			<td class="column9 style91 null"></td>
-			<td class="column10 style91 null"></td>
-			<td class="column11 style91 null"></td>
-			<td class="column12 style91 null"></td>
-			<td class="column13 style91 null"></td>
-			<td class="column14 style92 null"></td>
-			<td class="column24 style7 null"></td>
-		  </tr>
-		  <tr class="row49">
-			<td colspan=3 class="column0 style93 s">SBM-영업-P-701-05</td>
-			<td class="column3 style94 null"></td>
-			<td class="column4 style93 null"></td>
-			<td class="column5 style94 null"></td>
-			<td class="column6 style94 null"></td>
-			<td class="column7 style94 null"></td>
-			<td class="column8 style95 null"></td>
-			<td class="column9 style95 null"></td>
-			<td class="column10 style96 null"></td>
-			<td colspan=3 class="column11 style96 s">㈜에스비엠</td>
-			<td class="column14 style95 null"></td>
-			<td class="column15 style98 null"></td>
-			<td class="column16 style98 null"></td>
-			<td class="column17 style95 null"></td>
-			<td class="column18 style95 null"></td>
-			<td class="column19 style95 null"></td>
-			<td class="column20 style95 null"></td>
-			<td colspan=3 class="column23 style96 s">A4(210 X297mm)</td>
-			<td class="column24 style99 null"></td>
-		  </tr>
-
-		</tbody>
+		  </tbody>
 	</table>
   </body>
 </html>
