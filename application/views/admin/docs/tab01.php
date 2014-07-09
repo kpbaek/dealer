@@ -15,8 +15,13 @@
 	  .inlineStr { text-align:left }
 	  .n { text-align:right }
 	  .s { text-align:left }
+	  td.style00 { vertical-align:middle; text-align:left; padding-left:0px; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; font-weight:bold; color:#000000; font-family:'굴림'; font-size:10pt; background-color:#FFFFFF }
 	  td.style01 { vertical-align:middle; text-align:center; border-bottom:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; font-weight:bold; color:#000000; font-family:'굴림'; font-size:10pt; background-color:#CCCCFF }
-	  
+	  td.style02 { vertical-align:middle; text-align:center; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:none #000000; border-right:1px solid #000000 !important; font-weight:bold; color:#000000; font-family:'굴림'; font-size:10pt; background-color:white }
+	  td.style03 { vertical-align:middle; text-align:center; border-bottom:1px solid #000000 !important; border-top:2px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; font-weight:bold; color:#000000; font-family:'굴림'; font-size:10pt; background-color:white }
+	  td.style04 { vertical-align:middle; border-bottom:2px solid #000000 !important; border-top:2px solid #000000; border-left:none #000000; border-right:2px solid #000000; font-weight:bold; color:#000000; font-family:'굴림'; font-size:10pt; background-color:white }
+	  td.style05 { vertical-align:middle; text-align:left; padding-left:0px; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; font-weight:bold; color:#000000; font-family:'굴림'; font-size:10pt; background-color:#FFFFFF }
+	  table.sheet0 tr { height:16pt; }
 	</style>
   </head>
 
@@ -25,7 +30,7 @@
 @page { left-margin: 0.7in; right-margin: 0.7in; top-margin: 0.75in; bottom-margin: 0.75in; }
 body { left-margin: 0.7in; right-margin: 0.7in; top-margin: 0.75in; bottom-margin: 0.75in; }
 </style>
-	<table border="1" cellpadding="0" cellspacing="0" id="sheet0" style="width: 210mm;">
+	<table border="3" cellpadding="0" cellspacing="0" id="sheet0" style="width: 210mm;border-top: 3px;" class="sheet0">
 		<col class="col0">
 		<col class="col1">
 		<col class="col2">
@@ -53,58 +58,57 @@ body { left-margin: 0.7in; right-margin: 0.7in; top-margin: 0.75in; bottom-margi
 		<col class="col24">
 		<tbody>
 		  <tr>
-			<td align=center colspan="10" rowspan="2" width="55%"><b>생산의뢰서</b></td>
-			<td width=5% rowspan="2">의<br />
-뢰</td>
-			<td colspan="2" width=10%>담당</td>
-			<td colspan="2" width=10%>팀장</td>
-			<td colspan="2" width=10%>이사</td>
-			<td colspan="2" width=10%>대표이사</td>
+			<td align=center colspan="10" rowspan="2" width="55%" class="style04"><span style="font-size: 30px">생산의뢰서</span></td>
+			<td width=5% rowspan="2" class="style03">의<br/>뢰</td>
+			<td colspan="2" width=10% class="style03">담당</td>
+			<td colspan="2" width=10% class="style03">팀장</td>
+			<td colspan="2" width=10% class="style03">이사</td>
+			<td colspan="2" width=10% class="style03">대표이사</td>
 		  </tr>
 		  <tr height=70px>
-		  	<td colspan="2">1</td>
-			<td colspan="2">1</td>
-			<td colspan="2">1</td>
-			<td colspan="2">1</td>
+		  	<td colspan="2" height="70px"></td>
+			<td colspan="2"></td>
+			<td colspan="2"></td>
+			<td colspan="2"></td>
 		  </tr>
 		  <tr>
 			<td colspan="3" width=15% class="style01">문서번호</td>
 			<td colspan="5" width="25%"></td>
-			<td colspan="2" width=10%>P/I NO. </td>
-			<td colspan="3"></td>
-			<td colspan="2">작성일</td>
-			<td colspan="4"></td>
+			<td colspan="2" width=10% class="style01">P/I NO. </td>
+			<td colspan="3" class="style03"></td>
+			<td colspan="2" class="style03">작성일</td>
+			<td colspan="4" class="style03"></td>
 		  </tr>
 		  <tr>
-			<td colspan="3" width=10%>바이어</td>
+			<td colspan="3" width=10% class="style01">바이어</td>
 			<td colspan="10" width="30%"></td>
-			<td colspan="2">P/O NO.</td>
-			<td colspan="4"></td>
+			<td colspan="2" class="style01">P/O NO.</td>
+			<td colspan="4" class="style01"></td>
 		  </tr>
 		  <tr>
-			<td colspan="3" width=10%>MODEL</td>
+			<td colspan="3" width=10% class="style01">MODEL</td>
 			<td colspan="10" width="30%"></td>
-			<td colspan="2">Q'TY</td>
+			<td colspan="2" class="style01">Q'TY</td>
 			<td colspan="4"></td>
 		  </tr>
 		  <tr>
-			<td rowspan=2 colspan="3">CURRENCY</td>
-			<td>C1</td>
-			<td>C2</td>
-			<td width=5%>C3</td>
-			<td width=5%>C4</td>
-			<td width=5%>C5</td>
-			<td width=5%>C6</td>
-			<td width=5%>C7</td>
-			<td width=5%>C8</td>
-			<td width=5%>C9</td>
-			<td>C10</td>
-			<td>C11</td>
-			<td>C12</td>
-			<td>C13</td>
-			<td>C14</td>
-			<td>C15</td>
-			<td>기타</td>
+			<td rowspan=2 colspan="3" class="style01">CURRENCY</td>
+			<td class="style01">C1</td>
+			<td class="style01">C2</td>
+			<td width=5% class="style01">C3</td>
+			<td width=5% class="style01">C4</td>
+			<td width=5% class="style01">C5</td>
+			<td width=5% class="style01">C6</td>
+			<td width=5% class="style01">C7</td>
+			<td width=5% class="style01">C8</td>
+			<td width=5% class="style01">C9</td>
+			<td class="style01">C10</td>
+			<td class="style01">C11</td>
+			<td class="style01">C12</td>
+			<td class="style01">C13</td>
+			<td class="style01">C14</td>
+			<td class="style01">C15</td>
+			<td class="style01">기타</td>
 		  </tr>
 			<td>RSD</td>
 			<td>EUR</td>
@@ -124,7 +128,7 @@ body { left-margin: 0.7in; right-margin: 0.7in; top-margin: 0.75in; bottom-margi
 			<td></td>
 		  </tr>
 		  <tr>
-			<td colspan="3">Fitness</td>
+			<td colspan="3" class="style01">Fitness</td>
 			<td>X</td>
 			<td>X</td>
 			<td>X</td>
@@ -143,16 +147,16 @@ body { left-margin: 0.7in; right-margin: 0.7in; top-margin: 0.75in; bottom-margi
 			<td></td>
 		  </tr>
 		  <tr>
-			<td rowspan=2 colspan="3">SERIAL NUMBER</td>
-			<td colspan=2>SRL</td>
-			<td colspan=2>P-OCR</td>
-			<td colspan=2>S-OCR</td>
-			<td>C1</td>
-			<td>C2</td>
-			<td>C3</td>
-			<td>C4</td>
-			<td>C5</td>
-			<td colspan=5>기타</td>
+			<td rowspan=2 colspan="3" class="style01">SERIAL NUMBER</td>
+			<td colspan=2 class="style01">SRL</td>
+			<td colspan=2 class="style01">P-OCR</td>
+			<td colspan=2 class="style01">S-OCR</td>
+			<td class="style01">C1</td>
+			<td class="style01">C2</td>
+			<td class="style01">C3</td>
+			<td class="style01">C4</td>
+			<td class="style01">C5</td>
+			<td colspan=5 class="style01">기타</td>
 		  </tr>
 		  <tr>
 			<td colspan=2>X</td>
@@ -166,13 +170,13 @@ body { left-margin: 0.7in; right-margin: 0.7in; top-margin: 0.75in; bottom-margi
 			<td colspan=5></td>
 		  </tr>
 		  <tr>
-			<td rowspan=2 colspan="3">CF DETECTOR</td>
-		    <td colspan=2>UV</td>
-			<td colspan=2>MG</td>
-			<td colspan=2>MRA</td>
-			<td colspan=2>IR</td>
-			<td colspan=3>Tape Detector</td>
-			<td colspan=5>기타</td>
+			<td rowspan=2 colspan="3" class="style01">CF DETECTOR</td>
+		    <td colspan=2 class="style01">UV</td>
+			<td colspan=2 class="style01">MG</td>
+			<td colspan=2 class="style01">MRA</td>
+			<td colspan=2 class="style01">IR</td>
+			<td colspan=3 class="style01">Tape Detector</td>
+			<td colspan=5 class="style01">기타</td>
 		  </tr>
 		  <tr>
 		    <td colspan=2>X</td>
@@ -183,143 +187,144 @@ body { left-margin: 0.7in; right-margin: 0.7in; top-margin: 0.75in; bottom-margi
 			<td colspan=5></td>
 		  </tr>
 		  <tr>
-			<td rowspan=10 colspan="2">OPTION</td>
-			<td rowspan=2>SW</td>
-			<td colspan=4>ISSUE</td>
+			<td rowspan=10 colspan="2" class="style01">OPTION</td>
+			<td rowspan=2 class="style01">SW</td>
+			<td colspan=4 class="style01">ISSUE</td>
 			<td colspan=12></td>
 		  </tr>
 		  <tr>
-			<td colspan=4>SNC</td>
+			<td colspan=4 class="style01">SNC</td>
 			<td colspan=12></td>
 		  </tr>
 		  <tr>
-			<td rowspan=7>HW</td>
-			<td colspan=4>CIS</td>
+			<td rowspan=7 class="style01">HW</td>
+			<td colspan=4 class="style01">CIS</td>
 			<td colspan=12></td>
 		  </tr>
 		  <tr>
-			<td colspan=4>LAN</td>
+			<td colspan=4 class="style01">LAN</td>
 			<td colspan=12></td>
 		  </tr>
 		  <tr>
-			<td rowspan=2 colspan=2>Reject <br />Pocket</td>
-			<td colspan=2>Old Type</td>
+			<td rowspan=2 colspan=2 class="style01">Reject <br />Pocket</td>
+			<td colspan=2 class="style01">Old Type</td>
 			<td colspan=12></td>
 		  </tr>
 		  <tr>
-			<td colspan=2>New Type</td>
+			<td colspan=2 class="style01">New Type</td>
 			<td colspan=12></td>
 		  </tr>
 		  <tr>
-			<td colspan=4>Printer</td>
+			<td colspan=4 class="style01">Printer</td>
 			<td colspan=12></td>
 		  </tr>
 		  <tr>
-			<td colspan=4>SV-200</td>
+			<td colspan=4 class="style01">SV-200</td>
 			<td colspan=12></td>
 		  </tr>
 		  <tr>
-			<td colspan=4>SDP-7</td>
+			<td colspan=4 class="style01">SDP-7</td>
 			<td colspan=12></td>
 		  </tr>
 		  <tr>
-			<td>기타</td>
-			<td colspan=4>특이사항</td>
+			<td class="style01">기타</td>
+			<td colspan=4 class="style01">특이사항</td>
 			<td colspan=12></td>
 		  </tr>
 		  <tr>
-			<td rowspan=5 colspan="3">USER OPTION</td>
-		    <td colspan=4>Language (LCD)</td>
+			<td rowspan=5 colspan="3" class="style01">USER OPTION</td>
+		    <td colspan=4 class="style01">Language (LCD)</td>
 			<td colspan=13></td>
 		  </tr>
 		  <tr>
-		    <td colspan=4>Out Box</td>
+		    <td colspan=4 class="style01">Out Box</td>
 			<td colspan=13></td>
 		  </tr>
 		  <tr>
-		    <td colspan=4>Label</td>
+		    <td colspan=4 class="style01">Label</td>
 			<td colspan=13></td>
 		  </tr>
 		  <tr>
-		    <td colspan=4>PWR/                  Printer Power Cable</td>
+		    <td colspan=4 class="style01">PWR/                  Printer Power Cable</td>
 			<td colspan=13></td>
 		  </tr>
 		  <tr>
-		    <td colspan=4>User's Manual</td>
+		    <td colspan=4 class="style01">User's Manual</td>
 			<td colspan=13></td>
 		  </tr>
 		  <tr>
-			<td colspan="3">기본 악세서리</td>
+			<td colspan="3" class="style01">기본 악세서리</td>
 		    <td colspan=16>Cleaning Brush, Clean Cloth, PC Cable</td>
 		  </tr>
 		  <tr>
-			<td colspan="3">품질 이관일</td>
-		    <td colspan=6></td>
-			<td colspan="3">품질 출하일</td>
-		    <td colspan=7></td>
+			<td colspan="3" class="style01">품질 이관일</td>
+		    <td colspan=5></td>
+			<td colspan="3" class="style01">품질 출하일</td>
+		    <td colspan=8></td>
 		  </tr>
 		  <tr>
-			<td align=center colspan="10" rowspan="2" width="55%"></td>
-			<td width=5% rowspan="2">품<br/>질</td>
-			<td colspan="2" width=10%>담당</td>
-			<td colspan="2" width=10%>차장</td>
-			<td colspan="2" width=10%>부장</td>
-			<td colspan="2" width=10%>팀장</td>
+			<td align=center colspan="10" rowspan="8" width="55%" class="style04"></td>
+			<td width=5% rowspan="2" class="style03">품<br/>질</td>
+			<td colspan="2" width=10% class="style03">담당</td>
+			<td colspan="2" width=10% class="style03">차장</td>
+			<td colspan="2" width=10% class="style03">부장</td>
+			<td colspan="2" width=10% class="style03">팀장</td>
 		  </tr>
 		  <tr height=70px>
-		  	<td colspan="2">1</td>
-			<td colspan="2">1</td>
-			<td colspan="2">1</td>
-			<td colspan="2">1</td>
+		  	<td colspan="2" height=70px></td>
+			<td colspan="2"></td>
+			<td colspan="2"></td>
+			<td colspan="2"></td>
 		  </tr>
 		  <tr>
-			<td align=center colspan="10" rowspan="2" width="55%"></td>
-			<td width=5% rowspan="2">연<br/>구<br/>소</td>
-			<td colspan="2" width=10%>담당</td>
-			<td colspan="2" width=10%>과장</td>
-			<td colspan="2" width=10%>부장</td>
-			<td colspan="2" width=10%>이사</td>
+			<td width=5% rowspan="2" class="style02">연<br/>구<br/>소</td>
+			<td colspan="2" width=10% class="style02">담당</td>
+			<td colspan="2" width=10% class="style02">과장</td>
+			<td colspan="2" width=10% class="style02">부장</td>
+			<td colspan="2" width=10% class="style02">이사</td>
 		  </tr>
 		  <tr height=70px>
-		  	<td colspan="2">1</td>
-			<td colspan="2">1</td>
-			<td colspan="2">1</td>
-			<td colspan="2">1</td>
+		  	<td colspan="2" height=70px></td>
+			<td colspan="2"></td>
+			<td colspan="2"></td>
+			<td colspan="2"></td>
 		  </tr>
 		  <tr>
-			<td align=center colspan="10" rowspan="2" width="55%"></td>
-			<td width=5% rowspan="2">구<br/>매</td>
-			<td colspan="2" width=10%>담당</td>
-			<td colspan="2" width=10%>차장</td>
-			<td colspan="2" width=10%>부장</td>
-			<td colspan="2" width=10%>이사</td>
+			<td width=5% rowspan="2" class="style02">구<br/>매</td>
+			<td colspan="2" width=10% class="style02">담당</td>
+			<td colspan="2" width=10% class="style02">차장</td>
+			<td colspan="2" width=10% class="style02">부장</td>
+			<td colspan="2" width=10% class="style02">이사</td>
 		  </tr>
 		  <tr height=70px>
-		  	<td colspan="2">1</td>
-			<td colspan="2">1</td>
-			<td colspan="2">1</td>
-			<td colspan="2">1</td>
-		  </tr>
-		  		  <tr>
-			<td align=center colspan="10" rowspan="2" width="55%"></td>
-			<td width=5% rowspan="2">생<br/>산</td>
-			<td colspan="2" width=10%>담당</td>
-			<td colspan="2" width=10%>과장</td>
-			<td colspan="2" width=10%>부장</td>
-			<td colspan="2" width=10%>이사</td>
-		  </tr>
-		  <tr height=70px>
-		  	<td colspan="2">1</td>
-			<td colspan="2">1</td>
-			<td colspan="2">1</td>
-			<td colspan="2">1</td>
+		  	<td colspan="2" height=70px></td>
+			<td colspan="2"></td>
+			<td colspan="2"></td>
+			<td colspan="2"></td>
 		  </tr>
 		  <tr>
-			<td colspan="4">SBM-영업-P-701-05</td>
-		    <td colspan=12>㈜에스비엠</td>
-			<td colspan=3>A4(210 X297mm)</td>
+			<td width=5% rowspan="2" class="style02">생<br/>산</td>
+			<td colspan="2" width=10% class="style02">담당</td>
+			<td colspan="2" width=10% class="style02">과장</td>
+			<td colspan="2" width=10% class="style02">부장</td>
+			<td colspan="2" width=10% class="style02">이사</td>
 		  </tr>
-		  </tbody>
-	</table>
+		  <tr>
+		  	<td colspan="2" height=70px></td>
+			<td colspan="2"></td>
+			<td colspan="2"></td>
+			<td colspan="2"></td>
+		  </tr>
+		  </table>
+		<table border="0" cellpadding="0" cellspacing="0" id="sheet0" style="width: 210mm;">
+			  <tbody>
+			  <tr style="border:0px;">
+				<td width=20% class="style00">SBM-영업-P-701-05</td>
+			    <td width=15% class="style00">㈜에스비엠</td>
+				<td style="text-align:right;font-weight:bold;" >A4(210 X297mm)</td>
+			  </tr>
+			  </tbody>
+		</table>
+	
   </body>
 </html>
