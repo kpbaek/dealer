@@ -15,6 +15,8 @@
 	  .inlineStr { text-align:left }
 	  .n { text-align:right }
 	  .s { text-align:left }
+	  td.style02 { vertical-align:middle; text-align:center; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:none #000000; border-right:1px solid #000000 !important; font-weight:bold; color:#000000; font-family:'굴림'; font-size:10pt; background-color:white }
+	  td.style03 { vertical-align:middle; text-align:center; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; font-weight:bold; color:#000000; font-family:'굴림'; font-size:10pt; background-color:white }
 	  td.style0 { vertical-align:middle; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; color:#000000; font-family:'돋움'; font-size:11pt; background-color:white }
 	  td.style1 { vertical-align:middle; border-bottom:none #000000; border-top:3px solid #000000 !important; border-left:3px solid #000000 !important; border-right:none #000000; color:#000000; font-family:'굴림'; font-size:11pt; background-color:white }
 	  td.style2 { vertical-align:middle; border-bottom:none #000000; border-top:3px solid #000000 !important; border-left:none #000000; border-right:none #000000; color:#000000; font-family:'굴림'; font-size:12pt; background-color:white }
@@ -93,40 +95,7 @@
 	  table.sheet0 col.col10 { width:72.52222139pt }
 	  table.sheet0 col.col11 { width:71.84444362pt }
 	  table.sheet0 tr { height:15pt }
-	  table.sheet0 tr.row0 { height:21.95pt }
-	  table.sheet0 tr.row1 { height:21.95pt }
-	  table.sheet0 tr.row2 { height:21.95pt }
-	  table.sheet0 tr.row3 { height:21.75pt }
-	  table.sheet0 tr.row4 { height:10.9pt }
-	  table.sheet0 tr.row5 { height:21.95pt }
-	  table.sheet0 tr.row6 { height:21.95pt }
-	  table.sheet0 tr.row7 { height:21.95pt }
-	  table.sheet0 tr.row8 { height:21.95pt }
-	  table.sheet0 tr.row9 { height:21.95pt }
-	  table.sheet0 tr.row10 { height:21.95pt }
-	  table.sheet0 tr.row11 { height:21.75pt }
-	  table.sheet0 tr.row12 { height:21.95pt }
-	  table.sheet0 tr.row13 { height:21.95pt }
-	  table.sheet0 tr.row14 { height:21.95pt }
-	  table.sheet0 tr.row15 { height:21.95pt }
-	  table.sheet0 tr.row16 { height:21.95pt }
-	  table.sheet0 tr.row17 { height:21.95pt }
-	  table.sheet0 tr.row18 { height:26.25pt }
-	  table.sheet0 tr.row19 { height:26.25pt }
-	  table.sheet0 tr.row20 { height:21.95pt }
-	  table.sheet0 tr.row21 { height:21.95pt }
-	  table.sheet0 tr.row22 { height:21.95pt }
-	  table.sheet0 tr.row23 { height:36pt }
-	  table.sheet0 tr.row24 { height:36pt }
-	  table.sheet0 tr.row25 { height:36pt }
-	  table.sheet0 tr.row26 { height:14.25pt }
-	  table.sheet0 tr.row27 { height:14.25pt }
-	  table.sheet0 tr.row28 { height:36pt }
-	  table.sheet0 tr.row29 { height:36pt }
-	  table.sheet0 tr.row30 { height:36pt }
-	  table.sheet0 tr.row31 { height:21.95pt }
-	  table.sheet0 tr.row32 { height:21.95pt }
-	  table.sheet0 tr.row33 { height:21.95pt }
+
 	</style>
   </head>
 
@@ -135,7 +104,7 @@
 @page { left-margin: 0.35433070866142in; right-margin: 0.31496062992126in; top-margin: 0.39370078740157in; bottom-margin: 0in; }
 body { left-margin: 0.35433070866142in; right-margin: 0.31496062992126in; top-margin: 0.39370078740157in; bottom-margin: 0in; }
 </style>
-	<table border="0" cellpadding="0" cellspacing="0" id="sheet0" class="sheet0">
+	<table border="0" cellpadding="0" cellspacing="0" id="sheet0" class="sheet0" style="width: 210mm;border-top: 3px;">
 		<col class="col0">
 		<col class="col1">
 		<col class="col2">
@@ -165,30 +134,21 @@ body { left-margin: 0.35433070866142in; right-margin: 0.31496062992126in; top-ma
 		  </tr>
 		  <tr class="row1">
 			<td class="column0 style4 null"></td>
-			<td class="column1 style5 s">청구 부서 : 영업팀</td>
-			<td class="column2 style5 null"></td>
+			<td class="column1 style5 s" colspan=2 style="text-decoration:underline;">청구 부서 : 영업팀</td>
 			<td class="column3 style5 null"></td>
 			<td class="column4 style54 s style54" colspan="2" rowspan="2">출고 전표</td>
-			<td class="column6 style57 n style57" colspan="2">41736</td>
+			<td class="column6 style57 n style57" colspan="2" style="text-decoration:underline;">청구 일자 : 2014. 04. 07</td>
 			<td class="column8 style6 null"></td>
-			<td class="column9">&nbsp;</td>
-			<td class="column10">&nbsp;</td>
-			<td class="column11">&nbsp;</td>
 		  </tr>
 		  <tr class="row2">
 			<td class="column0 style4 null"></td>
-			<td class="column1 style58 f style58" colspan="3">청구 번호 : SWD-140321-7</td>
-			<td class="column6 style59 f style59" colspan="2">41736</td>
+			<td class="column1 style58 f style58" colspan="3" style="text-decoration:underline;">청구 번호 : SWD-140321-7</td>
+			<td class="column6 style59 f style59" colspan="2" style="text-decoration:underline;">출고 일자: &nbsp;2014. 04. 07</td>
 			<td class="column8 style6 null"></td>
-			<td class="column9">&nbsp;</td>
-			<td class="column10">&nbsp;</td>
-			<td class="column11">&nbsp;</td>
 		  </tr>
 		  <tr class="row3">
 			<td class="column0 style4 null"></td>
-			<td class="column1 style5 s">Buyer: </td>
-			<td class="column2 style7 s">Ladkani</td>
-			<td class="column3 style5 null"></td>
+			<td class="column1 style5 s" colspan=3 style="text-decoration:underline;">Buyer: Ladkani</td>
 			<td class="column4 style5 null"></td>
 			<td class="column5 style5 null"></td>
 			<td class="column6 style5 null"></td>
@@ -292,19 +252,49 @@ body { left-margin: 0.35433070866142in; right-margin: 0.31496062992126in; top-ma
 			<td class="column10">&nbsp;</td>
 			<td class="column11">&nbsp;</td>
 		  </tr>
+		  <tr class="row8">
+			<td class="column0 style4 null" colspan=3>
+		  	<td colspan=3>&nbsp;</td>
+			<td class="column8 style6 null" colspan=3></td>
+		  </tr>
+		  
 		  <tr class="row11">
-			<td class="column0 style4 null"></td>
-			<td class="column1 style15 null"></td>
-			<td class="column2 style15 null"></td>
-			<td class="column3 style15 null"></td>
-			<td class="column4 style15 null"></td>
-			<td class="column5 style15 null"></td>
-			<td class="column6 style15 null"></td>
-			<td class="column7 style15 null"></td>
-			<td class="column8 style6 null"></td>
-			<td class="column9">&nbsp;</td>
-			<td class="column10">&nbsp;</td>
-			<td class="column11">&nbsp;</td>
+			<td class="column0 style4 null" colspan=1></td>
+		  	<td colspan=3>
+		  		<table border=0>
+		  <tr>
+			<td width=5% rowspan="2" class="style03">의<br/>뢰</td>
+			<td colspan="2" width=70px class="style03">담당</td>
+			<td colspan="2" width=70px class="style03">팀장</td>
+			<td colspan="2" width=70px class="style03">이사</td>
+			<td colspan="2" width=70px class="style03">대표이사</td>
+		  </tr>
+		  <tr height=70px>
+		  	<td colspan="2" height=70px class="style03"></td>
+			<td colspan="2" class="style03"></td>
+			<td colspan="2" class="style03"></td>
+			<td colspan="2" class="style03"></td>
+		  </tr>
+		  <tr >
+			<td colspan=3>
+		  	<td colspan=3>&nbsp;</td>
+			<td colspan=3></td>
+		  </tr>
+		  <tr>
+			<td width=5% rowspan="2" class="style03">생<br/>산</td>
+			<td colspan="2" width=70px class="style03">담당</td>
+			<td colspan="2" width=70px class="style03">과장</td>
+			<td colspan="2" width=70px class="style03">부장</td>
+		  </tr>
+		  <tr height=70px>
+		  	<td colspan="2" height=70px class="style03"></td>
+			<td colspan="2" class="style03"></td>
+			<td colspan="2" class="style03"></td>
+		  </tr>
+		  		</table>
+
+			</td>
+			<td class="column8 style6 null" colspan=5></td>
 		  </tr>
 		  <tr class="row12">
 			<td class="column0 style4 null"></td>
@@ -355,9 +345,8 @@ body { left-margin: 0.35433070866142in; right-margin: 0.31496062992126in; top-ma
 			<td class="column3 style5 null"></td>
 			<td class="column4 style5 null"></td>
 			<td class="column5 style5 null"></td>
-			<td class="column6 style5 null">
-<div style="position: relative;"><img style="position: absolute; z-index: 1; left: 86px; top: 2px; width: 147px; height: 44px;" src="zip://D:\dev\php\web\sbm\sbm.dealer\application\views\test\docs_02.xlsx#xl/media/image1.jpeg" border="0" /></div></td>
-			<td class="column7 style5 null"></td>
+			<td class="column6 style5 null"></td>
+			<td class="column7 style5 null"><img style="width: 147px; height: 44px;" src="/images/common/sbmlogo.jpeg" border="0" /></td>
 			<td class="column8 style6 null"></td>
 			<td class="column9">&nbsp;</td>
 			<td class="column10">&nbsp;</td>
@@ -392,20 +381,12 @@ body { left-margin: 0.35433070866142in; right-margin: 0.31496062992126in; top-ma
 			<td class="column11">&nbsp;</td>
 		  </tr>
 		  <tr class="row18">
-			<td class="column0 style22 s">SBM-공통-P-708-01</td>
-			<td class="column1 style23 null"></td>
-			<td class="column2 style23 null"></td>
+			<td class="column0 style22 s" colspan=3>SBM-공통-P-708-01</td>
 			<td class="column3 style23 null"></td>
 			<td class="column4 style24 s">㈜에스비엠</td>
 			<td class="column5 style23 null"></td>
 			<td class="column6 style23 null">
-<div style="position: relative;"><img style="position: absolute; z-index: 1; left: 86px; top: 0px; width: 147px; height: 0px;" src="zip://D:\dev\php\web\sbm\sbm.dealer\application\views\test\docs_02.xlsx#xl/media/image2.jpeg" border="0" /></div>
-<div style="position: relative;"><img style="position: absolute; z-index: 1; left: 86px; top: 0px; width: 147px; height: 0px;" src="zip://D:\dev\php\web\sbm\sbm.dealer\application\views\test\docs_02.xlsx#xl/media/image2.jpeg" border="0" /></div>
-<div style="position: relative;"><img style="position: absolute; z-index: 1; left: 86px; top: 0px; width: 147px; height: 0px;" src="zip://D:\dev\php\web\sbm\sbm.dealer\application\views\test\docs_02.xlsx#xl/media/image2.jpeg" border="0" /></div>
-<div style="position: relative;"><img style="position: absolute; z-index: 1; left: 86px; top: 0px; width: 147px; height: 0px;" src="zip://D:\dev\php\web\sbm\sbm.dealer\application\views\test\docs_02.xlsx#xl/media/image2.jpeg" border="0" /></div>
-<div style="position: relative;"><img style="position: absolute; z-index: 1; left: 86px; top: 0px; width: 147px; height: 0px;" src="zip://D:\dev\php\web\sbm\sbm.dealer\application\views\test\docs_02.xlsx#xl/media/image2.jpeg" border="0" /></div></td>
-			<td class="column7 style23 null"></td>
-			<td class="column8 style24 s">A4(210 X297mm)</td>
+			<td class="column8 style24 s" colspan=2>A4(210 X297mm)</td>
 			<td class="column9">&nbsp;</td>
 			<td class="column10">&nbsp;</td>
 			<td class="column11">&nbsp;</td>
@@ -444,9 +425,8 @@ body { left-margin: 0.35433070866142in; right-margin: 0.31496062992126in; top-ma
 			<td class="column2 style5 null"></td>
 			<td class="column3 style5 null"></td>
 			<td class="column4 style54 s style54" colspan="2" rowspan="2">인수확인증</td>
-			<td class="column6 style30 null">
-<div style="position: relative;"><img style="position: absolute; z-index: 1; left: 84px; top: 2px; width: 147px; height: 44px;" src="zip://D:\dev\php\web\sbm\sbm.dealer\application\views\test\docs_02.xlsx#xl/media/image1.jpeg" border="0" /></div></td>
-			<td class="column7 style30 null"></td>
+			<td class="column6 style30 null"></td>
+			<td class="column7 style30 null"><img style="width: 147px; height: 44px;" src="/images/common/sbmlogo.jpeg" border="0" /></td>
 			<td class="column8 style31 null"></td>
 			<td class="column9">&nbsp;</td>
 			<td class="column10">&nbsp;</td>
@@ -467,10 +447,7 @@ body { left-margin: 0.35433070866142in; right-margin: 0.31496062992126in; top-ma
 		  <tr class="row23">
 			<td class="column0 style29 null"></td>
 			<td class="column1 style5 null"></td>
-			<td class="column2 style34 s">인수차량번호:</td>
-			<td class="column3 style5 null"></td>
-			<td class="column4 style5 null"></td>
-			<td class="column5 style5 null"></td>
+			<td class="column2 style34 s" colspan=4>인수차량번호:</td>
 			<td class="column6 style5 null"></td>
 			<td class="column7 style5 null"></td>
 			<td class="column8 style31 null"></td>
@@ -481,10 +458,7 @@ body { left-margin: 0.35433070866142in; right-margin: 0.31496062992126in; top-ma
 		  <tr class="row24">
 			<td class="column0 style29 null"></td>
 			<td class="column1 style8 null"></td>
-			<td class="column2 style34 s">인    수     인:</td>
-			<td class="column3 style5 null"></td>
-			<td class="column4 style5 null"></td>
-			<td class="column5 style5 null"></td>
+			<td class="column2 style34 s" colspan=4>인&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;수&nbsp;&nbsp;&nbsp;&nbsp;인:</td>
 			<td class="column6 style5 null"></td>
 			<td class="column7 style5 null"></td>
 			<td class="column8 style31 null"></td>
@@ -495,10 +469,7 @@ body { left-margin: 0.35433070866142in; right-margin: 0.31496062992126in; top-ma
 		  <tr class="row25">
 			<td class="column0 style29 null"></td>
 			<td class="column1 style15 null"></td>
-			<td class="column2 style35 s">인수인연락처:</td>
-			<td class="column3 style15 null"></td>
-			<td class="column4 style15 null"></td>
-			<td class="column5 style15 null"></td>
+			<td class="column2 style35 s" colspan=4>인수인연락처:</td>
 			<td class="column6 style15 null"></td>
 			<td class="column7 style15 null"></td>
 			<td class="column8 style31 null"></td>
@@ -534,15 +505,10 @@ body { left-margin: 0.35433070866142in; right-margin: 0.31496062992126in; top-ma
 			<td class="column10">&nbsp;</td>
 			<td class="column11">&nbsp;</td>
 		  </tr>
-		  <tr class="row28">
+		  <tr class="row25">
 			<td class="column0 style29 null"></td>
-			<td class="column1 style39 s">상기  본인은  ㈜에스비엠의  Banking  Machine</td>
-			<td class="column2 style40 null"></td>
-			<td class="column3 style15 null"></td>
-			<td class="column4 style41 null"></td>
-			<td class="column5 style41 null"></td>
-			<td class="column6 style41 null"></td>
-			<td class="column7 style41 null"></td>
+			<td class="column1 style15 null"></td>
+			<td class="column2 style35 s" colspan=6>상기  본인은  ㈜에스비엠의  Banking  Machine(40) Carton을  인수 하였음을 확인합니다.</td>
 			<td class="column8 style31 null"></td>
 			<td class="column9">&nbsp;</td>
 			<td class="column10">&nbsp;</td>
@@ -550,7 +516,7 @@ body { left-margin: 0.35433070866142in; right-margin: 0.31496062992126in; top-ma
 		  </tr>
 		  <tr class="row29">
 			<td class="column0 style29 null"></td>
-			<td class="column1 style55 f style55" colspan="7">40</td>
+			<td class="column1 style55 f style55" colspan="7"></td>
 			<td class="column8 style31 null"></td>
 			<td class="column9">&nbsp;</td>
 			<td class="column10">&nbsp;</td>
@@ -562,7 +528,7 @@ body { left-margin: 0.35433070866142in; right-margin: 0.31496062992126in; top-ma
 			<td class="column2 style43 f">Ladkani</td>
 			<td class="column3 style5 null"></td>
 			<td class="column4 style5 null"></td>
-			<td class="column5 style56 f style56" colspan="3">2014&amp;quot;년&amp;quot;  04&amp;quot;월&amp;quot;  07&amp;quot;일&amp;quot;</td>
+			<td class="column5 style56 f style56" colspan="3">2014년  04월 07일</td>
 			<td class="column8 style31 null"></td>
 			<td class="column9">&nbsp;</td>
 			<td class="column10">&nbsp;</td>
@@ -572,7 +538,7 @@ body { left-margin: 0.35433070866142in; right-margin: 0.31496062992126in; top-ma
 			<td class="column0 style29 null"></td>
 			<td class="column1 style44 null"></td>
 			<td class="column2 style45 f">SB-9RL</td>
-			<td class="column3 style46 f">40</td>
+			<td class="column3 style46 f">40 대</td>
 			<td class="column4 style5 null"></td>
 			<td class="column5 style5 null"></td>
 			<td class="column6 style5 null"></td>
