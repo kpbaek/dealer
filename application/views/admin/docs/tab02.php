@@ -262,35 +262,35 @@ body { left-margin: 0.35433070866142in; right-margin: 0.31496062992126in; top-ma
 			<td class="column0 style4 null" colspan=1></td>
 		  	<td colspan=3>
 		  		<table border=0>
-		  <tr>
-			<td width=5% rowspan="2" class="style03">의<br/>뢰</td>
-			<td colspan="2" width=70px class="style03">담당</td>
-			<td colspan="2" width=70px class="style03">팀장</td>
-			<td colspan="2" width=70px class="style03">이사</td>
-			<td colspan="2" width=70px class="style03">대표이사</td>
-		  </tr>
-		  <tr height=70px>
-		  	<td colspan="2" height=70px class="style03"></td>
-			<td colspan="2" class="style03"></td>
-			<td colspan="2" class="style03"></td>
-			<td colspan="2" class="style03"></td>
-		  </tr>
-		  <tr >
-			<td colspan=3>
-		  	<td colspan=3>&nbsp;</td>
-			<td colspan=3></td>
-		  </tr>
-		  <tr>
-			<td width=5% rowspan="2" class="style03">생<br/>산</td>
-			<td colspan="2" width=70px class="style03">담당</td>
-			<td colspan="2" width=70px class="style03">과장</td>
-			<td colspan="2" width=70px class="style03">부장</td>
-		  </tr>
-		  <tr height=70px>
-		  	<td colspan="2" height=70px class="style03"></td>
-			<td colspan="2" class="style03"></td>
-			<td colspan="2" class="style03"></td>
-		  </tr>
+				  <tr>
+					<td width=5% rowspan="2" class="style03">의<br/>뢰</td>
+					<td colspan="2" width=70px class="style03">담당</td>
+					<td colspan="2" width=70px class="style03">팀장</td>
+					<td colspan="2" width=70px class="style03">이사</td>
+					<td colspan="2" width=70px class="style03">대표이사</td>
+				  </tr>
+				  <tr height=70px>
+				  	<td colspan="2" height=70px class="style03"></td>
+					<td colspan="2" class="style03"></td>
+					<td colspan="2" class="style03"></td>
+					<td colspan="2" class="style03"></td>
+				  </tr>
+				  <tr >
+					<td colspan=3>
+				  	<td colspan=3>&nbsp;</td>
+					<td colspan=3></td>
+				  </tr>
+				  <tr>
+					<td width=5% rowspan="2" class="style03">생<br/>산</td>
+					<td colspan="2" width=70px class="style03">담당</td>
+					<td colspan="2" width=70px class="style03">과장</td>
+					<td colspan="2" width=70px class="style03">부장</td>
+				  </tr>
+				  <tr height=70px>
+				  	<td colspan="2" height=70px class="style03"></td>
+					<td colspan="2" class="style03"></td>
+					<td colspan="2" class="style03"></td>
+				  </tr>
 		  		</table>
 
 			</td>
