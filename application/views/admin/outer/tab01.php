@@ -18,7 +18,7 @@
 	  td.style0 { vertical-align:middle; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; color:#000000; font-family:'돋움'; font-size:11pt; background-color:white }
 	  td.style1 { vertical-align:middle; text-align:justify; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; color:#000000; font-family:'Arial'; font-size:10pt; background-color:white }
 	  td.style2 { vertical-align:middle; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; color:#000000; font-family:'돋움'; font-size:11pt; background-color:white }
-	  td.style3 { vertical-align:bottom; text-align:center; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; color:#000000; font-family:'Arial'; font-size:18pt; background-color:white }
+	  td.style3 { vertical-align:bottom; text-align:center; border-bottom:4px solid #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; color:#000000; font-family:'Arial'; font-size:18pt; background-color:white }
 	  td.style4 { vertical-align:bottom; text-align:center; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; color:#000000; font-family:'돋움'; font-size:11pt; background-color:white }
 	  td.style5 { vertical-align:middle; text-align:justify; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; color:#FF0000; font-family:'Arial'; font-size:10pt; background-color:white }
 	  td.style6 { vertical-align:middle; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; color:#FF0000; font-family:'돋움'; font-size:11pt; background-color:white }
@@ -62,12 +62,12 @@
 	  td.style44 { vertical-align:middle; text-align:left; padding-left:0px; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; color:#000000; font-family:'Arial'; font-size:10pt; background-color:white }
 	  td.style45 { vertical-align:middle; text-align:justify; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; font-weight:bold; color:#000000; font-family:'Arial'; font-size:10pt; background-color:white }
 	  td.style46 { vertical-align:middle; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; color:#000000; font-family:'Arial'; font-size:10pt; background-color:white }
-	  td.style47 { vertical-align:middle; text-align:left; padding-left:9px; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; font-weight:bold; color:#000000; font-family:'Arial'; font-size:12pt; background-color:white }
+	  td.style47 { vertical-align:middle; text-align:left; padding-left:9px; border-bottom:none #000000; border-top:1px solid #000000; border-left:none #000000; border-right:none #000000; font-weight:bold; color:#000000; font-family:'Arial'; font-size:12pt; background-color:white }
 	  td.style48 { vertical-align:middle; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; font-weight:bold; color:#000000; font-family:'Arial'; font-size:12pt; background-color:white }
 	  td.style49 { vertical-align:middle; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; color:#000000; font-family:'Arial'; font-size:12pt; background-color:white }
 	  td.style50 { vertical-align:middle; text-align:left; padding-left:9px; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; color:#000000; font-family:'Arial'; font-size:9pt; background-color:white }
 	  td.style51 { vertical-align:middle; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; color:#000000; font-family:'Arial'; font-size:9pt; background-color:white }
-	  td.style52 { vertical-align:middle; text-align:center; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; font-weight:bold; color:#000000; font-family:'Arial'; font-size:11pt; background-color:white }
+	  td.style52 { vertical-align:middle; text-align:center; border-bottom:none #000000; border-top:2px solid #000000; border-left:none #000000; border-right:none #000000; font-weight:bold; color:#000000; font-family:'Arial'; font-size:11pt; background-color:white }
 	  td.style53 { vertical-align:middle; text-align:center; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; color:#000000; font-family:'돋움'; font-size:11pt; background-color:white }
 	  td.style54 { vertical-align:middle; text-align:center; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; color:#000000; font-family:'Arial'; font-size:9pt; background-color:white }
 	  td.style55 { vertical-align:middle; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; color:#000000; font-family:'Arial'; font-size:10pt; background-color:white }
@@ -148,7 +148,7 @@
 @page { left-margin: 0.98425196850394in; right-margin: 0.98425196850394in; top-margin: 0.19685039370079in; bottom-margin: 0.039370078740157in; }
 body { left-margin: 0.98425196850394in; right-margin: 0.98425196850394in; top-margin: 0.19685039370079in; bottom-margin: 0.039370078740157in; }
 </style>
-	<table border="0" cellpadding="0" cellspacing="0" id="sheet0" class="sheet0">
+	<table border="1" cellpadding="0" cellspacing="0" id="sheet0" class="sheet0" style="width: 210mm;">
 		<col class="col0">
 		<col class="col1">
 		<col class="col2">
@@ -163,49 +163,27 @@ body { left-margin: 0.98425196850394in; right-margin: 0.98425196850394in; top-ma
 			<td class="column1 style1 null"></td>
 			<td class="column2 style1 null"></td>
 			<td class="column3">&nbsp;</td>
-			<td class="column4">&nbsp;</td>
-			<td class="column5">&nbsp;</td>
-			<td class="column6">&nbsp;</td>
-			<td class="column7">&nbsp;</td>
-		  </tr>
-		  <tr class="row1">
-			<td class="column0 style1 null"></td>
-			<td class="column1 style1 null"></td>
-			<td class="column2 style1 null"></td>
-			<td class="column3">&nbsp;</td>
-			<td class="column4">&nbsp;</td>
-			<td class="column5">&nbsp;</td>
-			<td class="column6">&nbsp;</td>
-			<td class="column7">&nbsp;</td>
-		  </tr>
-		  <tr class="row2">
-			<td class="column0 style1 null"></td>
-			<td class="column1 style1 null"></td>
-			<td class="column2 style1 null"></td>
-			<td class="column3">&nbsp;</td>
-			<td class="column4">&nbsp;</td>
-			<td class="column5">&nbsp;</td>
-			<td class="column6">&nbsp;</td>
-			<td class="column7">&nbsp;</td>
-		  </tr>
-		  <tr class="row3">
-			<td class="column0">&nbsp;</td>
-			<td class="column1">&nbsp;</td>
-			<td class="column2">&nbsp;</td>
-			<td class="column3">&nbsp;</td>
-			<td class="column4">&nbsp;</td>
-			<td class="column5">&nbsp;</td>
-			<td class="column6">&nbsp;</td>
+			<td class="column4" colspan=3>
+		  		<table border=0>
+				  <tr>
+					<td width=5% rowspan="2" class="style12">결<br/>재</td>
+					<td colspan="2" width=70px class="style12">담당</td>
+					<td colspan="2" width=70px class="style12">팀장</td>
+					<td colspan="2" width=70px class="style12">이사</td>
+					<td colspan="2" width=80px class="style12">대표이사</td>
+				  </tr>
+				  <tr height=70px>
+				  	<td colspan="2" height=70px class="style12"></td>
+					<td colspan="2" class="style12"></td>
+					<td colspan="2" class="style12"></td>
+					<td colspan="2" class="style12"></td>
+				  </tr>
+		  		</table>
+			</td>
 			<td class="column7">&nbsp;</td>
 		  </tr>
 		  <tr class="row4">
-			<td class="column0 style3 s">PROFORMA INVOICE</td>
-			<td class="column1 style3 null"></td>
-			<td class="column2 style3 null"></td>
-			<td class="column3 style4 null"></td>
-			<td class="column4 style4 null"></td>
-			<td class="column5 style4 null"></td>
-			<td class="column6 style4 null"></td>
+			<td class="column0 style3 s" colspan=7>PROFORMA INVOICE</td>
 			<td class="column7">&nbsp;</td>
 		  </tr>
 		  <tr class="row5">
@@ -219,7 +197,7 @@ body { left-margin: 0.98425196850394in; right-margin: 0.98425196850394in; top-ma
 			<td class="column7">&nbsp;</td>
 		  </tr>
 		  <tr class="row6">
-			<td class="column0 style62 n style62" colspan="3">41719</td>
+			<td class="column0 style62 n style62" colspan="3">Date: 2014-03-21</td>
 			<td class="column3 style5 null"></td>
 			<td class="column4">&nbsp;</td>
 			<td class="column5 style63 n style63" colspan="2">Our Ref: PI-140321-7</td>
@@ -227,20 +205,13 @@ body { left-margin: 0.98425196850394in; right-margin: 0.98425196850394in; top-ma
 		  </tr>
 		  <tr class="row7">
 			<td class="column0 style7 s">Messrs.</td>
-			<td class="column1 style7 s">: Ladkani Office Solutions</td>
-			<td class="column2 style8 null"></td>
-			<td class="column3">&nbsp;</td>
-			<td class="column4">&nbsp;</td>
+			<td class="column1 style7 s" colspan=4>: Ladkani Office Solutions</td>
 			<td class="column5 style64 null style64" colspan="2"></td>
 			<td class="column7">&nbsp;</td>
 		  </tr>
 		  <tr class="row8">
 			<td class="column0 style8 s">Attn.</td>
-			<td class="column1 style9 s">: Mr. Imad Ladkani</td>
-			<td class="column2 style8 null"></td>
-			<td class="column3 style8 null"></td>
-			<td class="column4">&nbsp;</td>
-			<td class="column5 style10 null"></td>
+			<td class="column1 style9 s" colspan=5>: Mr. Imad Ladkani</td>
 			<td class="column6 style10 null"></td>
 			<td class="column7">&nbsp;</td>
 		  </tr>
@@ -254,12 +225,13 @@ body { left-margin: 0.98425196850394in; right-margin: 0.98425196850394in; top-ma
 			<td class="column6 style10 null"></td>
 			<td class="column7">&nbsp;</td>
 		  </tr>
+		  
 		  <tr class="row10">
 			<td class="column0 style65 s style65" colspan="7">We are pleased to confirm your order for the under-mentioned article(s) as per conditions and details described as follows:</td>
 			<td class="column7">&nbsp;</td>
 		  </tr>
 		  <tr class="row11">
-			<td class="column0 style12 s">Model</td>
+		  	<td class="column0 style12 s" style="border-left:1px solid #000000">Model</td>
 			<td class="column1 style66 s style66" colspan="3">Description</td>
 			<td class="column4 style12 s">Q’ty</td>
 			<td class="column5 style13 s">Unit Price</td>
@@ -268,9 +240,7 @@ body { left-margin: 0.98425196850394in; right-margin: 0.98425196850394in; top-ma
 		  </tr>
 		  <tr class="row12">
 			<td class="column0 style14 s">SB-9</td>
-			<td class="column1 style15 s">Currency Discrimination Counter</td>
-			<td class="column2 style16 null"></td>
-			<td class="column3 style16 null"></td>
+			<td class="column1 style15 s" colspan="3">Currency Discrimination Counter</td>
 			<td class="column4 style17 n">40</td>
 			<td class="column5 style18 n">0</td>
 			<td class="column6 style19 f">0</td>
@@ -278,9 +248,7 @@ body { left-margin: 0.98425196850394in; right-margin: 0.98425196850394in; top-ma
 		  </tr>
 		  <tr class="row13">
 			<td class="column0 style21 null"></td>
-			<td class="column1 style15 s">Counterfeit Detection: MG, MR-Array, IR &amp; UV/SUV </td>
-			<td class="column2 style16 null"></td>
-			<td class="column3 style16 null"></td>
+			<td class="column1 style15 s" colspan="3">Counterfeit Detection: MG, MR-Array, IR &amp; UV/SUV </td>
 			<td class="column4 style17 null"></td>
 			<td class="column5 style22 null"></td>
 			<td class="column6 style23 null"></td>
@@ -288,9 +256,7 @@ body { left-margin: 0.98425196850394in; right-margin: 0.98425196850394in; top-ma
 		  </tr>
 		  <tr class="row14">
 			<td class="column0 style21 null"></td>
-			<td class="column1 style15 s">For LBP/USD/EUR only  /  P-OCR for USD/EUR</td>
-			<td class="column2 style16 null"></td>
-			<td class="column3 style16 null"></td>
+			<td class="column1 style15 s" colspan="3">For LBP/USD/EUR only  /  P-OCR for USD/EUR</td>
 			<td class="column4 style17 null"></td>
 			<td class="column5 style22 null"></td>
 			<td class="column6 style23 s">.</td>
@@ -308,9 +274,7 @@ body { left-margin: 0.98425196850394in; right-margin: 0.98425196850394in; top-ma
 		  </tr>
 		  <tr class="row16">
 			<td class="column0 style14 s">Printer</td>
-			<td class="column1 style24 s">SP-58S</td>
-			<td class="column2 style16 null"></td>
-			<td class="column3 style16 null"></td>
+			<td class="column1 style24 s" colspan="3">SP-58S</td>
 			<td class="column4 style17 n">40</td>
 			<td class="column5 style19 n">0</td>
 			<td class="column6 style19 f">0</td>
@@ -328,9 +292,7 @@ body { left-margin: 0.98425196850394in; right-margin: 0.98425196850394in; top-ma
 		  </tr>
 		  <tr class="row18">
 			<td class="column0 style25 null"></td>
-			<td class="column1 style26 s">Spare Parts</td>
-			<td class="column2 style27 null"></td>
-			<td class="column3 style27 null"></td>
+			<td class="column1 style26 s" colspan="3">Spare Parts</td>
 			<td class="column4 style28 null"></td>
 			<td class="column5 style18 null"></td>
 			<td class="column6 style18 null"></td>
@@ -338,9 +300,7 @@ body { left-margin: 0.98425196850394in; right-margin: 0.98425196850394in; top-ma
 		  </tr>
 		  <tr class="row19">
 			<td class="column0 style25 null"></td>
-			<td class="column1 style30 s">SB-1100  CIS</td>
-			<td class="column2 style27 null"></td>
-			<td class="column3 style27 null"></td>
+			<td class="column1 style30 s" colspan="3">SB-1100  CIS</td>
 			<td class="column4 style28 n">5</td>
 			<td class="column5 style18 n">USD  130.00</td>
 			<td class="column6 style19 f">USD  650.00</td>
@@ -348,9 +308,7 @@ body { left-margin: 0.98425196850394in; right-margin: 0.98425196850394in; top-ma
 		  </tr>
 		  <tr class="row20">
 			<td class="column0 style25 null"></td>
-			<td class="column1 style30 s">SB-9  P_POWER_IO V1.5</td>
-			<td class="column2 style27 null"></td>
-			<td class="column3 style27 null"></td>
+			<td class="column1 style30 s" colspan="3">SB-9  P_POWER_IO V1.5</td>
 			<td class="column4 style28 n">5</td>
 			<td class="column5 style18 n">USD  85.00</td>
 			<td class="column6 style19 f">USD  425.00</td>
@@ -358,9 +316,7 @@ body { left-margin: 0.98425196850394in; right-margin: 0.98425196850394in; top-ma
 		  </tr>
 		  <tr class="row21">
 			<td class="column0 style25 null"></td>
-			<td class="column1 style30 s">SB-9  MAIN V1.3</td>
-			<td class="column2 style27 null"></td>
-			<td class="column3 style27 null"></td>
+			<td class="column1 style30 s" colspan="3">SB-9  MAIN V1.3</td>
 			<td class="column4 style28 n">5</td>
 			<td class="column5 style18 n">USD  220.00</td>
 			<td class="column6 style19 f">USD  1,100.00</td>
@@ -424,76 +380,50 @@ body { left-margin: 0.98425196850394in; right-margin: 0.98425196850394in; top-ma
 			<td class="column7">&nbsp;</td>
 		  </tr>
 		  <tr class="row28">
-			<td class="column0 style39 s">Origin</td>
-			<td class="column1 style11 null"></td>
+			<td class="column0 style39 s" colspan=2>Origin</td>
 			<td class="column2 style40 s">:</td>
-			<td class="column3 style39 s">Republic of Korea</td>
-			<td class="column4">&nbsp;</td>
-			<td class="column5">&nbsp;</td>
-			<td class="column6">&nbsp;</td>
+			<td class="column3 style39 s" colspan=4>Republic of Korea</td>
 			<td class="column7">&nbsp;</td>
 		  </tr>
 		  <tr class="row29">
-			<td class="column0 style39 s">Packing</td>
-			<td class="column1 style11 null"></td>
+			<td class="column0 style39 s" colspan=2>Packing</td>
 			<td class="column2 style40 s">:</td>
-			<td class="column3 style39 s">Export standard carton packing</td>
-			<td class="column4">&nbsp;</td>
-			<td class="column5">&nbsp;</td>
-			<td class="column6">&nbsp;</td>
+			<td class="column3 style39 s" colspan=4>Export standard carton packing</td>
 			<td class="column7">&nbsp;</td>
 		  </tr>
 		  <tr class="row30">
-			<td class="column0 style39 s">Shipment</td>
-			<td class="column1 style11 null"></td>
+			<td class="column0 style39 s" colspan=2>Shipment</td>
 			<td class="column2 style40 s">:</td>
 			<td class="column3 style61 s style61" colspan="3">To be announced</td>
 			<td class="column6">&nbsp;</td>
 			<td class="column7">&nbsp;</td>
 		  </tr>
 		  <tr class="row31">
-			<td class="column0 style39 s">Shipping port</td>
-			<td class="column1 style11 null"></td>
+			<td class="column0 style39 s" colspan=2>Shipping port</td>
 			<td class="column2 style40 s">:</td>
-			<td class="column3 style39 s">Incheon, Korea (Shipped by AIR)</td>
-			<td class="column4">&nbsp;</td>
-			<td class="column5">&nbsp;</td>
-			<td class="column6">&nbsp;</td>
+			<td class="column3 style39 s" colspan=4>Incheon, Korea (Shipped by AIR)</td>
 			<td class="column7">&nbsp;</td>
 		  </tr>
 		  <tr class="row32">
-			<td class="column0 style39 s">Inspection</td>
-			<td class="column1 style11 null"></td>
+			<td class="column0 style39 s" colspan=2>Inspection</td>
 			<td class="column2 style40 s">:</td>
-			<td class="column3 style39 s">Final inspection shall be made at the SBM’s factory</td>
-			<td class="column4">&nbsp;</td>
-			<td class="column5">&nbsp;</td>
-			<td class="column6">&nbsp;</td>
+			<td class="column3 style39 s" colspan=4>Final inspection shall be made at the SBM’s factory</td>
 			<td class="column7">&nbsp;</td>
 		  </tr>
 		  <tr class="row33">
-			<td class="column0 style39 s">Destination</td>
-			<td class="column1 style11 null"></td>
+			<td class="column0 style39 s" colspan=2>Destination</td>
 			<td class="column2 style40 s">:</td>
-			<td class="column3 style39 s">Lebanon</td>
-			<td class="column4">&nbsp;</td>
-			<td class="column5">&nbsp;</td>
-			<td class="column6">&nbsp;</td>
+			<td class="column3 style39 s" colspan=4>Lebanon</td>
 			<td class="column7">&nbsp;</td>
 		  </tr>
 		  <tr class="row34">
-			<td class="column0 style39 s">Payment</td>
-			<td class="column1 style11 null"></td>
+			<td class="column0 style39 s" colspan=2>Payment</td>
 			<td class="column2 style40 s">:</td>
-			<td class="column3 style39 s">T/T in advance (All expenses outside of Korea shall be charged by remitter)</td>
-			<td class="column4">&nbsp;</td>
-			<td class="column5">&nbsp;</td>
-			<td class="column6">&nbsp;</td>
+			<td class="column3 style39 s" colspan=4>T/T in advance (All expenses outside of Korea shall be charged by remitter)</td>
 			<td class="column7">&nbsp;</td>
 		  </tr>
 		  <tr class="row35">
-			<td class="column0 style39 s">Validity</td>
-			<td class="column1 style11 null"></td>
+			<td class="column0 style39 s" colspan=2>Validity</td>
 			<td class="column2 style40 s">:</td>
 			<td class="column3 style42 f">41747</td>
 			<td class="column4 style43 null"></td>
@@ -502,63 +432,44 @@ body { left-margin: 0.98425196850394in; right-margin: 0.98425196850394in; top-ma
 			<td class="column7">&nbsp;</td>
 		  </tr>
 		  <tr class="row36">
-			<td class="column0 style44 s">Bank Information</td>
-			<td class="column1 style1 null"></td>
+			<td class="column0 style44 s" colspan=2>Bank Information</td>
 			<td class="column2 style40 s">:</td>
-			<td class="column3 style60 s">HANABANK, GASAN-DONG BRANCH</td>
-			<td class="column4">&nbsp;</td>
-			<td class="column5">&nbsp;</td>
-			<td class="column6">&nbsp;</td>
+			<td class="column3 style60 s" colspan=4>HANABANK, GASAN-DONG BRANCH</td>
 			<td class="column7">&nbsp;</td>
 		  </tr>
 		  <tr class="row37">
 			<td class="column0">&nbsp;</td>
 			<td class="column1">&nbsp;</td>
 			<td class="column2 style1 null"></td>
-			<td class="column3 style60 s">550-1, GASAN-DONG, GEUMCHEON-GU, SEOUL, KOREA</td>
-			<td class="column4">&nbsp;</td>
-			<td class="column5">&nbsp;</td>
-			<td class="column6">&nbsp;</td>
+			<td class="column3 style60 s" colspan=4>550-1, GASAN-DONG, GEUMCHEON-GU, SEOUL, KOREA</td>
 			<td class="column7">&nbsp;</td>
 		  </tr>
 		  <tr class="row38">
 			<td class="column0">&nbsp;</td>
 			<td class="column1">&nbsp;</td>
 			<td class="column2 style1 null"></td>
-			<td class="column3 style60 s">SWIFT CODE: HNBNKRSE</td>
-			<td class="column4">&nbsp;</td>
-			<td class="column5">&nbsp;</td>
-			<td class="column6">&nbsp;</td>
+			<td class="column3 style60 s" colspan=4>SWIFT CODE: HNBNKRSE</td>
 			<td class="column7">&nbsp;</td>
 		  </tr>
 		  <tr class="row39">
 			<td class="column0">&nbsp;</td>
 			<td class="column1">&nbsp;</td>
 			<td class="column2 style1 null"></td>
-			<td class="column3 style60 s">Account No.: 332-910001-81938</td>
-			<td class="column4">&nbsp;</td>
-			<td class="column5">&nbsp;</td>
-			<td class="column6">&nbsp;</td>
+			<td class="column3 style60 s" colspan=4>Account No.: 332-910001-81938</td>
 			<td class="column7">&nbsp;</td>
 		  </tr>
 		  <tr class="row40">
 			<td class="column0 style1 s">Reference:</td>
 			<td class="column1 style45 null"></td>
 			<td class="column2 style40 s">:</td>
-			<td class="column3 style41 s">If you delay the Ex-works date already agreed with us </td>
-			<td class="column4">&nbsp;</td>
-			<td class="column5">&nbsp;</td>
-			<td class="column6">&nbsp;</td>
+			<td class="column3 style41 s" colspan=4>If you delay the Ex-works date already agreed with us </td>
 			<td class="column7">&nbsp;</td>
 		  </tr>
 		  <tr class="row41">
 			<td class="column0 style1 null"></td>
 			<td class="column1 style59 null"></td>
 			<td class="column2 style59 null"></td>
-			<td class="column3 style41 s">we duly inform that the new date is subject to our production schedule.</td>
-			<td class="column4">&nbsp;</td>
-			<td class="column5">&nbsp;</td>
-			<td class="column6">&nbsp;</td>
+			<td class="column3 style41 s" colspan=4>we duly inform that the new date is subject to our production schedule.</td>
 			<td class="column7">&nbsp;</td>
 		  </tr>
 		  <tr class="row42">
@@ -632,59 +543,29 @@ body { left-margin: 0.98425196850394in; right-margin: 0.98425196850394in; top-ma
 			<td class="column7">&nbsp;</td>
 		  </tr>
 		  <tr class="row49">
-			<td class="column0 style47 s">Arthur Kim</td>
-			<td class="column1 style48 null"></td>
-			<td class="column2 style48 null"></td>
-			<td class="column3 style2 null"></td>
-			<td class="column4 style2 null"></td>
+			<td class="column0 style47 s" colspan=5>Arthur Kim</td>
 			<td class="column5 style2 null"></td>
 			<td class="column6 style2 null"></td>
 			<td class="column7">&nbsp;</td>
 		  </tr>
 		  <tr class="row50">
-			<td class="column0 style50 s">Sales and Marketing Dept. / Senior Manager</td>
-			<td class="column1 style51 null"></td>
-			<td class="column2 style51 null"></td>
-			<td class="column3">&nbsp;</td>
-			<td class="column4">&nbsp;</td>
-			<td class="column5">&nbsp;</td>
-			<td class="column6">&nbsp;</td>
+			<td class="column0 style50 s" colspan=7>Sales and Marketing Dept. / Senior Manager</td>
 			<td class="column7">&nbsp;</td>
 		  </tr>
 		  <tr class="row51">
-			<td class="column0 style52 s">SBM Co., Ltd.</td>
-			<td class="column1 style52 null"></td>
-			<td class="column2 style52 null"></td>
-			<td class="column3 style53 null"></td>
-			<td class="column4 style53 null"></td>
-			<td class="column5 style53 null"></td>
-			<td class="column6 style53 null"></td>
+			<td class="column0 style52 s" colspan=7>SBM Co., Ltd.</td>
 			<td class="column7">&nbsp;</td>
 		  </tr>
 		  <tr class="row52">
-			<td class="column0 style54 s">6F, Hyunwoo Bld, 206, Anyang7-Dong, Manan-Gu, Anyang-City, Gyeonggi-Do, KOREA . 430-817</td>
-			<td class="column1 style54 null"></td>
-			<td class="column2 style54 null"></td>
-			<td class="column3 style53 null"></td>
-			<td class="column4 style53 null"></td>
-			<td class="column5 style53 null"></td>
-			<td class="column6 style53 null"></td>
+			<td class="column0 style54 s" colspan=7>6F, Hyunwoo Bld, 206, Anyang7-Dong, Manan-Gu, Anyang-City, Gyeonggi-Do, KOREA . 430-817</td>
 			<td class="column7">&nbsp;</td>
 		  </tr>
 		  <tr class="row53">
-			<td class="column0 style54 s">Tel: +82-31-429-0789    Fax: +82-31-429-3607</td>
-			<td class="column1 style54 null"></td>
-			<td class="column2 style54 null"></td>
-			<td class="column3 style53 null"></td>
-			<td class="column4 style53 null"></td>
-			<td class="column5 style53 null"></td>
-			<td class="column6 style53 null"></td>
+			<td class="column0 style54 s" colspan=7>Tel: +82-31-429-0789    Fax: +82-31-429-3607</td>
 			<td class="column7">&nbsp;</td>
 		  </tr>
 		  <tr class="row54">
-			<td class="column0 style55 s">SBM-<span style="color:#000000; font-family:'돋움'; font-size:10pt">영업</span><span style="color:#000000; font-family:'Arial'; font-size:10pt">-P-701-02</span></td>
-			<td class="column1 style56 null"></td>
-			<td class="column2 style56 null"></td>
+			<td class="column0 style55 s" colspan=3>SBM-<span style="color:#000000; font-family:'돋움'; font-size:10pt">영업</span><span style="color:#000000; font-family:'Arial'; font-size:10pt">-P-701-02</span></td>
 			<td class="column3 style57 s">㈜에스비엠</td>
 			<td class="column4 style56 null"></td>
 			<td class="column5 style56 null"></td>
