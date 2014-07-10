@@ -289,7 +289,7 @@
 @page { left-margin: 0.15748031496063in; right-margin: 0.15748031496063in; top-margin: 0.35433070866142in; bottom-margin: 0in; }
 body { left-margin: 0.15748031496063in; right-margin: 0.15748031496063in; top-margin: 0.35433070866142in; bottom-margin: 0in; }
 </style>
-	<table border="1" cellpadding="0" cellspacing="0" id="sheet0" class="sheet0">
+	<table border="0" cellpadding="0" cellspacing="0" id="sheet0" class="sheet0" style="width: 210mm;">
 		<col class="col0">
 		<col class="col1">
 		<col class="col2">
@@ -323,62 +323,60 @@ body { left-margin: 0.15748031496063in; right-margin: 0.15748031496063in; top-ma
 		  </tr>
 		  <tr class="row1">
 			<td class="column0 style5 null"></td>
-			<td class="column1 style98 null style98"><img style="width: 147px; height: 44px;" src="/images/common/sbmlogo.jpeg" border="0" /></td>
-			<td class="column2 style125 s style130" colspan="2">부품출고의뢰서</td>
+			<td class="column1 style98 null style98" align=center><img style="width: 75px; height: 25px;" src="/images/common/sbmlogo.jpeg" border="0" /></td>
+			<td class="column2 style125 s style130" colspan="2">부품출고<br>의뢰서</td>
 			<td class="column0 style7 null"></td>
 			<td class="column0 style7 null" colspan=2>
 		  		<table border=1>
 				  <tr>
-					<td width=5% rowspan="2" class="style03">의<br/>뢰</td>
-					<td colspan="2" width=73px class="style03">담당</td>
-					<td colspan="2" width=73px class="style03">팀장</td>
-					<td colspan="2" width=73px class="style03">이사</td>
-					<td colspan="2" width=73px class="style03">대표이사</td>
+					<td width=5% rowspan="2">의<br/>뢰</td>
+					<td colspan="1" width=70px>담당</td>
+					<td colspan="2" width=70px>팀장</td>
+					<td colspan="2" width=70px>이사</td>
+					<td colspan="2" width=70px>대표이사</td>
 				  </tr>
-				  <tr height=70px>
-				  	<td colspan="2" height=70px class="style03"></td>
-					<td colspan="2" class="style03"></td>
-					<td colspan="2" class="style03"></td>
-					<td colspan="2" class="style03"></td>
-				  </tr>
-		  		</table>
-			</td>
-			<td class="column0 style7 null" colspan=2>
-		  		<table border=1>
 				  <tr>
-					<td width=5% rowspan="2" class="style03">품<br/>질</td>
-					<td colspan="2" width=90px class="style03">부장</td>
-				  </tr>
-				  <tr height=70px>
-				  	<td colspan="2" height=70px class="style03"></td>
+				  	<td colspan="1" height=70px></td>
+					<td colspan="2"></td>
+					<td colspan="2"></td>
+					<td colspan="2"></td>
 				  </tr>
 		  		</table>
 			</td>
-			<td class="column0 style7 null"></td>
-			<td colspan=2 class="column0 style7 null">
+			<td colspan=5 class="column0 style7 null">
 				<table border=0>
 				<tr>
-			<td class="column0 style7 null" width=100px>
+			<td class="column0 style7 null" width=120px>
 		  		<table border=1>
 				  <tr>
-					<td width=5% class="style8 s">유무상</td>
+					<td rowspan="2">품<br/>질</td>
+					<td colspan="2" width=70px>부장</td>
 				  </tr>
-				  <tr height=50px>
-				  	<td height=50px class="style8 s"><span style="font-size:24pt;">유상</span></td>
+				  <tr height=70px>
+				  	<td colspan="2" height=70px></td>
+				  </tr>
+		  		</table>
+			</td>
+				<td class="column0 style7 null" width=100px>
+		  		<table border=1>
+				  <tr>
+					<td width=90px class="style8 s">유무상</td>
+				  </tr>
+				  <tr>
+				  	<td height=50px class="style8 s"><span style="font-size:14pt;">유상</span></td>
 				  </tr>
 				  <tr height=20px>
 				  	<td class="style8 s style123"></td>
 				  </tr>
 				  </table>
 			</td>
-			<td class="column0 style7 null"></td>
 			<td class="column0 style7 null" width=100px>
 		  		<table border=1>
 				  <tr>
-					<td width=5% class="style8 s" >우선순위</td>
+					<td width=7% class="style8  style12" >우선순위</td>
 				  </tr>
 				  <tr>
-				  	<td height=70px class="style8 s style123"></td>
+				  	<td height=70px class="style8 style123"></td>
 				  </tr>
 				  </table>
 			</td>
@@ -388,52 +386,6 @@ body { left-margin: 0.15748031496063in; right-margin: 0.15748031496063in; top-ma
 			</td>
 			<td class="column12 style9 null"></td>
 		  </tr>
-<!-- 		  
-		  <tr class="row1">
-			<td class="column0 style5 null"></td>
-			<td class="column1 style98 null style98" rowspan="3"><img style="width: 147px; height: 44px;" src="/images/common/sbmlogo.jpeg" border="0" /></td>
-			<td class="column2 style125 s style130" colspan="2" rowspan="3">부품출고의뢰서</td>
-			<td class="column0 style7 null"></td>
-			<td class="column5 style131 null style131" rowspan="3">
-			</td>
-			<td class="column6 style7 null"></td>
-			<td class="column7 style7 null"></td>
-			<td class="column8  style8 s" colspan="2">유/무상</td>
-			<td class="column10 style7 null"></td>
-			<td class="column11 style8 s">우선순위</td>
-			<td class="column12 style9 null"></td>
-		  </tr>
-		  <tr class="row2">
-			<td class="column0 style5 null"></td>
-			<td class="column4 style6 null"></td>
-			<td class="column6 style134 null style134" rowspan="2"></td>
-			<td class="column7 style135 null style135" rowspan="2"></td>
-			<td class="column8 style8 s" colspan="2" rowspan="2"><span style="font-size:24pt;">유상</span></td>
-			<td class="column10 style10 null"></td>
-			<td class="column11 style121 null style122" rowspan="2"></td>
-			<td class="column12 style9 null"></td>
-		  </tr>
-		  <tr class="row3">
-			<td class="column0 style5 null"></td>
-			<td class="column4 style6 null"></td>
-			<td class="column10 style10 null"></td>
-			<td class="column12 style9 null"></td>
-		  </tr>
-		  <tr class="row4">
-			<td class="column0 style5 null"></td>
-			<td class="column1 style11 null"></td>
-			<td class="column2 style11 null"></td>
-			<td class="column3 style11 null"></td>
-			<td class="column4 style11 null"></td>
-			<td class="column5 style11 null"></td>
-			<td class="column6 style11 null"></td>
-			<td class="column7 style11 null"></td>
-			<td class="column8 style123 null style124" colspan="2"></td>
-			<td class="column10 style11 null"></td>
-			<td class="column11 style12 null"></td>
-			<td class="column12 style13 null"></td>
-		  </tr>
--->		  
 		  <tr class="row5">
 			<td class="column0 style5 null"></td>
 			<td class="column1 style14 null"></td>
@@ -771,8 +723,7 @@ body { left-margin: 0.15748031496063in; right-margin: 0.15748031496063in; top-ma
 		  </tr>
 		  <tr class="row32">
 			<td class="column0 style5 null"></td>
-			<td class="column1 style52 s">출고 가능일정 확인해 주세요.</td>
-			<td class="column2 style50 null"></td>
+			<td class="column1 style52 s" colspan=2>출고 가능일정 확인해 주세요. 감사합니다.</td>
 			<td class="column3 style51 null"></td>
 			<td class="column4 style48 null"></td>
 			<td class="column5 style53 s">720004400B</td>
@@ -786,7 +737,7 @@ body { left-margin: 0.15748031496063in; right-margin: 0.15748031496063in; top-ma
 		  </tr>
 		  <tr class="row33">
 			<td class="column0 style5 null"></td>
-			<td class="column1 style52 s">감사합니다.</td>
+			<td class="column1 style52 s"></td>
 			<td class="column2 style50 null"></td>
 			<td class="column3 style51 null"></td>
 			<td class="column4 style48 null"></td>
@@ -832,26 +783,11 @@ body { left-margin: 0.15748031496063in; right-margin: 0.15748031496063in; top-ma
 			<td class="column5 style60 null"></td>
 			<td class="column6 style60 null"></td>
 			<td class="column7 style60 null"></td>
-			<td class="column8 style61 null"></td>
-			<td class="column9 style61 null"></td>
-			<td class="column10 style61 null"></td>
-			<td class="column11 style61 null"></td>
-			<td class="column12 style9 null"></td>
-		  </tr>
-		  <tr class="row37">
-			<td class="column0">&nbsp;</td>
-			<td class="column1">&nbsp;</td>
-			<td class="column2">&nbsp;</td>
-			<td class="column3">&nbsp;</td>
-			<td class="column4">&nbsp;</td>
-			<td class="column5">&nbsp;</td>
-			<td class="column6 style63 null"></td>
-			<td class="column7 style64 null"></td>
-			<td class="column8 style63 null"></td>
-			<td class="column9 style63 null"></td>
-			<td class="column10 style63 null"></td>
-			<td class="column11 style63 null"></td>
-			<td class="column12 style65 s">1/3</td>
+			<td class="column8 style60 null"></td>
+			<td class="column9 style60 null"></td>
+			<td class="column10 style60 null"></td>
+			<td class="column11 style60 null"></td>
+			<td class="column12 style60 style9 null"></td>
 		  </tr>
 		</tbody>
 	</table>
