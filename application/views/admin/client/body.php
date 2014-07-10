@@ -34,7 +34,7 @@
 
 <ul id="clientTabs" class="shadetabs">
 <li><a href="/admin/client/tab01" rel="#iframe" class="selected">Find a Dealer</a></li>
-<li><a href="/admin/client/tab02" rel="#iframe" class="selected">To be a Dealer</a></li>
+<li><a href="/admin/client/tab02" rel="#iframe">To be a Dealer</a></li>
 </ul>
 
 <div id="clientDiv" style="border:1px solid gray; width:970px; height: 550px; padding: 5px; margin-bottom:1em">
@@ -42,13 +42,11 @@
 
 <script type="text/javascript">
 
-var products=new ddajaxtabs("clientTabs", "clientDiv");
-products.setpersist(false);
-products.setselectedClassTarget("link"); //"link" or "linkparent"
-products.init();
+var client=new ddajaxtabs("clientTabs", "clientDiv");
+client.setpersist(false);
+client.setselectedClassTarget("link"); //"link" or "linkparent"
+client.init();
 </script>
-
-<p><a href="/admin/client?countrytabs=0">Reload page and select 1nd tab using URL parameter</a> | <a href="javascript: countries.expandit(3)">Dynamically select last Tab</a></p>
 
 <hr />
 
