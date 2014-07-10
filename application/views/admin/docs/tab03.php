@@ -289,7 +289,7 @@
 @page { left-margin: 0.15748031496063in; right-margin: 0.15748031496063in; top-margin: 0.35433070866142in; bottom-margin: 0in; }
 body { left-margin: 0.15748031496063in; right-margin: 0.15748031496063in; top-margin: 0.35433070866142in; bottom-margin: 0in; }
 </style>
-	<table border="0" cellpadding="0" cellspacing="0" id="sheet0" class="sheet0">
+	<table border="1" cellpadding="0" cellspacing="0" id="sheet0" class="sheet0">
 		<col class="col0">
 		<col class="col1">
 		<col class="col2">
@@ -320,44 +320,104 @@ body { left-margin: 0.15748031496063in; right-margin: 0.15748031496063in; top-ma
 			<td class="column10 style2 null"></td>
 			<td class="column11 style2 null"></td>
 			<td class="column12 style3 null"></td>
-			<td class="column13">&nbsp;</td>
-			<td class="column14">&nbsp;</td>
 		  </tr>
 		  <tr class="row1">
 			<td class="column0 style5 null"></td>
-			<td class="column1 style98 null style98" rowspan="3">
-<div style="position: relative;"><img style="position: absolute; z-index: 1; left: 6px; top: 19px; width: 93px; height: 37px;" src="zip://D:\dev\php\web\sbm\sbm.dealer\application\views\test\part.xlsx#xl/media/image1.png" border="0" /></div></td>
+			<td class="column1 style98 null style98"><img style="width: 147px; height: 44px;" src="/images/common/sbmlogo.jpeg" border="0" /></td>
+			<td class="column2 style125 s style130" colspan="2">부품출고의뢰서</td>
+			<td class="column0 style7 null"></td>
+			<td class="column0 style7 null" colspan=2>
+		  		<table border=1>
+				  <tr>
+					<td width=5% rowspan="2" class="style03">의<br/>뢰</td>
+					<td colspan="2" width=73px class="style03">담당</td>
+					<td colspan="2" width=73px class="style03">팀장</td>
+					<td colspan="2" width=73px class="style03">이사</td>
+					<td colspan="2" width=73px class="style03">대표이사</td>
+				  </tr>
+				  <tr height=70px>
+				  	<td colspan="2" height=70px class="style03"></td>
+					<td colspan="2" class="style03"></td>
+					<td colspan="2" class="style03"></td>
+					<td colspan="2" class="style03"></td>
+				  </tr>
+		  		</table>
+			</td>
+			<td class="column0 style7 null" colspan=2>
+		  		<table border=1>
+				  <tr>
+					<td width=5% rowspan="2" class="style03">품<br/>질</td>
+					<td colspan="2" width=90px class="style03">부장</td>
+				  </tr>
+				  <tr height=70px>
+				  	<td colspan="2" height=70px class="style03"></td>
+				  </tr>
+		  		</table>
+			</td>
+			<td class="column0 style7 null"></td>
+			<td colspan=2 class="column0 style7 null">
+				<table border=0>
+				<tr>
+			<td class="column0 style7 null" width=100px>
+		  		<table border=1>
+				  <tr>
+					<td width=5% class="style8 s">유무상</td>
+				  </tr>
+				  <tr height=50px>
+				  	<td height=50px class="style8 s"><span style="font-size:24pt;">유상</span></td>
+				  </tr>
+				  <tr height=20px>
+				  	<td class="style8 s style123"></td>
+				  </tr>
+				  </table>
+			</td>
+			<td class="column0 style7 null"></td>
+			<td class="column0 style7 null" width=100px>
+		  		<table border=1>
+				  <tr>
+					<td width=5% class="style8 s" >우선순위</td>
+				  </tr>
+				  <tr>
+				  	<td height=70px class="style8 s style123"></td>
+				  </tr>
+				  </table>
+			</td>
+				
+				</tr>
+				</table>
+			</td>
+			<td class="column12 style9 null"></td>
+		  </tr>
+<!-- 		  
+		  <tr class="row1">
+			<td class="column0 style5 null"></td>
+			<td class="column1 style98 null style98" rowspan="3"><img style="width: 147px; height: 44px;" src="/images/common/sbmlogo.jpeg" border="0" /></td>
 			<td class="column2 style125 s style130" colspan="2" rowspan="3">부품출고의뢰서</td>
-			<td class="column4 style6 null"></td>
-			<td class="column5 style131 null style131" rowspan="3"></td>
+			<td class="column0 style7 null"></td>
+			<td class="column5 style131 null style131" rowspan="3">
+			</td>
 			<td class="column6 style7 null"></td>
 			<td class="column7 style7 null"></td>
-			<td class="column8 style132 s style133" colspan="2">유/무상</td>
+			<td class="column8  style8 s" colspan="2">유/무상</td>
 			<td class="column10 style7 null"></td>
 			<td class="column11 style8 s">우선순위</td>
 			<td class="column12 style9 null"></td>
-			<td class="column13">&nbsp;</td>
-			<td class="column14 style4 s">유상수리</td>
 		  </tr>
 		  <tr class="row2">
 			<td class="column0 style5 null"></td>
 			<td class="column4 style6 null"></td>
 			<td class="column6 style134 null style134" rowspan="2"></td>
 			<td class="column7 style135 null style135" rowspan="2"></td>
-			<td class="column8 style136 s style139" colspan="2" rowspan="2">유상</td>
+			<td class="column8 style8 s" colspan="2" rowspan="2"><span style="font-size:24pt;">유상</span></td>
 			<td class="column10 style10 null"></td>
 			<td class="column11 style121 null style122" rowspan="2"></td>
 			<td class="column12 style9 null"></td>
-			<td class="column13">&nbsp;</td>
-			<td class="column14 style4 s">무상수리</td>
 		  </tr>
 		  <tr class="row3">
 			<td class="column0 style5 null"></td>
 			<td class="column4 style6 null"></td>
 			<td class="column10 style10 null"></td>
 			<td class="column12 style9 null"></td>
-			<td class="column13">&nbsp;</td>
-			<td class="column14 style4 s">무상대체</td>
 		  </tr>
 		  <tr class="row4">
 			<td class="column0 style5 null"></td>
@@ -372,9 +432,8 @@ body { left-margin: 0.15748031496063in; right-margin: 0.15748031496063in; top-ma
 			<td class="column10 style11 null"></td>
 			<td class="column11 style12 null"></td>
 			<td class="column12 style13 null"></td>
-			<td class="column13">&nbsp;</td>
-			<td class="column14 style4 s">유상구매</td>
 		  </tr>
+-->		  
 		  <tr class="row5">
 			<td class="column0 style5 null"></td>
 			<td class="column1 style14 null"></td>
@@ -389,8 +448,6 @@ body { left-margin: 0.15748031496063in; right-margin: 0.15748031496063in; top-ma
 			<td class="column10 style11 null"></td>
 			<td class="column11 style11 null"></td>
 			<td class="column12 style13 null"></td>
-			<td class="column13">&nbsp;</td>
-			<td class="column14">&nbsp;</td>
 		  </tr>
 		  <tr class="row6">
 			<td class="column0 style5 null"></td>
@@ -402,16 +459,12 @@ body { left-margin: 0.15748031496063in; right-margin: 0.15748031496063in; top-ma
 			<td class="column7 style17 s">Q'ty</td>
 			<td class="column8 style111 s style113" colspan="4">Remark</td>
 			<td class="column12 style18 null"></td>
-			<td class="column13">&nbsp;</td>
-			<td class="column14">&nbsp;</td>
 		  </tr>
 		  <tr class="row7">
 			<td class="column0 style5 null"></td>
 			<td class="column4 style15 null"></td>
 			<td class="column5 style114 s style116" colspan="7">SB-1100 부품입니다.</td>
 			<td class="column12 style9 null"></td>
-			<td class="column13 style19 null"></td>
-			<td class="column14">&nbsp;</td>
 		  </tr>
 		  <tr class="row8">
 			<td class="column0 style5 null"></td>
@@ -426,8 +479,6 @@ body { left-margin: 0.15748031496063in; right-margin: 0.15748031496063in; top-ma
 			<td class="column10 style24 null"></td>
 			<td class="column11 style25 null"></td>
 			<td class="column12 style9 null"></td>
-			<td class="column13 style19 null"></td>
-			<td class="column14">&nbsp;</td>
 		  </tr>
 		  <tr class="row9">
 			<td class="column0 style5 null"></td>
@@ -440,8 +491,6 @@ body { left-margin: 0.15748031496063in; right-margin: 0.15748031496063in; top-ma
 			<td class="column10 style24 null"></td>
 			<td class="column11 style25 null"></td>
 			<td class="column12 style18 null"></td>
-			<td class="column13">&nbsp;</td>
-			<td class="column14">&nbsp;</td>
 		  </tr>
 		  <tr class="row10">
 			<td class="column0 style5 null"></td>
@@ -456,8 +505,6 @@ body { left-margin: 0.15748031496063in; right-margin: 0.15748031496063in; top-ma
 			<td class="column10 style24 null"></td>
 			<td class="column11 style25 null"></td>
 			<td class="column12 style18 null"></td>
-			<td class="column13">&nbsp;</td>
-			<td class="column14">&nbsp;</td>
 		  </tr>
 		  <tr class="row11">
 			<td class="column0 style5 null"></td>
@@ -470,8 +517,6 @@ body { left-margin: 0.15748031496063in; right-margin: 0.15748031496063in; top-ma
 			<td class="column10 style24 null"></td>
 			<td class="column11 style25 null"></td>
 			<td class="column12 style18 null"></td>
-			<td class="column13">&nbsp;</td>
-			<td class="column14">&nbsp;</td>
 		  </tr>
 		  <tr class="row12">
 			<td class="column0 style5 null"></td>
@@ -486,8 +531,6 @@ body { left-margin: 0.15748031496063in; right-margin: 0.15748031496063in; top-ma
 			<td class="column10 style24 null"></td>
 			<td class="column11 style25 null"></td>
 			<td class="column12 style18 null"></td>
-			<td class="column13">&nbsp;</td>
-			<td class="column14">&nbsp;</td>
 		  </tr>
 		  <tr class="row13">
 			<td class="column0 style5 null"></td>
@@ -500,8 +543,6 @@ body { left-margin: 0.15748031496063in; right-margin: 0.15748031496063in; top-ma
 			<td class="column10 style24 null"></td>
 			<td class="column11 style25 null"></td>
 			<td class="column12 style9 null"></td>
-			<td class="column13">&nbsp;</td>
-			<td class="column14">&nbsp;</td>
 		  </tr>
 		  <tr class="row14">
 			<td class="column0 style5 null"></td>
@@ -516,8 +557,6 @@ body { left-margin: 0.15748031496063in; right-margin: 0.15748031496063in; top-ma
 			<td class="column10 style24 null"></td>
 			<td class="column11 style25 null"></td>
 			<td class="column12 style18 null"></td>
-			<td class="column13">&nbsp;</td>
-			<td class="column14">&nbsp;</td>
 		  </tr>
 		  <tr class="row15">
 			<td class="column0 style5 null"></td>
@@ -530,8 +569,6 @@ body { left-margin: 0.15748031496063in; right-margin: 0.15748031496063in; top-ma
 			<td class="column10 style24 null"></td>
 			<td class="column11 style25 null"></td>
 			<td class="column12 style18 null"></td>
-			<td class="column13">&nbsp;</td>
-			<td class="column14">&nbsp;</td>
 		  </tr>
 		  <tr class="row16">
 			<td class="column0 style5 null"></td>
@@ -546,8 +583,6 @@ body { left-margin: 0.15748031496063in; right-margin: 0.15748031496063in; top-ma
 			<td class="column10 style24 null"></td>
 			<td class="column11 style25 null"></td>
 			<td class="column12 style18 null"></td>
-			<td class="column13">&nbsp;</td>
-			<td class="column14">&nbsp;</td>
 		  </tr>
 		  <tr class="row17">
 			<td class="column0 style5 null"></td>
@@ -560,8 +595,6 @@ body { left-margin: 0.15748031496063in; right-margin: 0.15748031496063in; top-ma
 			<td class="column10 style24 null"></td>
 			<td class="column11 style25 null"></td>
 			<td class="column12 style18 null"></td>
-			<td class="column13">&nbsp;</td>
-			<td class="column14">&nbsp;</td>
 		  </tr>
 		  <tr class="row18">
 			<td class="column0 style5 null"></td>
@@ -576,8 +609,6 @@ body { left-margin: 0.15748031496063in; right-margin: 0.15748031496063in; top-ma
 			<td class="column10 style24 null"></td>
 			<td class="column11 style25 null"></td>
 			<td class="column12 style18 null"></td>
-			<td class="column13">&nbsp;</td>
-			<td class="column14">&nbsp;</td>
 		  </tr>
 		  <tr class="row19">
 			<td class="column0 style5 null"></td>
@@ -590,8 +621,6 @@ body { left-margin: 0.15748031496063in; right-margin: 0.15748031496063in; top-ma
 			<td class="column10 style24 null"></td>
 			<td class="column11 style25 null"></td>
 			<td class="column12 style18 null"></td>
-			<td class="column13">&nbsp;</td>
-			<td class="column14">&nbsp;</td>
 		  </tr>
 		  <tr class="row20">
 			<td class="column0 style5 null"></td>
@@ -603,16 +632,12 @@ body { left-margin: 0.15748031496063in; right-margin: 0.15748031496063in; top-ma
 			<td class="column7 style22 n">5</td>
 			<td class="column8 style118 s style120" colspan="4">CF OPTION (W/ UV)-2RCV Sensors</td>
 			<td class="column12 style18 null"></td>
-			<td class="column13">&nbsp;</td>
-			<td class="column14">&nbsp;</td>
 		  </tr>
 		  <tr class="row21">
 			<td class="column0 style5 null"></td>
 			<td class="column4 style15 null"></td>
 			<td class="column5 style117 s style116" colspan="7">SB-7 <span style="font-weight:bold; color:#000000; font-family:'돋움'; font-size:10pt">부품입니다</span><span style="font-weight:bold; color:#000000; font-family:'Arial'; font-size:10pt">.</span></td>
 			<td class="column12 style18 null"></td>
-			<td class="column13">&nbsp;</td>
-			<td class="column14">&nbsp;</td>
 		  </tr>
 		  <tr class="row22">
 			<td class="column0 style5 null"></td>
@@ -627,8 +652,6 @@ body { left-margin: 0.15748031496063in; right-margin: 0.15748031496063in; top-ma
 			<td class="column10 style24 null"></td>
 			<td class="column11 style25 null"></td>
 			<td class="column12 style18 null"></td>
-			<td class="column13">&nbsp;</td>
-			<td class="column14">&nbsp;</td>
 		  </tr>
 		  <tr class="row23">
 			<td class="column0 style5 null"></td>
@@ -641,8 +664,6 @@ body { left-margin: 0.15748031496063in; right-margin: 0.15748031496063in; top-ma
 			<td class="column10 style24 null"></td>
 			<td class="column11 style25 null"></td>
 			<td class="column12 style18 null"></td>
-			<td class="column13">&nbsp;</td>
-			<td class="column14">&nbsp;</td>
 		  </tr>
 		  <tr class="row24">
 			<td class="column0 style5 null"></td>
@@ -658,16 +679,12 @@ body { left-margin: 0.15748031496063in; right-margin: 0.15748031496063in; top-ma
 			<td class="column10 style24 null"></td>
 			<td class="column11 style25 null"></td>
 			<td class="column12 style18 null"></td>
-			<td class="column13">&nbsp;</td>
-			<td class="column14">&nbsp;</td>
 		  </tr>
 		  <tr class="row25">
 			<td class="column0 style5 null"></td>
 			<td class="column4 style15 null"></td>
 			<td class="column5 style117 s style116" colspan="7">SB-9 <span style="font-weight:bold; color:#000000; font-family:'돋움'; font-size:10pt">부품입니다</span><span style="font-weight:bold; color:#000000; font-family:'Arial'; font-size:10pt">.</span></td>
 			<td class="column12 style18 null"></td>
-			<td class="column13">&nbsp;</td>
-			<td class="column14">&nbsp;</td>
 		  </tr>
 		  <tr class="row26">
 			<td class="column0 style5 null"></td>
@@ -683,8 +700,6 @@ body { left-margin: 0.15748031496063in; right-margin: 0.15748031496063in; top-ma
 			<td class="column10 style24 null"></td>
 			<td class="column11 style25 null"></td>
 			<td class="column12 style37 null"></td>
-			<td class="column13 style19 null"></td>
-			<td class="column14">&nbsp;</td>
 		  </tr>
 		  <tr class="row27">
 			<td class="column0 style5 null"></td>
@@ -697,8 +712,6 @@ body { left-margin: 0.15748031496063in; right-margin: 0.15748031496063in; top-ma
 			<td class="column10 style24 null"></td>
 			<td class="column11 style25 null"></td>
 			<td class="column12 style40 null"></td>
-			<td class="column13 style19 null"></td>
-			<td class="column14">&nbsp;</td>
 		  </tr>
 		  <tr class="row28">
 			<td class="column0 style5 null"></td>
@@ -713,8 +726,6 @@ body { left-margin: 0.15748031496063in; right-margin: 0.15748031496063in; top-ma
 			<td class="column10 style24 null"></td>
 			<td class="column11 style25 null"></td>
 			<td class="column12 style18 null"></td>
-			<td class="column13 style19 null"></td>
-			<td class="column14">&nbsp;</td>
 		  </tr>
 		  <tr class="row29">
 			<td class="column0 style5 null"></td>
@@ -727,8 +738,6 @@ body { left-margin: 0.15748031496063in; right-margin: 0.15748031496063in; top-ma
 			<td class="column10 style43 null"></td>
 			<td class="column11 style44 null"></td>
 			<td class="column12 style18 null"></td>
-			<td class="column13 style19 null"></td>
-			<td class="column14">&nbsp;</td>
 		  </tr>
 		  <tr class="row30">
 			<td class="column0 style5 null"></td>
@@ -744,8 +753,6 @@ body { left-margin: 0.15748031496063in; right-margin: 0.15748031496063in; top-ma
 			<td class="column10 style43 null"></td>
 			<td class="column11 style44 null"></td>
 			<td class="column12 style9 null"></td>
-			<td class="column13 style19 null"></td>
-			<td class="column14">&nbsp;</td>
 		  </tr>
 		  <tr class="row31">
 			<td class="column0 style5 null"></td>
@@ -761,8 +768,6 @@ body { left-margin: 0.15748031496063in; right-margin: 0.15748031496063in; top-ma
 			<td class="column10 style43 null"></td>
 			<td class="column11 style44 null"></td>
 			<td class="column12 style9 null"></td>
-			<td class="column13 style19 null"></td>
-			<td class="column14">&nbsp;</td>
 		  </tr>
 		  <tr class="row32">
 			<td class="column0 style5 null"></td>
@@ -778,8 +783,6 @@ body { left-margin: 0.15748031496063in; right-margin: 0.15748031496063in; top-ma
 			<td class="column10 style43 null"></td>
 			<td class="column11 style44 null"></td>
 			<td class="column12 style9 null"></td>
-			<td class="column13 style19 null"></td>
-			<td class="column14">&nbsp;</td>
 		  </tr>
 		  <tr class="row33">
 			<td class="column0 style5 null"></td>
@@ -795,8 +798,6 @@ body { left-margin: 0.15748031496063in; right-margin: 0.15748031496063in; top-ma
 			<td class="column10 style43 null"></td>
 			<td class="column11 style44 null"></td>
 			<td class="column12 style9 null"></td>
-			<td class="column13 style19 null"></td>
-			<td class="column14">&nbsp;</td>
 		  </tr>
 		  <tr class="row34">
 			<td class="column0 style5 null"></td>
@@ -809,8 +810,6 @@ body { left-margin: 0.15748031496063in; right-margin: 0.15748031496063in; top-ma
 			<td class="column7 style54 n">6</td>
 			<td class="column8 style95 null style97" colspan="4"></td>
 			<td class="column12 style9 null"></td>
-			<td class="column13 style55 null"></td>
-			<td class="column14">&nbsp;</td>
 		  </tr>
 		  <tr class="row35">
 			<td class="column0 style5 null"></td>
@@ -823,8 +822,6 @@ body { left-margin: 0.15748031496063in; right-margin: 0.15748031496063in; top-ma
 			<td class="column7 style36 n">4</td>
 			<td class="column8 style95 null style97" colspan="4"></td>
 			<td class="column12 style9 null"></td>
-			<td class="column13 style19 null"></td>
-			<td class="column14">&nbsp;</td>
 		  </tr>
 		  <tr class="row36">
 			<td class="column0 style59 null"></td>
@@ -840,8 +837,6 @@ body { left-margin: 0.15748031496063in; right-margin: 0.15748031496063in; top-ma
 			<td class="column10 style61 null"></td>
 			<td class="column11 style61 null"></td>
 			<td class="column12 style9 null"></td>
-			<td class="column13">&nbsp;</td>
-			<td class="column14">&nbsp;</td>
 		  </tr>
 		  <tr class="row37">
 			<td class="column0">&nbsp;</td>
@@ -857,1235 +852,6 @@ body { left-margin: 0.15748031496063in; right-margin: 0.15748031496063in; top-ma
 			<td class="column10 style63 null"></td>
 			<td class="column11 style63 null"></td>
 			<td class="column12 style65 s">1/3</td>
-			<td class="column13">&nbsp;</td>
-			<td class="column14">&nbsp;</td>
-		  </tr>
-		  <tr class="row38">
-			<td class="column0 style66 null"></td>
-			<td class="column1 style67 null"></td>
-			<td class="column2 style67 null"></td>
-			<td class="column3 style67 null"></td>
-			<td class="column4 style67 null"></td>
-			<td class="column5 style67 null"></td>
-			<td class="column6 style63 null"></td>
-			<td class="column7 style64 null"></td>
-			<td class="column8 style68 null"></td>
-			<td class="column9 style68 null"></td>
-			<td class="column10 style68 null"></td>
-			<td class="column11 style68 null"></td>
-			<td class="column12 style69 null"></td>
-			<td class="column13">&nbsp;</td>
-			<td class="column14">&nbsp;</td>
-		  </tr>
-		  <tr class="row39">
-			<td class="column0 style5 null"></td>
-			<td class="column1 style101 s style101" rowspan="2">&nbsp;● PI No.</td>
-			<td class="column2 style110 n style110" colspan="2" rowspan="2">PI-131224-1</td>
-			<td class="column4 style15 null"></td>
-			<td class="column5 style16 s">CODE</td>
-			<td class="column6 style17 s">NAME</td>
-			<td class="column7 style17 s">Q'ty</td>
-			<td class="column8 style111 s style113" colspan="4">Remark</td>
-			<td class="column12 style18 null"></td>
-			<td class="column13">&nbsp;</td>
-			<td class="column14">&nbsp;</td>
-		  </tr>
-		  <tr class="row40">
-			<td class="column0 style5 null"></td>
-			<td class="column4 style15 null"></td>
-			<td class="column5 style114 s style116" colspan="7">SB-9 부품입니다.</td>
-			<td class="column12 style9 null"></td>
-			<td class="column13 style19 null"></td>
-			<td class="column14">&nbsp;</td>
-		  </tr>
-		  <tr class="row41">
-			<td class="column0 style5 null"></td>
-			<td class="column1 style101 s style101" rowspan="2">&nbsp;● Ref No.</td>
-			<td class="column2 style109 f style109" colspan="2" rowspan="2">SWP-131224-1</td>
-			<td class="column4 style15 null"></td>
-			<td class="column5 style34 s">720817000A</td>
-			<td class="column6 style35 s">COVER_SENSOR_P2</td>
-			<td class="column7 style36 n">2</td>
-			<td class="column8 style23 null"></td>
-			<td class="column9 style24 null"></td>
-			<td class="column10 style24 null"></td>
-			<td class="column11 style25 null"></td>
-			<td class="column12 style9 null"></td>
-			<td class="column13 style19 null"></td>
-			<td class="column14">&nbsp;</td>
-		  </tr>
-		  <tr class="row42">
-			<td class="column0 style5 null"></td>
-			<td class="column4 style15 null"></td>
-			<td class="column5 style34 s">740508400A</td>
-			<td class="column6 style35 s">CAP_STACKER_SENSOR</td>
-			<td class="column7 style36 n">3</td>
-			<td class="column8 style23 null"></td>
-			<td class="column9 style24 null"></td>
-			<td class="column10 style24 null"></td>
-			<td class="column11 style25 null"></td>
-			<td class="column12 style18 null"></td>
-			<td class="column13">&nbsp;</td>
-			<td class="column14">&nbsp;</td>
-		  </tr>
-		  <tr class="row43">
-			<td class="column0 style5 null"></td>
-			<td class="column1 style101 s style101" rowspan="2">&nbsp;● SB-1100</td>
-			<td class="column2 style108 s style108" colspan="2" rowspan="2">O</td>
-			<td class="column4 style15 null"></td>
-			<td class="column5 style34 s">720511200A</td>
-			<td class="column6 style70 s">COVER_DOOR_TOP_UPPER<br />
-Color (Grey)</td>
-			<td class="column7 style36 n">4</td>
-			<td class="column8 style23 null"></td>
-			<td class="column9 style24 null"></td>
-			<td class="column10 style24 null"></td>
-			<td class="column11 style25 null"></td>
-			<td class="column12 style18 null"></td>
-			<td class="column13">&nbsp;</td>
-			<td class="column14">&nbsp;</td>
-		  </tr>
-		  <tr class="row44">
-			<td class="column0 style5 null"></td>
-			<td class="column4 style15 null"></td>
-			<td class="column5 style53 s">720511700B</td>
-			<td class="column6 style70 s">COVER_DOOR_TOP_LOWER<br />
-Color (Grey)</td>
-			<td class="column7 style36 n">4</td>
-			<td class="column8 style23 null"></td>
-			<td class="column9 style24 null"></td>
-			<td class="column10 style24 null"></td>
-			<td class="column11 style25 null"></td>
-			<td class="column12 style18 null"></td>
-			<td class="column13">&nbsp;</td>
-			<td class="column14">&nbsp;</td>
-		  </tr>
-		  <tr class="row45">
-			<td class="column0 style5 null"></td>
-			<td class="column1 style101 s style101" rowspan="2">&nbsp;● SB-9</td>
-			<td class="column2 style108 s style108" colspan="2" rowspan="2">O</td>
-			<td class="column4 style15 null"></td>
-			<td class="column5 style34 s">720511000A</td>
-			<td class="column6 style35 s">COVER_LEFT<br />
-Color (White)</td>
-			<td class="column7 style36 n">3</td>
-			<td class="column8 style23 null"></td>
-			<td class="column9 style24 null"></td>
-			<td class="column10 style24 null"></td>
-			<td class="column11 style25 null"></td>
-			<td class="column12 style18 null"></td>
-			<td class="column13">&nbsp;</td>
-			<td class="column14">&nbsp;</td>
-		  </tr>
-		  <tr class="row46">
-			<td class="column0 style5 null"></td>
-			<td class="column4 style15 null"></td>
-			<td class="column5 style34 s">720511100A</td>
-			<td class="column6 style35 s">COVER_RIGHT<br />
-Color (White)</td>
-			<td class="column7 style36 n">3</td>
-			<td class="column8 style23 null"></td>
-			<td class="column9 style24 null"></td>
-			<td class="column10 style24 null"></td>
-			<td class="column11 style25 null"></td>
-			<td class="column12 style9 null"></td>
-			<td class="column13">&nbsp;</td>
-			<td class="column14">&nbsp;</td>
-		  </tr>
-		  <tr class="row47">
-			<td class="column0 style5 null"></td>
-			<td class="column1 style101 s style101" rowspan="2">&nbsp;● SB-7</td>
-			<td class="column2 style108 s style108" colspan="2" rowspan="2">O</td>
-			<td class="column4 style15 null"></td>
-			<td class="column5 style34 s">720510100A</td>
-			<td class="column6 style41 s">COVER_OP_PANEL<br />
-Color (Grey)</td>
-			<td class="column7 style53 n">2</td>
-			<td class="column8 style23 null"></td>
-			<td class="column9 style24 null"></td>
-			<td class="column10 style24 null"></td>
-			<td class="column11 style25 null"></td>
-			<td class="column12 style18 null"></td>
-			<td class="column13">&nbsp;</td>
-			<td class="column14">&nbsp;</td>
-		  </tr>
-		  <tr class="row48">
-			<td class="column0 style5 null"></td>
-			<td class="column4 style15 null"></td>
-			<td class="column5 style53 s">720510100B</td>
-			<td class="column6 style41 s">COVER_OP_PANEL_(Rev.B)<br />
-Color (Grey)</td>
-			<td class="column7 style36 n">3</td>
-			<td class="column8 style23 null"></td>
-			<td class="column9 style24 null"></td>
-			<td class="column10 style24 null"></td>
-			<td class="column11 style25 null"></td>
-			<td class="column12 style18 null"></td>
-			<td class="column13">&nbsp;</td>
-			<td class="column14">&nbsp;</td>
-		  </tr>
-		  <tr class="row49">
-			<td class="column0 style5 null"></td>
-			<td class="column1 style101 s style101" rowspan="2">&nbsp;● 바이어</td>
-			<td class="column2 style100 s style100" colspan="2" rowspan="2">Ladkani</td>
-			<td class="column4 style15 null"></td>
-			<td class="column5 style34 s">8805B043XA</td>
-			<td class="column6 style41 s">ELECTRO_FORMING_BADGE</td>
-			<td class="column7 style36 n">3</td>
-			<td class="column8 style23 null"></td>
-			<td class="column9 style24 null"></td>
-			<td class="column10 style24 null"></td>
-			<td class="column11 style25 null"></td>
-			<td class="column12 style18 null"></td>
-			<td class="column13">&nbsp;</td>
-			<td class="column14">&nbsp;</td>
-		  </tr>
-		  <tr class="row50">
-			<td class="column0 style5 null"></td>
-			<td class="column4 style15 null"></td>
-			<td class="column5 style34 s">8805B037XA</td>
-			<td class="column6 style41 s">WINDOW_LCD_P  (Included Tape)<br />
-Select Model Name</td>
-			<td class="column7 style36 n">5</td>
-			<td class="column8 style23 null"></td>
-			<td class="column9 style24 null"></td>
-			<td class="column10 style24 null"></td>
-			<td class="column11 style25 null"></td>
-			<td class="column12 style18 null"></td>
-			<td class="column13">&nbsp;</td>
-			<td class="column14">&nbsp;</td>
-		  </tr>
-		  <tr class="row51">
-			<td class="column0 style5 null"></td>
-			<td class="column1 style106 s style107" rowspan="2">&nbsp;● 국가명</td>
-			<td class="column2 style100 s style100" colspan="2" rowspan="2">Lebanon</td>
-			<td class="column4 style15 null"></td>
-			<td class="column5 style34 s">720510209A</td>
-			<td class="column6 style41 s">LENS_LED</td>
-			<td class="column7 style36 n">5</td>
-			<td class="column8 style23 null"></td>
-			<td class="column9 style24 null"></td>
-			<td class="column10 style24 null"></td>
-			<td class="column11 style25 null"></td>
-			<td class="column12 style18 null"></td>
-			<td class="column13">&nbsp;</td>
-			<td class="column14">&nbsp;</td>
-		  </tr>
-		  <tr class="row52">
-			<td class="column0 style5 null"></td>
-			<td class="column4 style15 null"></td>
-			<td class="column5 style34 s">1A05X2125B</td>
-			<td class="column6 style39 s">BUTTON_FUNCTION_P  (Rev.B)<br />
-Color (Grey)</td>
-			<td class="column7 style36 n">2</td>
-			<td class="column8 style23 null"></td>
-			<td class="column9 style24 null"></td>
-			<td class="column10 style24 null"></td>
-			<td class="column11 style25 null"></td>
-			<td class="column12 style18 null"></td>
-			<td class="column13">&nbsp;</td>
-			<td class="column14">&nbsp;</td>
-		  </tr>
-		  <tr class="row53">
-			<td class="column0 style5 null"></td>
-			<td class="column1 style106 s style107" rowspan="2">&nbsp;● 작성일</td>
-			<td class="column2 style102 n style105" colspan="2" rowspan="2">2013. 12. 30</td>
-			<td class="column4 style15 null"></td>
-			<td class="column5 style34 s">1A05X2126B</td>
-			<td class="column6 style39 s">BUTTON_NUMERIC_P (Rev.B)<br />
-Color (Grey)</td>
-			<td class="column7 style36 n">2</td>
-			<td class="column8 style23 null"></td>
-			<td class="column9 style24 null"></td>
-			<td class="column10 style24 null"></td>
-			<td class="column11 style25 null"></td>
-			<td class="column12 style18 null"></td>
-			<td class="column13">&nbsp;</td>
-			<td class="column14">&nbsp;</td>
-		  </tr>
-		  <tr class="row54">
-			<td class="column0 style5 null"></td>
-			<td class="column4 style15 null"></td>
-			<td class="column5 style34 s">720510602B</td>
-			<td class="column6 style39 s">REJECT_PLATE_(Rev.B)<br />
-Color (Grey)</td>
-			<td class="column7 style36 n">3</td>
-			<td class="column8 style23 null"></td>
-			<td class="column9 style24 null"></td>
-			<td class="column10 style24 null"></td>
-			<td class="column11 style25 null"></td>
-			<td class="column12 style18 null"></td>
-			<td class="column13">&nbsp;</td>
-			<td class="column14">&nbsp;</td>
-		  </tr>
-		  <tr class="row55">
-			<td class="column0 style5 null"></td>
-			<td class="column1 style106 s style107" rowspan="2">&nbsp;● 납기일</td>
-			<td class="column2 style102 null style105" colspan="2" rowspan="2"></td>
-			<td class="column4 style15 null"></td>
-			<td class="column5 style38 s">720510602D</td>
-			<td class="column6 style39 s">REJECT_PLATE (Rev. C)<br />
-Color (Grey)</td>
-			<td class="column7 style71 n">3</td>
-			<td class="column8 style23 null"></td>
-			<td class="column9 style24 null"></td>
-			<td class="column10 style24 null"></td>
-			<td class="column11 style25 null"></td>
-			<td class="column12 style18 null"></td>
-			<td class="column13">&nbsp;</td>
-			<td class="column14">&nbsp;</td>
-		  </tr>
-		  <tr class="row56">
-			<td class="column0 style5 null"></td>
-			<td class="column4 style15 null"></td>
-			<td class="column5 style38 s">8808E075XA</td>
-			<td class="column6 style39 s">REFLECT_SHEET_REJECT (Rev. A)</td>
-			<td class="column7 style71 n">20</td>
-			<td class="column8 style23 null"></td>
-			<td class="column9 style24 null"></td>
-			<td class="column10 style24 null"></td>
-			<td class="column11 style25 null"></td>
-			<td class="column12 style18 null"></td>
-			<td class="column13">&nbsp;</td>
-			<td class="column14">&nbsp;</td>
-		  </tr>
-		  <tr class="row57">
-			<td class="column0 style5 null"></td>
-			<td class="column1 style98 s style99" rowspan="2">&nbsp;● Main Ver./<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Checksum</td>
-			<td class="column2 style100 null style100" colspan="2" rowspan="2"></td>
-			<td class="column4 style15 null"></td>
-			<td class="column5 style38 s">720817400A</td>
-			<td class="column6 style39 s">REJECT_COVER_PINCH<br />
-Color (Grey)</td>
-			<td class="column7 style71 n">10</td>
-			<td class="column8 style23 null"></td>
-			<td class="column9 style24 null"></td>
-			<td class="column10 style24 null"></td>
-			<td class="column11 style25 null"></td>
-			<td class="column12 style18 null"></td>
-			<td class="column13">&nbsp;</td>
-			<td class="column14">&nbsp;</td>
-		  </tr>
-		  <tr class="row58">
-			<td class="column0 style5 null"></td>
-			<td class="column4 style15 null"></td>
-			<td class="column5 style34 s">720510702A</td>
-			<td class="column6 style35 s">LIMIT_REJECT<br />
-Color (Grey)</td>
-			<td class="column7 style36 n">5</td>
-			<td class="column8 style23 null"></td>
-			<td class="column9 style24 null"></td>
-			<td class="column10 style24 null"></td>
-			<td class="column11 style25 null"></td>
-			<td class="column12 style18 null"></td>
-			<td class="column13">&nbsp;</td>
-			<td class="column14">&nbsp;</td>
-		  </tr>
-		  <tr class="row59">
-			<td class="column0 style5 null"></td>
-			<td class="column1 style98 s style99" rowspan="2">&nbsp;● Image Ver./<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Checksum</td>
-			<td class="column2 style100 null style100" colspan="2" rowspan="2"></td>
-			<td class="column4 style15 null"></td>
-			<td class="column5 style38 s">720510702B</td>
-			<td class="column6 style39 s">LIMIT_REJECT (Rev. B)<br />
-Color (Grey)</td>
-			<td class="column7 style36 n">5</td>
-			<td class="column8 style23 null"></td>
-			<td class="column9 style24 null"></td>
-			<td class="column10 style24 null"></td>
-			<td class="column11 style25 null"></td>
-			<td class="column12 style37 null"></td>
-			<td class="column13 style19 null"></td>
-			<td class="column14">&nbsp;</td>
-		  </tr>
-		  <tr class="row60">
-			<td class="column0 style5 null"></td>
-			<td class="column4 style15 null"></td>
-			<td class="column5 style53 s">720817100A</td>
-			<td class="column6 style39 s">REJECT_BAR_P2 (Rev. A)</td>
-			<td class="column7 style36 n">5</td>
-			<td class="column8 style23 null"></td>
-			<td class="column9 style24 null"></td>
-			<td class="column10 style24 null"></td>
-			<td class="column11 style25 null"></td>
-			<td class="column12 style40 null"></td>
-			<td class="column13 style19 null"></td>
-			<td class="column14">&nbsp;</td>
-		  </tr>
-		  <tr class="row61">
-			<td class="column0 style5 null"></td>
-			<td class="column1 style101 s style101" rowspan="2">&nbsp;● 출하일</td>
-			<td class="column2 style102 null style105" colspan="2" rowspan="2"></td>
-			<td class="column4 style15 null"></td>
-			<td class="column5 style38 s">720817100B</td>
-			<td class="column6 style39 s">REJECT_BAR_P2(Rev. B)</td>
-			<td class="column7 style36 n">5</td>
-			<td class="column8 style23 null"></td>
-			<td class="column9 style24 null"></td>
-			<td class="column10 style24 null"></td>
-			<td class="column11 style25 null"></td>
-			<td class="column12 style18 null"></td>
-			<td class="column13 style19 null"></td>
-			<td class="column14">&nbsp;</td>
-		  </tr>
-		  <tr class="row62">
-			<td class="column0 style5 null"></td>
-			<td class="column4 style15 null"></td>
-			<td class="column5 style34 s">720510502B</td>
-			<td class="column6 style39 s">HOUSING_POCKET_(Rev.B)<br />
-Color (Grey)</td>
-			<td class="column7 style36 n">3</td>
-			<td class="column8 style23 null"></td>
-			<td class="column9 style24 null"></td>
-			<td class="column10 style24 null"></td>
-			<td class="column11 style25 null"></td>
-			<td class="column12 style18 null"></td>
-			<td class="column13 style19 null"></td>
-			<td class="column14">&nbsp;</td>
-		  </tr>
-		  <tr class="row63">
-			<td class="column0 style5 null"></td>
-			<td class="column1 style45 s">&nbsp;● 추가내용: </td>
-			<td class="column2 style46 null"></td>
-			<td class="column3 style47 null"></td>
-			<td class="column4 style48 null"></td>
-			<td class="column5 style38 s">720510502C</td>
-			<td class="column6 style39 s">HOUSING_POCKET (Rev. C)<br />
-Color (Grey)</td>
-			<td class="column7 style36 n">3</td>
-			<td class="column8 style72 null"></td>
-			<td class="column9 style73 null"></td>
-			<td class="column10 style73 null"></td>
-			<td class="column11 style74 null"></td>
-			<td class="column12 style9 null"></td>
-			<td class="column13 style19 null"></td>
-			<td class="column14">&nbsp;</td>
-		  </tr>
-		  <tr class="row64">
-			<td class="column0 style5 null"></td>
-			<td class="column1 style49 null"></td>
-			<td class="column2 style50 null"></td>
-			<td class="column3 style51 null"></td>
-			<td class="column4 style48 null"></td>
-			<td class="column5 style34 s">720510802A</td>
-			<td class="column6 style35 s">GUIDE_STACKER<br />
-Color (Grey)</td>
-			<td class="column7 style36 n">3</td>
-			<td class="column8 style23 null"></td>
-			<td class="column9 style24 null"></td>
-			<td class="column10 style24 null"></td>
-			<td class="column11 style25 null"></td>
-			<td class="column12 style9 null"></td>
-			<td class="column13 style19 null"></td>
-			<td class="column14">&nbsp;</td>
-		  </tr>
-		  <tr class="row65">
-			<td class="column0 style5 null"></td>
-			<td class="column1 style49 null"></td>
-			<td class="column2 style50 null"></td>
-			<td class="column3 style51 null"></td>
-			<td class="column4 style48 null"></td>
-			<td class="column5 style53 s">720509501A</td>
-			<td class="column6 style41 s">GUIDE_PRESS_ROLLER_P</td>
-			<td class="column7 style36 n">2</td>
-			<td class="column8 style23 null"></td>
-			<td class="column9 style24 null"></td>
-			<td class="column10 style24 null"></td>
-			<td class="column11 style25 null"></td>
-			<td class="column12 style9 null"></td>
-			<td class="column13 style19 null"></td>
-			<td class="column14">&nbsp;</td>
-		  </tr>
-		  <tr class="row66">
-			<td class="column0 style5 null"></td>
-			<td class="column1 style49 null"></td>
-			<td class="column2 style50 null"></td>
-			<td class="column3 style51 null"></td>
-			<td class="column4 style48 null"></td>
-			<td class="column5 style53 s">720509601A</td>
-			<td class="column6 style41 s">GUIDE_TRANSFER_ROLLER_P</td>
-			<td class="column7 style36 n">5</td>
-			<td class="column8 style23 null"></td>
-			<td class="column9 style24 null"></td>
-			<td class="column10 style24 null"></td>
-			<td class="column11 style25 null"></td>
-			<td class="column12 style9 null"></td>
-			<td class="column13 style19 null"></td>
-			<td class="column14">&nbsp;</td>
-		  </tr>
-		  <tr class="row67">
-			<td class="column0 style5 null"></td>
-			<td class="column1 style49 null"></td>
-			<td class="column2 style50 null"></td>
-			<td class="column3 style51 null"></td>
-			<td class="column4 style48 null"></td>
-			<td class="column5 style34 s">720507702B</td>
-			<td class="column6 style41 s">WING_STACKER_P_(Rev.B)</td>
-			<td class="column7 style36 n">2</td>
-			<td class="column8 style23 null"></td>
-			<td class="column9 style24 null"></td>
-			<td class="column10 style24 null"></td>
-			<td class="column11 style25 null"></td>
-			<td class="column12 style9 null"></td>
-			<td class="column13 style19 null"></td>
-			<td class="column14">&nbsp;</td>
-		  </tr>
-		  <tr class="row68">
-			<td class="column0 style5 null"></td>
-			<td class="column1 style49 null"></td>
-			<td class="column2 style50 null"></td>
-			<td class="column3 style51 null"></td>
-			<td class="column4 style48 null"></td>
-			<td class="column5 style38 s">720817902A</td>
-			<td class="column6 style39 s">WING_STACKER (Rev.C)</td>
-			<td class="column7 style36 n">2</td>
-			<td class="column8 style23 null"></td>
-			<td class="column9 style24 null"></td>
-			<td class="column10 style24 null"></td>
-			<td class="column11 style25 null"></td>
-			<td class="column12 style9 null"></td>
-			<td class="column13 style19 null"></td>
-			<td class="column14">&nbsp;</td>
-		  </tr>
-		  <tr class="row69">
-			<td class="column0 style5 null"></td>
-			<td class="column1 style49 null"></td>
-			<td class="column2 style50 null"></td>
-			<td class="column3 style51 null"></td>
-			<td class="column4 style48 null"></td>
-			<td class="column5 style34 s">720509200A</td>
-			<td class="column6 style41 s">COVER_REAR<br />
-Color (White)</td>
-			<td class="column7 style36 n">3</td>
-			<td class="column8 style23 null"></td>
-			<td class="column9 style24 null"></td>
-			<td class="column10 style24 null"></td>
-			<td class="column11 style25 null"></td>
-			<td class="column12 style9 null"></td>
-			<td class="column13 style19 null"></td>
-			<td class="column14">&nbsp;</td>
-		  </tr>
-		  <tr class="row70">
-			<td class="column0 style5 null"></td>
-			<td class="column1 style52 null"></td>
-			<td class="column2 style50 null"></td>
-			<td class="column3 style51 null"></td>
-			<td class="column4 style48 null"></td>
-			<td class="column5 style53 s">7801G029XA</td>
-			<td class="column6 style41 s">GLASS_UV_REFLECT</td>
-			<td class="column7 style36 n">4</td>
-			<td class="column8 style94 null style94" colspan="4"></td>
-			<td class="column12 style9 null"></td>
-			<td class="column13 style19 null"></td>
-			<td class="column14">&nbsp;</td>
-		  </tr>
-		  <tr class="row71">
-			<td class="column0 style5 null"></td>
-			<td class="column1 style52 null"></td>
-			<td class="column2 style50 null"></td>
-			<td class="column3 style51 null"></td>
-			<td class="column4 style48 null"></td>
-			<td class="column5 style34 s">720509001A</td>
-			<td class="column6 style41 s">GUIDE_LOWER(Rev. A)</td>
-			<td class="column7 style36 n">3</td>
-			<td class="column8 style94 null style94" colspan="4"></td>
-			<td class="column12 style9 null"></td>
-			<td class="column13 style19 null"></td>
-			<td class="column14">&nbsp;</td>
-		  </tr>
-		  <tr class="row72">
-			<td class="column0 style5 null"></td>
-			<td class="column1 style49 null"></td>
-			<td class="column2 style50 null"></td>
-			<td class="column3 style51 null"></td>
-			<td class="column4 style48 null"></td>
-			<td class="column5 style38 s">720509001B</td>
-			<td class="column6 style39 s">GUIDE_LOWER(Rev. B)</td>
-			<td class="column7 style71 n">3</td>
-			<td class="column8 style94 null style94" colspan="4"></td>
-			<td class="column12 style9 null"></td>
-			<td class="column13 style55 null"></td>
-			<td class="column14">&nbsp;</td>
-		  </tr>
-		  <tr class="row73">
-			<td class="column0 style75 null"></td>
-			<td class="column1 style56 null"></td>
-			<td class="column2 style57 null"></td>
-			<td class="column3 style58 null"></td>
-			<td class="column4 style76 null"></td>
-			<td class="column5 style34 s">1A05X2152B</td>
-			<td class="column6 style31 s">ASS'Y_SWING_SELECTOR_(Rev.B)</td>
-			<td class="column7 style36 n">2</td>
-			<td class="column8 style95 null style97" colspan="4"></td>
-			<td class="column12 style77 null"></td>
-			<td class="column13 style19 null"></td>
-			<td class="column14">&nbsp;</td>
-		  </tr>
-		  <tr class="row74">
-			<td class="column0 style59 null"></td>
-			<td class="column1 style60 null"></td>
-			<td class="column2 style60 null"></td>
-			<td class="column3 style60 null"></td>
-			<td class="column4 style60 null"></td>
-			<td class="column5 style60 null"></td>
-			<td class="column6 style60 null"></td>
-			<td class="column7 style60 null"></td>
-			<td class="column8 style60 null"></td>
-			<td class="column9 style60 null"></td>
-			<td class="column10 style60 null"></td>
-			<td class="column11 style60 null"></td>
-			<td class="column12 style78 null"></td>
-			<td class="column13">&nbsp;</td>
-			<td class="column14">&nbsp;</td>
-		  </tr>
-		  <tr class="row75">
-			<td class="column0">&nbsp;</td>
-			<td class="column1 style79 null"></td>
-			<td class="column2">&nbsp;</td>
-			<td class="column3">&nbsp;</td>
-			<td class="column4">&nbsp;</td>
-			<td class="column5">&nbsp;</td>
-			<td class="column6">&nbsp;</td>
-			<td class="column7">&nbsp;</td>
-			<td class="column8">&nbsp;</td>
-			<td class="column9">&nbsp;</td>
-			<td class="column10">&nbsp;</td>
-			<td class="column11">&nbsp;</td>
-			<td class="column12 style80 s">2/3</td>
-			<td class="column13">&nbsp;</td>
-			<td class="column14">&nbsp;</td>
-		  </tr>
-		  <tr class="row76">
-			<td class="column0 style66 null"></td>
-			<td class="column1 style67 null"></td>
-			<td class="column2 style67 null"></td>
-			<td class="column3 style67 null"></td>
-			<td class="column4 style67 null"></td>
-			<td class="column5 style67 null"></td>
-			<td class="column6 style63 null"></td>
-			<td class="column7 style64 null"></td>
-			<td class="column8 style68 null"></td>
-			<td class="column9 style68 null"></td>
-			<td class="column10 style68 null"></td>
-			<td class="column11 style68 null"></td>
-			<td class="column12 style69 null"></td>
-			<td class="column13">&nbsp;</td>
-			<td class="column14">&nbsp;</td>
-		  </tr>
-		  <tr class="row77">
-			<td class="column0 style5 null"></td>
-			<td class="column1 style101 s style101" rowspan="2">&nbsp;● PI No.</td>
-			<td class="column2 style110 n style110" colspan="2" rowspan="2">PI-131224-1</td>
-			<td class="column4 style15 null"></td>
-			<td class="column5 style16 s">CODE</td>
-			<td class="column6 style17 s">NAME</td>
-			<td class="column7 style17 s">Q'ty</td>
-			<td class="column8 style111 s style113" colspan="4">Remark</td>
-			<td class="column12 style18 null"></td>
-			<td class="column13">&nbsp;</td>
-			<td class="column14">&nbsp;</td>
-		  </tr>
-		  <tr class="row78">
-			<td class="column0 style5 null"></td>
-			<td class="column4 style15 null"></td>
-			<td class="column5 style114 s style116" colspan="7">SB-9 부품입니다.</td>
-			<td class="column12 style9 null"></td>
-			<td class="column13 style19 null"></td>
-			<td class="column14">&nbsp;</td>
-		  </tr>
-		  <tr class="row79">
-			<td class="column0 style5 null"></td>
-			<td class="column1 style101 s style101" rowspan="2">&nbsp;● Ref No.</td>
-			<td class="column2 style109 f style109" colspan="2" rowspan="2">SWP-131224-1</td>
-			<td class="column4 style15 null"></td>
-			<td class="column5 style38 s">720817601A</td>
-			<td class="column6 style81 s">GUIDE_SELECTOR_P2</td>
-			<td class="column7 style36 n">3</td>
-			<td class="column8 style23 null"></td>
-			<td class="column9 style24 null"></td>
-			<td class="column10 style24 null"></td>
-			<td class="column11 style25 null"></td>
-			<td class="column12 style9 null"></td>
-			<td class="column13 style19 null"></td>
-			<td class="column14">&nbsp;</td>
-		  </tr>
-		  <tr class="row80">
-			<td class="column0 style5 null"></td>
-			<td class="column4 style15 null"></td>
-			<td class="column5 style34 s">720511900A</td>
-			<td class="column6 style82 s">HOPPER_GUIDE_L<br />
-Color (Grey)</td>
-			<td class="column7 style36 n">5</td>
-			<td class="column8 style23 null"></td>
-			<td class="column9 style24 null"></td>
-			<td class="column10 style24 null"></td>
-			<td class="column11 style25 null"></td>
-			<td class="column12 style18 null"></td>
-			<td class="column13">&nbsp;</td>
-			<td class="column14">&nbsp;</td>
-		  </tr>
-		  <tr class="row81">
-			<td class="column0 style5 null"></td>
-			<td class="column1 style101 s style101" rowspan="2">&nbsp;● SB-1100</td>
-			<td class="column2 style108 s style108" colspan="2" rowspan="2">O</td>
-			<td class="column4 style15 null"></td>
-			<td class="column5 style34 s">720512000A</td>
-			<td class="column6 style82 s">HOPPER_GUIDE_R<br />
-Color (Grey)</td>
-			<td class="column7 style36 n">5</td>
-			<td class="column8 style23 null"></td>
-			<td class="column9 style24 null"></td>
-			<td class="column10 style24 null"></td>
-			<td class="column11 style25 null"></td>
-			<td class="column12 style18 null"></td>
-			<td class="column13">&nbsp;</td>
-			<td class="column14">&nbsp;</td>
-		  </tr>
-		  <tr class="row82">
-			<td class="column0 style5 null"></td>
-			<td class="column4 style15 null"></td>
-			<td class="column5 style34 s">1A05X1082A</td>
-			<td class="column6 style82 s">SMPS_P</td>
-			<td class="column7 style36 n">10</td>
-			<td class="column8 style23 null"></td>
-			<td class="column9 style24 null"></td>
-			<td class="column10 style24 null"></td>
-			<td class="column11 style25 null"></td>
-			<td class="column12 style18 null"></td>
-			<td class="column13">&nbsp;</td>
-			<td class="column14">&nbsp;</td>
-		  </tr>
-		  <tr class="row83">
-			<td class="column0 style5 null"></td>
-			<td class="column1 style101 s style101" rowspan="2">&nbsp;● SB-9</td>
-			<td class="column2 style108 s style108" colspan="2" rowspan="2">O</td>
-			<td class="column4 style15 null"></td>
-			<td class="column5 style34 s">8600B002XA</td>
-			<td class="column6 style31 s">SOLENOID (KHA38H06A) (Included SHP-19 Harness)</td>
-			<td class="column7 style36 n">1</td>
-			<td class="column8 style23 null"></td>
-			<td class="column9 style24 null"></td>
-			<td class="column10 style24 null"></td>
-			<td class="column11 style25 null"></td>
-			<td class="column12 style18 null"></td>
-			<td class="column13">&nbsp;</td>
-			<td class="column14">&nbsp;</td>
-		  </tr>
-		  <tr class="row84">
-			<td class="column0 style5 null"></td>
-			<td class="column4 style15 null"></td>
-			<td class="column5 style53 s">1A08X1132A</td>
-			<td class="column6 style31 s">SB-9-AMP V2.0 (SB-9 only)</td>
-			<td class="column7 style36 n">1</td>
-			<td class="column8 style23 null"></td>
-			<td class="column9 style24 null"></td>
-			<td class="column10 style24 null"></td>
-			<td class="column11 style25 null"></td>
-			<td class="column12 style9 null"></td>
-			<td class="column13">&nbsp;</td>
-			<td class="column14">&nbsp;</td>
-		  </tr>
-		  <tr class="row85">
-			<td class="column0 style5 null"></td>
-			<td class="column1 style101 s style101" rowspan="2">&nbsp;● SB-7</td>
-			<td class="column2 style108 s style108" colspan="2" rowspan="2">O</td>
-			<td class="column4 style15 null"></td>
-			<td class="column5 style34 s">1A05X1213Z</td>
-			<td class="column6 style31 s">PBA_ENCODER_1 (Included SHP-27 Harness)</td>
-			<td class="column7 style36 n">2</td>
-			<td class="column8 style23 null"></td>
-			<td class="column9 style24 null"></td>
-			<td class="column10 style24 null"></td>
-			<td class="column11 style25 null"></td>
-			<td class="column12 style18 null"></td>
-			<td class="column13">&nbsp;</td>
-			<td class="column14">&nbsp;</td>
-		  </tr>
-		  <tr class="row86">
-			<td class="column0 style5 null"></td>
-			<td class="column4 style15 null"></td>
-			<td class="column5 style34 s">1A05X1214Z</td>
-			<td class="column6 style31 s">PBA_ENCODER_2  (Included SHP-01 Harness + 2 PBA)</td>
-			<td class="column7 style36 n">2</td>
-			<td class="column8 style23 null"></td>
-			<td class="column9 style24 null"></td>
-			<td class="column10 style24 null"></td>
-			<td class="column11 style25 null"></td>
-			<td class="column12 style18 null"></td>
-			<td class="column13">&nbsp;</td>
-			<td class="column14">&nbsp;</td>
-		  </tr>
-		  <tr class="row87">
-			<td class="column0 style5 null"></td>
-			<td class="column1 style101 s style101" rowspan="2">&nbsp;● 바이어</td>
-			<td class="column2 style100 s style100" colspan="2" rowspan="2">Ladkani</td>
-			<td class="column4 style15 null"></td>
-			<td class="column5 style34 s">1A05X1215Z</td>
-			<td class="column6 style31 s">PBA_HOPPER_1 (Included SHP-22 Harness)</td>
-			<td class="column7 style36 n">2</td>
-			<td class="column8 style23 null"></td>
-			<td class="column9 style24 null"></td>
-			<td class="column10 style24 null"></td>
-			<td class="column11 style25 null"></td>
-			<td class="column12 style18 null"></td>
-			<td class="column13">&nbsp;</td>
-			<td class="column14">&nbsp;</td>
-		  </tr>
-		  <tr class="row88">
-			<td class="column0 style5 null"></td>
-			<td class="column4 style15 null"></td>
-			<td class="column5 style34 s">1A05X1217Z</td>
-			<td class="column6 style31 s">PBA_HOPPER_3  (Included SHP-31 Harness + 1 PBA) 190mm</td>
-			<td class="column7 style36 n">2</td>
-			<td class="column8 style23 null"></td>
-			<td class="column9 style24 null"></td>
-			<td class="column10 style24 null"></td>
-			<td class="column11 style25 null"></td>
-			<td class="column12 style18 null"></td>
-			<td class="column13">&nbsp;</td>
-			<td class="column14">&nbsp;</td>
-		  </tr>
-		  <tr class="row89">
-			<td class="column0 style5 null"></td>
-			<td class="column1 style106 s style107" rowspan="2">&nbsp;● 국가명</td>
-			<td class="column2 style100 s style100" colspan="2" rowspan="2">Lebanon</td>
-			<td class="column4 style15 null"></td>
-			<td class="column5 style53 s">1A07X1098A</td>
-			<td class="column6 style31 s">PBA_IR_TRN_MODULE</td>
-			<td class="column7 style36 n">2</td>
-			<td class="column8 style23 null"></td>
-			<td class="column9 style24 null"></td>
-			<td class="column10 style24 null"></td>
-			<td class="column11 style25 null"></td>
-			<td class="column12 style18 null"></td>
-			<td class="column13">&nbsp;</td>
-			<td class="column14">&nbsp;</td>
-		  </tr>
-		  <tr class="row90">
-			<td class="column0 style5 null"></td>
-			<td class="column4 style15 null"></td>
-			<td class="column5 style53 s">6608H017XA</td>
-			<td class="column6 style31 s">CIS(SB9)</td>
-			<td class="column7 style36 n">2</td>
-			<td class="column8 style23 null"></td>
-			<td class="column9 style24 null"></td>
-			<td class="column10 style24 null"></td>
-			<td class="column11 style25 null"></td>
-			<td class="column12 style18 null"></td>
-			<td class="column13">&nbsp;</td>
-			<td class="column14">&nbsp;</td>
-		  </tr>
-		  <tr class="row91">
-			<td class="column0 style5 null"></td>
-			<td class="column1 style106 s style107" rowspan="2">&nbsp;● 작성일</td>
-			<td class="column2 style102 n style105" colspan="2" rowspan="2">2013. 12. 30</td>
-			<td class="column4 style15 null"></td>
-			<td class="column5 style34 s">1A05X1076A</td>
-			<td class="column6 style31 s">P-SP_TRN V1.3</td>
-			<td class="column7 style36 n">2</td>
-			<td class="column8 style23 null"></td>
-			<td class="column9 style24 null"></td>
-			<td class="column10 style24 null"></td>
-			<td class="column11 style25 null"></td>
-			<td class="column12 style18 null"></td>
-			<td class="column13">&nbsp;</td>
-			<td class="column14">&nbsp;</td>
-		  </tr>
-		  <tr class="row92">
-			<td class="column0 style5 null"></td>
-			<td class="column4 style15 null"></td>
-			<td class="column5 style53 s">1A05X1123A</td>
-			<td class="column6 style31 s">P-SP_TRN V1.4</td>
-			<td class="column7 style36 n">2</td>
-			<td class="column8 style23 null"></td>
-			<td class="column9 style24 null"></td>
-			<td class="column10 style24 null"></td>
-			<td class="column11 style25 null"></td>
-			<td class="column12 style18 null"></td>
-			<td class="column13">&nbsp;</td>
-			<td class="column14">&nbsp;</td>
-		  </tr>
-		  <tr class="row93">
-			<td class="column0 style5 null"></td>
-			<td class="column1 style106 s style107" rowspan="2">&nbsp;● 납기일</td>
-			<td class="column2 style102 null style105" colspan="2" rowspan="2"></td>
-			<td class="column4 style15 null"></td>
-			<td class="column5 style34 s">1A05X1077A</td>
-			<td class="column6 style31 s">P-SP_RCV V1.3 </td>
-			<td class="column7 style36 n">2</td>
-			<td class="column8 style23 null"></td>
-			<td class="column9 style24 null"></td>
-			<td class="column10 style24 null"></td>
-			<td class="column11 style25 null"></td>
-			<td class="column12 style18 null"></td>
-			<td class="column13">&nbsp;</td>
-			<td class="column14">&nbsp;</td>
-		  </tr>
-		  <tr class="row94">
-			<td class="column0 style5 null"></td>
-			<td class="column4 style15 null"></td>
-			<td class="column5 style53 s">1A08X1138A</td>
-			<td class="column6 style31 s">SB9-JP_TRN V1.2</td>
-			<td class="column7 style36 n">2</td>
-			<td class="column8 style23 null"></td>
-			<td class="column9 style24 null"></td>
-			<td class="column10 style24 null"></td>
-			<td class="column11 style25 null"></td>
-			<td class="column12 style18 null"></td>
-			<td class="column13">&nbsp;</td>
-			<td class="column14">&nbsp;</td>
-		  </tr>
-		  <tr class="row95">
-			<td class="column0 style5 null"></td>
-			<td class="column1 style98 s style99" rowspan="2">&nbsp;● Main Ver./<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Checksum</td>
-			<td class="column2 style100 null style100" colspan="2" rowspan="2"></td>
-			<td class="column4 style15 null"></td>
-			<td class="column5 style53 s">1A08X1130A</td>
-			<td class="column6 style31 s">SB9-MAIN V1.3</td>
-			<td class="column7 style36 n">2</td>
-			<td class="column8 style23 null"></td>
-			<td class="column9 style24 null"></td>
-			<td class="column10 style24 null"></td>
-			<td class="column11 style25 null"></td>
-			<td class="column12 style18 null"></td>
-			<td class="column13">&nbsp;</td>
-			<td class="column14">&nbsp;</td>
-		  </tr>
-		  <tr class="row96">
-			<td class="column0 style5 null"></td>
-			<td class="column4 style15 null"></td>
-			<td class="column5 style34 s">1A05X1142A</td>
-			<td class="column6 style31 s">P-OPE V1.7A  (Included Dome sheet)<br />
-For 'White Mono LCD' (R17=10 ohm)</td>
-			<td class="column7 style36 n">5</td>
-			<td class="column8 style23 null"></td>
-			<td class="column9 style24 null"></td>
-			<td class="column10 style24 null"></td>
-			<td class="column11 style25 null"></td>
-			<td class="column12 style18 null"></td>
-			<td class="column13">&nbsp;</td>
-			<td class="column14">&nbsp;</td>
-		  </tr>
-		  <tr class="row97">
-			<td class="column0 style5 null"></td>
-			<td class="column1 style98 s style99" rowspan="2">&nbsp;● Image Ver./<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Checksum</td>
-			<td class="column2 style100 null style100" colspan="2" rowspan="2"></td>
-			<td class="column4 style15 null"></td>
-			<td class="column5 style34 s">1A05X2120A</td>
-			<td class="column6 style31 s">ROLLER_ADF_P  (Included WAVE_WASHER_GUIDE)</td>
-			<td class="column7 style36 n">5</td>
-			<td class="column8 style23 null"></td>
-			<td class="column9 style24 null"></td>
-			<td class="column10 style24 null"></td>
-			<td class="column11 style25 null"></td>
-			<td class="column12 style37 null"></td>
-			<td class="column13 style19 null"></td>
-			<td class="column14">&nbsp;</td>
-		  </tr>
-		  <tr class="row98">
-			<td class="column0 style5 null"></td>
-			<td class="column4 style15 null"></td>
-			<td class="column5 style34 s">1A05X2122A</td>
-			<td class="column6 style31 s">ROLLER_FEED_1_P</td>
-			<td class="column7 style36 n">5</td>
-			<td class="column8 style23 null"></td>
-			<td class="column9 style24 null"></td>
-			<td class="column10 style24 null"></td>
-			<td class="column11 style25 null"></td>
-			<td class="column12 style40 null"></td>
-			<td class="column13 style19 null"></td>
-			<td class="column14">&nbsp;</td>
-		  </tr>
-		  <tr class="row99">
-			<td class="column0 style5 null"></td>
-			<td class="column1 style101 s style101" rowspan="2">&nbsp;● 출하일</td>
-			<td class="column2 style102 null style105" colspan="2" rowspan="2"></td>
-			<td class="column4 style15 null"></td>
-			<td class="column5 style34 s">1A05X2123A</td>
-			<td class="column6 style31 s">ROLLER_FEED_2_P</td>
-			<td class="column7 style36 n">5</td>
-			<td class="column8 style23 null"></td>
-			<td class="column9 style24 null"></td>
-			<td class="column10 style24 null"></td>
-			<td class="column11 style25 null"></td>
-			<td class="column12 style18 null"></td>
-			<td class="column13 style19 null"></td>
-			<td class="column14">&nbsp;</td>
-		  </tr>
-		  <tr class="row100">
-			<td class="column0 style5 null"></td>
-			<td class="column4 style15 null"></td>
-			<td class="column5 style38 s">1A05X2123B</td>
-			<td class="column6 style81 s">ROLLER_FEED_2_P (Rev. B)</td>
-			<td class="column7 style36 n">5</td>
-			<td class="column8 style23 null"></td>
-			<td class="column9 style24 null"></td>
-			<td class="column10 style24 null"></td>
-			<td class="column11 style25 null"></td>
-			<td class="column12 style18 null"></td>
-			<td class="column13 style19 null"></td>
-			<td class="column14">&nbsp;</td>
-		  </tr>
-		  <tr class="row101">
-			<td class="column0 style5 null"></td>
-			<td class="column1 style45 s">&nbsp;● 추가내용: </td>
-			<td class="column2 style46 null"></td>
-			<td class="column3 style47 null"></td>
-			<td class="column4 style48 null"></td>
-			<td class="column5 style38 s">800803400A</td>
-			<td class="column6 style81 s">ROLLER_FEED_REJECT (Rev. A)</td>
-			<td class="column7 style36 n">5</td>
-			<td class="column8 style72 null"></td>
-			<td class="column9 style73 null"></td>
-			<td class="column10 style73 null"></td>
-			<td class="column11 style74 null"></td>
-			<td class="column12 style9 null"></td>
-			<td class="column13 style19 null"></td>
-			<td class="column14">&nbsp;</td>
-		  </tr>
-		  <tr class="row102">
-			<td class="column0 style5 null"></td>
-			<td class="column1 style49 null"></td>
-			<td class="column2 style50 null"></td>
-			<td class="column3 style51 null"></td>
-			<td class="column4 style48 null"></td>
-			<td class="column5 style34 s">1A05X2121A</td>
-			<td class="column6 style31 s">ROLLER_FEED_MR_P</td>
-			<td class="column7 style36 n">2</td>
-			<td class="column8 style23 null"></td>
-			<td class="column9 style24 null"></td>
-			<td class="column10 style24 null"></td>
-			<td class="column11 style25 null"></td>
-			<td class="column12 style9 null"></td>
-			<td class="column13 style19 null"></td>
-			<td class="column14">&nbsp;</td>
-		  </tr>
-		  <tr class="row103">
-			<td class="column0 style5 null"></td>
-			<td class="column1 style49 null"></td>
-			<td class="column2 style50 null"></td>
-			<td class="column3 style51 null"></td>
-			<td class="column4 style48 null"></td>
-			<td class="column5 style34 s">1A05X2119A</td>
-			<td class="column6 style31 s">ROLLER_PICK_UP_P</td>
-			<td class="column7 style36 n">5</td>
-			<td class="column8 style23 null"></td>
-			<td class="column9 style24 null"></td>
-			<td class="column10 style24 null"></td>
-			<td class="column11 style25 null"></td>
-			<td class="column12 style9 null"></td>
-			<td class="column13 style19 null"></td>
-			<td class="column14">&nbsp;</td>
-		  </tr>
-		  <tr class="row104">
-			<td class="column0 style5 null"></td>
-			<td class="column1 style49 null"></td>
-			<td class="column2 style50 null"></td>
-			<td class="column3 style51 null"></td>
-			<td class="column4 style48 null"></td>
-			<td class="column5 style34 s">1A05X2128A</td>
-			<td class="column6 style31 s">ROLLER_SEPARATOR_P</td>
-			<td class="column7 style36 n">5</td>
-			<td class="column8 style23 null"></td>
-			<td class="column9 style24 null"></td>
-			<td class="column10 style24 null"></td>
-			<td class="column11 style25 null"></td>
-			<td class="column12 style9 null"></td>
-			<td class="column13 style19 null"></td>
-			<td class="column14">&nbsp;</td>
-		  </tr>
-		  <tr class="row105">
-			<td class="column0 style5 null"></td>
-			<td class="column1 style49 null"></td>
-			<td class="column2 style50 null"></td>
-			<td class="column3 style51 null"></td>
-			<td class="column4 style48 null"></td>
-			<td class="column5 style34 s">800502300A</td>
-			<td class="column6 style31 s">ROLLER_TRANSFER_P</td>
-			<td class="column7 style36 n">5</td>
-			<td class="column8 style23 null"></td>
-			<td class="column9 style24 null"></td>
-			<td class="column10 style24 null"></td>
-			<td class="column11 style25 null"></td>
-			<td class="column12 style9 null"></td>
-			<td class="column13 style19 null"></td>
-			<td class="column14">&nbsp;</td>
-		  </tr>
-		  <tr class="row106">
-			<td class="column0 style5 null"></td>
-			<td class="column1 style49 null"></td>
-			<td class="column2 style50 null"></td>
-			<td class="column3 style51 null"></td>
-			<td class="column4 style48 null"></td>
-			<td class="column5 style83 s">7005A083XA</td>
-			<td class="column6 style84 s">SHP-02 24P (MAIN-OPE)</td>
-			<td class="column7 style36 n">5</td>
-			<td class="column8 style23 null"></td>
-			<td class="column9 style24 null"></td>
-			<td class="column10 style24 null"></td>
-			<td class="column11 style25 null"></td>
-			<td class="column12 style9 null"></td>
-			<td class="column13 style19 null"></td>
-			<td class="column14">&nbsp;</td>
-		  </tr>
-		  <tr class="row107">
-			<td class="column0 style5 null"></td>
-			<td class="column1 style49 null"></td>
-			<td class="column2 style50 null"></td>
-			<td class="column3 style51 null"></td>
-			<td class="column4 style48 null"></td>
-			<td class="column5 style85 s">800000900A</td>
-			<td class="column6 style84 s">ROLLER_PINCH</td>
-			<td class="column7 style92 n">150</td>
-			<td class="column8 style93 null style93" colspan="4"></td>
-			<td class="column12 style9 null"></td>
-			<td class="column13 style19 null"></td>
-			<td class="column14">&nbsp;</td>
-		  </tr>
-		  <tr class="row108">
-			<td class="column0 style5 null"></td>
-			<td class="column1 style52 null"></td>
-			<td class="column2 style50 null"></td>
-			<td class="column3 style51 null"></td>
-			<td class="column4 style48 null"></td>
-			<td class="column5 style85 s">800001000A</td>
-			<td class="column6 style84 s">ROLLER_PINCH_EXIT</td>
-			<td class="column7 style92 n">30</td>
-			<td class="column8 style93 null style93" colspan="4"></td>
-			<td class="column12 style9 null"></td>
-			<td class="column13 style19 null"></td>
-			<td class="column14">&nbsp;</td>
-		  </tr>
-		  <tr class="row109">
-			<td class="column0 style5 null"></td>
-			<td class="column1 style52 null"></td>
-			<td class="column2 style50 null"></td>
-			<td class="column3 style51 null"></td>
-			<td class="column4 style48 null"></td>
-			<td class="column5 style85 null"></td>
-			<td class="column6 style84 s">SP-58S_MAIN_BOARD</td>
-			<td class="column7 style92 n">5</td>
-			<td class="column8 style93 null style93" colspan="4"></td>
-			<td class="column12 style9 null"></td>
-			<td class="column13 style19 null"></td>
-			<td class="column14">&nbsp;</td>
-		  </tr>
-		  <tr class="row110">
-			<td class="column0 style5 null"></td>
-			<td class="column1 style49 null"></td>
-			<td class="column2 style50 null"></td>
-			<td class="column3 style51 null"></td>
-			<td class="column4 style48 null"></td>
-			<td class="column5 style86 null"></td>
-			<td class="column6 style87 null"></td>
-			<td class="column7 style42 null"></td>
-			<td class="column8 style94 null style94" colspan="4"></td>
-			<td class="column12 style9 null"></td>
-			<td class="column13 style55 null"></td>
-			<td class="column14">&nbsp;</td>
-		  </tr>
-		  <tr class="row111">
-			<td class="column0 style75 null"></td>
-			<td class="column1 style56 null"></td>
-			<td class="column2 style57 null"></td>
-			<td class="column3 style58 null"></td>
-			<td class="column4 style76 null"></td>
-			<td class="column5 style88 null"></td>
-			<td class="column6 style89 null"></td>
-			<td class="column7 style42 null"></td>
-			<td class="column8 style95 null style97" colspan="4"></td>
-			<td class="column12 style77 null"></td>
-			<td class="column13 style19 null"></td>
-			<td class="column14">&nbsp;</td>
-		  </tr>
-		  <tr class="row112">
-			<td class="column0 style59 null"></td>
-			<td class="column1 style60 null"></td>
-			<td class="column2 style60 null"></td>
-			<td class="column3 style60 null"></td>
-			<td class="column4 style60 null"></td>
-			<td class="column5 style60 null"></td>
-			<td class="column6 style60 null"></td>
-			<td class="column7 style60 null"></td>
-			<td class="column8 style60 null"></td>
-			<td class="column9 style60 null"></td>
-			<td class="column10 style60 null"></td>
-			<td class="column11 style60 null"></td>
-			<td class="column12 style78 null"></td>
-			<td class="column13">&nbsp;</td>
-			<td class="column14">&nbsp;</td>
-		  </tr>
-		  <tr class="row113">
-			<td class="column0 style4 s">SBM-영업-P-704-09</td>
-			<td class="column1 style79 null"></td>
-			<td class="column2">&nbsp;</td>
-			<td class="column3">&nbsp;</td>
-			<td class="column4">&nbsp;</td>
-			<td class="column5">&nbsp;</td>
-			<td class="column6 style90 s">㈜에스비엠</td>
-			<td class="column7">&nbsp;</td>
-			<td class="column8 style80 s">3/3</td>
-			<td class="column9 style80 null"></td>
-			<td class="column10">&nbsp;</td>
-			<td class="column11">&nbsp;</td>
-			<td class="column12 style91 s">A4(210 X297mm)</td>
-			<td class="column13">&nbsp;</td>
-			<td class="column14">&nbsp;</td>
-		  </tr>
-		  <tr class="row114">
-			<td class="column0">&nbsp;</td>
-			<td class="column1">&nbsp;</td>
-			<td class="column2">&nbsp;</td>
-			<td class="column3">&nbsp;</td>
-			<td class="column4">&nbsp;</td>
-			<td class="column5 style4 null"></td>
-			<td class="column6">&nbsp;</td>
-			<td class="column7">&nbsp;</td>
-			<td class="column8">&nbsp;</td>
-			<td class="column9">&nbsp;</td>
-			<td class="column10">&nbsp;</td>
-			<td class="column11">&nbsp;</td>
-			<td class="column12">&nbsp;</td>
-			<td class="column13">&nbsp;</td>
-			<td class="column14">&nbsp;</td>
-		  </tr>
-		  <tr class="row115">
-			<td class="column0">&nbsp;</td>
-			<td class="column1">&nbsp;</td>
-			<td class="column2">&nbsp;</td>
-			<td class="column3">&nbsp;</td>
-			<td class="column4">&nbsp;</td>
-			<td class="column5 style4 null"></td>
-			<td class="column6">&nbsp;</td>
-			<td class="column7">&nbsp;</td>
-			<td class="column8">&nbsp;</td>
-			<td class="column9">&nbsp;</td>
-			<td class="column10">&nbsp;</td>
-			<td class="column11">&nbsp;</td>
-			<td class="column12">&nbsp;</td>
-			<td class="column13">&nbsp;</td>
-			<td class="column14">&nbsp;</td>
-		  </tr>
-		  <tr class="row116">
-			<td class="column0">&nbsp;</td>
-			<td class="column1">&nbsp;</td>
-			<td class="column2">&nbsp;</td>
-			<td class="column3">&nbsp;</td>
-			<td class="column4">&nbsp;</td>
-			<td class="column5 style4 null"></td>
-			<td class="column6">&nbsp;</td>
-			<td class="column7">&nbsp;</td>
-			<td class="column8">&nbsp;</td>
-			<td class="column9">&nbsp;</td>
-			<td class="column10">&nbsp;</td>
-			<td class="column11">&nbsp;</td>
-			<td class="column12">&nbsp;</td>
-			<td class="column13">&nbsp;</td>
-			<td class="column14">&nbsp;</td>
 		  </tr>
 		</tbody>
 	</table>
