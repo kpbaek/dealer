@@ -148,7 +148,7 @@
 @page { left-margin: 0.98425196850394in; right-margin: 0.98425196850394in; top-margin: 0.19685039370079in; bottom-margin: 0.039370078740157in; }
 body { left-margin: 0.98425196850394in; right-margin: 0.98425196850394in; top-margin: 0.19685039370079in; bottom-margin: 0.039370078740157in; }
 </style>
-	<table border="1" cellpadding="0" cellspacing="0" id="sheet0" class="sheet0" style="width: 210mm;">
+	<table border="0" cellpadding="0" cellspacing="0" id="sheet0" class="sheet0" style="width: 210mm;">
 		<col class="col0">
 		<col class="col1">
 		<col class="col2">
@@ -180,11 +180,9 @@ body { left-margin: 0.98425196850394in; right-margin: 0.98425196850394in; top-ma
 				  </tr>
 		  		</table>
 			</td>
-			<td class="column7">&nbsp;</td>
 		  </tr>
 		  <tr class="row4">
 			<td class="column0 style3 s" colspan=7>PROFORMA INVOICE</td>
-			<td class="column7">&nbsp;</td>
 		  </tr>
 		  <tr class="row5">
 			<td class="column0 style1 s">&nbsp;</td>
@@ -194,26 +192,22 @@ body { left-margin: 0.98425196850394in; right-margin: 0.98425196850394in; top-ma
 			<td class="column4">&nbsp;</td>
 			<td class="column5">&nbsp;</td>
 			<td class="column6">&nbsp;</td>
-			<td class="column7">&nbsp;</td>
 		  </tr>
 		  <tr class="row6">
 			<td class="column0 style62 n style62" colspan="3">Date: 2014-03-21</td>
 			<td class="column3 style5 null"></td>
 			<td class="column4">&nbsp;</td>
 			<td class="column5 style63 n style63" colspan="2">Our Ref: PI-140321-7</td>
-			<td class="column7">&nbsp;</td>
 		  </tr>
 		  <tr class="row7">
 			<td class="column0 style7 s">Messrs.</td>
 			<td class="column1 style7 s" colspan=4>: Ladkani Office Solutions</td>
 			<td class="column5 style64 null style64" colspan="2"></td>
-			<td class="column7">&nbsp;</td>
 		  </tr>
 		  <tr class="row8">
 			<td class="column0 style8 s">Attn.</td>
 			<td class="column1 style9 s" colspan=5>: Mr. Imad Ladkani</td>
 			<td class="column6 style10 null"></td>
-			<td class="column7">&nbsp;</td>
 		  </tr>
 		  <tr class="row9">
 			<td class="column0 style11 null"></td>
@@ -223,12 +217,10 @@ body { left-margin: 0.98425196850394in; right-margin: 0.98425196850394in; top-ma
 			<td class="column4">&nbsp;</td>
 			<td class="column5 style10 null"></td>
 			<td class="column6 style10 null"></td>
-			<td class="column7">&nbsp;</td>
 		  </tr>
 		  
 		  <tr class="row10">
 			<td class="column0 style65 s style65" colspan="7">We are pleased to confirm your order for the under-mentioned article(s) as per conditions and details described as follows:</td>
-			<td class="column7">&nbsp;</td>
 		  </tr>
 		  <tr class="row11">
 		  	<td class="column0 style12 s" style="border-left:1px solid #000000">Model</td>
@@ -236,7 +228,6 @@ body { left-margin: 0.98425196850394in; right-margin: 0.98425196850394in; top-ma
 			<td class="column4 style12 s">Q’ty</td>
 			<td class="column5 style13 s">Unit Price</td>
 			<td class="column6 style13 s">Amount</td>
-			<td class="column7">&nbsp;</td>
 		  </tr>
 		  <tr class="row12">
 			<td class="column0 style14 s">SB-9</td>
@@ -244,7 +235,6 @@ body { left-margin: 0.98425196850394in; right-margin: 0.98425196850394in; top-ma
 			<td class="column4 style17 n">40</td>
 			<td class="column5 style18 n">0</td>
 			<td class="column6 style19 f">0</td>
-			<td class="column7">&nbsp;</td>
 		  </tr>
 		  <tr class="row13">
 			<td class="column0 style21 null"></td>
@@ -252,7 +242,6 @@ body { left-margin: 0.98425196850394in; right-margin: 0.98425196850394in; top-ma
 			<td class="column4 style17 null"></td>
 			<td class="column5 style22 null"></td>
 			<td class="column6 style23 null"></td>
-			<td class="column7">&nbsp;</td>
 		  </tr>
 		  <tr class="row14">
 			<td class="column0 style21 null"></td>
@@ -260,7 +249,6 @@ body { left-margin: 0.98425196850394in; right-margin: 0.98425196850394in; top-ma
 			<td class="column4 style17 null"></td>
 			<td class="column5 style22 null"></td>
 			<td class="column6 style23 s">.</td>
-			<td class="column7">&nbsp;</td>
 		  </tr>
 		  <tr class="row15">
 			<td class="column0 style21 null"></td>
@@ -270,7 +258,6 @@ body { left-margin: 0.98425196850394in; right-margin: 0.98425196850394in; top-ma
 			<td class="column4 style17 null"></td>
 			<td class="column5 style22 null"></td>
 			<td class="column6 style23 null"></td>
-			<td class="column7">&nbsp;</td>
 		  </tr>
 		  <tr class="row16">
 			<td class="column0 style14 s">Printer</td>
@@ -278,7 +265,6 @@ body { left-margin: 0.98425196850394in; right-margin: 0.98425196850394in; top-ma
 			<td class="column4 style17 n">40</td>
 			<td class="column5 style19 n">0</td>
 			<td class="column6 style19 f">0</td>
-			<td class="column7">&nbsp;</td>
 		  </tr>
 		  <tr class="row17">
 			<td class="column0 style25 null"></td>
@@ -288,7 +274,6 @@ body { left-margin: 0.98425196850394in; right-margin: 0.98425196850394in; top-ma
 			<td class="column4 style28 null"></td>
 			<td class="column5 style18 null"></td>
 			<td class="column6 style18 null"></td>
-			<td class="column7">&nbsp;</td>
 		  </tr>
 		  <tr class="row18">
 			<td class="column0 style25 null"></td>
@@ -296,7 +281,6 @@ body { left-margin: 0.98425196850394in; right-margin: 0.98425196850394in; top-ma
 			<td class="column4 style28 null"></td>
 			<td class="column5 style18 null"></td>
 			<td class="column6 style18 null"></td>
-			<td class="column7">&nbsp;</td>
 		  </tr>
 		  <tr class="row19">
 			<td class="column0 style25 null"></td>
@@ -304,7 +288,6 @@ body { left-margin: 0.98425196850394in; right-margin: 0.98425196850394in; top-ma
 			<td class="column4 style28 n">5</td>
 			<td class="column5 style18 n">USD  130.00</td>
 			<td class="column6 style19 f">USD  650.00</td>
-			<td class="column7">&nbsp;</td>
 		  </tr>
 		  <tr class="row20">
 			<td class="column0 style25 null"></td>
@@ -312,7 +295,6 @@ body { left-margin: 0.98425196850394in; right-margin: 0.98425196850394in; top-ma
 			<td class="column4 style28 n">5</td>
 			<td class="column5 style18 n">USD  85.00</td>
 			<td class="column6 style19 f">USD  425.00</td>
-			<td class="column7">&nbsp;</td>
 		  </tr>
 		  <tr class="row21">
 			<td class="column0 style25 null"></td>
@@ -320,7 +302,6 @@ body { left-margin: 0.98425196850394in; right-margin: 0.98425196850394in; top-ma
 			<td class="column4 style28 n">5</td>
 			<td class="column5 style18 n">USD  220.00</td>
 			<td class="column6 style19 f">USD  1,100.00</td>
-			<td class="column7">&nbsp;</td>
 		  </tr>
 		  <tr class="row22">
 			<td class="column0 style25 null"></td>
@@ -330,7 +311,6 @@ body { left-margin: 0.98425196850394in; right-margin: 0.98425196850394in; top-ma
 			<td class="column4 style28 null"></td>
 			<td class="column5 style18 null"></td>
 			<td class="column6 style18 null"></td>
-			<td class="column7">&nbsp;</td>
 		  </tr>
 		  <tr class="row23">
 			<td class="column0 style25 null"></td>
@@ -340,7 +320,6 @@ body { left-margin: 0.98425196850394in; right-margin: 0.98425196850394in; top-ma
 			<td class="column4 style28 null"></td>
 			<td class="column5 style18 null"></td>
 			<td class="column6 style18 null"></td>
-			<td class="column7">&nbsp;</td>
 		  </tr>
 		  <tr class="row24">
 			<td class="column0 style25 null"></td>
@@ -350,7 +329,6 @@ body { left-margin: 0.98425196850394in; right-margin: 0.98425196850394in; top-ma
 			<td class="column4 style28 null"></td>
 			<td class="column5 style18 null"></td>
 			<td class="column6 style18 null"></td>
-			<td class="column7">&nbsp;</td>
 		  </tr>
 		  <tr class="row25">
 			<td class="column0 style14 null"></td>
@@ -360,14 +338,12 @@ body { left-margin: 0.98425196850394in; right-margin: 0.98425196850394in; top-ma
 			<td class="column4 style33 null"></td>
 			<td class="column5 style19 null"></td>
 			<td class="column6 style34 null"></td>
-			<td class="column7 style32 null"></td>
 		  </tr>
 		  <tr class="row26">
 			<td class="column0 style67 s style69" colspan="4">Total Amount (FOB)</td>
 			<td class="column4 style35 null"></td>
 			<td class="column5 style36 null"></td>
 			<td class="column6 style37 f">USD  2,175.00</td>
-			<td class="column7">&nbsp;</td>
 		  </tr>
 		  <tr class="row27">
 			<td class="column0 style11 null"></td>
@@ -377,50 +353,42 @@ body { left-margin: 0.98425196850394in; right-margin: 0.98425196850394in; top-ma
 			<td class="column4">&nbsp;</td>
 			<td class="column5">&nbsp;</td>
 			<td class="column6 style38 null"></td>
-			<td class="column7">&nbsp;</td>
 		  </tr>
 		  <tr class="row28">
 			<td class="column0 style39 s" colspan=2>Origin</td>
 			<td class="column2 style40 s">:</td>
 			<td class="column3 style39 s" colspan=4>Republic of Korea</td>
-			<td class="column7">&nbsp;</td>
 		  </tr>
 		  <tr class="row29">
 			<td class="column0 style39 s" colspan=2>Packing</td>
 			<td class="column2 style40 s">:</td>
 			<td class="column3 style39 s" colspan=4>Export standard carton packing</td>
-			<td class="column7">&nbsp;</td>
 		  </tr>
 		  <tr class="row30">
 			<td class="column0 style39 s" colspan=2>Shipment</td>
 			<td class="column2 style40 s">:</td>
 			<td class="column3 style61 s style61" colspan="3">To be announced</td>
 			<td class="column6">&nbsp;</td>
-			<td class="column7">&nbsp;</td>
 		  </tr>
 		  <tr class="row31">
 			<td class="column0 style39 s" colspan=2>Shipping port</td>
 			<td class="column2 style40 s">:</td>
 			<td class="column3 style39 s" colspan=4>Incheon, Korea (Shipped by AIR)</td>
-			<td class="column7">&nbsp;</td>
 		  </tr>
 		  <tr class="row32">
 			<td class="column0 style39 s" colspan=2>Inspection</td>
 			<td class="column2 style40 s">:</td>
 			<td class="column3 style39 s" colspan=4>Final inspection shall be made at the SBM’s factory</td>
-			<td class="column7">&nbsp;</td>
 		  </tr>
 		  <tr class="row33">
 			<td class="column0 style39 s" colspan=2>Destination</td>
 			<td class="column2 style40 s">:</td>
 			<td class="column3 style39 s" colspan=4>Lebanon</td>
-			<td class="column7">&nbsp;</td>
 		  </tr>
 		  <tr class="row34">
 			<td class="column0 style39 s" colspan=2>Payment</td>
 			<td class="column2 style40 s">:</td>
 			<td class="column3 style39 s" colspan=4>T/T in advance (All expenses outside of Korea shall be charged by remitter)</td>
-			<td class="column7">&nbsp;</td>
 		  </tr>
 		  <tr class="row35">
 			<td class="column0 style39 s" colspan=2>Validity</td>
@@ -429,48 +397,41 @@ body { left-margin: 0.98425196850394in; right-margin: 0.98425196850394in; top-ma
 			<td class="column4 style43 null"></td>
 			<td class="column5 style43 null"></td>
 			<td class="column6">&nbsp;</td>
-			<td class="column7">&nbsp;</td>
 		  </tr>
 		  <tr class="row36">
 			<td class="column0 style44 s" colspan=2>Bank Information</td>
 			<td class="column2 style40 s">:</td>
 			<td class="column3 style60 s" colspan=4>HANABANK, GASAN-DONG BRANCH</td>
-			<td class="column7">&nbsp;</td>
 		  </tr>
 		  <tr class="row37">
 			<td class="column0">&nbsp;</td>
 			<td class="column1">&nbsp;</td>
 			<td class="column2 style1 null"></td>
 			<td class="column3 style60 s" colspan=4>550-1, GASAN-DONG, GEUMCHEON-GU, SEOUL, KOREA</td>
-			<td class="column7">&nbsp;</td>
 		  </tr>
 		  <tr class="row38">
 			<td class="column0">&nbsp;</td>
 			<td class="column1">&nbsp;</td>
 			<td class="column2 style1 null"></td>
 			<td class="column3 style60 s" colspan=4>SWIFT CODE: HNBNKRSE</td>
-			<td class="column7">&nbsp;</td>
 		  </tr>
 		  <tr class="row39">
 			<td class="column0">&nbsp;</td>
 			<td class="column1">&nbsp;</td>
 			<td class="column2 style1 null"></td>
 			<td class="column3 style60 s" colspan=4>Account No.: 332-910001-81938</td>
-			<td class="column7">&nbsp;</td>
 		  </tr>
 		  <tr class="row40">
 			<td class="column0 style1 s">Reference:</td>
 			<td class="column1 style45 null"></td>
 			<td class="column2 style40 s">:</td>
 			<td class="column3 style41 s" colspan=4>If you delay the Ex-works date already agreed with us </td>
-			<td class="column7">&nbsp;</td>
 		  </tr>
 		  <tr class="row41">
 			<td class="column0 style1 null"></td>
 			<td class="column1 style59 null"></td>
 			<td class="column2 style59 null"></td>
 			<td class="column3 style41 s" colspan=4>we duly inform that the new date is subject to our production schedule.</td>
-			<td class="column7">&nbsp;</td>
 		  </tr>
 		  <tr class="row42">
 			<td class="column0 style45 null"></td>
@@ -480,7 +441,6 @@ body { left-margin: 0.98425196850394in; right-margin: 0.98425196850394in; top-ma
 			<td class="column4">&nbsp;</td>
 			<td class="column5">&nbsp;</td>
 			<td class="column6">&nbsp;</td>
-			<td class="column7">&nbsp;</td>
 		  </tr>
 		  <tr class="row43">
 			<td class="column0 style45 null"></td>
@@ -490,7 +450,6 @@ body { left-margin: 0.98425196850394in; right-margin: 0.98425196850394in; top-ma
 			<td class="column4">&nbsp;</td>
 			<td class="column5">&nbsp;</td>
 			<td class="column6">&nbsp;</td>
-			<td class="column7">&nbsp;</td>
 		  </tr>
 		  <tr class="row44">
 			<td class="column0 style45 null"></td>
@@ -500,7 +459,6 @@ body { left-margin: 0.98425196850394in; right-margin: 0.98425196850394in; top-ma
 			<td class="column4">&nbsp;</td>
 			<td class="column5">&nbsp;</td>
 			<td class="column6">&nbsp;</td>
-			<td class="column7">&nbsp;</td>
 		  </tr>
 		  <tr class="row45">
 			<td class="column0 style45 null"></td>
@@ -510,7 +468,6 @@ body { left-margin: 0.98425196850394in; right-margin: 0.98425196850394in; top-ma
 			<td class="column4">&nbsp;</td>
 			<td class="column5">&nbsp;</td>
 			<td class="column6">&nbsp;</td>
-			<td class="column7">&nbsp;</td>
 		  </tr>
 		  <tr class="row46">
 			<td class="column0 style45 null"></td>
@@ -520,7 +477,6 @@ body { left-margin: 0.98425196850394in; right-margin: 0.98425196850394in; top-ma
 			<td class="column4">&nbsp;</td>
 			<td class="column5">&nbsp;</td>
 			<td class="column6">&nbsp;</td>
-			<td class="column7">&nbsp;</td>
 		  </tr>
 		  <tr class="row47">
 			<td class="column0 style45 null"></td>
@@ -530,7 +486,6 @@ body { left-margin: 0.98425196850394in; right-margin: 0.98425196850394in; top-ma
 			<td class="column4">&nbsp;</td>
 			<td class="column5">&nbsp;</td>
 			<td class="column6">&nbsp;</td>
-			<td class="column7">&nbsp;</td>
 		  </tr>
 		  <tr class="row48">
 			<td class="column0 style46 null"></td>
@@ -540,29 +495,23 @@ body { left-margin: 0.98425196850394in; right-margin: 0.98425196850394in; top-ma
 			<td class="column4">&nbsp;</td>
 			<td class="column5">&nbsp;</td>
 			<td class="column6">&nbsp;</td>
-			<td class="column7">&nbsp;</td>
 		  </tr>
 		  <tr class="row49">
 			<td class="column0 style47 s" colspan=5>Arthur Kim</td>
 			<td class="column5 style2 null"></td>
 			<td class="column6 style2 null"></td>
-			<td class="column7">&nbsp;</td>
 		  </tr>
 		  <tr class="row50">
 			<td class="column0 style50 s" colspan=7>Sales and Marketing Dept. / Senior Manager</td>
-			<td class="column7">&nbsp;</td>
 		  </tr>
 		  <tr class="row51">
 			<td class="column0 style52 s" colspan=7>SBM Co., Ltd.</td>
-			<td class="column7">&nbsp;</td>
 		  </tr>
 		  <tr class="row52">
 			<td class="column0 style54 s" colspan=7>6F, Hyunwoo Bld, 206, Anyang7-Dong, Manan-Gu, Anyang-City, Gyeonggi-Do, KOREA . 430-817</td>
-			<td class="column7">&nbsp;</td>
 		  </tr>
 		  <tr class="row53">
 			<td class="column0 style54 s" colspan=7>Tel: +82-31-429-0789    Fax: +82-31-429-3607</td>
-			<td class="column7">&nbsp;</td>
 		  </tr>
 		  <tr class="row54">
 			<td class="column0 style55 s" colspan=3>SBM-<span style="color:#000000; font-family:'돋움'; font-size:10pt">영업</span><span style="color:#000000; font-family:'Arial'; font-size:10pt">-P-701-02</span></td>
@@ -570,7 +519,6 @@ body { left-margin: 0.98425196850394in; right-margin: 0.98425196850394in; top-ma
 			<td class="column4 style56 null"></td>
 			<td class="column5 style56 null"></td>
 			<td class="column6 style57 s">A4(210 X297mm)</td>
-			<td class="column7">&nbsp;</td>
 		  </tr>
 		</tbody>
 	</table>
