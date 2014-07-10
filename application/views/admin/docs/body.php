@@ -20,27 +20,27 @@
 
 <body>
 
-<h3><a href="/admin/docs?countrytabs=0">사내문서</a></h3>
+<h3><a href="/admin/docs?doctabs=0">사내문서</a></h3>
 
-<ul id="countrytabs" class="shadetabs">
-<li><a href="/admin/docs/tab01" rel="countrycontainer" class="selected">생산의뢰서</a></li>
-<li><a href="/admin/docs/tab02" rel="countrycontainer">출고전표</a></li>
-<li><a href="/admin/docs/tab03" rel="countrycontainer">부품출고</a></li>
+<ul id="doctabs" class="shadetabs">
+<li><a href="/admin/docs/tab01" rel="#iframe" class="selected">생산의뢰서</a></li>
+<li><a href="/admin/docs/tab02" rel="#iframe">출고전표</a></li>
+<li><a href="/admin/docs/tab03" rel="#iframe">부품출고</a></li>
 </ul>
 
-<div id="countrydivcontainer" style="border:1px solid gray; width:970px; height:550px; margin-bottom: 1em; padding: 10px;overflow: scroll;">
+<div id="docDiv" style="border:1px solid gray; width:970px; height:550px; margin-bottom: 1em; padding: 10px;overflow: scroll;">
 </div>
 
 <script type="text/javascript">
 
-var countries=new ddajaxtabs("countrytabs", "countrydivcontainer")
-countries.setpersist(true)
-countries.setselectedClassTarget("link") //"link" or "linkparent"
-countries.init()
+var doc=new ddajaxtabs("doctabs", "docDiv")
+doc.setpersist(true)
+doc.setselectedClassTarget("link") //"link" or "linkparent"
+doc.init()
 
 </script>
 
-<p><a href="/admin/docs?countrytabs=0">Reload page and select 1nd tab using URL parameter</a> | <a href="javascript: countries.expandit(3)">Dynamically select last Tab</a></p>
+<p><a href="/admin/docs?doctabs=0">Reload page and select 1nd tab using URL parameter</a> | <a href="javascript: doc.expandit(3)">Dynamically select last Tab</a></p>
 
 <hr />
 
