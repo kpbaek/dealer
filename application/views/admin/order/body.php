@@ -25,6 +25,7 @@
 <ul id="ordertabs" class="shadetabs">
 <li><a href="/admin/order/tab01" rel="#iframe" class="selected">장비</a></li>
 <li><a href="/admin/order/tab02" rel="#iframe">부품</a></li>
+<li><a href="/admin/order/tab03" rel="#iframe">주문내역</a></li>
 </ul>
 
 <div id="orderDiv" style="border:1px solid gray; width:970px; height:550px; margin-bottom: 1em; padding: 10px;overflow: scroll;">
