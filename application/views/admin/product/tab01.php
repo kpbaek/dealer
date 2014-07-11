@@ -40,6 +40,9 @@
 	  table.sheet0 tr { height:15pt }
 	</style>	
 </head>
+
+<body  onload="javascript:">
+
 <div id="searchDiv" style="display:">
 <form name="searchForm">
 <input type="text" name="page" style="display: none">
@@ -76,23 +79,24 @@ searchId<input type="text" name="searchId">
 		<tbody>
 		<tr>
 			<td class="style01">Model</td>
-			<td>
-			<select name="cdGrp" onchange="javascript:getCodeCombo(this.value, document.addForm.cdDtl);" style="display:">
+			<td width=25%>
+			<select name="cdGrp" onchange="javascript:getCodeCombo(this.value, document.addForm.cdDtl);" style="display:none">
 			<option value="">-------------------</option>
 			<option value="01">01</option>
 			<option value="02">02</option>
 			</select>
 			<select name="cdDtl">
+			<option value="">----------------------------</option>
 			</select>
 			</td>
 			<td class="style01">S/N</td>
-			<td><input type="text" id="invdate" name="invdate" size=12 style="border-style: none;"></td>
+			<td width=25%><input type="text" id="invdate" name="invdate" size=12 style="border-style: ;"></td>
 			<td class="style01">CODE</td>
-			<td><input type="text" id="id" name="id" size=5 style="border-style: none;"></td>
+			<td width=25%><input type="text" id="id" name="id" size=9 style="border-style: ;"></td>
 			</tr>
 		<tr>
 			<td class="style01">Part Name</td>
-			<td colspan=5></td>
+			<td colspan=5><input type="text" id="partnm" name="partnm" size=120 style="border-style: ;"></td>
 		</tr>
 		<tr>
 			<td class="style01">IMAGE</td>
@@ -100,8 +104,8 @@ searchId<input type="text" name="searchId">
 			<div id="thumbDiv"></div>
 			<!-- <iframe name="ifUpload" scrolling="no" marginheight="0" marginwidth="0" frameborder="0" width="50" height=50></iframe> -->
 			</td>
-			<td>Remark</td>
-			<td colspan=5><textarea rows="3" cols="65"></textarea></td>
+			<td class="style01">Remark</td>
+			<td colspan=5><textarea rows="3" cols="45"></textarea></td>
 		</tr>
 		<tr>
 			<td class="style01">Recommend</td>
@@ -109,7 +113,7 @@ searchId<input type="text" name="searchId">
 				<select name="recommend">
 				</select>
 			</td>
-			<td class="style01" width=80>Spare Part</td>
+			<td class="style01">Spare Part</td>
 			<td>
 				<select name="spare">
 				</select>
@@ -135,6 +139,8 @@ searchId<input type="text" name="searchId">
 </form>
 
 </div>
+
+</body>
 
 <script type="text/javascript">
 
@@ -188,7 +194,7 @@ searchId<input type="text" name="searchId">
 		    sortname: 'id',
 		    sortorder: "desc",
 			toolbar: [true,"top"],
-		    hiddengrid: true,
+		    hiddengrid: false,
 			caption:"부품관리"
 		});
 		jQuery("#list").jqGrid('navGrid','#pager',{edit:false,add:false,del:false,search:false});
