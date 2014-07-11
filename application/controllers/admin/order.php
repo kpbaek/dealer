@@ -49,6 +49,11 @@ class Order extends CI_Controller {
 		$this->load->view('/admin/order/tab02');
 	}
 
+	public function tab03()
+	{
+		$this->load->view('/admin/order/tab03');
+	}
+
 	public function listPart()
 	{
 		$this->load->view('/admin/order/listPart');
