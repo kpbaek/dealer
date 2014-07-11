@@ -27,6 +27,7 @@
 	  td.style00 { vertical-align:middle; text-align:left; border-bottom:none #000000; border-top:1px solid #000000 !important; border-left:none #000000; border-right:1px dashed #000000 !important; color:#000000; font-family:'Arial'; font-size:9pt; background-color:white }
 	  td.style001 { vertical-align:middle; text-align:right; border-bottom:none #000000; border-top:1px solid #000000 !important; border-left:1px dashed #000000 !important; border-right:none #000000; font-weight:bold; color:#000000; font-family:'Arial'; font-size:9pt; background-color:white }
 	  td.style002 { vertical-align:middle; border-bottom:none #000000; border-top:1px solid #000000 !important; border-left:2px solid #000000 !important; border-right:none #000000; font-weight:bold; color:#000000; font-family:'Arial'; font-size:9pt; background-color:white }
+	  td.style003 { vertical-align:middle; border-bottom:none #000000; border-top:1px solid #000000 !important; border-left:none #000000; border-right:none #000000; font-weight:bold; color:#000000; font-family:'Arial'; font-size:9pt; background-color:white }
 	  td.style0 { vertical-align:bottom; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; color:#000000; font-family:'돋움'; font-size:11pt; background-color:white }
 	  td.style1 { vertical-align:middle; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; color:#000000; font-family:'Arial'; font-size:11pt; background-color:white }
 	  td.style2 { vertical-align:middle; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; color:#000000; font-family:'Arial'; font-size:11pt; background-color:white }
@@ -507,15 +508,15 @@ body { left-margin: 0.19685039370079in; right-margin: 0.19685039370079in; top-ma
 		  <tr class="row1">
 			<td class="column0 style06 s" colspan=2 width=10%>Shipper :</td>
 			<td class="column23 style07 s" width=45%></td>
-			<td colspan=2 class="column23 style08 s" width=20%>Invoice date and No.</td>
-			<td class="column42 style09 null" colspan=2 width=25%></td>
+			<td colspan=2 class="column23 style08 s" width=25%>Invoice date and No.</td>
+			<td class="column42 style09 null" colspan=2 width=20%></td>
 		  </tr>
 		  <tr class="row2">
 			<td class="column0 style9 null" colspan=2 rowspan=4><img style="width: 75px; height: 25px;" src="/images/common/sbmlogo.jpeg" border="0" /></td>
 			<td class="column5 style10 s" valign=top>SBM CO., LTD.</td>
 			<td class="column23 style11 null"></td>
-			<td class="column24 style1 s" width=70px>Invoice date :</td>
-			<td class="column31 style217 n style217" width=90px>4 April, 2014</td>
+			<td class="column24 style1 s" width=100px>Invoice date :</td>
+			<td class="column31 style217 n">4 April, 2014</td>
 			<td class="column42 style13 null"></td>
 		  </tr>
 		  <tr class="row2">
@@ -609,9 +610,8 @@ body { left-margin: 0.19685039370079in; right-margin: 0.19685039370079in; top-ma
 
 		  <tr class="row1">
 			<td class="column0 style002 s" colspan=2>Vessel/Flight</td>
-			<td class="column23 style6 s" width=25%>Port of Loading :</td>
-			<td colspan=2 class="column23 style5 s">Terms of delivery and payment</td>
-			<td class="column42 style7 null" colspan=2></td>
+			<td class="column23 style003 s" width=25%>Port of Loading :</td>
+			<td colspan=4 class="column23 style5 s style7">Terms of delivery and payment</td>
 		  </tr>
 		  <tr class="row2">
 			<td class="column0 style9 null" colspan=2></td>
@@ -631,8 +631,7 @@ body { left-margin: 0.19685039370079in; right-margin: 0.19685039370079in; top-ma
 			<td class="column0 style9 null" colspan=2></td>
 			<td class="column5 style1 s">Beirut, LEBANON</td>
 			<td class="column23 style15 null"></td>
-			<td class="column24 style1 s">8472.90-1090</td>
-			<td class="column24 style1 s">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8473.40-9000</td>
+			<td class="column24 style1 s" colspan=2>8472.90-1090&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8473.40-9000</td>
 			<td class="column42 style13 null"></td>
 		  </tr>
 		  
