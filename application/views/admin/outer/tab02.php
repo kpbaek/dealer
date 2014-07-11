@@ -18,14 +18,20 @@
 	  td.style01 { vertical-align:middle; border-bottom:none #000000; border-top:1px solid #000000 !important; border-left:none; border-right:none; color:#000000; font-family:'Arial'; font-size:11pt; background-color:white }
 	  td.style02 { vertical-align:middle; border-bottom:none #000000; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:none; font-weight:bold; color:#000000; font-family:'Arial'; font-size:9pt; background-color:white }
 	  td.style03 { vertical-align:middle; border-bottom:none #000000; border-top:1px solid #000000 !important; border-left:none; border-right:1px solid #000000 !important; color:#000000; font-family:'Arial'; font-size:9pt; background-color:white }
+	  td.style04 { vertical-align:middle; text-align:center; border-bottom:none #000000; border-top:1px solid #000000 !important; border-left:1px dashed #000000 !important; border-right:none #000000; color:#000000; font-family:'Arial'; font-size:9pt; background-color:white }
+	  td.style05 { vertical-align:middle; text-align:center; border-bottom:none #000000; border-top:1px solid #000000 !important; border-left:none #000000; border-right:1px dashed #000000 !important; color:#000000; font-family:'Arial'; font-size:9pt; background-color:white }
+	  td.style06 { vertical-align:middle; border-bottom:none #000000; border-top:2px solid #000000 !important; border-left:2px solid #000000 !important; border-right:none #000000; color:#000000; font-family:'Arial'; font-size:9pt; background-color:white }
+	  td.style07 { vertical-align:middle; border-bottom:none #000000; border-top:2px solid #000000 !important; border-left:none #000000; border-right:none #000000; color:#000000; font-family:'Arial'; font-size:9pt; background-color:white }
+	  td.style08 { vertical-align:middle; border-bottom:none #000000; border-top:2px solid #000000 !important; border-left:1px solid #000000 !important; border-right:none #000000; font-weight:bold; color:#000000; font-family:'Arial'; font-size:9pt; background-color:white }
+	  td.style09 { vertical-align:middle; border-bottom:none #000000; border-top:2px solid #000000 !important; border-left:none #000000; border-right:2px solid #000000 !important; color:#000000; font-family:'Arial'; font-size:9pt; background-color:white }
 	  td.style0 { vertical-align:bottom; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; color:#000000; font-family:'돋움'; font-size:11pt; background-color:white }
 	  td.style1 { vertical-align:middle; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; color:#000000; font-family:'Arial'; font-size:11pt; background-color:white }
 	  td.style2 { vertical-align:middle; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; color:#000000; font-family:'Arial'; font-size:11pt; background-color:white }
-	  td.style3 { vertical-align:middle; border-bottom:none #000000; border-top:2px solid #000000 !important; border-left:2px solid #000000 !important; border-right:none #000000; color:#000000; font-family:'Arial'; font-size:9pt; background-color:white }
+	  td.style3 { vertical-align:middle; border-bottom:none #000000; border-top:1px solid #000000 !important; border-left:2px solid #000000 !important; border-right:none #000000; color:#000000; font-family:'Arial'; font-size:9pt; background-color:white }
 	  td.style4 { vertical-align:middle; border-bottom:none #000000; border-top:2px solid #000000 !important; border-left:none #000000; border-right:none #000000; color:#000000; font-family:'Arial'; font-size:9pt; background-color:white }
-	  td.style5 { vertical-align:middle; border-bottom:none #000000; border-top:2px solid #000000 !important; border-left:1px solid #000000 !important; border-right:none #000000; font-weight:bold; color:#000000; font-family:'Arial'; font-size:9pt; background-color:white }
-	  td.style6 { vertical-align:middle; border-bottom:none #000000; border-top:2px solid #000000 !important; border-left:none #000000; border-right:none #000000; color:#000000; font-family:'Arial'; font-size:9pt; background-color:white }
-	  td.style7 { vertical-align:middle; border-bottom:none #000000; border-top:2px solid #000000 !important; border-left:none #000000; border-right:2px solid #000000 !important; color:#000000; font-family:'Arial'; font-size:9pt; background-color:white }
+	  td.style5 { vertical-align:middle; border-bottom:none #000000; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:none #000000; font-weight:bold; color:#000000; font-family:'Arial'; font-size:9pt; background-color:white }
+	  td.style6 { vertical-align:middle; border-bottom:none #000000; border-top:1px solid #000000 !important; border-left:none #000000; border-right:none #000000; color:#000000; font-family:'Arial'; font-size:9pt; background-color:white }
+	  td.style7 { vertical-align:middle; border-bottom:none #000000; border-top:1px solid #000000 !important; border-left:none #000000; border-right:2px solid #000000 !important; color:#000000; font-family:'Arial'; font-size:9pt; background-color:white }
 	  td.style8 { vertical-align:middle; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; color:#000000; font-family:'Arial'; font-size:9pt; background-color:white }
 	  td.style9 { vertical-align:middle; border-bottom:none #000000; border-top:none #000000; border-left:2px solid #000000 !important; border-right:none #000000; color:#000000; font-family:'Arial'; font-size:11pt; background-color:white }
 	  td.style10 { vertical-align:middle; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; font-weight:bold; color:#000000; font-family:'Arial'; font-size:11pt; background-color:white }
@@ -72,7 +78,7 @@
 	  td.style51 { vertical-align:middle; border-bottom:1px solid #000000 !important; border-top:none #000000; border-left:1px solid #000000 !important; border-right:none #000000; color:#000000; font-family:'Arial'; font-size:9pt; background-color:white }
 	  td.style52 { vertical-align:middle; border-bottom:1px solid #000000 !important; border-top:none #000000; border-left:none #000000; border-right:2px solid #000000 !important; color:#000000; font-family:'Arial'; font-size:9pt; background-color:white }
 	  td.style53 { vertical-align:middle; border-bottom:none #000000; border-top:none #000000; border-left:2px solid #000000 !important; border-right:none #000000; font-weight:bold; color:#000000; font-family:'Arial'; font-size:9pt; background-color:white }
-	  td.style54 { vertical-align:middle; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; font-weight:bold; color:#000000; font-family:'Arial'; font-size:9pt; background-color:white }
+	  td.style54 { vertical-align:middle; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; color:#000000; font-family:'Arial'; font-size:9pt; background-color:white }
 	  td.style55 { vertical-align:middle; border-bottom:1px solid #000000 !important; border-top:none #000000; border-left:none #000000; border-right:none #000000; color:#000000; font-family:'Arial'; font-size:10pt; background-color:white }
 	  td.style56 { vertical-align:middle; text-align:right; padding-right:9px; border-bottom:1px solid #000000 !important; border-top:none #000000; border-left:none #000000; border-right:1px solid #000000 !important; color:#000000; font-family:'Arial'; font-size:10pt; background-color:white }
 	  td.style57 { vertical-align:middle; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; font-weight:bold; color:#000000; font-family:'Arial'; font-size:11pt; background-color:white }
@@ -225,7 +231,7 @@
 	  td.style204 { vertical-align:middle; text-align:left; padding-left:0px; border-bottom:1px solid #000000 !important; border-top:none #000000; border-left:none #000000; border-right:none #000000; color:#000000; font-family:'Arial'; font-size:10pt; background-color:white }
 	  td.style205 { vertical-align:middle; text-align:center; border-bottom:none #000000; border-top:1px solid #000000 !important; border-left:1px dashed #000000 !important; border-right:none #000000; font-weight:bold; color:#000000; font-family:'Arial'; font-size:9pt; background-color:white }
 	  td.style206 { vertical-align:middle; text-align:center; border-bottom:none #000000; border-top:1px solid #000000 !important; border-left:none #000000; border-right:none #000000; font-weight:bold; color:#000000; font-family:'Arial'; font-size:9pt; background-color:white }
-	  td.style207 { vertical-align:middle; text-align:center; border-bottom:none #000000; border-top:1px solid #000000 !important; border-left:none #000000; border-right:1px dashed #000000 !important; font-weight:bold; color:#000000; font-family:'Arial'; font-size:9pt; background-color:white }
+	  td.style207 { vertical-align:middle; text-align:center; border-bottom:none #000000; border-top:1px solid #000000 !important; border-left:none #000000; border-right:1px dashed #000000 !important; color:#000000; font-family:'Arial'; font-size:9pt; background-color:white }
 	  td.style208 { vertical-align:middle; text-align:center; border-bottom:none #000000; border-top:1px solid #000000 !important; border-left:1px dashed #000000 !important; border-right:none #000000; font-weight:bold; color:#000000; font-family:'Arial'; font-size:9pt; background-color:white }
 	  td.style209 { vertical-align:middle; text-align:center; border-bottom:none #000000; border-top:1px solid #000000 !important; border-left:none #000000; border-right:none #000000; color:#000000; font-family:'Arial'; font-size:11pt; background-color:white }
 	  td.style210 { vertical-align:middle; text-align:center; border-bottom:none #000000; border-top:1px solid #000000 !important; border-left:none #000000; border-right:1px dashed #000000 !important; color:#000000; font-family:'Arial'; font-size:11pt; background-color:white }
@@ -496,24 +502,24 @@ body { left-margin: 0.19685039370079in; right-margin: 0.19685039370079in; top-ma
 			<td class="column43 style1 null"></td>
 		  </tr>
 		  <tr class="row1">
-			<td class="column0 style3 s" colspan=2>Shipper :</td>
-			<td class="column23 style6 s" width=45%></td>
-			<td colspan=2 class="column23 style5 s">Invoice date and No.</td>
-			<td class="column42 style7 null" colspan=2></td>
+			<td class="column0 style06 s" colspan=2 width=15%>Shipper :</td>
+			<td class="column23 style07 s" width=40%></td>
+			<td colspan=2 class="column23 style08 s" width=20%>Invoice date and No.</td>
+			<td class="column42 style09 null" colspan=2 width=15%></td>
 		  </tr>
 		  <tr class="row2">
 			<td class="column0 style9 null" colspan=2 rowspan=4><img style="width: 75px; height: 25px;" src="/images/common/sbmlogo.jpeg" border="0" /></td>
 			<td class="column5 style10 s" valign=top>SBM CO., LTD.</td>
 			<td class="column23 style11 null"></td>
-			<td class="column24 style1 s">&nbsp;&nbsp;&nbsp;&nbsp;Invoice date :</td>
-			<td class="column31 style217 n style217">4 April, 2014</td>
+			<td class="column24 style1 s" width=70px>Invoice date :</td>
+			<td class="column31 style217 n style217" width=90px>4 April, 2014</td>
 			<td class="column42 style13 null"></td>
 		  </tr>
 		  <tr class="row2">
 			<td class="column23 style14 null">6F, Hyunwoo Bld, 206, Anyang-Dong</td>
 			<td class="column23 style11 null"></td>
-			<td class="column24 style1 s">&nbsp;&nbsp;&nbsp;&nbsp;Invoice No :</td>
-			<td class="column31 style217 n style217">SWI-140321-7</td>
+			<td class="column24 style1 s">Invoice No :</td>
+			<td class="column31 style217 n style217" width=90px>SWI-140321-7</td>
 			<td class="column42 style13 null"></td>
 		  </tr>
 		  <tr class="row2">
@@ -527,7 +533,7 @@ body { left-margin: 0.19685039370079in; right-margin: 0.19685039370079in; top-ma
 			<td class="column23 style14 null">430-817, KOREA</td>
 			<td class="column23 style02 null"></td>
 			<td class="column24 style01 s">&nbsp;&nbsp;&nbsp;&nbsp;PI no.:</td>
-			<td class="column31 style217 n style03">PI-140321-7</td>
+			<td class="column31 style01 s">PI-140321-7</td>
 			<td class="column42 style13 null"></td>
 		  </tr>
 		  <tr class="row1">
@@ -593,7 +599,7 @@ body { left-margin: 0.19685039370079in; right-margin: 0.19685039370079in; top-ma
 		  
 		  <tr class="row1">
 			<td class="column0 style3 s" colspan=2>Departure date :</td>
-			<td class="column23 style6 s" width=45%></td>
+			<td class="column23 style6 s"></td>
 			<td colspan=2 class="column23 style11 s"></td>
 			<td class="column42 style7 null" colspan=2></td>
 		  </tr>
@@ -608,7 +614,7 @@ body { left-margin: 0.19685039370079in; right-margin: 0.19685039370079in; top-ma
 			<td class="column0 style9 null" colspan=2></td>
 			<td class="column5 style1 s" valign=top>Incheon / KOREA</td>
 			<td class="column23 style15 null"></td>
-			<td class="column24 style1 s" colspan=2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FOB</td>
+			<td class="column24 style1 s" colspan=2>FOB</td>
 			<td class="column42 style13 null"></td>
 		  </tr>
 		  
@@ -620,64 +626,65 @@ body { left-margin: 0.19685039370079in; right-margin: 0.19685039370079in; top-ma
 		  </tr>
 		  <tr class="row2">
 			<td class="column0 style9 null" colspan=2></td>
-			<td class="column5 style1 s" valign=top>Beirut, LEBANON</td>
+			<td class="column5 style1 s">Beirut, LEBANON</td>
 			<td class="column23 style15 null"></td>
-			<td class="column24 style1 s" colspan=2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8472.90-1090&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8473.40-9000</td>
+			<td class="column24 style1 s">8472.90-1090</td>
+			<td class="column24 style1 s">8473.40-9000</td>
 			<td class="column42 style13 null"></td>
 		  </tr>
 		  
-		  <tr class="row22">
-			<td class="column0 style53 s"></td>
-			<td class="column1 style54 s style207">No.</td>
-			<td class="column4 style66 s style207">Description of Goods</td>
-			<td class="column25 style206 s style207">Quantity</td>
-			<td class="column30 style205 s style207">Unit price</td>
-			<td class="column36 style205 s">Amount</td>
+		  <tr>
+			<td class="column0 style3 s"></td>
+			<td class="column1 style66 s style05">No.</td>
+			<td class="column4 style66 s style05">Description of Goods</td>
+			<td class="column25 style205 s" width=10%>Quantity</td>
+			<td class="column30 style205 s" width=10%>Unit price</td>
+			<td class="column36 style205 s" width=15%>Amount</td>
 			<td class="column47 style13 null"></td>
 		  </tr>
 		  <tr class="row22">
-			<td class="column0 style53 s"></td>
+			<td class="column0 style3 s"></td>
 			<td class="column1 style54 s style207">1)</td>
-			<td class="column4 style66 s style207">SB-9  Currency Discrimination Counter</td>
-			<td class="column25 style206 s style207">40</td>
-			<td class="column30 style205 s style207">0</td>
-			<td class="column36 style205 s">0</td>
+			<td class="column4 style54 s style207">SB-9  Currency Discrimination Counter</td>
+			<td class="column25 style54 s style207">40</td>
+			<td class="column30 style54 s style207">0</td>
+			<td class="column36 style04 s">0</td>
 			<td class="column47 style13 null"></td>
 		  </tr>
 		  
 		  <tr class="row22">
-			<td class="column0 style53 s"></td>
+			<td class="column0 style3 s"></td>
 			<td class="column1 style54 s style207">2)</td>
-			<td class="column4 style66 s style207">Printer (Model: SP-85S)</td>
-			<td class="column25 style206 s style207">40</td>
-			<td class="column30 style205 s style207">0</td>
-			<td class="column36 style205 s">0</td>
+			<td class="column4 style54 s style207">Printer (Model: SP-85S)</td>
+			<td class="column25 style54 s style207">40</td>
+			<td class="column30 style54 s style207">0</td>
+			<td class="column36 style04 s">0</td>
 			<td class="column47 style13 null"></td>
 		  </tr>
 		  <tr class="row22">
-			<td class="column0 style53 s"></td>
+			<td class="column0 style3 s"></td>
 			<td class="column1 style54 s style207">3)</td>
-			<td class="column4 style66 s style207">Currency Discrimination Counter Spare Parts</td>
-			<td class="column25 style206 s style207">40</td>
-			<td class="column30 style205 s style207">0</td>
-			<td class="column36 style205 s">0</td>
+			<td class="column4 style54 s style207">Currency Discrimination Counter Spare Parts</td>
+			<td class="column25 style54 s style207">40</td>
+			<td class="column30 style54 s style207">0</td>
+			<td class="column36 style04 s">0</td>
 			<td class="column47 style13 null"></td>
 		  </tr>
 		  <tr class="row22">
-			<td class="column0 style53 s"></td>
+			<td class="column0 style3 s"></td>
 			<td class="column1 style54 s style207">4)</td>
-			<td class="column4 style66 s style207">Repair Parts</td>
-			<td class="column25 style206 s style207">40</td>
-			<td class="column30 style205 s style207">0</td>
-			<td class="column36 style205 s">0</td>
+			<td class="column4 style54 s style207">Repair Parts</td>
+			<td class="column25 style54 s style207">40</td>
+			<td class="column30 style54 s style207">0</td>
+			<td class="column36 style04 s">0</td>
 			<td class="column47 style13 null"></td>
 		  </tr>
 		  <tr class="row22">
-			<td class="column0 style53 s"></td>
+			<td class="column0 style3 s"></td>
 			<td class="column1 style54 s style207"></td>
-			<td class="column4 style66 s style207">TOTAL :</td>
-			<td class="column25 style206 s style207">160</td>
-			<td class="column30 style205 s style207">0</td>
+			<td class="column4 style66 s style05">TOTAL :</td>
+			<td class="column25 style206 s">160</td>
+			<td class="column30 style205 s">0</td>
 			<td class="column36 style205 s">0</td>
 			<td class="column47 style13 null"></td>
 		  </tr>
