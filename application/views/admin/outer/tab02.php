@@ -24,6 +24,9 @@
 	  td.style07 { vertical-align:middle; border-bottom:none #000000; border-top:2px solid #000000 !important; border-left:none #000000; border-right:none #000000; color:#000000; font-family:'Arial'; font-size:9pt; background-color:white }
 	  td.style08 { vertical-align:middle; border-bottom:none #000000; border-top:2px solid #000000 !important; border-left:1px solid #000000 !important; border-right:none #000000; font-weight:bold; color:#000000; font-family:'Arial'; font-size:9pt; background-color:white }
 	  td.style09 { vertical-align:middle; border-bottom:none #000000; border-top:2px solid #000000 !important; border-left:none #000000; border-right:2px solid #000000 !important; color:#000000; font-family:'Arial'; font-size:9pt; background-color:white }
+	  td.style00 { vertical-align:middle; text-align:left; border-bottom:none #000000; border-top:1px solid #000000 !important; border-left:none #000000; border-right:1px dashed #000000 !important; color:#000000; font-family:'Arial'; font-size:9pt; background-color:white }
+	  td.style001 { vertical-align:middle; text-align:right; border-bottom:none #000000; border-top:1px solid #000000 !important; border-left:1px dashed #000000 !important; border-right:none #000000; font-weight:bold; color:#000000; font-family:'Arial'; font-size:9pt; background-color:white }
+	  td.style002 { vertical-align:middle; border-bottom:none #000000; border-top:1px solid #000000 !important; border-left:2px solid #000000 !important; border-right:none #000000; font-weight:bold; color:#000000; font-family:'Arial'; font-size:9pt; background-color:white }
 	  td.style0 { vertical-align:bottom; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; color:#000000; font-family:'돋움'; font-size:11pt; background-color:white }
 	  td.style1 { vertical-align:middle; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; color:#000000; font-family:'Arial'; font-size:11pt; background-color:white }
 	  td.style2 { vertical-align:middle; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; color:#000000; font-family:'Arial'; font-size:11pt; background-color:white }
@@ -230,8 +233,8 @@
 	  td.style203 { vertical-align:middle; text-align:left; padding-left:0px; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; font-weight:bold; color:#000000; font-family:'Arial'; font-size:8pt; background-color:white }
 	  td.style204 { vertical-align:middle; text-align:left; padding-left:0px; border-bottom:1px solid #000000 !important; border-top:none #000000; border-left:none #000000; border-right:none #000000; color:#000000; font-family:'Arial'; font-size:10pt; background-color:white }
 	  td.style205 { vertical-align:middle; text-align:center; border-bottom:none #000000; border-top:1px solid #000000 !important; border-left:1px dashed #000000 !important; border-right:none #000000; font-weight:bold; color:#000000; font-family:'Arial'; font-size:9pt; background-color:white }
-	  td.style206 { vertical-align:middle; text-align:center; border-bottom:none #000000; border-top:1px solid #000000 !important; border-left:none #000000; border-right:none #000000; font-weight:bold; color:#000000; font-family:'Arial'; font-size:9pt; background-color:white }
-	  td.style207 { vertical-align:middle; text-align:center; border-bottom:none #000000; border-top:1px solid #000000 !important; border-left:none #000000; border-right:1px dashed #000000 !important; color:#000000; font-family:'Arial'; font-size:9pt; background-color:white }
+	  td.style206 { vertical-align:right; text-align:center; border-bottom:none #000000; border-top:1px solid #000000 !important; border-left:none #000000; border-right:none #000000; font-weight:bold; color:#000000; font-family:'Arial'; font-size:9pt; background-color:white }
+	  td.style207 { vertical-align:middle; text-align:right; border-bottom:none #000000; border-top:1px solid #000000 !important; border-left:none #000000; border-right:1px dashed #000000 !important; color:#000000; font-family:'Arial'; font-size:9pt; background-color:white }
 	  td.style208 { vertical-align:middle; text-align:center; border-bottom:none #000000; border-top:1px solid #000000 !important; border-left:1px dashed #000000 !important; border-right:none #000000; font-weight:bold; color:#000000; font-family:'Arial'; font-size:9pt; background-color:white }
 	  td.style209 { vertical-align:middle; text-align:center; border-bottom:none #000000; border-top:1px solid #000000 !important; border-left:none #000000; border-right:none #000000; color:#000000; font-family:'Arial'; font-size:11pt; background-color:white }
 	  td.style210 { vertical-align:middle; text-align:center; border-bottom:none #000000; border-top:1px solid #000000 !important; border-left:none #000000; border-right:1px dashed #000000 !important; color:#000000; font-family:'Arial'; font-size:11pt; background-color:white }
@@ -447,7 +450,7 @@
 @page { left-margin: 0.19685039370079in; right-margin: 0.19685039370079in; top-margin: 0.39370078740157in; bottom-margin: 0.2755905511811in; }
 body { left-margin: 0.19685039370079in; right-margin: 0.19685039370079in; top-margin: 0.39370078740157in; bottom-margin: 0.2755905511811in; }
 </style>
-	<table border="0" cellpadding="0" cellspacing="0" id="sheet0" class="sheet0" style="width: 210mm;" align=center>
+	<table border="0" cellpadding="0" cellspacing="0" id="sheet0" class="sheet0" style="width: 210mm;height: 290mm;" align=center>
 		<col class="col0">
 		<col class="col1">
 		<col class="col2">
@@ -502,10 +505,10 @@ body { left-margin: 0.19685039370079in; right-margin: 0.19685039370079in; top-ma
 			<td class="column43 style1 null"></td>
 		  </tr>
 		  <tr class="row1">
-			<td class="column0 style06 s" colspan=2 width=15%>Shipper :</td>
-			<td class="column23 style07 s" width=40%></td>
+			<td class="column0 style06 s" colspan=2 width=10%>Shipper :</td>
+			<td class="column23 style07 s" width=45%></td>
 			<td colspan=2 class="column23 style08 s" width=20%>Invoice date and No.</td>
-			<td class="column42 style09 null" colspan=2 width=15%></td>
+			<td class="column42 style09 null" colspan=2 width=25%></td>
 		  </tr>
 		  <tr class="row2">
 			<td class="column0 style9 null" colspan=2 rowspan=4><img style="width: 75px; height: 25px;" src="/images/common/sbmlogo.jpeg" border="0" /></td>
@@ -539,8 +542,8 @@ body { left-margin: 0.19685039370079in; right-margin: 0.19685039370079in; top-ma
 		  <tr class="row1">
 			<td class="column0 style3 s" colspan=2>Consignee :</td>
 			<td class="column23 style6 s" width=25%></td>
-			<td colspan=2 class="column23 style5 s">Buyer(if other than consignee)</td>
-			<td class="column42 style7 null" colspan=2></td>
+			<td colspan=3 class="column23 style5 s">Buyer(if other than consignee)</td>
+			<td class="column42 style7 null"></td>
 		  </tr>
 		  <tr class="row2">
 			<td class="column0 style9 null" colspan=2 rowspan=5></td>
@@ -598,14 +601,14 @@ body { left-margin: 0.19685039370079in; right-margin: 0.19685039370079in; top-ma
 		  
 		  
 		  <tr class="row1">
-			<td class="column0 style3 s" colspan=2>Departure date :</td>
+			<td class="column0 style002 s" colspan=2>Departure date :</td>
 			<td class="column23 style6 s"></td>
 			<td colspan=2 class="column23 style11 s"></td>
 			<td class="column42 style7 null" colspan=2></td>
 		  </tr>
 
 		  <tr class="row1">
-			<td class="column0 style3 s" colspan=2>Vessel/Flight</td>
+			<td class="column0 style002 s" colspan=2>Vessel/Flight</td>
 			<td class="column23 style6 s" width=25%>Port of Loading :</td>
 			<td colspan=2 class="column23 style5 s">Terms of delivery and payment</td>
 			<td class="column42 style7 null" colspan=2></td>
@@ -619,7 +622,7 @@ body { left-margin: 0.19685039370079in; right-margin: 0.19685039370079in; top-ma
 		  </tr>
 		  
 		  <tr class="row1">
-			<td class="column0 style3 s" colspan=2>Final Destination</td>
+			<td class="column0 style002 s" colspan=2>Final Destination</td>
 			<td class="column23 style6 s" width=25%></td>
 			<td colspan=2 class="column23 style5 s">HS Code : </td>
 			<td class="column42 style7 null" colspan=2></td>
@@ -629,7 +632,7 @@ body { left-margin: 0.19685039370079in; right-margin: 0.19685039370079in; top-ma
 			<td class="column5 style1 s">Beirut, LEBANON</td>
 			<td class="column23 style15 null"></td>
 			<td class="column24 style1 s">8472.90-1090</td>
-			<td class="column24 style1 s">8473.40-9000</td>
+			<td class="column24 style1 s">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8473.40-9000</td>
 			<td class="column42 style13 null"></td>
 		  </tr>
 		  
@@ -638,54 +641,64 @@ body { left-margin: 0.19685039370079in; right-margin: 0.19685039370079in; top-ma
 			<td class="column1 style66 s style05">No.</td>
 			<td class="column4 style66 s style05">Description of Goods</td>
 			<td class="column25 style205 s" width=10%>Quantity</td>
-			<td class="column30 style205 s" width=10%>Unit price</td>
-			<td class="column36 style205 s" width=15%>Amount</td>
+			<td class="column30 style205 s">Unit price</td>
+			<td class="column36 style205 s">Amount</td>
 			<td class="column47 style13 null"></td>
-		  </tr>
+			</tr>
 		  <tr class="row22">
 			<td class="column0 style3 s"></td>
-			<td class="column1 style54 s style207">1)</td>
-			<td class="column4 style54 s style207">SB-9  Currency Discrimination Counter</td>
-			<td class="column25 style54 s style207">40</td>
-			<td class="column30 style54 s style207">0</td>
-			<td class="column36 style04 s">0</td>
+			<td class="column1 style54 s style05">1)</td>
+			<td class="column4 style00">SB-9  Currency Discrimination Counter</td>
+			<td class="column25 style54 s style207">40 Units</td>
+			<td class="column30 style54 s style207">$0.00&nbsp;&nbsp;&nbsp;&nbsp;</td>
+			<td class="column36 style001 s">$0.00
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			</td>
 			<td class="column47 style13 null"></td>
 		  </tr>
 		  
 		  <tr class="row22">
 			<td class="column0 style3 s"></td>
-			<td class="column1 style54 s style207">2)</td>
-			<td class="column4 style54 s style207">Printer (Model: SP-85S)</td>
-			<td class="column25 style54 s style207">40</td>
-			<td class="column30 style54 s style207">0</td>
-			<td class="column36 style04 s">0</td>
+			<td class="column1 style54 s style05">2)</td>
+			<td class="column4 style54 s style00">Printer (Model: SP-85S)</td>
+			<td class="column25 style54 s style207">40 Units</td>
+			<td class="column30 style54 s style207">$0.00&nbsp;&nbsp;&nbsp;&nbsp;</td>
+			<td class="column36 style001 s">$0.00
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			</td>
 			<td class="column47 style13 null"></td>
 		  </tr>
 		  <tr class="row22">
 			<td class="column0 style3 s"></td>
-			<td class="column1 style54 s style207">3)</td>
-			<td class="column4 style54 s style207">Currency Discrimination Counter Spare Parts</td>
-			<td class="column25 style54 s style207">40</td>
-			<td class="column30 style54 s style207">0</td>
-			<td class="column36 style04 s">0</td>
+			<td class="column1 style54 s style05">3)</td>
+			<td class="column4 style54 s style00">Currency Discrimination Counter Spare Parts</td>
+			<td class="column25 style54 s style207">13 Units</td>
+			<td class="column30 style54 s style207">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+			<td class="column36 style001 s">$254.7
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			</td>
 			<td class="column47 style13 null"></td>
 		  </tr>
 		  <tr class="row22">
 			<td class="column0 style3 s"></td>
-			<td class="column1 style54 s style207">4)</td>
-			<td class="column4 style54 s style207">Repair Parts</td>
-			<td class="column25 style54 s style207">40</td>
-			<td class="column30 style54 s style207">0</td>
-			<td class="column36 style04 s">0</td>
+			<td class="column1 style54 s style05">4)</td>
+			<td class="column4 style54 s style00">Repair Parts</td>
+			<td class="column25 style54 s style207">517 Units</td>
+			<td class="column30 style54 s style207">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+			<td class="column36 style001 s">$4,340.00
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			</td>
 			<td class="column47 style13 null"></td>
 		  </tr>
 		  <tr class="row22">
 			<td class="column0 style3 s"></td>
-			<td class="column1 style54 s style207"></td>
+			<td class="column1 style54 s style05"></td>
 			<td class="column4 style66 s style05">TOTAL :</td>
-			<td class="column25 style206 s">160</td>
-			<td class="column30 style205 s">0</td>
-			<td class="column36 style205 s">0</td>
+			<td class="column25 style001 s">160 Units</td>
+			<td class="column30 style001 s">$0.00&nbsp;&nbsp;&nbsp;&nbsp;</td>
+			<td class="column36 style001 s">$4,594.70
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			</td>
 			<td class="column47 style13 null"></td>
 		  </tr>
 
@@ -694,11 +707,10 @@ body { left-margin: 0.19685039370079in; right-margin: 0.19685039370079in; top-ma
 			<td class="column42 style13 null"></td>
 		  </tr>
 		  <tr class="row46">
-			<td class="column0 style53 s" rowspan=2></td>
+			<td class="column0 style53 s" rowspan=2 width=5%></td>
 		  	<td class="column1 style10 s" colspan=2>SBM CO., LTD</td>
 			<td class="column29 style14 null">signed by</td>
-			<td class="column28 style14 null" rowspan=2><img style="width: 167px; height: 64px;" src="/images/common/sbmsign.jpeg" border="0" /></td>
-			<td class="column42 style1 s"></td>
+			<td class="column28 style14 null" rowspan=2 colspan=2><img style="width: 180px; height: 80px;" src="/images/common/sbmsign.jpeg" border="0" /></td>
 			<td class="column42 style13 null"></td>
 		  </tr>
 		  <tr class="row46">
@@ -713,405 +725,6 @@ body { left-margin: 0.19685039370079in; right-margin: 0.19685039370079in; top-ma
 			<td class="column42 style109 s"></td>
 		  </tr>
 		  
-		  
-		  <!-- 
-
-		  <tr class="row45">
-			<td class="column0 style97 null"></td>
-			<td class="column1 style98 null"></td>
-			<td class="column2 style98 null"></td>
-			<td class="column3 style98 null"></td>
-			<td class="column4 style98 null"></td>
-			<td class="column5 style98 null"></td>
-			<td class="column6 style98 null"></td>
-			<td class="column7 style98 null"></td>
-			<td class="column8 style98 null"></td>
-			<td class="column9 style98 null"></td>
-			<td class="column10 style98 null"></td>
-			<td class="column11 style99 null"></td>
-			<td class="column12 style98 null"></td>
-			<td class="column13 style100 s">TOTAL :</td>
-			<td class="column14 style98 null"></td>
-			<td class="column15 style98 null"></td>
-			<td class="column16 style98 null"></td>
-			<td class="column17 style98 null"></td>
-			<td class="column18 style98 null"></td>
-			<td class="column19 style98 null"></td>
-			<td class="column20 style98 null"></td>
-			<td class="column21 style98 null"></td>
-			<td class="column22 style98 null"></td>
-			<td class="column23 style98 null"></td>
-			<td class="column24 style98 null"></td>
-			<td class="column25 style213 f style213" colspan="4">610Units</td>
-			<td class="column29 style101 null"></td>
-			<td class="column30 style101 null"></td>
-			<td class="column31 style101 null"></td>
-			<td class="column32 style98 null"></td>
-			<td class="column33 style98 null"></td>
-			<td class="column34 style98 null"></td>
-			<td class="column35 style102 null"></td>
-			<td class="column36 style214 f style215" colspan="5">$4,594.70</td>
-			<td class="column41 style103 null"></td>
-			<td class="column42 style103 null"></td>
-			<td class="column43 style9 null"></td>
-			<td class="column44">&nbsp;</td>
-			<td class="column45">&nbsp;</td>
-			<td class="column46">&nbsp;</td>
-			<td class="column47">&nbsp;</td>
-		  </tr>
-		  <tr class="row46">
-			<td class="column0 style22 null"></td>
-			<td class="column1 style10 s">SBM CO., LTD</td>
-			<td class="column2 style14 null"></td>
-			<td class="column3 style14 null"></td>
-			<td class="column4 style14 null"></td>
-			<td class="column5 style14 null"></td>
-			<td class="column6 style14 null"></td>
-			<td class="column7 style14 null"></td>
-			<td class="column8 style14 null"></td>
-			<td class="column9 style14 null"></td>
-			<td class="column10 style14 null"></td>
-			<td class="column11 style14 null"></td>
-			<td class="column12 style14 null"></td>
-			<td class="column13 style14 null"></td>
-			<td class="column14 style14 null"></td>
-			<td class="column15 style14 null"></td>
-			<td class="column16 style14 null"></td>
-			<td class="column17 style14 null"></td>
-			<td class="column18 style14 null"></td>
-			<td class="column19 style14 null"></td>
-			<td class="column20 style14 null"></td>
-			<td class="column21 style14 null"></td>
-			<td class="column22 style14 null"></td>
-			<td class="column23 style14 null"></td>
-			<td class="column24 style14 null"></td>
-			<td class="column25 style14 null"></td>
-			<td class="column26 style14 null"></td>
-			<td class="column27 style14 null"></td>
-			<td class="column28 style14 null">
-<div style="position: relative;"><img style="position: absolute; z-index: 1; left: 5px; top: 18px; width: 230px; height: 109px;" src="zip://D:\dev\php\web\sbm\sbm.dealer\application\views\test\packing.xlsx#xl/media/image2.jpeg" border="0" /></div></td>
-			<td class="column29 style14 null"></td>
-			<td class="column30 style14 null"></td>
-			<td class="column31 style14 null"></td>
-			<td class="column32 style14 null"></td>
-			<td class="column33 style14 null"></td>
-			<td class="column34 style14 null"></td>
-			<td class="column35 style14 null"></td>
-			<td class="column36 style14 null"></td>
-			<td class="column37 style14 null"></td>
-			<td class="column38 style14 null"></td>
-			<td class="column39 style14 null"></td>
-			<td class="column40 style14 null"></td>
-			<td class="column41 style27 null"></td>
-			<td class="column42 style27 null"></td>
-			<td class="column43">&nbsp;</td>
-			<td class="column44">&nbsp;</td>
-			<td class="column45">&nbsp;</td>
-			<td class="column46">&nbsp;</td>
-			<td class="column47">&nbsp;</td>
-		  </tr>
-		  <tr class="row47">
-			<td class="column0 style22 null"></td>
-			<td class="column1 style14 f">6F, Hyunwoo Bld, 206, Anyang-Dong</td>
-			<td class="column2 style14 null"></td>
-			<td class="column3 style14 null"></td>
-			<td class="column4 style14 null"></td>
-			<td class="column5 style14 null"></td>
-			<td class="column6 style14 null"></td>
-			<td class="column7 style14 null"></td>
-			<td class="column8 style14 null"></td>
-			<td class="column9 style14 null"></td>
-			<td class="column10 style14 null"></td>
-			<td class="column11 style14 null"></td>
-			<td class="column12 style14 null"></td>
-			<td class="column13 style14 null"></td>
-			<td class="column14 style14 null"></td>
-			<td class="column15 style14 null"></td>
-			<td class="column16 style14 null"></td>
-			<td class="column17 style14 null"></td>
-			<td class="column18 style14 null"></td>
-			<td class="column19 style14 null"></td>
-			<td class="column20 style14 null"></td>
-			<td class="column21 style14 null"></td>
-			<td class="column22 style14 null"></td>
-			<td class="column23 style14 null"></td>
-			<td class="column24 style14 null"></td>
-			<td class="column25 style104 s">Signed By :</td>
-			<td class="column26 style14 null"></td>
-			<td class="column27 style14 null"></td>
-			<td class="column28 style14 null"></td>
-			<td class="column29 style14 null"></td>
-			<td class="column30 style14 null"></td>
-			<td class="column31 style14 null"></td>
-			<td class="column32 style14 null"></td>
-			<td class="column33 style14 null"></td>
-			<td class="column34 style14 null"></td>
-			<td class="column35 style14 null"></td>
-			<td class="column36 style14 null"></td>
-			<td class="column37 style14 null"></td>
-			<td class="column38 style14 null"></td>
-			<td class="column39 style14 null"></td>
-			<td class="column40 style14 null"></td>
-			<td class="column41 style27 null"></td>
-			<td class="column42 style27 null"></td>
-			<td class="column43">&nbsp;</td>
-			<td class="column44">&nbsp;</td>
-			<td class="column45">&nbsp;</td>
-			<td class="column46">&nbsp;</td>
-			<td class="column47">&nbsp;</td>
-		  </tr>
-		  <tr class="row48">
-			<td class="column0 style22 null"></td>
-			<td class="column1 style14 f">Manan-Gu, Anyang-City, Gyeonggi-Do</td>
-			<td class="column2 style14 null"></td>
-			<td class="column3 style10 null"></td>
-			<td class="column4 style1 null"></td>
-			<td class="column5 style1 null"></td>
-			<td class="column6 style1 null"></td>
-			<td class="column7 style1 null"></td>
-			<td class="column8 style1 null"></td>
-			<td class="column9 style1 null"></td>
-			<td class="column10 style14 null"></td>
-			<td class="column11 style14 null"></td>
-			<td class="column12 style14 null"></td>
-			<td class="column13 style14 null"></td>
-			<td class="column14 style14 null"></td>
-			<td class="column15 style14 null"></td>
-			<td class="column16 style14 null"></td>
-			<td class="column17 style14 null"></td>
-			<td class="column18 style14 null"></td>
-			<td class="column19 style14 null"></td>
-			<td class="column20 style14 null"></td>
-			<td class="column21 style14 null"></td>
-			<td class="column22 style14 null"></td>
-			<td class="column23 style14 null"></td>
-			<td class="column24 style14 null"></td>
-			<td class="column25 style14 null"></td>
-			<td class="column26 style14 null"></td>
-			<td class="column27 style14 null"></td>
-			<td class="column28 style14 null"></td>
-			<td class="column29 style14 null"></td>
-			<td class="column30 style14 null"></td>
-			<td class="column31 style14 null"></td>
-			<td class="column32 style14 null"></td>
-			<td class="column33 style14 null"></td>
-			<td class="column34 style14 null"></td>
-			<td class="column35 style14 null"></td>
-			<td class="column36 style14 null"></td>
-			<td class="column37 style14 null"></td>
-			<td class="column38 style14 null"></td>
-			<td class="column39 style14 null"></td>
-			<td class="column40 style14 null"></td>
-			<td class="column41 style27 null"></td>
-			<td class="column42 style27 null"></td>
-			<td class="column43">&nbsp;</td>
-			<td class="column44">&nbsp;</td>
-			<td class="column45">&nbsp;</td>
-			<td class="column46">&nbsp;</td>
-			<td class="column47">&nbsp;</td>
-		  </tr>
-		  <tr class="row49">
-			<td class="column0 style22 null"></td>
-			<td class="column1 style14 f">430-817, KOREA</td>
-			<td class="column2 style14 null"></td>
-			<td class="column3 style14 null"></td>
-			<td class="column4 style14 null"></td>
-			<td class="column5 style14 null"></td>
-			<td class="column6 style14 null"></td>
-			<td class="column7 style14 null"></td>
-			<td class="column8 style14 null"></td>
-			<td class="column9 style14 null"></td>
-			<td class="column10 style14 null"></td>
-			<td class="column11 style14 null"></td>
-			<td class="column12 style14 null"></td>
-			<td class="column13 style14 null"></td>
-			<td class="column14 style14 null"></td>
-			<td class="column15 style14 null"></td>
-			<td class="column16 style14 null"></td>
-			<td class="column17 style14 null"></td>
-			<td class="column18 style14 null"></td>
-			<td class="column19 style14 null"></td>
-			<td class="column20 style14 null"></td>
-			<td class="column21 style14 null"></td>
-			<td class="column22 style14 null"></td>
-			<td class="column23 style14 null"></td>
-			<td class="column24 style14 null"></td>
-			<td class="column25 style14 null"></td>
-			<td class="column26 style14 null"></td>
-			<td class="column27 style14 null"></td>
-			<td class="column28 style14 null"></td>
-			<td class="column29 style14 null"></td>
-			<td class="column30 style14 null"></td>
-			<td class="column31 style14 null"></td>
-			<td class="column32 style14 null"></td>
-			<td class="column33 style14 null"></td>
-			<td class="column34 style14 null"></td>
-			<td class="column35 style14 null"></td>
-			<td class="column36 style14 null"></td>
-			<td class="column37 style14 null"></td>
-			<td class="column38 style14 null"></td>
-			<td class="column39 style14 null"></td>
-			<td class="column40 style14 null"></td>
-			<td class="column41 style27 null"></td>
-			<td class="column42 style27 null"></td>
-			<td class="column43">&nbsp;</td>
-			<td class="column44">&nbsp;</td>
-			<td class="column45">&nbsp;</td>
-			<td class="column46">&nbsp;</td>
-			<td class="column47">&nbsp;</td>
-		  </tr>
-		  <tr class="row50">
-			<td class="column0 style105 null"></td>
-			<td class="column1 style106 s">Tel : +82-31-429-0789</td>
-			<td class="column2 style106 null"></td>
-			<td class="column3 style106 null"></td>
-			<td class="column4 style106 null"></td>
-			<td class="column5 style106 null"></td>
-			<td class="column6 style106 null"></td>
-			<td class="column7 style106 null"></td>
-			<td class="column8 style10 null"></td>
-			<td class="column9 style10 null"></td>
-			<td class="column10 style10 null"></td>
-			<td class="column11 style10 null"></td>
-			<td class="column12 style10 null"></td>
-			<td class="column13 style10 null"></td>
-			<td class="column14 style10 null"></td>
-			<td class="column15 style10 null"></td>
-			<td class="column16 style10 null"></td>
-			<td class="column17 style10 null"></td>
-			<td class="column18 style10 null"></td>
-			<td class="column19 style10 null"></td>
-			<td class="column20 style10 null"></td>
-			<td class="column21 style10 null"></td>
-			<td class="column22 style10 null"></td>
-			<td class="column23 style10 null"></td>
-			<td class="column24 style10 null"></td>
-			<td class="column25 style10 null"></td>
-			<td class="column26 style104 null"></td>
-			<td class="column27 style10 null"></td>
-			<td class="column28 style10 null"></td>
-			<td class="column29 style10 null"></td>
-			<td class="column30 style1 null"></td>
-			<td class="column31 style1 null"></td>
-			<td class="column32 style1 null"></td>
-			<td class="column33 style1 null"></td>
-			<td class="column34 style1 null"></td>
-			<td class="column35 style1 null"></td>
-			<td class="column36 style1 null"></td>
-			<td class="column37 style1 null"></td>
-			<td class="column38 style1 null"></td>
-			<td class="column39 style1 null"></td>
-			<td class="column40 style1 null"></td>
-			<td class="column41 style13 null"></td>
-			<td class="column42 style13 null"></td>
-			<td class="column43">&nbsp;</td>
-			<td class="column44">&nbsp;</td>
-			<td class="column45">&nbsp;</td>
-			<td class="column46">&nbsp;</td>
-			<td class="column47">&nbsp;</td>
-		  </tr>
-		  <tr class="row51">
-			<td class="column0 style105 null"></td>
-			<td class="column1 style106 s">Fax : +82-31-429-3607</td>
-			<td class="column2 style106 null"></td>
-			<td class="column3 style106 null"></td>
-			<td class="column4 style106 null"></td>
-			<td class="column5 style106 null"></td>
-			<td class="column6 style106 null"></td>
-			<td class="column7 style106 null"></td>
-			<td class="column8 style10 null"></td>
-			<td class="column9 style10 null"></td>
-			<td class="column10 style10 null"></td>
-			<td class="column11 style10 null"></td>
-			<td class="column12 style10 null"></td>
-			<td class="column13 style10 null"></td>
-			<td class="column14 style10 null"></td>
-			<td class="column15 style10 null"></td>
-			<td class="column16 style10 null"></td>
-			<td class="column17 style10 null"></td>
-			<td class="column18 style10 null"></td>
-			<td class="column19 style10 null"></td>
-			<td class="column20 style10 null"></td>
-			<td class="column21 style10 null"></td>
-			<td class="column22 style10 null"></td>
-			<td class="column23 style10 null"></td>
-			<td class="column24 style10 null"></td>
-			<td class="column25 style10 null"></td>
-			<td class="column26 style10 null"></td>
-			<td class="column27 style10 null"></td>
-			<td class="column28 style10 null"></td>
-			<td class="column29 style10 null"></td>
-			<td class="column30 style1 null"></td>
-			<td class="column31 style1 null"></td>
-			<td class="column32 style1 null"></td>
-			<td class="column33 style1 null"></td>
-			<td class="column34 style1 null"></td>
-			<td class="column35 style1 null"></td>
-			<td class="column36 style1 null"></td>
-			<td class="column37 style1 null"></td>
-			<td class="column38 style1 null"></td>
-			<td class="column39 style1 null"></td>
-			<td class="column40 style1 null"></td>
-			<td class="column41 style13 null"></td>
-			<td class="column42 style13 null"></td>
-			<td class="column43">&nbsp;</td>
-			<td class="column44">&nbsp;</td>
-			<td class="column45">&nbsp;</td>
-			<td class="column46">&nbsp;</td>
-			<td class="column47">&nbsp;</td>
-		  </tr>
-		  <tr class="row52">
-			<td class="column0 style107 null"></td>
-			<td class="column1 style108 null"></td>
-			<td class="column2 style108 null"></td>
-			<td class="column3 style108 null"></td>
-			<td class="column4 style108 null"></td>
-			<td class="column5 style108 null"></td>
-			<td class="column6 style108 null"></td>
-			<td class="column7 style108 null"></td>
-			<td class="column8 style108 null"></td>
-			<td class="column9 style108 null"></td>
-			<td class="column10 style108 null"></td>
-			<td class="column11 style108 null"></td>
-			<td class="column12 style108 null"></td>
-			<td class="column13 style108 null"></td>
-			<td class="column14 style108 null"></td>
-			<td class="column15 style108 null"></td>
-			<td class="column16 style108 null"></td>
-			<td class="column17 style108 null"></td>
-			<td class="column18 style108 null"></td>
-			<td class="column19 style108 null"></td>
-			<td class="column20 style108 null"></td>
-			<td class="column21 style108 null"></td>
-			<td class="column22 style108 null"></td>
-			<td class="column23 style108 null"></td>
-			<td class="column24 style108 null"></td>
-			<td class="column25 style108 null"></td>
-			<td class="column26 style108 null"></td>
-			<td class="column27 style108 null"></td>
-			<td class="column28 style108 null"></td>
-			<td class="column29 style108 null"></td>
-			<td class="column30 style108 null"></td>
-			<td class="column31 style108 null"></td>
-			<td class="column32 style108 null"></td>
-			<td class="column33 style108 null"></td>
-			<td class="column34 style108 null"></td>
-			<td class="column35 style108 null"></td>
-			<td class="column36 style108 null"></td>
-			<td class="column37 style108 null"></td>
-			<td class="column38 style108 null"></td>
-			<td class="column39 style108 null"></td>
-			<td class="column40 style108 null"></td>
-			<td class="column41 style109 null"></td>
-			<td class="column42 style109 null"></td>
-			<td class="column43">&nbsp;</td>
-			<td class="column44">&nbsp;</td>
-			<td class="column45">&nbsp;</td>
-			<td class="column46">&nbsp;</td>
-			<td class="column47">&nbsp;</td>
-		  </tr>
-		  
- -->		  
 		</tbody>
 	</table>
   </body>
