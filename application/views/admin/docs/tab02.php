@@ -576,30 +576,6 @@ body { left-margin: 0.35433070866142in; right-margin: 0.31496062992126in; top-ma
 			<td class="column10">&nbsp;</td>
 			<td class="column11">&nbsp;</td>
 		  </tr>
-		  <tr class="row34">
-			<td class="column0">&nbsp;</td>
-			<td class="column1">&nbsp;</td>
-			<td class="column2">&nbsp;</td>
-			<td class="column3">&nbsp;</td>
-			<td class="column4">&nbsp;</td>
-			<td class="column5">&nbsp;</td>
-			<td class="column6 style0 null">
-<div style="position: relative;"><img style="position: absolute; z-index: 1; left: 86px; top: 0px; width: 147px; height: 0px;" src="zip://D:\dev\php\web\sbm\sbm.dealer\application\views\test\docs_02.xlsx#xl/media/image2.jpeg" border="0" /></div>
-<div style="position: relative;"><img style="position: absolute; z-index: 1; left: 86px; top: 0px; width: 147px; height: 0px;" src="zip://D:\dev\php\web\sbm\sbm.dealer\application\views\test\docs_02.xlsx#xl/media/image2.jpeg" border="0" /></div>
-<div style="position: relative;"><img style="position: absolute; z-index: 1; left: 86px; top: 0px; width: 147px; height: 0px;" src="zip://D:\dev\php\web\sbm\sbm.dealer\application\views\test\docs_02.xlsx#xl/media/image2.jpeg" border="0" /></div>
-<div style="position: relative;"><img style="position: absolute; z-index: 1; left: 86px; top: 0px; width: 147px; height: 0px;" src="zip://D:\dev\php\web\sbm\sbm.dealer\application\views\test\docs_02.xlsx#xl/media/image2.jpeg" border="0" /></div>
-<div style="position: relative;"><img style="position: absolute; z-index: 1; left: 86px; top: 0px; width: 147px; height: 0px;" src="zip://D:\dev\php\web\sbm\sbm.dealer\application\views\test\docs_02.xlsx#xl/media/image2.jpeg" border="0" /></div>
-<div style="position: relative;"><img style="position: absolute; z-index: 1; left: 86px; top: 0px; width: 147px; height: 0px;" src="zip://D:\dev\php\web\sbm\sbm.dealer\application\views\test\docs_02.xlsx#xl/media/image2.jpeg" border="0" /></div>
-<div style="position: relative;"><img style="position: absolute; z-index: 1; left: 86px; top: 0px; width: 147px; height: 0px;" src="zip://D:\dev\php\web\sbm\sbm.dealer\application\views\test\docs_02.xlsx#xl/media/image2.jpeg" border="0" /></div>
-<div style="position: relative;"><img style="position: absolute; z-index: 1; left: 86px; top: 0px; width: 147px; height: 0px;" src="zip://D:\dev\php\web\sbm\sbm.dealer\application\views\test\docs_02.xlsx#xl/media/image2.jpeg" border="0" /></div>
-<div style="position: relative;"><img style="position: absolute; z-index: 1; left: 86px; top: 0px; width: 147px; height: 0px;" src="zip://D:\dev\php\web\sbm\sbm.dealer\application\views\test\docs_02.xlsx#xl/media/image2.jpeg" border="0" /></div>
-<div style="position: relative;"><img style="position: absolute; z-index: 1; left: 86px; top: 0px; width: 147px; height: 0px;" src="zip://D:\dev\php\web\sbm\sbm.dealer\application\views\test\docs_02.xlsx#xl/media/image2.jpeg" border="0" /></div></td>
-			<td class="column7">&nbsp;</td>
-			<td class="column8">&nbsp;</td>
-			<td class="column9">&nbsp;</td>
-			<td class="column10">&nbsp;</td>
-			<td class="column11">&nbsp;</td>
-		  </tr>
 		</tbody>
 	</table>
   </body>
