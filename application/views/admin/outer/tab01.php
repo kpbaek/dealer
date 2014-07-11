@@ -148,7 +148,7 @@
 @page { left-margin: 0.98425196850394in; right-margin: 0.98425196850394in; top-margin: 0.19685039370079in; bottom-margin: 0.039370078740157in; }
 body { left-margin: 0.98425196850394in; right-margin: 0.98425196850394in; top-margin: 0.19685039370079in; bottom-margin: 0.039370078740157in; }
 </style>
-	<table border="0" cellpadding="0" cellspacing="0" id="sheet0" class="sheet0" style="width: 210mm;">
+	<table border="0" cellpadding="0" cellspacing="0" id="sheet0" class="sheet0" style="width: 210mm;height: 290mm;">
 		<col class="col0">
 		<col class="col1">
 		<col class="col2">
@@ -194,7 +194,7 @@ body { left-margin: 0.98425196850394in; right-margin: 0.98425196850394in; top-ma
 			<td class="column6">&nbsp;</td>
 		  </tr>
 		  <tr class="row6">
-			<td class="column0 style62 n style62" colspan="3">Date: 2014-03-21</td>
+			<td class="column0 style62 n style62" colspan="3">Date: 21 Mar., 2014</td>
 			<td class="column3 style5 null"></td>
 			<td class="column4">&nbsp;</td>
 			<td class="column5 style63 n style63" colspan="2">Our Ref: PI-140321-7</td>

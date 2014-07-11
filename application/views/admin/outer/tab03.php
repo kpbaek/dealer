@@ -515,15 +515,13 @@ body { left-margin: 0.19685039370079in; right-margin: 0.19685039370079in; top-ma
 			<td class="column0 style9 null" colspan=2 rowspan=4><img style="width: 75px; height: 25px;" src="/images/common/sbmlogo.jpeg" border="0" /></td>
 			<td class="column5 style10 s" valign=top>SBM CO., LTD.</td>
 			<td class="column23 style11 null"></td>
-			<td class="column24 style1 s"  colspan=2>Invoice date :</td>
-			<td class="column31 style217 n style217" width=90px>4 April, 2014</td>
+			<td class="column24 style1 s"  colspan=3>Invoice date : 4 April, 2014</td>
 			<td class="column42 style13 null"></td>
 		  </tr>
 		  <tr class="row2">
 			<td class="column23 style14 null">6F, Hyunwoo Bld, 206, Anyang-Dong</td>
 			<td class="column23 style11 null"></td>
-			<td class="column24 style1 s" colspan=2>Invoice No :</td>
-			<td class="column31 style217 n style217" width=90px>SWI-140321-7</td>
+			<td class="column24 style1 s" colspan=3>Invoice No : SWI-140321-7</td>
 			<td class="column42 style13 null"></td>
 		  </tr>
 		  <tr class="row2">

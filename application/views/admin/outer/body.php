@@ -20,27 +20,25 @@
 
 <body>
 
-<h3><a href="/admin/outer?countrytabs=0">외부발송문서</a></h3>
+<h3><a href="/admin/outer?outertabs=0">외부발송문서</a></h3>
 
-<ul id="countrytabs" class="shadetabs">
-<li><a href="/admin/outer/tab01" rel="countrycontainer" class="selected">Proforma invoice</a></li>
-<li><a href="/admin/outer/tab02" rel="countrycontainer">INVOICE</a></li>
-<li><a href="/admin/outer/tab03" rel="countrycontainer">PACKING LIST</a></li>
+<ul id="outertabs" class="shadetabs">
+<li><a href="/admin/outer/tab01" rel="#iframe" class="selected">Proforma invoice</a></li>
+<li><a href="/admin/outer/tab02" rel="#iframe">INVOICE</a></li>
+<li><a href="/admin/outer/tab03" rel="#iframe">PACKING LIST</a></li>
 </ul>
 
-<div id="countrydivcontainer" style="border:1px solid gray; width:970px; height:550px; margin-bottom: 1em; padding: 10px;overflow: scroll;">
+<div id="outerDiv" style="border:1px solid gray; width:970px; height:550px; margin-bottom: 1em; padding: 10px;overflow: scroll;">
 </div>
 
 <script type="text/javascript">
 
-var countries=new ddajaxtabs("countrytabs", "countrydivcontainer")
-countries.setpersist(true)
-countries.setselectedClassTarget("link") //"link" or "linkparent"
-countries.init()
+var outer=new ddajaxtabs("outertabs", "outerDiv")
+outer.setpersist(true)
+outer.setselectedClassTarget("link") //"link" or "linkparent"
+outer.init()
 
 </script>
-
-<p><a href="/admin/outer?countrytabs=0">Reload page and select 1nd tab using URL parameter</a> | <a href="javascript: countries.expandit(3)">Dynamically select last Tab</a></p>
 
 <hr />
 
