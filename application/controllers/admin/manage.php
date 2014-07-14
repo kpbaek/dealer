@@ -49,6 +49,10 @@ class Manage extends CI_Controller {
 		$this->load->view('/admin/manage/tab02');
 	}
 	
+	public function listDealer()
+	{
+		$this->load->view('/admin/manage/listDealer');
+	}
 	
 }
 

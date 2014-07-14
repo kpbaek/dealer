@@ -59,6 +59,16 @@ class Order extends CI_Controller {
 		$this->load->view('/admin/order/listPart');
 	}
 	
+	public function listOrder()
+	{
+		$this->load->view('/admin/order/listOrder');
+	}
+
+	public function listDtlOrder()
+	{
+		$this->load->view('/admin/order/listDtlOrder');
+	}
+
 }
 
 /* End of file welcome.php */
