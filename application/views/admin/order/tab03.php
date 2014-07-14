@@ -46,8 +46,9 @@
 <div id="searchDiv" style="display:">
 <form name="searchForm">
 <input type="text" name="page" style="display: none">
-담당부서
-<select id="searchTeamId" name="searchTeamId">
+주문확정여부
+<select id="searchState" name="searchState">
+<option value="">X</option>
 </select>
 영업담당자
 <select id="searchSaleWorkerId" name="searchSaleWorkerId">
@@ -60,7 +61,7 @@
 <div id="pager"></div>
 </div>
 <br>
-<table id="list_d"></table>
+<table id="list_d" style="display:none"></table>
 <div id="pager_d"></div>
 
 
@@ -83,7 +84,7 @@
 		   	url:targetUrl,
 		   	datatype: "json",
 		   	//colNames:['Inv No','Date', 'Client', 'Amount','Tax','Total','Notes'],
-		   	colNames:['', '주문일자', '처리상태', 'Country', 'Dealer Name', 'Delivery', 'Amount', '담당부서', '영업담당자', 'Confirm', '', '', 'P/I', 'C/I', '출고의뢰', 'Packing'],
+		   	colNames:['', '주문일자', '확정일자', 'Country', 'Dealer', 'Delivery', 'Amount', '', '담당자', 'Confirm', '', 'remark', 'P/I', 'C/I', '출고전표', 'Packing'],
 	   	              //, '(1CIS)', '(2CIS)', 'Q(Per 1Unit)', 'Order Price', 'Amount'
 		   	colModel:[
 		   		{name:'chk', index:'chk', width:55,hidden:true,search:true,formatter:'checkbox', editoptions:{value:'1:0'}, formatoptions:{disabled:true}}, 
@@ -93,15 +94,15 @@
 		   		{name:'code',index:'name', width:100, align:"right",search:true},
 		   		{name:'part_name',index:'part_name', width:100,search:true},
 		   		{name:'price',index:'price', width:70, sortable:false,search:true,formatter:'currency', formatoptions:{prefix:"$"}},		
-		   		{name:'c_image',index:'tax', width:80, align:"right",search:true},		
+		   		{name:'c_image',index:'tax', width:80, align:"right",search:true,hidden:true},		
 		   		{name:'amount',index:'amount', width:70, sortable:false,search:true,formatter:'currency', formatoptions:{prefix:"$"}},		
-		   		{name:'qty',index:'qty', width:70, sortable:false,search:true,hidden:false,editable:true,editrules:{number:true,minValue:0}},		
+		   		{name:'qty',index:'qty', width:100, sortable:false,search:true,hidden:false},		
 		   		{name:'c_qty',index:'qty', width:70, sortable:false,search:true,hidden:true},		
-		   		{name:'recomYN',index:'recomYN', width:70, sortable:false,search:true},		
+		   		{name:'remark',index:'remark', width:70, sortable:false,search:true},		
+		   		{name:'recomYN',index:'recomYN', width:140, sortable:false,search:true},		
 		   		{name:'spareYN',index:'spareYN', width:70, sortable:false,search:true},		
 		   		{name:'wearpartYN',index:'wearpartYN', width:70,align:"right",search:true},		
-		   		{name:'withoutWRT',index:'withoutWRT', width:70, sortable:false,search:true},		
-		   		{name:'remark',index:'remark', width:70, sortable:false,search:true}		
+		   		{name:'withoutWRT',index:'withoutWRT', width:70, sortable:false,search:true}		
 			],
 	        onSelectRow: function(rowid) {
 	        	alert("123");
@@ -118,9 +119,18 @@
                 for(var i=0;i < ids.length;i++){
                     var rowData = jQuery("#list").jqGrid('getRowData',ids[i]);
                     c_image = "<img src='/images/ci_logo.jpg' height='20'>";
-                    c_qty = "<input type=text size=6 height='20' name='c_qty' value='" + rowData.qty + "' onChange='javascript:calcAmt(" + (i+1) + ", this.value);'>";
-//                    jQuery("#list").jqGrid('setRowData',ids[i],{c_image:c_image});
-                    jQuery("#list").jqGrid('setRowData',ids[i],{c_qty:c_qty});
+                    c_qty = "<input style='height:22px;width:100px;' type=button name='c_qty' value='주문서확정' onclick=\"jQuery('#rowed2').saveRow('"+rowData.id+"');\">";
+                    c_pi = "<input style='height:22px;width:60px;' type=button name='be_pi' value='edit' onclick=\"jQuery('#rowed2').saveRow('"+rowData.id+"');\">";
+                    c_pi = c_pi + "<input style='height:22px;width:60px;' type=button name='c_pi' value='send' onclick=\"jQuery('#rowed2').saveRow('"+rowData.id+"');\">";
+                    c_ci = "<input style='height:22px;width:60px;' type=button name='c_ci' value='send' onclick=\"jQuery('#rowed2').saveRow('"+rowData.id+"');\">";
+                    c_rptout = "<input style='height:22px;width:60px;' type=button name='c_rptout' value='send' onclick=\"jQuery('#rowed2').saveRow('"+rowData.id+"');\">";
+                    c_packing = "<input style='height:22px;width:60px;' type=button name='c_packing' value='send' onclick=\"jQuery('#rowed2').saveRow('"+rowData.id+"');\">";
+                    //                    jQuery("#list").jqGrid('setRowData',ids[i],{c_image:c_image});
+                    jQuery("#list").jqGrid('setRowData',ids[i],{qty:c_qty});
+                    jQuery("#list").jqGrid('setRowData',ids[i],{recomYN:c_pi});
+                    jQuery("#list").jqGrid('setRowData',ids[i],{spareYN:c_ci});
+                    jQuery("#list").jqGrid('setRowData',ids[i],{wearpartYN:c_rptout});
+                    jQuery("#list").jqGrid('setRowData',ids[i],{withoutWRT:c_packing});
                     if(rowData.qty > 0){
 	                    jQuery("#list").jqGrid('setRowData',ids[i],{chk:'1'});
 					}else{
@@ -158,8 +168,8 @@
 			},
 			subGrid : true,
 			subGridUrl: "/admin/order/listDtlOrder",
-		    subGridModel: [{ name  : ['주문구분','주문번호','qty','amount','등록자',''],
-		                    width : [50,60,60,70,70], params:['id'] } 
+		    subGridModel: [{ name  : ['주문구분','주문번호','qty','amount','등록인','수정인','','의뢰서'],
+		                    width : [50,60,60,70,70,70], params:['id'] } 
 		    ],			
 			/**
 			multiselect: true,
@@ -201,7 +211,6 @@
 	
 	function initForm() {
 		var f = document.searchForm;
-		getCodeCombo("02", f.searchTeamId);
 		getCodeCombo("02", f.searchSaleWorkerId);
 //		newForm();
     }

@@ -34,7 +34,7 @@ mysql_select_db(PHPGRID_DBNAME);
 
 $start = $limit*$page - $limit; // do not put $limit*($page - 1)
 #$SQL = "SELECT a.id, a.invdate, b.name, a.amount,a.tax,a.total,a.note FROM invheader a, clients b 
-$SQL = "SELECT id as no, 'type' as type, '0' as price, '0' as qty, '0' as amount, 'tester' invdate
+$SQL = "SELECT '장비' as type, id as no, '0' as price, '0' as qty, '0' as amount, 'tester' invdate
 		FROM invheader"; 
 $SQL_WHERE = " WHERE client_id=". $searchId ; 
 $SQL_ORDER = "		ORDER BY "
@@ -76,10 +76,20 @@ $i=0;
 $qtytot = 0;
 $amttot = 0;
 $link = "";
+$linkDoc = "";
+$linkDoc = "";
+$type = "";
 while($row = mysql_fetch_array($result,MYSQL_ASSOC)) {
 	$link = "<input type=button value='edit'>";
+	if($row['no']%2==0){
+		$linkDoc = "<input type=button value='생산의뢰서'>";
+		$type = "장비";
+	}else{
+		$linkDoc = "<input type=button value='부품출고의뢰서'>";
+		$type = "부품";
+	}
 	$responce['rows'][$i]['no'] = $row['no'];
-	$responce['rows'][$i]['cell'] = array($row['no'],$row['type'],$row['qty'],$row['amount'],$row['invdate'],$link);
+	$responce['rows'][$i]['cell'] = array($type,$row['no'],$row['qty'],$row['amount'],$row['invdate'],$row['invdate'],$link, $linkDoc);
 	
 //	$qtytot += $row['qty'];
 //	$amttot += $row['amount'];
