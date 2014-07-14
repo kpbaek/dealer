@@ -34,7 +34,7 @@ mysql_select_db(PHPGRID_DBNAME);
 
 $start = $limit*$page - $limit; // do not put $limit*($page - 1)
 #$SQL = "SELECT a.id, a.invdate, b.name, a.amount,a.tax,a.total,a.note FROM invheader a, clients b 
-$SQL = "SELECT '장비' as type, id as no, '0' as price, '0' as qty, '0' as amount, 'tester' invdate
+$SQL = "SELECT '장비' as type, id as no, '0' as price, '1' as qty, '0.5' as amount, 'tester' invdate
 		FROM invheader"; 
 $SQL_WHERE = " WHERE client_id=". $searchId ; 
 $SQL_ORDER = "		ORDER BY "
