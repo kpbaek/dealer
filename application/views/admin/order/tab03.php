@@ -46,7 +46,12 @@
 <div id="searchDiv" style="display:">
 <form name="searchForm">
 <input type="text" name="page" style="display: none">
-searchNo<input type="text" id="searchNo" name="searchNo">
+담당부서
+<select id="searchTeamId" name="searchTeamId">
+</select>
+영업담당자
+<select id="searchSaleWorkerId" name="searchSaleWorkerId">
+</select>
 <input type="button" id="btnSearch" value="Search" onclick="javascript:gridReload();"/>
 </form>
 </div>
@@ -78,7 +83,7 @@ searchNo<input type="text" id="searchNo" name="searchNo">
 		   	url:targetUrl,
 		   	datatype: "json",
 		   	//colNames:['Inv No','Date', 'Client', 'Amount','Tax','Total','Notes'],
-		   	colNames:['처리상태','주문번호', '주문일자', 'Confirm', 'Country', 'Dealer Name', 'Delivery', '영업담당자', '총수량', '', 'Amount', 'modfiy', 'P/I', 'C/I', '출고의뢰', 'Packing'],
+		   	colNames:['', '주문일자', '처리상태', 'Country', 'Dealer Name', 'Delivery', 'Amount', '담당부서', '영업담당자', 'Confirm', '', '', 'P/I', 'C/I', '출고의뢰', 'Packing'],
 	   	              //, '(1CIS)', '(2CIS)', 'Q(Per 1Unit)', 'Order Price', 'Amount'
 		   	colModel:[
 		   		{name:'chk', index:'chk', width:55,hidden:true,search:true,formatter:'checkbox', editoptions:{value:'1:0'}, formatoptions:{disabled:true}}, 
@@ -87,11 +92,11 @@ searchNo<input type="text" id="searchNo" name="searchNo">
 		   		{name:'sn',index:'sn', width:70,search:true},
 		   		{name:'code',index:'name', width:100, align:"right",search:true},
 		   		{name:'part_name',index:'part_name', width:100,search:true},
-		   		{name:'c_image',index:'tax', width:80, align:"right",search:true},		
 		   		{name:'price',index:'price', width:70, sortable:false,search:true,formatter:'currency', formatoptions:{prefix:"$"}},		
+		   		{name:'c_image',index:'tax', width:80, align:"right",search:true},		
+		   		{name:'amount',index:'amount', width:70, sortable:false,search:true,formatter:'currency', formatoptions:{prefix:"$"}},		
 		   		{name:'qty',index:'qty', width:70, sortable:false,search:true,hidden:false,editable:true,editrules:{number:true,minValue:0}},		
 		   		{name:'c_qty',index:'qty', width:70, sortable:false,search:true,hidden:true},		
-		   		{name:'amount',index:'amount', width:70, sortable:false,search:true,formatter:'currency', formatoptions:{prefix:"$"}},		
 		   		{name:'recomYN',index:'recomYN', width:70, sortable:false,search:true},		
 		   		{name:'spareYN',index:'spareYN', width:70, sortable:false,search:true},		
 		   		{name:'wearpartYN',index:'wearpartYN', width:70,align:"right",search:true},		
@@ -107,7 +112,7 @@ searchNo<input type="text" id="searchNo" name="searchNo">
 	            listFwd(rowid);
 	        },
 			mtype: "POST",
-//			postData:{searchNo:''},
+//			postData:{searchSaleWorkerId:''},
             gridComplete: function(){
                 var ids = jQuery("#list").jqGrid('getDataIDs');
                 for(var i=0;i < ids.length;i++){
@@ -151,6 +156,11 @@ searchNo<input type="text" id="searchNo" name="searchNo">
 					calcAmt(iRow, val);
 				}
 			},
+			subGrid : true,
+			subGridUrl: "/admin/order/listDtlOrder",
+		    subGridModel: [{ name  : ['주문구분','주문번호','qty','amount','등록자',''],
+		                    width : [50,60,60,70,70], params:['id'] } 
+		    ],			
 			/**
 			multiselect: true,
 			*/		
@@ -191,15 +201,16 @@ searchNo<input type="text" id="searchNo" name="searchNo">
 	
 	function initForm() {
 		var f = document.searchForm;
-		getCodeCombo("02", f.searchNo);
+		getCodeCombo("02", f.searchTeamId);
+		getCodeCombo("02", f.searchSaleWorkerId);
 //		newForm();
     }
 	
     function gridReload() {
 		var targetUrl = "/admin/order/listPart";
     	var page = document.searchForm.page.value;
-    	var searchNo = document.searchForm.searchNo.value;
-        $("#list").jqGrid('setPostData', {test:'aa',searchNo:searchNo});
+    	var searchSaleWorkerId = document.searchForm.searchSaleWorkerId.value;
+        $("#list").jqGrid('setPostData', {test:'aa',searchSaleWorkerId:searchSaleWorkerId});
     	jQuery("#list").jqGrid('setGridParam', {url:targetUrl,page:'1'}).trigger("reloadGrid");
 		printPostData();
 	}
@@ -421,7 +432,7 @@ searchNo<input type="text" id="searchNo" name="searchNo">
 		],
 		
 		mtype: "POST",
-//		postData:{searchNo:''},
+//		postData:{searchSaleWorkerId:''},
         gridComplete: function(){
             var ids = jQuery("#list").jqGrid('getDataIDs');
             for(var i=0;i < ids.length;i++){
