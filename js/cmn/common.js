@@ -22,14 +22,14 @@
 	function getCodeCombo(cdGrp, selObj) {
 	    if (cdGrp == "") {
 	        deleteOptionElements(selObj);
-	        addOptionElement(selObj, "", "----------------");
+	        addOptionElement(selObj, "", "----------------------");
 	        return;
 	    }
 		var targetUrl = '/common/main/listCode?cdGrp=' + cdGrp;
 	    $.getJSON(targetUrl, function(result){
 //	    	$('#postdata').append(result['cdGrp']['name'] + ":" + cdGrp);
 	    	deleteOptionElements(selObj);
-	        addOptionElement(selObj, "", "----------------");
+	        addOptionElement(selObj, "", "----------------------");
 	    	for(var i=0; i<result['cdDtl'].length; i++){
             	addOptionElement(selObj, result['cdDtl'][i]['value'], result['cdDtl'][i]['text']); 
 			}
