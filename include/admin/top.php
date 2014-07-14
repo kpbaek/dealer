@@ -11,7 +11,7 @@
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js"></script>
 	<script src="/lib/jquery.cookie.js" type="text/javascript"></script>
 	<script src="/lib/jquery.treeview/jquery.treeview.js" type="text/javascript"></script>
-	
+
 	<script type="text/javascript">
 	$(document).ready(function(){
 		$("#browser").treeview({
@@ -24,4 +24,4 @@
 	
 	</head>
 	
-<h1 id="banner"><a href="/admin">Dealer Admin</a> </h1>
+<h1 id="banner"><a href="/admin">수주관리시스템 Admin</a> </h1>
