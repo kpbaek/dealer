@@ -33,7 +33,8 @@
 <h3><a href="/admin/manage?countrytabs=0">신청서</a></h3>
 
 <ul id="manageTabs" class="shadetabs">
-<li><a href="/admin/manage/tab01" rel="#iframe" class="selected">회원관리</a></li>
+<li><a href="/admin/manage/tab01" rel="#iframe" class="selected">딜러관리</a></li>
+<li><a href="/admin/manage/tab02" rel="#iframe">담당자관리</a></li>
 </ul>
 
 <div id="manageDiv" style="border:1px solid gray; width:970px; height: 550px; padding: 5px; margin-bottom:1em">

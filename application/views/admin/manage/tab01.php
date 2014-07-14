@@ -47,7 +47,7 @@
 <div id="searchDiv" style="display:">
 <form name="searchForm">
 <input type="text" name="page" style="display: none">
-searchId<input type="text" name="searchId">
+searchName<input type="text" name="searchId">
 <input type="button" id="btnSearch" value="Search" onclick="javascript:gridReload();"/>
 </form>
 </div>
@@ -82,7 +82,7 @@ searchId<input type="text" name="searchId">
 			<td width="18%" class="style01">Name</td>
 			<td width="5%"><sup>★</sup></td>
 			<td width="27%"><input type="text" id="invdate" name="delernm" size=35 style="border: 1"></td>
-			<td width="18%" class="style02">영업담당자</td>
+			<td width="18%" class="style02">담당부서/담당자</td>
 			<td width="5%"><sup></sup></td>
 			<td width="27%">
 				<select name="team_cd">
@@ -198,20 +198,20 @@ searchId<input type="text" name="searchId">
 <script type="text/javascript">
 
 	jQuery().ready(function () {
-		var targetUrl = "/admin/product/listPart";
+		var targetUrl = "/admin/manage/listDealer";
 		var mygrid = jQuery("#list").jqGrid({
 		   	//url:'/test/main/server',
 		   	url:targetUrl,
 		   	datatype: "json",
 		   	//colNames:['Inv No','Date', 'Client', 'Amount','Tax','Total','Notes'],
-		   	colNames:['id', 'Name', 'Company', 'Country', 'Business type', 'Job Title',  'Telephone number', 'Email address', '가입일', '영업담당자', 'Remark'],
+		   	colNames:['id', 'Name', 'Company', 'Country', 'Business type', 'Job Title',  'Tel number', 'Email', '가입일', '담당부서', '담당자'],
 	   	              //, '(1CIS)', '(2CIS)', 'Q(Per 1Unit)', 'Order Price', 'Amount'
 		   	colModel:[
 		   	    {name:'id', index:'id', width:55,hidden:true,search:true}, 
-		        {name:'model',index:'id', width:70, align:"right",search:true},
+		        {name:'name',index:'id', width:70, align:"right",search:true},
 		   		{name:'invdate',index:'invdate', width:70,search:true},
 		   		{name:'amount',index:'tax asc, invdate', width:70,search:true},
-		   		{name:'amount',index:'amount', width:100, align:"right",search:true},
+		   		{name:'amount',index:'amount', width:70, align:"right",search:true},
 		   		{name:'tax',index:'tax', width:50, align:"right",search:true},		
 		   		{name:'total',index:'total', width:70,align:"right",search:true},		
 		   		{name:'total',index:'note', width:70, sortable:false,search:true},		
@@ -233,7 +233,7 @@ searchId<input type="text" name="searchId">
                     var rowData = jQuery("#list").jqGrid('getRowData',cl);
                     var cl_id = rowData.id;
                     be = "<img src='/images/ci_logo.jpg' height='20'>";
-                    jQuery("#list").jqGrid('setRowData',ids[i],{tax:be});
+//                    jQuery("#list").jqGrid('setRowData',ids[i],{tax:be});
                 }
             },	            
             
@@ -295,7 +295,7 @@ searchId<input type="text" name="searchId">
     }
 	
     function gridReload() {
-		var targetUrl = "/admin/product/listPart";
+		var targetUrl = "/admin/manage/listDealer";
     	var page = document.searchForm.page.value;
     	var searchId = document.searchForm.searchId.value;
         $("#list").jqGrid('setPostData', {test:'aa',searchId:searchId});
