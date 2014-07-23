@@ -25,7 +25,7 @@
 <ul id="doctabs" class="shadetabs">
 <li><a href="/admin/docs/tab01" rel="#iframe" class="selected">생산의뢰서</a></li>
 <li><a href="/admin/docs/tab02" rel="#iframe">출고전표</a></li>
-<li><a href="/admin/docs/tab03" rel="#iframe">부품출고</a></li>
+<li><a href="/admin/docs/tab03" rel="#iframe">부품출고의뢰서</a></li>
 </ul>
 
 <div id="docDiv" style="border:1px solid gray; width:970px; height:550px; margin-bottom: 1em; padding: 10px;overflow: scroll;">
@@ -39,8 +39,6 @@ doc.setselectedClassTarget("link") //"link" or "linkparent"
 doc.init()
 
 </script>
-
-<p><a href="/admin/docs?doctabs=0">Reload page and select 1nd tab using URL parameter</a> | <a href="javascript: doc.expandit(3)">Dynamically select last Tab</a></p>
 
 <hr />
 

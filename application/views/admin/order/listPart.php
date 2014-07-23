@@ -31,7 +31,7 @@ mysql_select_db(PHPGRID_DBNAME);
 $start = $limit*$page - $limit; // do not put $limit*($page - 1)
 #$SQL = "SELECT a.id, a.invdate, b.name, a.amount,a.tax,a.total,a.note FROM invheader a, clients b 
 $SQL = "SELECT a.id, 'SB-1100' as model, id as sn, b.name as code, b.name as part_name, 1 as qty, id as price, id*1 as amount,a.tax,a.total,a.note 
-		, 'x' as recomYN, 'o' as spareYN, 'o' as wearpartYN, '' as withoutWRT, '' as remark
+		, 'x' as recomYN, 'o' as spareYN, 'o' as wearpartYN, '' as weight, '' as remark
 		FROM invheader a, clients b"; 
 $SQL_WHERE = " WHERE a.client_id=b.client_id 
 		and id LIKE concat('%%', '" .$searchModel. "')";
@@ -73,6 +73,7 @@ $responce['records'] = $count;
 $i=0;
 $qtytot = 0;
 $amttot = 0;
+$wgttot = 0;
 while($row = mysql_fetch_array($result,MYSQL_ASSOC)) {
 	$responce['rows'][$i]['id'] = $row['id'];
 	$responce['rows'][$i]['model'] = $row['model'];
@@ -84,19 +85,18 @@ while($row = mysql_fetch_array($result,MYSQL_ASSOC)) {
 //	$responce['rows'][$i]['amount'] = $row['amount'];
 	$responce['rows'][$i]['qty'] = 0;
 	$responce['rows'][$i]['amount'] = 0;
+	$responce['rows'][$i]['weight'] = '';
+	$responce['rows'][$i]['unit_weight'] = 0.1;
 	$responce['rows'][$i]['tax'] = $row['tax'];
 	$responce['rows'][$i]['total'] = $row['total'];
 	$responce['rows'][$i]['note'] = $row['note'];
-	$responce['rows'][$i]['recomYN'] = $row['recomYN'];
-	$responce['rows'][$i]['spareYN'] = $row['spareYN'];
-	$responce['rows'][$i]['wearpartYN'] = $row['wearpartYN'];
-	$responce['rows'][$i]['withoutWRT'] = $row['withoutWRT'];
 	$responce['rows'][$i]['remark'] = $row['remark'];
 	
 //	$qtytot += $row['qty'];
 //	$amttot += $row['amount'];
 	$qtytot += 0;
 	$amttot += 0;
+	$wgttot += 0;
 	
 #    echo $row['id'];
     $i++;
@@ -104,6 +104,7 @@ while($row = mysql_fetch_array($result,MYSQL_ASSOC)) {
 
 $responce['userdata']['qty'] = $qtytot;
 $responce['userdata']['amount'] = $amttot;
+$responce['userdata']['weight'] = $wgttot;
 $responce['userdata']['code'] = 'Totals:';
 
 echo json_encode($responce);

@@ -82,18 +82,6 @@
 	  td.style62 { vertical-align:middle; text-align:center; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:none #000000; color:#000000; font-family:'굴림'; font-size:11pt; background-color:white }
 	  td.style63 { vertical-align:middle; text-align:center; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:none #000000; border-right:none #000000; color:#000000; font-family:'굴림'; font-size:11pt; background-color:white }
 	  td.style64 { vertical-align:middle; text-align:center; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:none #000000; border-right:1px solid #000000 !important; color:#000000; font-family:'굴림'; font-size:11pt; background-color:white }
-	  table.sheet0 col.col0 { width:8.13333324pt }
-	  table.sheet0 col.col1 { width:27.1111108pt }
-	  table.sheet0 col.col2 { width:66.42222146pt }
-	  table.sheet0 col.col3 { width:42pt }
-	  table.sheet0 col.col4 { width:59.64444376pt }
-	  table.sheet0 col.col5 { width:72.52222139pt }
-	  table.sheet0 col.col6 { width:71.84444362pt }
-	  table.sheet0 col.col7 { width:57.61111045pt }
-	  table.sheet0 col.col8 { width:6.7777777pt }
-	  table.sheet0 col.col9 { width:8.13333324pt }
-	  table.sheet0 col.col10 { width:72.52222139pt }
-	  table.sheet0 col.col11 { width:71.84444362pt }
 	  table.sheet0 tr { height:15pt }
 
 	</style>
@@ -104,6 +92,16 @@
 @page { left-margin: 0.35433070866142in; right-margin: 0.31496062992126in; top-margin: 0.39370078740157in; bottom-margin: 0in; }
 body { left-margin: 0.35433070866142in; right-margin: 0.31496062992126in; top-margin: 0.39370078740157in; bottom-margin: 0in; }
 </style>
+
+	<table border="0" cellpadding="0" cellspacing="0" style="width: 210mm;">
+	<tr>
+		<td colspan=10 align=right>
+		<input type="button" value="send" onclick="javascript:sendMail();"/>
+		</td>
+	  </tr>
+	</table>
+	<p>
+
 	<table border="0" cellpadding="0" cellspacing="0" id="sheet0" class="sheet0" style="width: 210mm;border-top: 3px;">
 		<col class="col0">
 		<col class="col1">
@@ -179,8 +177,8 @@ body { left-margin: 0.35433070866142in; right-margin: 0.31496062992126in; top-ma
 			<td class="column3 style9 s">출고수량</td>
 			<td class="column4 style9 s">PI NO</td>
 			<td class="column5 style9 s">생산의뢰서 NO. </td>
-			<td class="column6 style9 s">생산의뢰서 잔량</td>
-			<td class="column7 style9 s">비고</td>
+			<td class="column6 style9 s" width=140px>생산의뢰서 잔량</td>
+			<td class="column7 style9 s" width=100px>비고</td>
 			<td class="column8 style6 null"></td>
 			<td class="column9">&nbsp;</td>
 			<td class="column10">&nbsp;</td>
@@ -260,7 +258,7 @@ body { left-margin: 0.35433070866142in; right-margin: 0.31496062992126in; top-ma
 		  
 		  <tr class="row11">
 			<td class="column0 style4 null" colspan=1></td>
-		  	<td colspan=3>
+		  	<td colspan=4>
 		  		<table border=0>
 				  <tr>
 					<td width=5% rowspan="2" class="style03">의<br/>뢰</td>
@@ -294,7 +292,7 @@ body { left-margin: 0.35433070866142in; right-margin: 0.31496062992126in; top-ma
 		  		</table>
 
 			</td>
-			<td class="column8 style6 null" colspan=5></td>
+			<td class="column8 style6 null" colspan=4></td>
 		  </tr>
 		  <tr class="row12">
 			<td class="column0 style4 null"></td>

@@ -28,15 +28,6 @@
 	  .n { text-align:right }
 	  .s { text-align:left }
 	  td.style01 { vertical-align:middle; text-align:center; padding-left:0px; border-bottom:none #000000; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:none #000000; font-weight:bold; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:#A0A0A0 }
-	  table.sheet0 col.col0 { width:42pt }
-	  table.sheet0 col.col1 { width:42pt }
-	  table.sheet0 col.col2 { width:42pt }
-	  table.sheet0 col.col3 { width:42pt }
-	  table.sheet0 col.col4 { width:42pt }
-	  table.sheet0 col.col5 { width:42pt }
-	  table.sheet0 col.col6 { width:42pt }
-	  table.sheet0 col.col7 { width:82pt }
-	  table.sheet0 col.col8 { width:82pt }
 	  table.sheet0 tr { height:15pt }
 	</style>	
 </head>
@@ -46,7 +37,8 @@
 <div id="searchDiv" style="display:">
 <form name="searchForm">
 <input type="text" name="page" style="display: none">
-searchId<input type="text" name="searchId">
+code<input type="text" name="searchId">
+part name<input type="text" name="searchPartId">
 <input type="button" id="btnSearch" value="Search" onclick="javascript:gridReload();"/>
 </form>
 </div>
@@ -54,6 +46,7 @@ searchId<input type="text" name="searchId">
 <table id="list"></table>
 <div id="pager"></div>
 </div>
+<!-- 
 <table border="0" cellpadding="0" cellspacing="0" style="width:950px;align:center; vertical-align:middle">
 <tr>
     <td align=right>
@@ -61,7 +54,11 @@ searchId<input type="text" name="searchId">
     </td>
 </tr>
 </table>
-</div>
+ -->
+<br>
+<table id="list_d"></table>
+<div id="pager_d"></div>
+
 <div id="postdata"></div>
 <p>
 <div id="formDiv" style="display:none">
@@ -78,8 +75,8 @@ searchId<input type="text" name="searchId">
 		<col class="col8">
 		<tbody>
 		<tr>
-			<td class="style01">Model</td>
-			<td width=25%>
+			<td class="style01" width=15%>Model</td>
+			<td width=20%>
 			<select name="cdGrp" onchange="javascript:getCodeCombo(this.value, document.addForm.cdDtl);" style="display:none">
 			<option value="">-------------------</option>
 			<option value="01">01</option>
@@ -89,17 +86,15 @@ searchId<input type="text" name="searchId">
 			<option value="">----------------------------</option>
 			</select>
 			</td>
-			<td class="style01">S/N</td>
-			<td width=25%><input type="text" id="invdate" name="invdate" size=12 style="border-style: ;"></td>
-			<td class="style01">CODE</td>
-			<td width=25%><input type="text" id="id" name="id" size=9 style="border-style: ;"></td>
+			<td class="style01" width=15%>CODE</td>
+			<td colspan=3><input type="text" id="id" name="id" size=9 style="border-style: ;"></td>
 			</tr>
 		<tr>
-			<td class="style01">Part Name</td>
-			<td colspan=5><input type="text" id="partnm" name="partnm" size=120 style="border-style: ;"></td>
+			<td class="style01">Part name</td>
+			<td colspan=5><input type="text" id="partnm" name="partnm" size=130 style="border-style: ;"></td>
 		</tr>
 		<tr>
-			<td class="style01">IMAGE</td>
+			<td class="style01">image</td>
 			<td><input type="file" name="userfile" size="20">
 			<div id="thumbDiv"></div>
 			<!-- <iframe name="ifUpload" scrolling="no" marginheight="0" marginwidth="0" frameborder="0" width="50" height=50></iframe> -->
@@ -108,21 +103,17 @@ searchId<input type="text" name="searchId">
 			<td colspan=5><textarea rows="3" cols="45"></textarea></td>
 		</tr>
 		<tr>
-			<td class="style01">Recommend</td>
+			<td class="style01">부품요율(%)</td>
 			<td>
 				<select name="recommend">
 				</select>
 			</td>
-			<td class="style01">Spare Part</td>
+			<td class="style01">Unit Price($)</td>
 			<td>
-				<select name="spare">
-				</select>
+				<input type="text" id="price" name="price" size=10 style="border-style: ;">
 			</td>
-			<td class="style01">Wear Parts</td>
-			<td>
-				<select name="wear">
-				</select>
-			</td>
+			<td class="style01" width=15%>Unit Weight(kg)</td>
+			<td width=15%><input type="text" id="unit_weight" name="unit_weight" size=9 style="border-style: ;"></td>
 		</tr>
 		</tbody>
 	</table>
@@ -151,19 +142,18 @@ searchId<input type="text" name="searchId">
 		   	url:targetUrl,
 		   	datatype: "json",
 		   	//colNames:['Inv No','Date', 'Client', 'Amount','Tax','Total','Notes'],
-		   	colNames:['id', 'model', 'S/N', 'CODE', 'Part Name', 'IMAGE', 'Recommend', 'Spare Part', 'Wear Parts',  'Without Warranty', 'Remark'],
+		   	colNames:['id', 'model', 'CODE', 'Part Name', 'image', '', 'Unit Price', 'Unit Weight', '등록일자', 'Remark'],
 	   	              //, '(1CIS)', '(2CIS)', 'Q(Per 1Unit)', 'Order Price', 'Amount'
 		   	colModel:[
-		   	    {name:'id', index:'id', width:55,hidden:false,search:true}, 
+		   	    {name:'id', index:'id', width:55,hidden:true,search:true}, 
 		        {name:'model',index:'id', width:70, align:"right",search:true},
-		   		{name:'invdate',index:'invdate', width:70,search:true},
 		   		{name:'amount',index:'tax asc, invdate', width:70,search:true},
 		   		{name:'amount',index:'amount', width:100, align:"right",search:true},
-		   		{name:'tax',index:'tax', width:50, align:"right",search:true},		
-		   		{name:'total',index:'total', width:70,align:"right",search:true},		
-		   		{name:'total',index:'note', width:70, sortable:false,search:true},		
-		   		{name:'total',index:'note', width:70, sortable:false,search:true},		
-		   		{name:'total',index:'note', width:70, sortable:false,search:true},		
+		   		{name:'pt_img',index:'tax', width:50, align:"right",search:true},		
+		   		{name:'',index:'tax', width:50, align:"right",search:true,hidden:true},		
+		   		{name:'unit_price',index:'total', width:70,align:"right",search:true},		
+		   		{name:'unit_weight',index:'total', width:70,align:"right",search:true},		
+		   		{name:'invdate',index:'invdate', width:70,search:true},
 		   		{name:'total',index:'note', width:70, sortable:false,search:true}		
 			],
 	        onSelectRow: function(id) {
@@ -180,7 +170,7 @@ searchId<input type="text" name="searchId">
                     var rowData = jQuery("#list").jqGrid('getRowData',cl);
                     var cl_id = rowData.id;
                     be = "<img src='/images/ci_logo.jpg' height='20'>";
-                    jQuery("#list").jqGrid('setRowData',ids[i],{tax:be});
+                    jQuery("#list").jqGrid('setRowData',ids[i],{pt_img:be, pt_ext_img:be});
                 }
             },	            
             
@@ -234,7 +224,6 @@ searchId<input type="text" name="searchId">
 		var f = document.addForm;
 		getCodeCombo("02", f.cdDtl);
 		getCodeCombo("01", f.recommend);
-		getCodeCombo("01", f.spare);
 		getCodeCombo("01", f.wear);
 		newForm();
     }
@@ -257,7 +246,7 @@ searchId<input type="text" name="searchId">
     }
     
     function view_detail(list, params) {
-    	displayDiv(formDiv);
+//    	displayDiv(formDiv);
     	document.getElementById("btnNew").disabled = false;
 		var f = document.addForm;
     	f.reset();
@@ -309,7 +298,7 @@ searchId<input type="text" name="searchId">
 	}
 
     function newForm() {
-    	displayDiv(formDiv);
+//    	displayDiv(formDiv);
     	var f = document.addForm;
     	f.reset();
     	document.getElementById("btnNew").disabled = true;
@@ -351,7 +340,59 @@ searchId<input type="text" name="searchId">
 		return true;
     }
 
+	jQuery("#list_d").jqGrid({
+		height: 100,
+	   	url:"/admin/product/listPart",
+	   	datatype: "json",
+	   	//colNames:['Inv No','Date', 'Client', 'Amount','Tax','Total','Notes'],
+	   	colNames:['바이어', 'country', 'company', '부품할증요율', '요율적용시작일', '요율적용종료일'],
+   	              //, '(1CIS)', '(2CIS)', 'Q(Per 1Unit)', 'Order Price', 'Amount'
+	   	colModel:[
+	   		{name:'id', index:'id', width:55,hidden:true,search:true}, 
+	        {name:'model',index:'model', width:70, align:"right",search:true},
+	   		{name:'code',index:'name', width:100, align:"right",search:true},
+	   		{name:'part_name',index:'part_name', width:70,search:true},
+	   		{name:'invdate',index:'tax', width:50, align:"right",search:true},		
+	   		{name:'rate_end_date',index:'tax', width:50, align:"right",search:true}		
+		],
+		
+		mtype: "POST",
+//		postData:{searchModel:''},
+        gridComplete: function(){
+            var ids = jQuery("#list").jqGrid('getDataIDs');
+            for(var i=0;i < ids.length;i++){
+                var rowData = jQuery("#list").jqGrid('getRowData',ids[i]);
+                c_image = "<img src='/images/ci_logo.jpg' height='20'>";
+                c_qty = "<input type=text size=6 height='20' name='c_qty' value='" + rowData.qty + "' onChange='javascript:calcAmt(" + (i+1) + ", this.value);'>";
+                jQuery("#list").jqGrid('setRowData',ids[i],{c_image:c_image});
+                jQuery("#list").jqGrid('setRowData',ids[i],{c_qty:c_qty});
 
+//                jQuery("#list").jqGrid('setSelection',(i+1));
+//                jQuery('#list').editRow('qty');
+            }
+            jQuery("#list").jqGrid('editRow','qty',false);
+		},	            
+        
+		rowNum:1000,
+//	   	rowList:[1000],
+	   	pager: '#pager_d',
+	    viewrecords: true,
+	    autowidth: false,
+	    width:950,
+	    height:100,
+	    sortname: 'id',
+	    sortorder: "desc",
+		toolbar: [true,"top"],
+	    hiddengrid: false,
+	    footerrow : false,
+		userDataOnFooter : true,
+	   	pgbuttons: false,
+	   	pgtext: false,
+	   	pginput:false,	
+//		multiselect: true,
+		caption:"부품별 딜러 할증요율"
+	})//.navGrid('#pager_d',{add:false,edit:false,del:false,search:false});    
+    
 </script>
 
 </html>

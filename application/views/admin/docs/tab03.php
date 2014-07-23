@@ -289,6 +289,16 @@
 @page { left-margin: 0.15748031496063in; right-margin: 0.15748031496063in; top-margin: 0.35433070866142in; bottom-margin: 0in; }
 body { left-margin: 0.15748031496063in; right-margin: 0.15748031496063in; top-margin: 0.35433070866142in; bottom-margin: 0in; }
 </style>
+
+	<table border="0" cellpadding="0" cellspacing="0" id="sheet0" style="width: 210mm;">
+	<tr>
+		<td colspan=10 align=right>
+		<input type="button" value="send" onclick="javascript:sendMail();"/>
+		</td>
+	  </tr>
+	</table>
+	<p>
+
 	<table border="0" cellpadding="0" cellspacing="0" id="sheet0" class="sheet0" style="width: 210mm;">
 		<col class="col0">
 		<col class="col1">

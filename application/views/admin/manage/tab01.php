@@ -95,17 +95,20 @@ searchName<input type="text" name="searchId">
 			<td class="style01">Company</td>
 			<td><sup>★</sup></td>
 			<td><input type="text" id="invdate" name="delernm" size=35 style="border: 1"></td>
-			<td width="18%" class="style01">Job Title</td>
+			<td width="18%" class="style02">부품할증요율</td>
 			<td width="5%"><sup></sup></td>
-			<td width="27%"><input type="text" id="invdate" name="delernm" size=35 style="border: 1"></td>
+			<td width="27%"><input type="text" id="perDisc" name="perDisc" size=10 style="border: 1">%</td>
 		  </tr>
 		  <tr>
 			<td class="style01">Telephone number</td>
 			<td><sup>★</sup></td>
 			<td><input type="text" id="invdate" name="delernm" size=35 style="border: 1"></td>
-			<td width="18%" class="style01">등록일자/수정일자</td>
+			<td width="18%" class="style02">Bank Information</td>
 			<td width="5%"><sup></sup></td>
-			<td width="27%"></td>
+			<td width="27%">
+				<select name="bank_inf">
+				</select>
+			</td>
 		  </tr>
 		  <tr>
 			<td class="style01">Address</td>
@@ -119,7 +122,9 @@ searchName<input type="text" name="searchId">
 				<select name="cntry">
 				</select>
 			</td>
-			<td colspan=3>드롭박스. 국가리스트 시트 첨부합니다. 인터넷에서 찾은 자료이니, 사용하시던 것이 있으면, 다른 것을 이용하셔도 무관합니다.</td>
+			<td width="18%" class="style01">Job Title</td>
+			<td width="5%"><sup></sup></td>
+			<td width="27%"><input type="text" id="invdate" name="delernm" size=35 style="border: 1"></td>
 		  </tr>
 		  <tr>
 			<td class="style01">Email address</td>
@@ -136,11 +141,11 @@ searchName<input type="text" name="searchId">
 		  <tr>
 			<td class="style01">Expierence in cash handling machine</td>
 			<td><sup></sup></td>
-			<td><input type="text" id="invdate" name="delernm" size=35 style="border: 1"></td>
+			<td><input type="text" id="invdate" name="delernm" size=5 style="border: 1">years</td>
 			<td colspan=3>&nbsp;</td>
 		  </tr>
 		  <tr>
-			<td class="style01">Main Customer</td>
+			<td class="style01">Main customer</td>
 			<td><sup></sup></td>
 			<td class="column2 style14 s">
 				<select name="main_cust">
@@ -151,33 +156,16 @@ searchName<input type="text" name="searchId">
 		  <tr>
 			<td class="style01">Comments</td>
 			<td><sup></sup></td>
-			<td colspan=3><textarea cols="50" rows="3" name="comment"></textarea></td>
-			<td>Please comment interesting model name.</td>
+			<td colspan=3><textarea cols="50" rows="3" name="comment">Please comment interesting model name.</textarea></td>
+			<td></td>
 		  </tr>
 		  <tr>
-			<td class="style01">Market Information</td>
+			<td class="style01">Market information</td>
 			<td><sup></sup></td>
-			<td colspan=3><textarea name="comment" cols="50" rows="3"></textarea></td>
-			<td>Please describe your market information.</td>
-		  </tr>
-		  <tr>
-			<td class="style01">The number of banks and their branch, CIT, etc.</td>
-			<td><sup></sup></td>
-			<td><input type="text" id="invdate" name="delernm" size=35 style="border: 1"></td>
-			<td colspan=5>&nbsp;</td>
-		  </tr>
-		  <tr>
-			<td class="style01">Bank policies</td>
-			<td><sup></sup></td>
-			<td><input type="text" id="invdate" name="delernm" size=35 style="border: 1"></td>
-			<td colspan=5>&nbsp;</td>
-			
-		  </tr>
-		  <tr>
-			<td class="style01">The names of popular models &amp; Price</td>
-			<td><sup></sup></td>
-			<td><input type="text" id="invdate" name="delernm" size=35 style="border: 1"></td>
-			<td colspan=5>&nbsp;</td>
+			<td colspan=3>
+			<textarea name="comment" cols="50" rows="5">Please describe your market information.<?php echo chr(13) . chr(10);?>The number of banks and their branch, CIT, etc. Bank policies<?php echo chr(13) . chr(10);?>The names of popular models &amp; Price<?php echo chr(13) . chr(10);?>
+			</textarea></td>
+			<td></td>
 		  </tr>
 		  <tr>
 			<td colspan=6>&nbsp;</td>
@@ -204,7 +192,7 @@ searchName<input type="text" name="searchId">
 		   	url:targetUrl,
 		   	datatype: "json",
 		   	//colNames:['Inv No','Date', 'Client', 'Amount','Tax','Total','Notes'],
-		   	colNames:['id', 'Name', 'Company', 'Country', 'Business type', 'Job Title',  'Tel number', 'Email', '가입일', '담당부서', '담당자'],
+		   	colNames:['id', 'Name', 'Company', 'Country', 'Business type', 'Job Title',  'Tel number', 'Email', '가입일', '담당부서', '담당자', '부품할증요율'],
 	   	              //, '(1CIS)', '(2CIS)', 'Q(Per 1Unit)', 'Order Price', 'Amount'
 		   	colModel:[
 		   	    {name:'id', index:'id', width:55,hidden:true,search:true}, 
@@ -214,6 +202,7 @@ searchName<input type="text" name="searchId">
 		   		{name:'amount',index:'amount', width:70, align:"right",search:true},
 		   		{name:'tax',index:'tax', width:50, align:"right",search:true},		
 		   		{name:'total',index:'total', width:70,align:"right",search:true},		
+		   		{name:'total',index:'note', width:70, sortable:false,search:true},		
 		   		{name:'total',index:'note', width:70, sortable:false,search:true},		
 		   		{name:'total',index:'note', width:70, sortable:false,search:true},		
 		   		{name:'total',index:'note', width:70, sortable:false,search:true},		
@@ -248,7 +237,7 @@ searchName<input type="text" name="searchId">
 		    sortorder: "desc",
 			toolbar: [true,"top"],
 		    hiddengrid: false,
-			caption:"회원관리"
+			caption:"딜러관리"
 		});
 		jQuery("#list").jqGrid('navGrid','#pager',{edit:false,add:false,del:false,search:false});
 /**
@@ -288,9 +277,7 @@ searchName<input type="text" name="searchId">
 		getCodeCombo("02", f.team_cd);
 		getCodeCombo("02", f.salesworker_id);
 		getCodeCombo("02", f.cdDtl);
-		getCodeCombo("01", f.recommend);
-		getCodeCombo("01", f.spare);
-		getCodeCombo("01", f.wear);
+		getCodeCombo("01", f.bank_inf);
 		newForm();
     }
 	

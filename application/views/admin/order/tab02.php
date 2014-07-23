@@ -46,7 +46,9 @@
 <div id="searchDiv" style="display:">
 <form name="searchForm">
 <input type="text" name="page" style="display: none">
-searchModel<select name="searchModel"></select>
+model<select name="searchModel"></select>
+code<input type=text name="searchCode">
+part name<input type=text name="searchPartName">
 <input type="button" id="btnSearch" value="Search" onclick="javascript:gridReload();"/>
 </form>
 </div>
@@ -86,13 +88,12 @@ searchModel<select name="searchModel"></select>
 		   	url:targetUrl,
 		   	datatype: "json",
 		   	//colNames:['Inv No','Date', 'Client', 'Amount','Tax','Total','Notes'],
-		   	colNames:['chk','id', 'model', 'S/N', 'CODE', 'Part Name', 'IMAGE', 'Price', 'qty', 'Qty', 'Amount', 'Recommend', 'Spare Part', 'Wear Parts',  'Without Warranty', 'Remark'],
+		   	colNames:['chk','id', 'model', 'CODE', 'Part Name', 'IMAGE', '공급단가', 'qty', 'Qty', 'Amount','unit weight', 'Weight(kg)', 'Remark'],
 	   	              //, '(1CIS)', '(2CIS)', 'Q(Per 1Unit)', 'Order Price', 'Amount'
 		   	colModel:[
 		   		{name:'chk', index:'chk', width:55,hidden:false,search:true,formatter:'checkbox', editoptions:{value:'1:0'}, formatoptions:{disabled:true}}, 
-		   		{name:'id', index:'id', width:55,hidden:false,search:true}, 
+		   		{name:'id', index:'id', width:55,hidden:true,search:true}, 
 		        {name:'model',index:'model', width:70, align:"right",search:true},
-		   		{name:'sn',index:'sn', width:70,search:true},
 		   		{name:'code',index:'name', width:100, align:"right",search:true},
 		   		{name:'part_name',index:'part_name', width:70,search:true},
 		   		{name:'c_image',index:'tax', width:50, align:"right",search:true},		
@@ -100,10 +101,8 @@ searchModel<select name="searchModel"></select>
 		   		{name:'qty',index:'qty', width:70, sortable:false,search:true,hidden:false,editable:true,editrules:{number:true,minValue:0}},		
 		   		{name:'c_qty',index:'qty', width:70, sortable:false,search:true,hidden:true},		
 		   		{name:'amount',index:'amount', width:70, sortable:false,search:true,formatter:'currency', formatoptions:{prefix:"$"}},		
-		   		{name:'recomYN',index:'recomYN', width:70, sortable:false,search:true},		
-		   		{name:'spareYN',index:'spareYN', width:70, sortable:false,search:true},		
-		   		{name:'wearpartYN',index:'wearpartYN', width:70,align:"right",search:true},		
-		   		{name:'withoutWRT',index:'withoutWRT', width:70, sortable:false,search:true},		
+		   		{name:'unit_weight',index:'id', width:70, sortable:false,search:true, hidden:false},		
+		   		{name:'weight',index:'id', width:70, sortable:false,search:true, hidden:true},		
 		   		{name:'remark',index:'remark', width:70, sortable:false,search:true}		
 			],
 	        onSelectRow: function(rowid) {
@@ -323,19 +322,26 @@ searchModel<select name="searchModel"></select>
         
         var rowData = jQuery("#list").jqGrid('getRowData',ids[rowid-1]);
         var amt = qty * rowData.price;
-    	jQuery("#list").jqGrid('setRowData',ids[rowid-1],{qty:qty, amount:amt});
+        var weight = parseInt(qty) * parseFloat(rowData.unit_weight);
+        weight = weight.toFixed(1);
+        jQuery("#list").jqGrid('setRowData',ids[rowid-1],{qty:qty, amount:amt, weight:weight});
 
     	var qty_ft = 0;
     	var amount_ft = 0;
-        for(var i=0;i < ids.length;i++){
+       	var weight_ft = 0;
+    	for(var i=0;i < ids.length;i++){
             var rowData = jQuery("#list").jqGrid('getRowData',ids[i]);
-            qty_ft += parseInt(rowData.qty);
-            amount_ft += parseInt(rowData.amount);
-        }
+            if(parseInt(rowData.qty) > 0){
+                qty_ft += parseInt(rowData.qty);
+                amount_ft += parseFloat(rowData.amount);
+                weight_ft += parseFloat(rowData.weight);
+			}
+		}
 //        alert(amount_ft);
     	var udata = $("#list").jqGrid('getUserData');
 		udata.qty= qty_ft;
-		udata.amount= amount_ft;
+		udata.amount= amount_ft.toFixed(2);
+		udata.weight= weight_ft.toFixed(2);
 		$("#list").jqGrid("footerData","set",udata,true);
 
 		orderConfirm();
@@ -363,17 +369,17 @@ searchModel<select name="searchModel"></select>
 	
 	function orderConfirm() {
         var ids = jQuery("#list").jqGrid('getDataIDs');
-        for(var i=0;i < ids.length;i++){
+    	for(var i=0;i < ids.length;i++){
     		jQuery("#list_d").jqGrid('delRowData',i);
         }
         for(var i=0;i < ids.length;i++){
             var rowData = jQuery("#list").jqGrid('getRowData',ids[i]);
             if(rowData.qty > 0){
 	            jQuery("#list_d").jqGrid('addRowData',i,rowData);
-            }
+			}
         }
     	var udata = $("#list").jqGrid('getUserData');
-		$("#list_d").jqGrid("footerData","set",udata,true);
+        $("#list_d").jqGrid("footerData","set",udata,true);
 	}
 	
 	function order() {
@@ -402,19 +408,19 @@ searchModel<select name="searchModel"></select>
 //	   	url:"/admin/order/listPart",
 	   	datatype: "json",
 	   	//colNames:['Inv No','Date', 'Client', 'Amount','Tax','Total','Notes'],
-	   	colNames:['id', 'model', 'S/N', 'CODE', 'Part Name', 'IMAGE', 'Price', 'qty', 'Qty', 'Amount'],
+	   	colNames:['id', 'model', 'CODE', 'Part Name', 'IMAGE', '공급단가', 'qty', 'Qty', 'Amount', 'Weight(kg)'],
    	              //, '(1CIS)', '(2CIS)', 'Q(Per 1Unit)', 'Order Price', 'Amount'
 	   	colModel:[
-	   		{name:'id', index:'id', width:55,hidden:false,search:true}, 
+	   		{name:'id', index:'id', width:55,hidden:true,search:true}, 
 	        {name:'model',index:'model', width:70, align:"right",search:true},
-	   		{name:'sn',index:'sn', width:70,search:true},
 	   		{name:'code',index:'name', width:100, align:"right",search:true},
 	   		{name:'part_name',index:'part_name', width:70,search:true},
 	   		{name:'c_image',index:'tax', width:50, align:"right",search:true},		
 	   		{name:'price',index:'price', width:70, sortable:false,search:true,formatter:'currency', formatoptions:{prefix:"$"}},		
 	   		{name:'qty',index:'qty', width:70, sortable:false,search:true,hidden:false,editable:true,editrules:{number:true,minValue:0}},		
 	   		{name:'c_qty',index:'qty', width:70, sortable:false,search:true,hidden:true},		
-	   		{name:'amount',index:'amount', width:70, sortable:false,search:true,formatter:'currency', formatoptions:{prefix:"$"}}		
+	   		{name:'amount',index:'amount', width:70, sortable:false,search:true,formatter:'currency', formatoptions:{prefix:"$"}},		
+	   		{name:'weight',index:'id', width:70, sortable:false,search:true}		
 		],
 		
 		mtype: "POST",

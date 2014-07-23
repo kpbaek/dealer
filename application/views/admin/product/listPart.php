@@ -39,7 +39,7 @@ if( $count >0 ) {
 }
 if ($page > $total_pages) $page=$total_pages;
 $start = $limit*$page - $limit; // do not put $limit*($page - 1)
-$SQL = "SELECT a.id, a.invdate, b.name, a.amount,a.tax,a.total,a.note FROM invheader a, clients b 
+$SQL = "SELECT a.id, a.invdate, '' as name, '' as amount,a.tax,'' as total,a.note, '2015-12-31' as rate_end_date FROM invheader a, clients b 
 		WHERE a.client_id=b.client_id 
 		and id LIKE concat('%%', '" .$searchId. "')
 		ORDER BY "
@@ -69,6 +69,7 @@ while($row = mysql_fetch_array($result,MYSQL_ASSOC)) {
 	$responce['rows'][$i]['name'] = $row['name'];
 	$responce['rows'][$i]['amount'] = $row['amount'];
 	$responce['rows'][$i]['tax'] = $row['tax'];
+	$responce['rows'][$i]['rate_end_date'] = $row['rate_end_date'];
 	$responce['rows'][$i]['total'] = $row['total'];
 	$responce['rows'][$i]['note'] = $row['note'];
 #    echo $row['id'];

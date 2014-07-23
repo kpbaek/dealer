@@ -89,11 +89,11 @@
 		  <tr>
 			<td class="style01">Expierence in cash handling machine</td>
 			<td><sup></sup></td>
-			<td><input type="text" id="invdate" name="delernm" size=35 style="border: 1"></td>
+			<td><input type="text" id="invdate" name="delernm" size=5 style="border: 1">years</td>
 			<td colspan=3>&nbsp;</td>
 		  </tr>
 		  <tr>
-			<td class="style01">Main Customer</td>
+			<td class="style01">Main customer</td>
 			<td><sup></sup></td>
 			<td class="column2 style14 s">
 				<select name="main_cust">
@@ -104,33 +104,16 @@
 		  <tr>
 			<td class="style01">Comments</td>
 			<td><sup></sup></td>
-			<td colspan=3><textarea cols="50" rows="3" name="comment"></textarea></td>
-			<td>Please comment interesting model name.</td>
+			<td colspan=3><textarea cols="50" rows="3" name="comment">Please comment interesting model name.</textarea></td>
+			<td></td>
 		  </tr>
 		  <tr>
-			<td class="style01">Market Information</td>
+			<td class="style01">Market information</td>
 			<td><sup></sup></td>
-			<td colspan=3><textarea name="comment" cols="50" rows="3"></textarea></td>
-			<td>Please describe your market information.</td>
-		  </tr>
-		  <tr>
-			<td class="style01">The number of banks and their branch, CIT, etc.</td>
-			<td><sup></sup></td>
-			<td><input type="text" id="invdate" name="delernm" size=35 style="border: 1"></td>
-			<td colspan=5>&nbsp;</td>
-		  </tr>
-		  <tr>
-			<td class="style01">Bank policies</td>
-			<td><sup></sup></td>
-			<td><input type="text" id="invdate" name="delernm" size=35 style="border: 1"></td>
-			<td colspan=5>&nbsp;</td>
-			
-		  </tr>
-		  <tr>
-			<td class="style01">The names of popular models &amp; Price</td>
-			<td><sup></sup></td>
-			<td><input type="text" id="invdate" name="delernm" size=35 style="border: 1"></td>
-			<td colspan=5>&nbsp;</td>
+			<td colspan=3>
+			<textarea name="comment" cols="50" rows="5">Please describe your market information.<?php echo chr(13) . chr(10);?>The number of banks and their branch, CIT, etc. Bank policies<?php echo chr(13) . chr(10);?>The names of popular models &amp; Price<?php echo chr(13) . chr(10);?>
+			</textarea></td>
+			<td></td>
 		  </tr>
 		  <tr>
 			<td colspan=6>&nbsp;</td>

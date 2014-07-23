@@ -5,6 +5,14 @@
 	  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	  <meta name="author" content="KPBAEK" />
 	  <meta name="company" content="Microsoft Corporation" />
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.8.24/themes/base/jquery-ui.css">
+
+	  
+
+	<script src="/lib/jquery.jqGrid-4.6.0/js/jquery-1.11.0.min.js" type="text/javascript"></script>
+  
+	  <script src="/lib/jquery-ui-1.11.0/jquery-ui.min.js" type="text/javascript"></script>
+	  
 	<style type="text/css">
 	  html { font-family:Calibri, Arial, Helvetica, sans-serif; font-size:11pt; background-color:white }
 	  table { border-collapse:collapse; page-break-after:always }
@@ -21,6 +29,7 @@
 	  td.style03 { vertical-align:middle; text-align:center; border-bottom:1px solid #000000 !important; border-top:2px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; font-weight:bold; color:#000000; font-family:'굴림'; font-size:10pt; background-color:white }
 	  td.style04 { vertical-align:middle; border-bottom:2px solid #000000 !important; border-top:2px solid #000000; border-left:none #000000; border-right:2px solid #000000; font-weight:bold; color:#000000; font-family:'굴림'; font-size:10pt; background-color:white }
 	  td.style05 { vertical-align:middle; text-align:left; padding-left:0px; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; font-weight:bold; color:#000000; font-family:'굴림'; font-size:10pt; background-color:#FFFFFF }
+	  td.style06 { vertical-align:middle; text-align:center; border-bottom:1px solid #000000 !important; border-top:2px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; font-weight:bold; color:#000000; font-family:'굴림'; font-size:10pt; background-color:#CCCCFF }
 	  table.sheet0 tr { height:16pt; }
 	</style>
   </head>
@@ -30,6 +39,15 @@
 @page { left-margin: 0.7in; right-margin: 0.7in; top-margin: 0.75in; bottom-margin: 0.75in; }
 body { left-margin: 0.7in; right-margin: 0.7in; top-margin: 0.75in; bottom-margin: 0.75in; }
 </style>
+	<table border="0" cellpadding="0" cellspacing="0" id="sheet0" style="width: 210mm;">
+	<tr>
+		<td colspan=10 align=right>
+		<input type="button" value="send" onclick="javascript:sendMail();"/>
+		</td>
+	  </tr>
+	</table>
+	<p>
+
 	<table border="3" cellpadding="0" cellspacing="0" id="sheet0" style="width: 210mm;border-top: 3px;" class="sheet0">
 		<col class="col0">
 		<col class="col1">
@@ -76,14 +94,14 @@ body { left-margin: 0.7in; right-margin: 0.7in; top-margin: 0.75in; bottom-margi
 			<td colspan="5" width="25%"></td>
 			<td colspan="2" width=10% class="style01">P/I NO. </td>
 			<td colspan="3" class="style03"></td>
-			<td colspan="2" class="style03">작성일</td>
+			<td colspan="2" class="style06">작성일</td>
 			<td colspan="4" class="style03"></td>
 		  </tr>
 		  <tr>
 			<td colspan="3" width=10% class="style01">바이어</td>
 			<td colspan="10" width="30%"></td>
 			<td colspan="2" class="style01">P/O NO.</td>
-			<td colspan="4" class="style01"></td>
+			<td colspan="4" class="style03"></td>
 		  </tr>
 		  <tr>
 			<td colspan="3" width=10% class="style01">MODEL</td>
@@ -92,8 +110,8 @@ body { left-margin: 0.7in; right-margin: 0.7in; top-margin: 0.75in; bottom-margi
 			<td colspan="4"></td>
 		  </tr>
 		  <tr>
-			<td rowspan=2 colspan="3" class="style01">CURRENCY</td>
-			<td class="style01">C1</td>
+			<td colspan="3" class="style01">CURRENCY</td>
+			<!-- <td class="style01">C1</td>
 			<td class="style01">C2</td>
 			<td width=5% class="style01">C3</td>
 			<td width=5% class="style01">C4</td>
@@ -108,8 +126,8 @@ body { left-margin: 0.7in; right-margin: 0.7in; top-margin: 0.75in; bottom-margi
 			<td class="style01">C13</td>
 			<td class="style01">C14</td>
 			<td class="style01">C15</td>
-			<td class="style01">기타</td>
-		  </tr>
+			<td class="style01">기타</td> 
+		  </tr>-->
 			<td>RSD</td>
 			<td>EUR</td>
 			<td width=5%>USD</td>
@@ -119,13 +137,13 @@ body { left-margin: 0.7in; right-margin: 0.7in; top-margin: 0.75in; bottom-margi
 			<td width=5%></td>
 			<td width=5%></td>
 			<td width=5%></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
+			<td width=5%></td>
+			<td width=5%></td>
+			<td width=5%></td>
+			<td width=5%></td>
+			<td width=5%></td>
+			<td width=5%></td>
+			<td width=5%></td>
 		  </tr>
 		  <tr>
 			<td colspan="3" class="style01">Fitness</td>
@@ -134,16 +152,16 @@ body { left-margin: 0.7in; right-margin: 0.7in; top-margin: 0.75in; bottom-margi
 			<td>X</td>
 			<td>X</td>
 			<td>X</td>
-			<td>X</td>
-			<td>X</td>
-			<td>X</td>
-			<td>X</td>
-			<td>X</td>
-			<td>X</td>
-			<td>X</td>
-			<td>X</td>
-			<td>X</td>
-			<td>X</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
 			<td></td>
 		  </tr>
 		  <tr>
@@ -151,12 +169,12 @@ body { left-margin: 0.7in; right-margin: 0.7in; top-margin: 0.75in; bottom-margi
 			<td colspan=2 class="style01">SRL</td>
 			<td colspan=2 class="style01">P-OCR</td>
 			<td colspan=2 class="style01">S-OCR</td>
-			<td class="style01">C1</td>
-			<td class="style01">C2</td>
-			<td class="style01">C3</td>
-			<td class="style01">C4</td>
-			<td class="style01">C5</td>
-			<td colspan=5 class="style01">기타</td>
+			<td>RSD</td>
+			<td>EUR</td>
+			<td>USD</td>
+			<td>GBP</td>
+			<td>CHF</td>
+			<td colspan=5></td>
 		  </tr>
 		  <tr>
 			<td colspan=2>X</td>
@@ -169,7 +187,7 @@ body { left-margin: 0.7in; right-margin: 0.7in; top-margin: 0.75in; bottom-margi
 			<td>X</td>
 			<td colspan=5></td>
 		  </tr>
-		  <tr>
+		  <!-- <tr>
 			<td rowspan=2 colspan="3" class="style01">CF DETECTOR</td>
 		    <td colspan=2 class="style01">UV</td>
 			<td colspan=2 class="style01">MG</td>
@@ -177,7 +195,7 @@ body { left-margin: 0.7in; right-margin: 0.7in; top-margin: 0.75in; bottom-margi
 			<td colspan=2 class="style01">IR</td>
 			<td colspan=3 class="style01">Tape Detector</td>
 			<td colspan=5 class="style01">기타</td>
-		  </tr>
+		  </tr> 
 		  <tr>
 		    <td colspan=2>X</td>
 			<td colspan=2>X</td>
@@ -185,7 +203,7 @@ body { left-margin: 0.7in; right-margin: 0.7in; top-margin: 0.75in; bottom-margi
 			<td colspan=2>X</td>
 			<td colspan=3>X</td>
 			<td colspan=5></td>
-		  </tr>
+		  </tr>-->
 		  <tr>
 			<td rowspan=10 colspan="2" class="style01">OPTION</td>
 			<td rowspan=2 class="style01">SW</td>
@@ -253,14 +271,8 @@ body { left-margin: 0.7in; right-margin: 0.7in; top-margin: 0.75in; bottom-margi
 			<td colspan=13></td>
 		  </tr>
 		  <tr>
-			<td colspan="3" class="style01">기본 악세서리</td>
-		    <td colspan=16>Cleaning Brush, Clean Cloth, PC Cable</td>
-		  </tr>
-		  <tr>
-			<td colspan="3" class="style01">품질 이관일</td>
-		    <td colspan=5></td>
-			<td colspan="3" class="style01">품질 출하일</td>
-		    <td colspan=8></td>
+			<td colspan="7" class="style01">품질 출하일</td>
+		    <td colspan=12><input type="text" id="date_from" name="date_from" value="<?php echo date("Y-m-d")?>" size="10" maxlength="10"/></td>
 		  </tr>
 		  <tr>
 			<td align=center colspan="10" rowspan="8" width="55%" class="style04"></td>
@@ -325,6 +337,44 @@ body { left-margin: 0.7in; right-margin: 0.7in; top-margin: 0.75in; bottom-margi
 			  </tr>
 			  </tbody>
 		</table>
-	
+		  
   </body>
+  
+ 
+
+<script>
+$.datepicker.setDefaults($.datepicker.regional['ko']);
+
+$(function() {
+    $( "#date_from" ).datepicker({
+        constrainInput: true,
+//        showOn: 'both',
+//        buttonImageOnly: 'true',
+//        buttonImage: '/img/calendarBtn.png',
+        showMonthAfterYear: true,
+        dateFormat: 'yy-mm-dd',
+        changeMonth: true,
+        changeYear: true,
+        beforeShow: function(input,inst){inst.dpDiv.css({ 'top': input.offsetHeight+ 'px', 'left': (input.offsetWidth - input.width)+ 'px'});},
+        onSelect: function(dateText, inst) {
+            checkDate(dateText,'from');
+        }
+    });
+});
+
+function checkDate(dateText, inst){
+    var today = "<?php echo date("Y-m-d")?>";
+    if (inst=="from") {
+        if (dateText < today) {
+            alert("현재날짜 이후로 선택하세요.");
+            $("#date_from").val("");
+        }
+    }
+}
+    
+</script>
+
+ 
+
+  
 </html>

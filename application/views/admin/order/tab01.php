@@ -6,9 +6,13 @@
 	<link rel="stylesheet" type="text/css" media="screen" href="/lib/jquery.jqGrid-4.6.0/plugins/ui.multiselect.css"></link>	
 	<link rel="stylesheet" type="text/css" media="screen" href="/lib/jquery.jqGrid-4.6.0/css/ui.jqgrid.css"></link>	
 	<link rel="stylesheet" type="text/css" media="screen" href="/lib/jquery.jqGrid-4.6.0/plugins/searchFilter.css"></link>	
-		
+    <link rel="stylesheet" href="/css/multiple-select.css" />
+	<link rel="stylesheet" type="text/css" href="/css/msdropdown/dd.css" />
+	
 	<script src="/js/cmn/common.js" type="text/javascript"></script>
 	<script src="/lib/jquery.jqGrid-4.6.0/js/jquery-1.11.0.min.js" type="text/javascript"></script>
+	<script src="/lib/js/jquery.multiple.select.js"></script>
+	<script src="/lib/js/msdropdown/jquery.dd.js"></script>
 	
 	<style type="text/css">
 	  html { font-family:Calibri, Arial, Helvetica, sans-serif; font-size:11pt; background-color:white }
@@ -46,11 +50,13 @@
 			<td colspan=10 class="style01">Purchase Order</td>
 		  </tr>
 		  <tr height="5px">
-			<td colspan=10></td>
+			<td width="20%" class="style01" colspan=2>Date</td>
+			<td width="30%" colspan=3>2004-03-14</td>
+		  	<td colspan=5></td>
 		  </tr>
 		  <tr>
 			<td width="20%" class="style01" colspan=2>Company Name</td>
-			<td width="30%" colspan=3>Kosovo - Treo</td>
+			<td width="30%" colspan=2>Kosovo - Treo</td>
 			<td width="10%" class="style01">Model</td>
 			<td width="10%">
 				<select name="model">
@@ -61,8 +67,7 @@
 		  <tr>
 		  	<td class="style01" colspan=2>No.</td>
 			<td>SWM-1204-07</td>
-			<td class="style01">Date</td>
-			<td>2004-03-14</td>
+			<td></td>
 			<td class="style01">P/O NO.</td>
 			<td><input type="text" id="remark" name="po_no" value="15220" size=10 style="border: 1"></td>
 			<td colspan=3></td>
@@ -71,150 +76,41 @@
 			<td class="style01" colspan=2>P/I NO. </td>
 			<td>PI-120403-2</td>
 			<td></td>
-			<td></td>
 			<td class="style01">Q'TY</td>
 			<td><input type="text" id="remark" name="qty" value="20" size=10 style="border: 1"></td>
 			<td colspan=3></td>
 		  </tr>
 		  <tr>
-			<td rowspan="4" class="style01" colspan=2>Currency</td>
-			<td class="style02">C1</td>
-			<td class="style02">C2</td>
-			<td class="style02">C3</td>
-			<td class="style02">C4</td>
-			<td class="style02">C5</td>
-		  	<td colspan=3></td>
+			<td rowspan="2" class="style01" colspan=2>Currency</td>
+		  	<td colspan=8></td>
 		  </tr>
 		  <tr>
 			<td>
-				<select name="C1">
-				</select>
+			    <div class="form-group">
+			        <select id="currency" multiple="multiple" class="form-control" style="width: 150px">
+			            <option value="1" selected>CHF</option>
+			            <option value="2">GBP</option>
+			            <option value="3" selected>USD</option>
+			            <option value="4">EUR</option>
+			        </select>
+			    </div>
 			</td>
-			<td>
-				<select name="C2">
-				</select>
-			</td>
-			<td>
-				<select name="C3">
-				</select>
-			</td>
-			<td>
-				<select name="C4">
-				</select>
-			</td>
-			<td>
-				<select name="C5">
-				</select>
-			</td>
-		  </tr>
-		  <tr>
-			<td class="style02">C6</td>
-			<td class="style02">C7</td>
-			<td class="style02">C8</td>
-			<td class="style02">C9</td>
-			<td class="style02">C10</td>
-		   	<td colspan=3></td>
-		  </tr>
-		  <tr>
-			<td>
-				<select name="C6">
-				</select>
-			</td>
-			<td>
-				<select name="C7">
-				</select>
-			</td>
-			<td>
-				<select name="C8">
-				</select>
-			</td>
-			<td>
-				<select name="C9">
-				</select>
-			</td>
-			<td>
-				<select name="C10">
-				</select>
-			</td>
-		  	<td colspan=3></td>
-		  </tr>
-		  <tr>
-			<td rowspan="2" class="style01">Serial Number</td>
-			<td rowspan="2" class="style01">
+		  	<td></td>
+			<td class="style01">Serial Number</td>
+			<td class="style01">
 				<select name="srl">
 				</select>
 			</td>
-			<td class="style02">C1</td>
-			<td class="style02">C2</td>
-			<td class="style02">C3</td>
-			<td class="style02">C4</td>
-			<td class="style02">C5</td>
-		   	<td colspan=3></td>
-		  </tr>
-		  <tr>
 			<td>
-				<select name="C1">
-				</select>
+			    <div class="form-group">
+			        <select id="currency2" multiple="multiple" class="form-control" style="width: 150px">
+			            <option value="1" selected>CHF</option>
+			            <option value="2" selected>GBP</option>
+			            <option value="3" selected>USD</option>
+			            <option value="4">EUR</option>
+			        </select>
+			    </div>
 			</td>
-			<td>
-				<select name="C2">
-				</select>
-			</td>
-			<td>
-				<select name="C3">
-				</select>
-			</td>
-			<td>
-				<select name="C4">
-				</select>
-			</td>
-			<td>
-				<select name="C5">
-				</select>
-			</td>
-			<td colspan="3"></td>
-		  </tr>
-		  <tr>
-			<td class="style01" colspan=2 rowspan=2>Detector</td>
-			<td class="style02">UV</td>
-			<td class="style02">MG</td>
-			<td class="style02">MRA</td>
-			<td class="style02">IR</td>
-			<td class="style02">MDD</td>
-			<td class="style02" width="10%">CIS</td>
-			<td class="style02" width="10%">Tape Detector</td>
-			<td></td>
-		  </tr>
-		  <tr>
-			<td>
-				<select name="uv">
-				</select>
-			</td>
-			<td>
-				<select name="mg">
-				</select>
-			</td>
-			<td>
-				<select name="mra">
-				</select>
-			</td>
-			<td>
-				<select name="ir">
-				</select>
-			</td>
-			<td>
-				<select name="mdd">
-				</select>
-			</td>
-			<td>
-				<select name="cis">
-				</select>
-			</td>
-			<td>
-				<select name="tape_detector">
-				</select>
-			</td>
-		   	<td></td>
 		  </tr>
 		  <tr>
 			<td class="style01" colspan=2>LCD Color</td>
@@ -241,32 +137,26 @@
 		  <tr class="row18">
 			<td class="style01" colspan=2>Power Cable</td>
 			<td>
-				<select name="power_cable">
-				</select>
-			</td>
-		   	<td colspan=7></td>
-		  </tr>
-		  <tr class="row18">
+			    <select style="width:200px" name="power_cable" id="power_cable">
+			      <option value="006" data-image="/images/common/dropdown/image006.png">220V UK 향</option>
+			      <option value="007" data-image="/images/common/dropdown/image007.png">220V India 향</option>
+			      <option value="008" data-image="/images/common/dropdown/image008.png" name="cd">230V 호주 향</option>
+			      <option value="011"  data-image="/images/common/dropdown/image011.png">110V 미국 향</option>
+			      <option value="012" data-image="/images/common/dropdown/image012.png" selected>220V 한국 향</option>
+			      <option value="013" data-image="/images/common/dropdown/image013.png">220V Israel향</option>
+			    </select>
+    		</td>
+		   	<td colspan=1></td>
 			<td class="style01" colspan=2>Other Options</td>
-			<td class="style02">LAN</td>
-			<td>
-				<select name="lan">
-				</select>
-			</td>
-			<td class="style02">SV-200</td>
-			<td>
-				<select name="sv200">
-				</select>
-			</td>
-			<td class="style02">Printer</td>
-			<td>
-				<select name="printer">
-				</select>
-			</td>
-			<td class="style02">SDP-7</td>
-			<td>
-				<select name="sdp7">
-				</select>
+			<td colspan=3>
+			    <div class="form-group">
+			        <select id="other_options" multiple="multiple" class="form-control" style="width: 250px">
+			            <option value="1">LAN</option>
+			            <option value="2">SV-200</option>
+			            <option value="3">Printer</option>
+			            <option value="4">SDP-7</option>
+			        </select>
+			    </div>
 			</td>
 		  </tr>
 		  <tr>
@@ -318,15 +208,8 @@
 		   	<td colspan=3></td>
 		  </tr>
 		  <tr>
-			<td class="style01" colspan=2>Unit Price</td>
-			<td colspan=2><input type="text" id="unit_price" name="unit_price" value="USD 10,000" size=10 style="border: 1"></td>
-			<td class="style01">Total Amount</td>
-			<td colspan=2><input type="text" id="tot_amt" name=""tot_amt"" value="USD 2,000.00" size=20 style="border: 1"></td>
-		   	<td colspan=5></td>
-		  </tr>
-		  <tr>
 			<td class="style01" colspan=2>Remark</td>
-			<td colspan=9><input type="text" id="remark" name="tel" size=120 style="border: 1"></td>
+			<td colspan=9><textarea id="remark" name="remark" cols=50 rows=5></textarea></td>
 		  </tr>
 		  <tr height=5px>
 			<td colspan=10></td>
@@ -343,7 +226,6 @@
 
 <script type="text/javascript">
 
-initForm();
 
 function initForm() {
 		var f = document.addForm;
@@ -358,20 +240,39 @@ function initForm() {
 		getCodeCombo("01", f.serial_prn_cable);
 		getCodeCombo("01", f.calibration_sheet);
 		getCodeCombo("01", f.pc_cable);
-		getCodeCombo("01", f.power_cable);
+//		getCodeCombo("01", f.power_cable);
 		getCodeCombo("01", f.lan);
 		getCodeCombo("01", f.sv200);
 		getCodeCombo("01", f.printer);
 		getCodeCombo("01", f.sdp7);
-		getCodeCombo("01", f.uv);
-		getCodeCombo("01", f.mg);
-		getCodeCombo("01", f.mra);
-		getCodeCombo("01", f.ir);
-		getCodeCombo("01", f.mdd);
-		getCodeCombo("01", f.cis);
-		getCodeCombo("01", f.tape_detector);
+
 		getCodeCombo("02", f.rej_pocket_tp);
 }
+
+$(function() {
+    $('#currency').change(function() {
+        console.log($(this).val());
+    }).multipleSelect();
+});
+
+$(function() {
+    $('#currency2').change(function() {
+        console.log($(this).val());
+    }).multipleSelect();
+});
+
+$(function() {
+    $('#other_options').change(function() {
+        console.log($(this).val());
+    }).multipleSelect();
+});
+
+$(document).ready(function(e) {	
+	initForm();
+	$("#power_cable").msDropdown({roundedBorder:false});
+});
+
+
 </script>
 
 
