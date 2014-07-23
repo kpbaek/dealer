@@ -401,6 +401,35 @@ body { left-margin: 0.98425196850394in; right-margin: 0.98425196850394in; top-ma
 		  <tr class="row36">
 			<td class="column0 style44 s" colspan=2>Bank Information</td>
 			<td class="column2 style40 s">:</td>
+			<td class="column3 style60 s" colspan=4>CITI BANK INC.-Commercial Bank Center-Gyeonggi Nambu</td>
+		  </tr>
+		  <tr class="row37">
+			<td class="column0">&nbsp;</td>
+			<td class="column1">&nbsp;</td>
+			<td class="column2 style1 null"></td>
+			<td class="column3 style60 s" colspan=4>2F, CITI Osan Bldg., 84 Seongho-daero</td>
+		  </tr>
+		  <tr class="row38">
+			<td class="column0">&nbsp;</td>
+			<td class="column1">&nbsp;</td>
+			<td class="column2 style1 null"></td>
+			<td class="column3 style60 s" colspan=4>Osan-si, Gyeonggi-do, 447-804, KOREA</td>
+		  </tr>
+		  <tr class="row38">
+			<td class="column0">&nbsp;</td>
+			<td class="column1">&nbsp;</td>
+			<td class="column2 style1 null"></td>
+			<td class="column3 style60 s" colspan=4>SWIFT Code: CITIKRSX</td>
+		  </tr>
+		  <tr class="row39">
+			<td class="column0">&nbsp;</td>
+			<td class="column1">&nbsp;</td>
+			<td class="column2 style1 null"></td>
+			<td class="column3 style60 s" colspan=4>Account No.: 558-00113-436-01</td>
+		  </tr>
+		  <tr class="row36">
+			<td class="column0 style44 s" colspan=2>Bank Information</td>
+			<td class="column2 style40 s">:</td>
 			<td class="column3 style60 s" colspan=4>HANABANK, GASAN-DONG BRANCH</td>
 		  </tr>
 		  <tr class="row37">

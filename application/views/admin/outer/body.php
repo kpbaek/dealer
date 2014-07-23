@@ -23,9 +23,9 @@
 <h3><a href="/admin/outer?outertabs=0">외부발송문서</a></h3>
 
 <ul id="outertabs" class="shadetabs">
-<li><a href="/admin/outer/tab01" rel="#iframe" class="selected">Proforma invoice</a></li>
-<li><a href="/admin/outer/tab02" rel="#iframe">INVOICE</a></li>
-<li><a href="/admin/outer/tab03" rel="#iframe">PACKING LIST</a></li>
+<li><a href="/admin/outer/tab01" rel="#iframe" class="selected">Proforma Invoice</a></li>
+<li><a href="/admin/outer/tab02" rel="#iframe">Invoice</a></li>
+<li><a href="/admin/outer/tab03" rel="#iframe">Packing List</a></li>
 </ul>
 
 <div id="outerDiv" style="border:1px solid gray; width:970px; height:550px; margin-bottom: 1em; padding: 10px;overflow: scroll;">
