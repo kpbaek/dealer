@@ -25,9 +25,9 @@
 					</li>
 					<li><span class="folder">외부발송문서</span>
 						<ul>
-							<li><span class="file"><a href="/admin/outer?outertabs=0">Proforma invoice</a></span></li>
-							<li><span class="file"><a href="/admin/outer?outertabs=1">INVOICE</a></span></li>
-							<li><span class="file"><a href="/admin/outer?outertabs=2">PACKING LIST</a></span></li>
+							<li><span class="file"><a href="/admin/outer?outertabs=0">Proforma Invoice</a></span></li>
+							<li><span class="file"><a href="/admin/outer?outertabs=1">Invoice</a></span></li>
+							<li><span class="file"><a href="/admin/outer?outertabs=2">Packing List</a></span></li>
 						</ul>
 					</li>
 				</ul>
