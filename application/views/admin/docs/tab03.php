@@ -733,7 +733,7 @@ body { left-margin: 0.15748031496063in; right-margin: 0.15748031496063in; top-ma
 		  </tr>
 		  <tr class="row32">
 			<td class="column0 style5 null"></td>
-			<td class="column1 style52 s" colspan=2>출고 가능일정 확인해 주세요. 감사합니다.</td>
+			<td class="column1 style52 s" colspan=2 style="vertical-align: top;"><textarea rows="7" cols="23">출고 가능일정 확인해 주세요. 감사합니다.</textarea></td>
 			<td class="column3 style51 null"></td>
 			<td class="column4 style48 null"></td>
 			<td class="column5 style53 s">720004400B</td>
