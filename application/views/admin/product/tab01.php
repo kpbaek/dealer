@@ -34,12 +34,13 @@
 
 <body  onload="javascript:">
 
-<div id="searchDiv" style="display:">
+<div id="searchDiv" style="text-align:right;display:">
 <form name="searchForm">
 <input type="text" name="page" style="display: none">
 code<input type="text" name="searchId">
 part name<input type="text" name="searchPartId">
 <input type="button" id="btnSearch" value="Search" onclick="javascript:gridReload();"/>
+<input type="button" id="btnPop" value="장비분해도" onclick="javascript:;"/>
 </form>
 </div>
 <div id="gridDiv">
@@ -345,15 +346,14 @@ part name<input type="text" name="searchPartId">
 	   	url:"/admin/product/listPart",
 	   	datatype: "json",
 	   	//colNames:['Inv No','Date', 'Client', 'Amount','Tax','Total','Notes'],
-	   	colNames:['바이어', 'country', 'company', '부품할증요율', '요율적용시작일', '요율적용종료일'],
+	   	colNames:['딜러','바이어', 'country', 'company', '부품할증요율'],
    	              //, '(1CIS)', '(2CIS)', 'Q(Per 1Unit)', 'Order Price', 'Amount'
 	   	colModel:[
 	   		{name:'id', index:'id', width:55,hidden:true,search:true}, 
+	        {name:'dealer',index:'name', width:70, align:"right",search:true},
 	        {name:'model',index:'model', width:70, align:"right",search:true},
 	   		{name:'code',index:'name', width:100, align:"right",search:true},
-	   		{name:'part_name',index:'part_name', width:70,search:true},
-	   		{name:'invdate',index:'tax', width:50, align:"right",search:true},		
-	   		{name:'rate_end_date',index:'tax', width:50, align:"right",search:true}		
+	   		{name:'part_name',index:'part_name', width:70,search:true}
 		],
 		
 		mtype: "POST",

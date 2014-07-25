@@ -451,6 +451,16 @@
 @page { left-margin: 0.19685039370079in; right-margin: 0.19685039370079in; top-margin: 0.39370078740157in; bottom-margin: 0.2755905511811in; }
 body { left-margin: 0.19685039370079in; right-margin: 0.19685039370079in; top-margin: 0.39370078740157in; bottom-margin: 0.2755905511811in; }
 </style>
+
+	<table border="0" cellpadding="0" cellspacing="0" id="sheet0" style="width: 210mm;" align=center>
+	<tr>
+		<td colspan=10 align=right>
+		<input type="button" value="send" onclick="javascript:sendMail();"/>
+		</td>
+	  </tr>
+	</table>
+	<p>
+
 	<table border="0" cellpadding="0" cellspacing="0" id="sheet0" class="sheet0" style="width: 210mm;height: 290mm;" align=center>
 		<col class="col0">
 		<col class="col1">
@@ -659,10 +669,10 @@ body { left-margin: 0.19685039370079in; right-margin: 0.19685039370079in; top-ma
 		  <tr class="row22">
 			<td class="column0 style3 s"></td>
 			<td class="column1 style54 s style05">2)</td>
-			<td class="column4 style54 s style00">Printer (Model: SP-85S)</td>
-			<td class="column25 style54 s style207">40 Units</td>
-			<td class="column30 style54 s style207">$0.00&nbsp;&nbsp;&nbsp;&nbsp;</td>
-			<td class="column36 style001 s">$0.00
+			<td class="column4 style54 s style00">Currency Discrimination Counter Spare Parts</td>
+			<td class="column25 style54 s style207">13 Units</td>
+			<td class="column30 style54 s style207">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+			<td class="column36 style001 s">$254.7
 			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 			</td>
 			<td class="column47 style13 null"></td>
@@ -670,10 +680,10 @@ body { left-margin: 0.19685039370079in; right-margin: 0.19685039370079in; top-ma
 		  <tr class="row22">
 			<td class="column0 style3 s"></td>
 			<td class="column1 style54 s style05">3)</td>
-			<td class="column4 style54 s style00">Currency Discrimination Counter Spare Parts</td>
-			<td class="column25 style54 s style207">13 Units</td>
-			<td class="column30 style54 s style207">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-			<td class="column36 style001 s">$254.7
+			<td class="column4 style54 s style00">Printer (Model: SP-85S)</td>
+			<td class="column25 style54 s style207">40 Units</td>
+			<td class="column30 style54 s style207">$0.00&nbsp;&nbsp;&nbsp;&nbsp;</td>
+			<td class="column36 style001 s">$0.00
 			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 			</td>
 			<td class="column47 style13 null"></td>

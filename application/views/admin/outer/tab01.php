@@ -148,7 +148,18 @@
 @page { left-margin: 0.98425196850394in; right-margin: 0.98425196850394in; top-margin: 0.19685039370079in; bottom-margin: 0.039370078740157in; }
 body { left-margin: 0.98425196850394in; right-margin: 0.98425196850394in; top-margin: 0.19685039370079in; bottom-margin: 0.039370078740157in; }
 </style>
-	<table border="0" cellpadding="0" cellspacing="0" id="sheet0" class="sheet0" style="width: 210mm;height: 290mm;">
+
+	<table border="0" cellpadding="0" cellspacing="0" id="sheet0" style="width: 210mm;" align=center>
+	<tr>
+		<td colspan=10 align=right>
+		<input type="button" value="save" onclick="javascript:save();"/>
+		<input type="button" value="send" onclick="javascript:sendMail();" disabled/>
+		</td>
+	  </tr>
+	</table>
+	<p>
+
+	<table border="0" cellpadding="0" cellspacing="0" id="sheet0" class="sheet0" style="width: 210mm;height: 290mm;" align=center>
 		<col class="col0">
 		<col class="col1">
 		<col class="col2">
@@ -238,7 +249,7 @@ body { left-margin: 0.98425196850394in; right-margin: 0.98425196850394in; top-ma
 		  </tr>
 		  <tr class="row13">
 			<td class="column0 style21 null"></td>
-			<td class="column1 style15 s" colspan="3">Counterfeit Detection: MG, MR-Array, IR &amp; UV/SUV </td>
+			<td class="column1 style15 s" colspan="3">Counterfeit Detection: MG, MR-Array, IR, UV </td>
 			<td class="column4 style17 null"></td>
 			<td class="column5 style22 null"></td>
 			<td class="column6 style23 null"></td>
@@ -258,13 +269,6 @@ body { left-margin: 0.98425196850394in; right-margin: 0.98425196850394in; top-ma
 			<td class="column4 style17 null"></td>
 			<td class="column5 style22 null"></td>
 			<td class="column6 style23 null"></td>
-		  </tr>
-		  <tr class="row16">
-			<td class="column0 style14 s">Printer</td>
-			<td class="column1 style24 s" colspan="3">SP-58S</td>
-			<td class="column4 style17 n">40</td>
-			<td class="column5 style19 n">0</td>
-			<td class="column6 style19 f">0</td>
 		  </tr>
 		  <tr class="row17">
 			<td class="column0 style25 null"></td>
@@ -312,24 +316,45 @@ body { left-margin: 0.98425196850394in; right-margin: 0.98425196850394in; top-ma
 			<td class="column5 style18 null"></td>
 			<td class="column6 style18 null"></td>
 		  </tr>
-		  <tr class="row23">
+		  <tr class="row26">
+			<td class="column0 style67 s style69" colspan="4">Total Amount (FOB)</td>
+			<td class="column4 style35 null"></td>
+			<td class="column5 style36 null"></td>
+			<td class="column6 style37 f">USD  2,175.00</td>
+		  </tr>
+
+		  <tr class="row16">
+			<td class="column0 style14 s">
+			<select name="printer">
+				<option>Printer</option>
+			</select>
+			</td>
+			<td class="column1 style24 s" colspan="3"><input type=text name="description" value="SP-58S" size=8 disabled></td>
+			<td class="column4 style17 n"><input type=text name="qty" value="0" size=8></td>
+			<td class="column5 style19 n"><input type=text name="qty" value="0" size=8 disabled></td>
+			<td class="column6 style19 f"><input type=text name="qty" value="0" size=8 disabled></td>
+		  </tr>
+		  <tr class="row22">
 			<td class="column0 style25 null"></td>
-			<td class="column1 style26 null"></td>
+			<td class="column1 style30 null"></td>
 			<td class="column2 style27 null"></td>
 			<td class="column3 style27 null"></td>
 			<td class="column4 style28 null"></td>
 			<td class="column5 style18 null"></td>
 			<td class="column6 style18 null"></td>
 		  </tr>
-		  <tr class="row24">
-			<td class="column0 style25 null"></td>
-			<td class="column1 style26 null"></td>
-			<td class="column2 style27 null"></td>
-			<td class="column3 style27 null"></td>
-			<td class="column4 style28 null"></td>
-			<td class="column5 style18 null"></td>
-			<td class="column6 style18 null"></td>
+		  <tr class="row16">
+			<td class="column0 style14 s">
+			<select name="printer">
+				<option>Repair Parts</option>
+			</select>
+			</td>
+			<td class="column1 style24 s" colspan="3"><input type=text name="description" value="SP-58S" size=8 disabled></td>
+			<td class="column4 style17 n"><input type=text name="qty" value="0" size=8></td>
+			<td class="column5 style19 n"></td>
+			<td class="column6 style19 f"><input type=text name="qty" value="0" size=8></td>
 		  </tr>
+		  
 		  <tr class="row25">
 			<td class="column0 style14 null"></td>
 			<td class="column1 style31 null"></td>
@@ -338,12 +363,6 @@ body { left-margin: 0.98425196850394in; right-margin: 0.98425196850394in; top-ma
 			<td class="column4 style33 null"></td>
 			<td class="column5 style19 null"></td>
 			<td class="column6 style34 null"></td>
-		  </tr>
-		  <tr class="row26">
-			<td class="column0 style67 s style69" colspan="4">Total Amount (FOB)</td>
-			<td class="column4 style35 null"></td>
-			<td class="column5 style36 null"></td>
-			<td class="column6 style37 f">USD  2,175.00</td>
 		  </tr>
 		  <tr class="row27">
 			<td class="column0 style11 null"></td>
@@ -373,7 +392,12 @@ body { left-margin: 0.98425196850394in; right-margin: 0.98425196850394in; top-ma
 		  <tr class="row31">
 			<td class="column0 style39 s" colspan=2>Shipping port</td>
 			<td class="column2 style40 s">:</td>
-			<td class="column3 style39 s" colspan=4>Incheon, Korea (Shipped by AIR)</td>
+			<td class="column3 style39 s" colspan=4>
+			<select name="shipping_port">
+				<option>Incheon, Korea</option>
+			</select>
+			 (Shipped by AIR)
+			</td>
 		  </tr>
 		  <tr class="row32">
 			<td class="column0 style39 s" colspan=2>Inspection</td>
@@ -383,17 +407,22 @@ body { left-margin: 0.98425196850394in; right-margin: 0.98425196850394in; top-ma
 		  <tr class="row33">
 			<td class="column0 style39 s" colspan=2>Destination</td>
 			<td class="column2 style40 s">:</td>
-			<td class="column3 style39 s" colspan=4>Lebanon</td>
+			<td class="column3 style39 s" colspan=4><input type=text name="final_dest" value="Beirut" size=8>, Lebanon</td>
 		  </tr>
 		  <tr class="row34">
 			<td class="column0 style39 s" colspan=2>Payment</td>
 			<td class="column2 style40 s">:</td>
-			<td class="column3 style39 s" colspan=4>T/T in advance (All expenses outside of Korea shall be charged by remitter)</td>
+			<td class="column3 style39 s" colspan=4>
+			<select name="payment">
+				<option>T/T in advance</option>
+			</select>
+			 (All expenses outside of Korea shall be charged by remitter)
+			</td>
 		  </tr>
 		  <tr class="row35">
 			<td class="column0 style39 s" colspan=2>Validity</td>
 			<td class="column2 style40 s">:</td>
-			<td class="column3 style42 f">41747</td>
+			<td class="column3 style42 f">Until <INPUT type=text id="validity" name="validity" value="Apr. 18, 2014" size=10></td>
 			<td class="column4 style43 null"></td>
 			<td class="column5 style43 null"></td>
 			<td class="column6">&nbsp;</td>
@@ -401,54 +430,22 @@ body { left-margin: 0.98425196850394in; right-margin: 0.98425196850394in; top-ma
 		  <tr class="row36">
 			<td class="column0 style44 s" colspan=2>Bank Information</td>
 			<td class="column2 style40 s">:</td>
-			<td class="column3 style60 s" colspan=4>CITI BANK INC.-Commercial Bank Center-Gyeonggi Nambu</td>
-		  </tr>
-		  <tr class="row37">
-			<td class="column0">&nbsp;</td>
-			<td class="column1">&nbsp;</td>
-			<td class="column2 style1 null"></td>
-			<td class="column3 style60 s" colspan=4>2F, CITI Osan Bldg., 84 Seongho-daero</td>
-		  </tr>
-		  <tr class="row38">
-			<td class="column0">&nbsp;</td>
-			<td class="column1">&nbsp;</td>
-			<td class="column2 style1 null"></td>
-			<td class="column3 style60 s" colspan=4>Osan-si, Gyeonggi-do, 447-804, KOREA</td>
-		  </tr>
-		  <tr class="row38">
-			<td class="column0">&nbsp;</td>
-			<td class="column1">&nbsp;</td>
-			<td class="column2 style1 null"></td>
-			<td class="column3 style60 s" colspan=4>SWIFT Code: CITIKRSX</td>
-		  </tr>
-		  <tr class="row39">
-			<td class="column0">&nbsp;</td>
-			<td class="column1">&nbsp;</td>
-			<td class="column2 style1 null"></td>
-			<td class="column3 style60 s" colspan=4>Account No.: 558-00113-436-01</td>
-		  </tr>
-		  <tr class="row36">
-			<td class="column0 style44 s" colspan=2>Bank Information</td>
-			<td class="column2 style40 s">:</td>
-			<td class="column3 style60 s" colspan=4>HANABANK, GASAN-DONG BRANCH</td>
-		  </tr>
-		  <tr class="row37">
-			<td class="column0">&nbsp;</td>
-			<td class="column1">&nbsp;</td>
-			<td class="column2 style1 null"></td>
-			<td class="column3 style60 s" colspan=4>550-1, GASAN-DONG, GEUMCHEON-GU, SEOUL, KOREA</td>
-		  </tr>
-		  <tr class="row38">
-			<td class="column0">&nbsp;</td>
-			<td class="column1">&nbsp;</td>
-			<td class="column2 style1 null"></td>
-			<td class="column3 style60 s" colspan=4>SWIFT CODE: HNBNKRSE</td>
-		  </tr>
-		  <tr class="row39">
-			<td class="column0">&nbsp;</td>
-			<td class="column1">&nbsp;</td>
-			<td class="column2 style1 null"></td>
-			<td class="column3 style60 s" colspan=4>Account No.: 332-910001-81938</td>
+			<td class="column3 style60 s" colspan=4>
+			<select name="bank_inf">
+				<option value="CITI BANK INC.-Commercial Bank Center-Gyeonggi Nambu
+				2F, CITI Osan Bldg., 84 Seongho-daero
+				Osan-si, Gyeonggi-do, 447-804, KOREA
+				SWIFT Code: CITIKRSX
+				Account No.: 558-00113-436-01">CITI BANK INC
+				</option>
+				<option value="HANABANK, GASAN-DONG BRANCH 
+     550-1, GASAN-DONG, GEUMCHEON-GU, SEOUL, KOREA 
+     SWIFT CODE: HNBNKRSE 
+     Account No.: 332-910001-81938 
+				">HANABANK
+				</option>
+				</select>
+			</td>
 		  </tr>
 		  <tr class="row40">
 			<td class="column0 style1 s">Reference:</td>

@@ -451,6 +451,16 @@
 @page { left-margin: 0.19685039370079in; right-margin: 0.19685039370079in; top-margin: 0.39370078740157in; bottom-margin: 0.2755905511811in; }
 body { left-margin: 0.19685039370079in; right-margin: 0.19685039370079in; top-margin: 0.39370078740157in; bottom-margin: 0.2755905511811in; }
 </style>
+
+	<table border="0" cellpadding="0" cellspacing="0" id="sheet0" style="width: 210mm;" align=center>
+	<tr>
+		<td colspan=10 align=right>
+		<input type="button" value="send" onclick="javascript:sendMail();"/>
+		</td>
+	  </tr>
+	</table>
+	<p>
+
 	<table border="0" cellpadding="0" cellspacing="0" id="sheet0" class="sheet0" style="width: 210mm;height: 290mm;" align=center>
 		<col class="col0">
 		<col class="col1">
@@ -600,7 +610,7 @@ body { left-margin: 0.19685039370079in; right-margin: 0.19685039370079in; top-ma
 			<td class="column0 style3 s"></td>
 			<td class="column1 style66 s style05">Carton No.<br>C/No.</td>
 			<td class="column4 style66 s style05">No.& kind of pkgs;Goods description</td>
-			<td class="column25 style205 s" width=10%>Quantity</td>
+			<td class="column25 style205 s" width=10%>Cartons</td>
 			<td class="column30 style205 s">Net Weight</td>
 			<td class="column36 style205 s">Gross Weight</td>
 			<td class="column36 style205 s">Measure (mm)</td>
@@ -608,11 +618,11 @@ body { left-margin: 0.19685039370079in; right-margin: 0.19685039370079in; top-ma
 			</tr>
 		  <tr class="row22">
 			<td class="column0 style3 s"></td>
-			<td class="column1 style54 s style05">1~40</td>
+			<td class="column1 style54 s style05"><input type=text name="cart_no" value="1~40" size="3" style="text-align: right"></td>
 			<td class="column4 style00">SB-9  Currency Discrimination Counter</td>
-			<td class="column25 style54 s style207">40 Cartons</td>
+			<td class="column25 style54 s style207">40</td>
 			<td class="column30 style54 s style207">360.0 Kg&nbsp;&nbsp;&nbsp;&nbsp;</td>
-			<td class="column36 style54 s style207 s">440.0 Kg
+			<td class="column36 style54 s style207 s"><input type=text name="spare_cart" value="440.0" size="3" style="text-align: right"> Kg
 			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 			</td>
 			<td class="column36 style205 s"></td>
@@ -620,11 +630,11 @@ body { left-margin: 0.19685039370079in; right-margin: 0.19685039370079in; top-ma
 		  </tr>
 		  <tr class="row22">
 			<td class="column0 style3 s"></td>
-			<td class="column1 style54 s style05">21</td>
+			<td class="column1 style54 s style05"><input type=text name="cart_no" value="21" size="3" style="text-align: right"></td>
 			<td class="column4 style54 s style00">Currency Discrimination Counter Spare Parts</td>
-			<td class="column25 style54 s style207">2 Cartons</td>
+			<td class="column25 style54 s style207"><input type=text name="spare_cart" value="2" size="3" style="text-align: right"></td>
 			<td class="column30 style54 s style207">18.0 Kg&nbsp;&nbsp;&nbsp;&nbsp;</td>
-			<td class="column36 style54 s style207">20.0 Kg
+			<td class="column36 style54 s style207"><input type=text name="spare_cart" value="20.0" size="3" style="text-align: right"> Kg
 			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 			</td>
 			<td class="column36 style205 s"></td>
@@ -632,11 +642,11 @@ body { left-margin: 0.19685039370079in; right-margin: 0.19685039370079in; top-ma
 		  </tr>
 		  <tr class="row22">
 			<td class="column0 style3 s"></td>
-			<td class="column1 style54 s style05">22</td>
+			<td class="column1 style54 s style05"><input type=text name="cart_no" value="22" size="3" style="text-align: right"></td>
 			<td class="column4 style54 s style00">Repair Parts</td>
-			<td class="column25 style54 s style207">1 Cartons</td>
-			<td class="column30 style54 s style207">2.0 Kg&nbsp;&nbsp;&nbsp;&nbsp;</td>
-			<td class="column36 style54 s style207">3.0 Kg
+			<td class="column25 style54 s style207"><input type=text name="spare_cart" value="1" size="3" style="text-align: right"></td>
+			<td class="column30 style54 s style207">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+			<td class="column36 style54 s style207"><input type=text name="spare_cart" value="3.0" size="3" style="text-align: right"> Kg
 			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 			</td>
 			<td class="column36 style205 s"></td>
@@ -646,9 +656,9 @@ body { left-margin: 0.19685039370079in; right-margin: 0.19685039370079in; top-ma
 			<td class="column0 style3 s"></td>
 			<td class="column1 style54 s style05"></td>
 			<td class="column4 style66 s style05">TOTAL :</td>
-			<td class="column25 style001 s">43 Cartons</td>
+			<td class="column25 style001 s"><input type=text name="spare_cart" value="43" size="3" style="text-align: right"></td>
 			<td class="column30 style001 s">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-			<td class="column36 style001 s">463.0 Kg
+			<td class="column36 style001 s"><input type=text name="spare_cart" value="463.0" size="3" style="text-align: right"> Kg
 			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 			</td>
 			<td class="column36 style205 s"></td>
