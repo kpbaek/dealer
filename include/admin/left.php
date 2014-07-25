@@ -1,4 +1,4 @@
-		<a href="/admin">login/out</a>
+		
 			
 		<ul id="browser" class="filetree treeview-famfamfam">
 			<li><span class="folder">수주관리</span>

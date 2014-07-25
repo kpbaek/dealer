@@ -25,3 +25,9 @@
 	</head>
 	
 <h1 id="banner"><a href="/admin">수주관리시스템 Admin</a> </h1>
+<div id=loginDiv style="display:">
+<h1><a href="/admin">Login</a></h1>
+</div>
+<div id=logoutDiv style="display:none">
+<h1>tester님 <img src="/images/common/btn_gnb_logout.gif"></h1>
+</div>
