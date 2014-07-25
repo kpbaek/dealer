@@ -44,10 +44,10 @@
 
 <body  onload="javascript:">
 
-<div id="searchDiv" style="display:">
+<div id="searchDiv" style="display:;text-align:right;">
 <form name="searchForm">
 <input type="text" name="page" style="display: none">
-searchName<input type="text" name="searchId">
+Name<input type="text" name="searchId">
 <input type="button" id="btnSearch" value="Search" onclick="javascript:gridReload();"/>
 </form>
 </div>
@@ -122,15 +122,25 @@ searchName<input type="text" name="searchId">
 				<select name="cntry">
 				</select>
 			</td>
-			<td width="18%" class="style01">Job Title</td>
+			<td width="18%" class="style02">Tel</td>
 			<td width="5%"><sup></sup></td>
-			<td width="27%"><input type="text" id="invdate" name="delernm" size=35 style="border: 1"></td>
+			<td width="27%"><input type="text" id="tel" name="tel" size=35 style="border: 1"></td>
 		  </tr>
 		  <tr>
 			<td class="style01">Email address</td>
 			<td><sup>★</sup></td>
 			<td><input type="text" id="invdate" name="delernm" size=35 style="border: 1"></td>
-			<td colspan=3>&nbsp;</td>
+			<td width="18%" class="style02">fax</td>
+			<td width="5%"><sup></sup></td>
+			<td width="27%"><input type="text" id="fax" name="fax" size=35 style="border: 1"></td>
+		  </tr>
+		  <tr>
+			<td class="style01">Job Title</td>
+			<td><sup></sup></td>
+			<td><input type="text" id="invdate" name="delernm" size=35 style="border: 1"></td>
+			<td width="18%" class="style02">attn</td>
+			<td width="5%"><sup></sup></td>
+			<td width="27%"><input type="text" id="attn" name="delernm" size=35 style="border: 1"></td>
 		  </tr>
 		  <tr>
 			<td class="style01">Homepage</td>
@@ -151,7 +161,7 @@ searchName<input type="text" name="searchId">
 				<select name="main_cust">
 				</select>
 			</td>
-			<td colspan=3>드롭박스. Bank, Cash centre, CIT, Distributor, Gaming, Retailer, Other</td>
+			<td colspan=3></td>
 		  </tr>
 		  <tr>
 			<td class="style01">Comments</td>
@@ -275,9 +285,11 @@ searchName<input type="text" name="searchId">
 	function initForm() {
 		var f = document.addForm;
 		getCodeCombo("02", f.team_cd);
+		getCodeCombo("02", f.cntry);
 		getCodeCombo("02", f.salesworker_id);
 		getCodeCombo("02", f.cdDtl);
-		getCodeCombo("01", f.bank_inf);
+		getCodeCombo("02", f.bank_inf);
+		getCodeCombo("02", f.main_cust);
 		newForm();
     }
 	

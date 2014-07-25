@@ -70,7 +70,7 @@
 		   	url:targetUrl,
 		   	datatype: "json",
 		   	//colNames:['Inv No','Date', 'Client', 'Amount','Tax','Total','Notes'],
-		   	colNames:['id', 'user_id', 'name(kor/eng)', '부서(kor/eng)', '직무(kor/eng)', 'email',  'tel', 'hp', '승인일시'],
+		   	colNames:['id', 'user_id', 'name(kor/eng)', '부서(kor/eng)', '직무(kor/eng)', 'email',  'tel(내선)', 'hp', '승인일시'],
 	   	              //, '(1CIS)', '(2CIS)', 'Q(Per 1Unit)', 'Order Price', 'Amount'
 		   	colModel:[
 		   	    {name:'id', index:'id', width:50,hidden:true,search:true}, 
@@ -78,8 +78,8 @@
 		   		{name:'invdate',index:'invdate', width:120,search:true},
 		   		{name:'amount',index:'tax asc, invdate', width:120,search:true},
 		   		{name:'amount',index:'amount', width:120, align:"right",search:true},
-		   		{name:'email',index:'tax', width:80, align:"right",search:true},		
-		   		{name:'tel',index:'total', width:70,align:"right",search:true},		
+		   		{name:'email',index:'tax', width:100, align:"right",search:true},		
+		   		{name:'tel',index:'total', width:60,align:"right",search:true},		
 		   		{name:'total',index:'note', width:70, sortable:false,search:true},		
 		   		{name:'total',index:'note', width:70, sortable:false,search:true}		
 			],
@@ -97,7 +97,7 @@
                     var rowData = jQuery("#list").jqGrid('getRowData',cl);
                     var cl_id = rowData.id;
                     c_email = "<input type=text size=20 height='20' name='c_email' value='" + "" + "'>";
-                    c_tel = "<input type=text size=15 height='20' name='c_email' value='" + "" + "'>";
+                    c_tel = "<input type=text size=3 height='20' name='c_email' value='" + "" + "' maxlength=3>";
                     jQuery("#list").jqGrid('setRowData',ids[i],{email:c_email});
                     jQuery("#list").jqGrid('setRowData',ids[i],{tel:c_tel});
                 }
