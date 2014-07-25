@@ -1,6 +1,6 @@
 		
 			
-		<ul id="browser" class="filetree treeview-famfamfam">
+		<ul id="menu" class="filetree treeview-famfamfam">
 			<li><span class="folder">수주관리</span>
 				<ul>
 					<li><span class="folder">신청서</span>

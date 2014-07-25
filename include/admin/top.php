@@ -8,13 +8,14 @@
 	<link rel="stylesheet" href="/lib/jquery.treeview/jquery.treeview.css" />
 	<link rel="stylesheet" href="/lib/jquery.treeview/screen.css" />
 	
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js"></script>
+ 	<script src="/lib/jquery.jqGrid-4.6.0/js/jquery-1.11.0.min.js" type="text/javascript"></script>
 	<script src="/lib/jquery.cookie.js" type="text/javascript"></script>
 	<script src="/lib/jquery.treeview/jquery.treeview.js" type="text/javascript"></script>
-
+	<script src="/lib/js/jquery.ui.shake.js"></script>
+	
 	<script type="text/javascript">
 	$(document).ready(function(){
-		$("#browser").treeview({
+		$("#menu").treeview({
 			toggle: function() {
 				console.log("%s was toggled.", $(this).find(">span").text());
 			}
