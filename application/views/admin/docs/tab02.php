@@ -191,7 +191,7 @@ body { left-margin: 0.35433070866142in; right-margin: 0.31496062992126in; top-ma
 			<td class="column3 style9 n">40</td>
 			<td class="column4 style11 n">PI-140321-7</td>
 			<td class="column5 style12 n">SWM-1403-51</td>
-			<td class="column6 style13 n">0</td>
+			<td class="column6 style13 n"></td>
 			<td class="column7 style14 null"></td>
 			<td class="column8 style6 null"></td>
 			<td class="column9">&nbsp;</td>
@@ -201,10 +201,10 @@ body { left-margin: 0.35433070866142in; right-margin: 0.31496062992126in; top-ma
 		  <tr class="row7">
 			<td class="column0 style4 null"></td>
 			<td class="column1 style9 n">2</td>
-			<td class="column2 style10 null"></td>
-			<td class="column3 style9 null"></td>
-			<td class="column4 style11 null"></td>
-			<td class="column5 style12 null"></td>
+			<td class="column2 style10 null">SB-1100</td>
+			<td class="column3 style9 null">3</td>
+			<td class="column4 style11 null">PI-140321-7</td>
+			<td class="column5 style12 null">SWM-1403-52</td>
 			<td class="column6 style13 null"></td>
 			<td class="column7 style9 null"></td>
 			<td class="column8 style6 null"></td>
@@ -243,7 +243,7 @@ body { left-margin: 0.35433070866142in; right-margin: 0.31496062992126in; top-ma
 		  <tr class="row10">
 			<td class="column0 style4 null"></td>
 			<td class="column1 style60 s style61" colspan="2">총 수량</td>
-			<td class="column3 style9 f">40</td>
+			<td class="column3 style9 f">43</td>
 			<td class="column4 style62 null style64" colspan="4"></td>
 			<td class="column8 style6 null"></td>
 			<td class="column9">&nbsp;</td>
@@ -506,7 +506,7 @@ body { left-margin: 0.35433070866142in; right-margin: 0.31496062992126in; top-ma
 		  <tr class="row25">
 			<td class="column0 style29 null"></td>
 			<td class="column1 style15 null"></td>
-			<td class="column2 style35 s" colspan=6>상기  본인은  ㈜에스비엠의  Banking  Machine(40) Carton을  인수 하였음을 확인합니다.</td>
+			<td class="column2 style35 s" colspan=6>상기  본인은  ㈜에스비엠의  Banking  Machine(43) Carton을  인수 하였음을 확인합니다.</td>
 			<td class="column8 style31 null"></td>
 			<td class="column9">&nbsp;</td>
 			<td class="column10">&nbsp;</td>
@@ -532,7 +532,7 @@ body { left-margin: 0.35433070866142in; right-margin: 0.31496062992126in; top-ma
 			<td class="column10">&nbsp;</td>
 			<td class="column11">&nbsp;</td>
 		  </tr>
-		  <tr class="row31">
+		  <!-- <tr class="row31">
 			<td class="column0 style29 null"></td>
 			<td class="column1 style44 null"></td>
 			<td class="column2 style45 f">SB-9RL</td>
@@ -545,7 +545,7 @@ body { left-margin: 0.35433070866142in; right-margin: 0.31496062992126in; top-ma
 			<td class="column9">&nbsp;</td>
 			<td class="column10">&nbsp;</td>
 			<td class="column11">&nbsp;</td>
-		  </tr>
+		  </tr> -->
 		  <tr class="row32">
 			<td class="column0 style29 null"></td>
 			<td class="column1 style44 null"></td>

@@ -5,13 +5,12 @@
 	  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	  <meta name="author" content="KPBAEK" />
 	  <meta name="company" content="Microsoft Corporation" />
-  <link rel="stylesheet" href="//code.jquery.com/ui/1.8.24/themes/base/jquery-ui.css">
-
-	  
-
-	<script src="/lib/jquery.jqGrid-4.6.0/js/jquery-1.11.0.min.js" type="text/javascript"></script>
-  
+	  <link rel="stylesheet" type="text/css" media="screen" href="/lib/js/themes/redmond/jquery-ui.custom.css"></link>	
+	  <link rel="stylesheet" type="text/css" href="/css/msdropdown/dd.css" />
+	  <script src="/js/cmn/common.js" type="text/javascript"></script>
+	  <script src="/lib/jquery.jqGrid-4.6.0/js/jquery-1.11.0.min.js" type="text/javascript"></script>
 	  <script src="/lib/jquery-ui-1.11.0/jquery-ui.min.js" type="text/javascript"></script>
+	  <script src="/lib/js/msdropdown/jquery.dd.js"></script>
 	  
 	<style type="text/css">
 	  html { font-family:Calibri, Arial, Helvetica, sans-serif; font-size:11pt; background-color:white }
@@ -48,6 +47,7 @@ body { left-margin: 0.7in; right-margin: 0.7in; top-margin: 0.75in; bottom-margi
 	</table>
 	<p>
 
+<form id="addForm" name="addForm" method="post">
 	<table border="3" cellpadding="0" cellspacing="0" id="sheet0" style="width: 210mm;border-top: 3px;" class="sheet0">
 		<col class="col0">
 		<col class="col1">
@@ -143,15 +143,30 @@ body { left-margin: 0.7in; right-margin: 0.7in; top-margin: 0.75in; bottom-margi
 			<td width=5%></td>
 			<td width=5%></td>
 			<td width=5%></td>
-			<td width=5%></td>
+			<td width=5% class="style01">기타</td>
 		  </tr>
 		  <tr>
 			<td colspan="3" class="style01">Fitness</td>
-			<td>X</td>
-			<td>X</td>
-			<td>X</td>
-			<td>X</td>
-			<td>X</td>
+			<td>
+				<select name="fitness_01">
+				</select>
+			</td>
+			<td>
+				<select name="fitness_02">
+				</select>
+			</td>
+			<td>
+				<select name="fitness_03">
+				</select>
+			</td>
+			<td>
+				<select name="fitness_04">
+				</select>
+			</td>
+			<td>
+				<select name="fitness_05">
+				</select>
+			</td>
 			<td></td>
 			<td></td>
 			<td></td>
@@ -174,20 +189,43 @@ body { left-margin: 0.7in; right-margin: 0.7in; top-margin: 0.75in; bottom-margi
 			<td>USD</td>
 			<td>GBP</td>
 			<td>CHF</td>
-			<td colspan=5></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td class="style01">기타</td>
 		  </tr>
 		  <tr>
 			<td colspan=2>X</td>
 			<td colspan=2>X</td>
 			<td colspan=2>X</td>
-			<td>X</td>
-			<td>X</td>
-			<td>X</td>
-			<td>X</td>
-			<td>X</td>
-			<td colspan=5></td>
+			<td>
+				<select name="serial_fitness_01">
+				</select>
+			</td>
+			<td>
+				<select name="serial_fitness_02">
+				</select>
+			</td>
+			<td>
+				<select name="serial_fitness_03">
+				</select>
+			</td>
+			<td>
+				<select name="serial_fitness_04">
+				</select>
+			</td>
+			<td>
+				<select name="serial_fitness_05">
+				</select>
+			</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
 		  </tr>
-		  <!-- <tr>
+		  <tr>
 			<td rowspan=2 colspan="3" class="style01">CF DETECTOR</td>
 		    <td colspan=2 class="style01">UV</td>
 			<td colspan=2 class="style01">MG</td>
@@ -197,15 +235,179 @@ body { left-margin: 0.7in; right-margin: 0.7in; top-margin: 0.75in; bottom-margi
 			<td colspan=5 class="style01">기타</td>
 		  </tr> 
 		  <tr>
-		    <td colspan=2>X</td>
-			<td colspan=2>X</td>
-			<td colspan=2>X</td>
-			<td colspan=2>X</td>
-			<td colspan=3>X</td>
-			<td colspan=5></td>
-		  </tr>-->
+		    <td colspan=2>
+				<select name="detector_uv">
+				</select>
+		    </td>
+		    <td colspan=2>
+				<select name="detector_mg">
+				</select>
+		    </td>
+		    <td colspan=2>
+				<select name="detector_mra">
+				</select>
+		    </td>
+		    <td colspan=2>
+				<select name="detector_ir">
+				</select>
+		    </td>
+		    <td colspan=3>
+				<select name="detector_tape">
+				</select>
+		    </td>
+		    <td colspan=5></td>
+		  </tr>
 		  <tr>
-			<td rowspan=10 colspan="2" class="style01">OPTION</td>
+			<td class="style01" colspan=3>OPTION</td>
+			<td colspan=18>
+				<TABLE border=1 width=100%>
+				<!-- SB-7 -->
+				<TR>
+					<TD rowspan=2 class="style01" width=30px>SW</TD>
+					<TD class="style01" width=160px>Dispenser Mode</TD>
+					<TD align=center>X</TD>
+				</TR>
+				<TR>
+					<TD class="style01">ISSUE</TD>
+					<TD align=center>X</TD>
+				</TR>
+				<TR>
+					<TD rowspan=4 class="style01">HW</TD>
+					<TD class="style01">LAN</TD>
+					<TD align=center>X</TD>
+				</TR>
+				<TR>
+					<TD class="style01">Printer</TD>
+					<TD align=center>X</TD>
+				</TR>
+				<TR>
+					<TD class="style01">SV-200</TD>
+					<TD align=center>X</TD>
+				</TR>
+				<TR>
+					<TD class="style01">SDP-7</TD>
+					<TD align=center>X</TD>
+				</TR>
+				<!-- SB-9 -->
+				<TR>
+					<TD rowspan=3 class="style01" width=30px>SW</TD>
+					<TD class="style01" width=160px>Dispenser Mode</TD>
+					<TD align=center>X</TD>
+				</TR>
+				<TR>
+					<TD class="style01">ISSUE</TD>
+					<TD align=center>X</TD>
+				</TR>
+				<TR>
+					<TD class="style01">SNC</TD>
+					<TD align=center>X</TD>
+				</TR>
+				<TR>
+					<TD rowspan=5 class="style01">HW</TD>
+					<TD class="style01">MDD</TD>
+					<TD align=center>X</TD>
+				</TR>
+				<TR>
+					<TD class="style01">LAN</TD>
+					<TD align=center>X</TD>
+				</TR>
+				<TR>
+					<TD class="style01">Printer</TD>
+					<TD align=center>X</TD>
+				</TR>
+				<TR>
+					<TD class="style01">SV-200</TD>
+					<TD align=center>X</TD>
+				</TR>
+				<TR>
+					<TD class="style01">SDP-7</TD>
+					<TD align=center>X</TD>
+				</TR>
+				<!-- SB-2000 -->
+				<TR>
+					<TD rowspan=3 class="style01" width=30px>SW</TD>
+					<TD class="style01" width=160px>Dispenser Mode</TD>
+					<TD align=center>X</TD>
+				</TR>
+				<TR>
+					<TD class="style01">ISSUE</TD>
+					<TD align=center>X</TD>
+				</TR>
+				<TR>
+					<TD class="style01">SNC</TD>
+					<TD align=center>X</TD>
+				</TR>
+				<TR>
+					<TD rowspan=5 class="style01">HW</TD>
+					<TD class="style01">Parallel Board</TD>
+					<TD align=center>X</TD>
+				</TR>
+				<TR>
+					<TD class="style01">LAN</TD>
+					<TD align=center>X</TD>
+				</TR>
+				<TR>
+					<TD class="style01">Printer</TD>
+					<TD align=center>X</TD>
+				</TR>
+				<TR>
+					<TD class="style01">SV-200</TD>
+					<TD align=center>X</TD>
+				</TR>
+				<TR>
+					<TD class="style01">SDP-7</TD>
+					<TD align=center>X</TD>
+				</TR>
+				<!-- SB-3000 -->
+				<TR>
+					<TD rowspan=3 class="style01" width=30px>SW</TD>
+					<TD class="style01" width=160px>Dispenser Mode</TD>
+					<TD align=center>X</TD>
+				</TR>
+				<TR>
+					<TD class="style01">ISSUE</TD>
+					<TD align=center>X</TD>
+				</TR>
+				<TR>
+					<TD class="style01">SNC</TD>
+					<TD align=center>X</TD>
+				</TR>
+				<TR>
+					<TD rowspan=6 class="style01">HW</TD>
+					<TD class="style01">CIS</TD>
+					<TD align=center>2</TD>
+				</TR>
+				<TR>
+					<TD class="style01">LAN</TD>
+					<TD align=center>X</TD>
+				</TR>
+				<TR>
+					<TD class="style01">Printer</TD>
+					<TD align=center>X</TD>
+				</TR>
+				<TR>
+					<TD class="style01">Reject Pocket</TD>
+					<TD align=center>X</TD>
+				</TR>
+				<TR>
+					<TD class="style01">SV-200</TD>
+					<TD align=center>X</TD>
+				</TR>
+				<TR>
+					<TD class="style01">SDP-7</TD>
+					<TD align=center>X</TD>
+				</TR>
+				<TR>
+					<TD class="style01" width=35px>기타</TD>
+					<TD class="style01" width=160px>특이사항</TD>
+					<TD><input type=text name="special_comment" size=50></TD>
+				</TR>
+				</TABLE>
+			</td>
+		  </tr>
+<!-- 		  
+		  <tr>
+			<td rowspan=9 colspan="2" class="style01">OPTION</td>
 			<td rowspan=2 class="style01">SW</td>
 			<td colspan=4 class="style01">ISSUE</td>
 			<td colspan=12></td>
@@ -224,12 +426,7 @@ body { left-margin: 0.7in; right-margin: 0.7in; top-margin: 0.75in; bottom-margi
 			<td colspan=12></td>
 		  </tr>
 		  <tr>
-			<td rowspan=2 colspan=2 class="style01">Reject <br />Pocket</td>
-			<td colspan=2 class="style01">Old Type</td>
-			<td colspan=12></td>
-		  </tr>
-		  <tr>
-			<td colspan=2 class="style01">New Type</td>
+			<td colspan=4 class="style01">Reject Pocket</td>
 			<td colspan=12></td>
 		  </tr>
 		  <tr>
@@ -245,33 +442,51 @@ body { left-margin: 0.7in; right-margin: 0.7in; top-margin: 0.75in; bottom-margi
 			<td colspan=12></td>
 		  </tr>
 		  <tr>
-			<td class="style01">기타</td>
-			<td colspan=4 class="style01">특이사항</td>
-			<td colspan=12></td>
+			<td class="style01" colspan=2>기타</td>
+			<td colspan=2 class="style01">특이사항</td>
+			<td colspan=22><input type=text name="special_comment" size=50></td>
+		  </tr>
+ -->		  
+		  <tr>
+			<td rowspan=8 colspan="3" class="style01">USER OPTION</td>
+		    <td colspan=5 class="style01">Language (LCD)</td>
+			<td colspan=13 align=center>English</td>
 		  </tr>
 		  <tr>
-			<td rowspan=5 colspan="3" class="style01">USER OPTION</td>
-		    <td colspan=4 class="style01">Language (LCD)</td>
-			<td colspan=13></td>
+		    <td colspan=5 class="style01">LCD Color</td>
+			<td colspan=13 align=center>MONO CHROM</td>
 		  </tr>
 		  <tr>
-		    <td colspan=4 class="style01">Out Box</td>
-			<td colspan=13></td>
+		    <td colspan=5 class="style01">LCD Window</td>
+			<td colspan=13 align=center>SBM @MODEL</td>
 		  </tr>
 		  <tr>
-		    <td colspan=4 class="style01">Label</td>
-			<td colspan=13></td>
+		    <td colspan=5 class="style01">Out Box</td>
+			<td colspan=13 align=center>SBM @MODEL</td>
 		  </tr>
 		  <tr>
-		    <td colspan=4 class="style01">PWR/                  Printer Power Cable</td>
-			<td colspan=13></td>
+		    <td colspan=5 class="style01">Label</td>
+			<td colspan=13 align=center>SBM @MODEL</td>
 		  </tr>
 		  <tr>
-		    <td colspan=4 class="style01">User's Manual</td>
-			<td colspan=13></td>
+		    <td colspan=5 class="style01">PWR / Printer Power Cable</td>
+			<td colspan=13 style="text-align: center;vertical-align: middle;">
+			220V 한국 향<img src="/images/common/dropdown/image012.png">
+			</td>
 		  </tr>
 		  <tr>
-			<td colspan="7" class="style01">품질 출하일</td>
+		    <td colspan=5 class="style01">Serial Printer Cable</td>
+			<td colspan=13 align=center>X</td>
+		  </tr>
+		  <tr>
+		    <td colspan=5 class="style01">User's Manual</td>
+			<td colspan=13>
+				<select name="user_manual">
+				</select>
+			</td>
+		  </tr>
+		  <tr>
+			<td colspan="8" class="style01">품질 출하일</td>
 		    <td colspan=12><input type="text" id="date_from" name="date_from" value="<?php echo date("Y-m-d")?>" size="10" maxlength="10"/></td>
 		  </tr>
 		  <tr>
@@ -328,6 +543,8 @@ body { left-margin: 0.7in; right-margin: 0.7in; top-margin: 0.75in; bottom-margi
 			<td colspan="2"></td>
 		  </tr>
 		  </table>
+</form>
+		  
 		<table border="0" cellpadding="0" cellspacing="0" id="sheet0" style="width: 210mm;">
 			  <tbody>
 			  <tr style="border:0px;">
@@ -343,6 +560,30 @@ body { left-margin: 0.7in; right-margin: 0.7in; top-margin: 0.75in; bottom-margi
  
 
 <script>
+function initForm() {
+	var f = document.addForm;
+	getCodeCombo("01", f.fitness_01);
+	getCodeCombo("01", f.fitness_02);
+	getCodeCombo("01", f.fitness_03);
+	getCodeCombo("01", f.fitness_04);
+	getCodeCombo("01", f.fitness_05);
+	getCodeCombo("01", f.serial_fitness_01);
+	getCodeCombo("01", f.serial_fitness_02);
+	getCodeCombo("01", f.serial_fitness_03);
+	getCodeCombo("01", f.serial_fitness_04);
+	getCodeCombo("01", f.serial_fitness_05);
+	getCodeCombo("01", f.detector_uv);
+	getCodeCombo("01", f.detector_mg);
+	getCodeCombo("01", f.detector_mra);
+	getCodeCombo("01", f.detector_ir);
+	getCodeCombo("01", f.detector_tape);
+	getCodeCombo("02", f.user_manual);
+}
+
+$(document).ready(function(e) {	
+	initForm();
+});
+
 $.datepicker.setDefaults($.datepicker.regional['ko']);
 
 $(function() {

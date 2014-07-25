@@ -411,6 +411,143 @@ body { left-margin: 0.15748031496063in; right-margin: 0.15748031496063in; top-ma
 			<td class="column11 style11 null"></td>
 			<td class="column12 style13 null"></td>
 		  </tr>
+		  <tr class="row5">
+			<td class="column0 style5 null"></td>
+			<td class="column1 style14 null" colspan=3>
+				<table width=100%>
+				<tr class="row6">
+					<td class="column1 style101 s style101" height="40px">&nbsp;● PI No.</td>
+					<td class="column2 style110 n style110" colspan="2">PI-131224-1</td>
+				</tr>
+				<tr class="row6">
+					<td class="column1 style101 s style101" height="40px">&nbsp;● Ref No.</td>
+					<td class="column2 style109 f style109" colspan="2">SWP-131224-1</td>
+				</tr>
+				<tr class="row6">
+					<td class="column1 style101 s style101" height="40px">&nbsp;● SB-1100</td>
+					<td class="column2 style109 f style109" colspan="2">O</td>
+				</tr>
+				<tr class="row6">
+					<td class="column1 style101 s style101" height="40px">&nbsp;● SB-9</td>
+					<td class="column2 style109 f style109" colspan="2">O</td>
+				</tr>
+				<tr class="row6">
+					<td class="column1 style101 s style101" height="40px">&nbsp;● SB-7</td>
+					<td class="column2 style109 f style109" colspan="2">O</td>
+				</tr>
+				<tr class="row6">
+					<td class="column1 style101 s style101" height="40px">&nbsp;● 바이어</td>
+					<td class="column2 style109 f style109" colspan="2">Ladkani</td>
+				</tr>
+				<tr class="row6">
+					<td class="column1 style101 s style101" height="40px">&nbsp;● 국가명</td>
+					<td class="column2 style109 f style109" colspan="2">Lebanon</td>
+				</tr>
+				<tr class="row6">
+					<td class="column1 style101 s style101" height="40px">&nbsp;● 작성일</td>
+					<td class="column2 style109 f style109" colspan="2">2013. 12. 30</td>
+				</tr>
+				<tr class="row6">
+					<td class="column1 style101 s style101" height="40px">&nbsp;● 납기일</td>
+					<td class="column2 style109 f style109" colspan="2">20XX. XX. XX</td>
+				</tr>
+				<tr class="row6">
+					<td class="column1 style101 s style101" height="40px">&nbsp;● Main Ver./ &nbsp;&nbsp;&nbsp;&nbsp;Checksum</td>
+					<td class="column2 style109 f style109" colspan="2"></td>
+				</tr>
+				<tr class="row6">
+					<td class="column1 style101 s style101" height="40px">&nbsp;● Image Ver./ &nbsp;&nbsp;&nbsp;&nbsp;Checksum</td>
+					<td class="column2 style109 f style109" colspan="2"></td>
+				</tr>
+				<tr class="row6">
+					<td class="column1 style101 s style101" height="40px">&nbsp;● 출하일</td>
+					<td class="column2 style109 f style109" colspan="2">20XX. XX. XX</td>
+				</tr>
+				<tr class="row6">
+					<td class="column1 style101 s style101" height="40px">&nbsp;● 추가내용:</td>
+					<td class="column2 style109 f style109" colspan="2"><textarea rows="7" cols="23">출고 가능일정 확인해 주세요. 감사합니다.</textarea></td>
+				</tr>
+				</table>
+			</td>
+			<td class="column4 style11 null"></td>
+			<td class="column5 style13 null" colspan=8>
+				<table width=100%>
+				<tr>
+					<td class="column5 style16 s" width=80px>CODE</td>
+					<td class="column6 style17 s" width=220px>NAME</td>
+					<td class="column7 style17 s" width=30px>Q'ty</td>
+					<td class="column8 style111 s style113">Remark</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="column5 style114 s style116" colspan="4">SB-1100 부품입니다.</td>
+				</tr>
+				<tr>
+					<td class="column5 style20 s">720002300A</td>
+					<td class="column6 style21 s">GUIDE_SELECTOR</td>
+					<td class="column7 style22 n">2</td>
+					<td class="column8 style21 s style113"></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="column5 style20 s">1A01X1046A</td>
+					<td class="column6 style21 s">PBA_UVA_V1.4</td>
+					<td class="column7 style22 n">5</td>
+					<td class="column8 style21 s style120">CF OPTION (W/ UV)-2RCV Sensors</td>
+				</tr>
+				<tr>
+					<td class="column5 style114 s style116" colspan="4">SB-7 부품입니다.</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="column5 style20 s">720508300A</td>
+					<td class="column6 style21 s">COVER_SENSOR (Rev.A)</td>
+					<td class="column7 style22 n">6</td>
+					<td class="column8 style21 s style113"></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="column5 style20 s">720508400A</td>
+					<td class="column6 style21 s">COVER_SENSOR_IR</td>
+					<td class="column7 style22 n">3</td>
+					<td class="column8 style21 s style120"></td>
+				</tr>
+				<tr>
+					<td class="column5 style114 s style116" colspan="4">SB-9 부품입니다.</td>
+				</tr>
+				<tr>
+					<td class="column5 style20 s">720507601B</td>
+					<td class="column6 style21 s">BUSH_STACKER_MOTOR_P_(Rev.B)</td>
+					<td class="column7 style22 n">2</td>
+					<td class="column8 style21 s style113"></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="column5 style20 s">720507601C</td>
+					<td class="column6 style21 s">BUSH_STACKER_MOTOR_P(Rev. C)</td>
+					<td class="column7 style22 n">2</td>
+					<td class="column8 style21 s style120"></td>
+				</tr>
+				</table>
+			</td>
+			<td></td>
+		  </tr>
+<!-- 		  
+		  <tr class="row5">
+			<td class="column0 style5 null"></td>
+			<td class="column1 style14 null"></td>
+			<td class="column2 style14 null"></td>
+			<td class="column3 style14 null"></td>
+			<td class="column4 style11 null"></td>
+			<td class="column5 style11 null"></td>
+			<td class="column6 style11 null"></td>
+			<td class="column7 style11 null"></td>
+			<td class="column8 style11 null"></td>
+			<td class="column9 style11 null"></td>
+			<td class="column10 style11 null"></td>
+			<td class="column11 style11 null"></td>
+			<td class="column12 style13 null"></td>
+		  </tr>
 		  <tr class="row6">
 			<td class="column0 style5 null"></td>
 			<td class="column1 style101 s style101" rowspan="2">&nbsp;● PI No.</td>
@@ -784,6 +921,7 @@ body { left-margin: 0.15748031496063in; right-margin: 0.15748031496063in; top-ma
 			<td class="column8 style95 null style97" colspan="4"></td>
 			<td class="column12 style9 null"></td>
 		  </tr>
+ -->		  
 		  <tr class="row36">
 			<td class="column0 style59 null"></td>
 			<td class="column1 style60 null"></td>
