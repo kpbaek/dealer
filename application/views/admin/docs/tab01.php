@@ -75,6 +75,7 @@ body { left-margin: 0.7in; right-margin: 0.7in; top-margin: 0.75in; bottom-margi
 		<col class="col23">
 		<col class="col24">
 		<tbody>
+		<!-- 
 		  <tr>
 			<td align=center colspan="10" rowspan="2" width="55%" class="style04"><span style="font-size: 30px">생산의뢰서</span></td>
 			<td width=5% rowspan="2" class="style03">의<br/>뢰</td>
@@ -88,6 +89,10 @@ body { left-margin: 0.7in; right-margin: 0.7in; top-margin: 0.75in; bottom-margi
 			<td colspan="2"></td>
 			<td colspan="2"></td>
 			<td colspan="2"></td>
+		  </tr>
+		  -->
+		  <tr>
+			<td align=center colspan="19" class="style04"><span style="font-size: 30px">생산의뢰서</span></td>
 		  </tr>
 		  <tr>
 			<td colspan="3" width=15% class="style01">문서번호</td>
@@ -489,6 +494,7 @@ body { left-margin: 0.7in; right-margin: 0.7in; top-margin: 0.75in; bottom-margi
 			<td colspan="8" class="style01">품질 출하일</td>
 		    <td colspan=12><input type="text" id="date_from" name="date_from" value="<?php echo date("Y-m-d")?>" size="10" maxlength="10"/></td>
 		  </tr>
+		  <!-- 
 		  <tr>
 			<td align=center colspan="10" rowspan="8" width="55%" class="style04"></td>
 			<td width=5% rowspan="2" class="style03">품<br/>질</td>
@@ -542,6 +548,7 @@ body { left-margin: 0.7in; right-margin: 0.7in; top-margin: 0.75in; bottom-margi
 			<td colspan="2"></td>
 			<td colspan="2"></td>
 		  </tr>
+		   -->
 		  </table>
 </form>
 		  

@@ -155,21 +155,6 @@
 	  td.style137 { vertical-align:middle; text-align:center; border-bottom:1px solid #000000 !important; border-top:2px solid #000000 !important; border-left:1px solid #000000 !important; border-right:2px solid #000000 !important; color:#000000; font-family:'굴림'; font-size:24pt; background-color:#FFFFFF }
 	  td.style138 { vertical-align:middle; text-align:center; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:2px solid #000000 !important; border-right:1px solid #000000 !important; color:#000000; font-family:'굴림'; font-size:24pt; background-color:#FFFFFF }
 	  td.style139 { vertical-align:middle; text-align:center; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:2px solid #000000 !important; color:#000000; font-family:'굴림'; font-size:24pt; background-color:#FFFFFF }
-	  table.sheet0 col.col0 { width:4.06666662pt }
-	  table.sheet0 col.col1 { width:54.89999937pt }
-	  table.sheet0 col.col2 { width:54.2222216pt }
-	  table.sheet0 col.col3 { width:31.85555519pt }
-	  table.sheet0 col.col4 { width:4.06666662pt }
-	  table.sheet0 col.col5 { width:69.81111031pt }
-	  table.sheet0 col.col6 { width:193.84444222pt }
-	  table.sheet0 col.col7 { width:35.92222181pt }
-	  table.sheet0 col.col8 { width:27.1111108pt }
-	  table.sheet0 col.col9 { width:27.1111108pt }
-	  table.sheet0 col.col10 { width:12.87777763pt }
-	  table.sheet0 col.col11 { width:41.34444397pt }
-	  table.sheet0 col.col12 { width:4.06666662pt }
-	  table.sheet0 col.col13 { width:12.87777763pt }
-	  table.sheet0 col.col14 { width:42.02222174pt }
 	  table.sheet0 tr { height:15pt }
 	  table.sheet0 tr.row0 { height:8.1pt }
 	  table.sheet0 tr.row1 { height:15pt }
@@ -332,9 +317,11 @@ body { left-margin: 0.15748031496063in; right-margin: 0.15748031496063in; top-ma
 			<td class="column12 style3 null"></td>
 		  </tr>
 		  <tr class="row1">
-			<td class="column0 style5 null"></td>
+			<td class="column0 style5 null" width="5px"></td>
 			<td class="column1 style98 null style98" align=center><img style="width: 75px; height: 25px;" src="/images/common/sbmlogo.jpeg" border="0" /></td>
-			<td class="column2 style125 s style130" colspan="2">부품출고<br>의뢰서</td>
+			<td class="column2 style125 s style130" colspan="10" height=50px>부품출고 의뢰서</td>
+			<td class="column0 style9 null"></td>
+			<!-- 
 			<td class="column0 style7 null"></td>
 			<td class="column0 style7 null" colspan=2>
 		  		<table border=1>
@@ -356,17 +343,17 @@ body { left-margin: 0.15748031496063in; right-margin: 0.15748031496063in; top-ma
 			<td colspan=5 class="column0 style7 null">
 				<table border=0>
 				<tr>
-			<td class="column0 style7 null" width=120px>
-		  		<table border=1>
-				  <tr>
-					<td rowspan="2">품<br/>질</td>
-					<td colspan="2" width=70px>부장</td>
-				  </tr>
-				  <tr height=70px>
-				  	<td colspan="2" height=70px></td>
-				  </tr>
-		  		</table>
-			</td>
+				<td class="column0 style7 null" width=120px>
+			  		<table border=1>
+					  <tr>
+						<td rowspan="2">품<br/>질</td>
+						<td colspan="2" width=70px>부장</td>
+					  </tr>
+					  <tr height=70px>
+					  	<td colspan="2" height=70px></td>
+					  </tr>
+			  		</table>
+				</td>
 				<td class="column0 style7 null" width=100px>
 		  		<table border=1>
 				  <tr>
@@ -390,11 +377,11 @@ body { left-margin: 0.15748031496063in; right-margin: 0.15748031496063in; top-ma
 				  </tr>
 				  </table>
 			</td>
-				
 				</tr>
 				</table>
 			</td>
 			<td class="column12 style9 null"></td>
+			-->
 		  </tr>
 		  <tr class="row5">
 			<td class="column0 style5 null"></td>
@@ -413,11 +400,11 @@ body { left-margin: 0.15748031496063in; right-margin: 0.15748031496063in; top-ma
 		  </tr>
 		  <tr class="row5">
 			<td class="column0 style5 null"></td>
-			<td class="column1 style14 null" colspan=3>
+			<td class="column1 style14 null" width=30%>
 				<table width=100%>
 				<tr class="row6">
 					<td class="column1 style101 s style101" height="40px">&nbsp;● PI No.</td>
-					<td class="column2 style110 n style110" colspan="2">PI-131224-1</td>
+					<td class="column2 style110 n style110" colspan="2" >PI-131224-1</td>
 				</tr>
 				<tr class="row6">
 					<td class="column1 style101 s style101" height="40px">&nbsp;● Ref No.</td>
@@ -465,16 +452,18 @@ body { left-margin: 0.15748031496063in; right-margin: 0.15748031496063in; top-ma
 				</tr>
 				<tr class="row6">
 					<td class="column1 style101 s style101" height="40px">&nbsp;● 추가내용:</td>
-					<td class="column2 style109 f style109" colspan="2"><textarea rows="7" cols="23">출고 가능일정 확인해 주세요. 감사합니다.</textarea></td>
+					<td class="column2 style109 f style109" colspan="2">
+					<textarea rows="7" cols="13">출고 가능일정 확인해 주세요. 감사합니다.</textarea>
+					</td>
 				</tr>
 				</table>
 			</td>
-			<td class="column4 style11 null"></td>
-			<td class="column5 style13 null" colspan=8>
-				<table width=100%>
+			<td width="10px"></td>
+			<td class="column5 style13 null" colspan=10>
+				<table width=99%>
 				<tr>
 					<td class="column5 style16 s" width=80px>CODE</td>
-					<td class="column6 style17 s" width=220px>NAME</td>
+					<td class="column6 style17 s" width=250px>NAME</td>
 					<td class="column7 style17 s" width=30px>Q'ty</td>
 					<td class="column8 style111 s style113">Remark</td>
 					<td></td>
@@ -530,7 +519,7 @@ body { left-margin: 0.15748031496063in; right-margin: 0.15748031496063in; top-ma
 				</tr>
 				</table>
 			</td>
-			<td></td>
+			<td width="5px"></td>
 		  </tr>
 <!-- 		  
 		  <tr class="row5">

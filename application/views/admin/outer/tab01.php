@@ -169,6 +169,7 @@ body { left-margin: 0.98425196850394in; right-margin: 0.98425196850394in; top-ma
 		<col class="col6">
 		<col class="col7">
 		<tbody>
+<!-- 		
 		  <tr class="row0">
 			<td class="column0 style1 null"></td>
 			<td class="column1 style1 null"></td>
@@ -192,6 +193,7 @@ body { left-margin: 0.98425196850394in; right-margin: 0.98425196850394in; top-ma
 		  		</table>
 			</td>
 		  </tr>
+ -->		  
 		  <tr class="row4">
 			<td class="column0 style3 s" colspan=7>PROFORMA INVOICE</td>
 		  </tr>

@@ -63,7 +63,7 @@ part name<input type=text name="searchPartName">
 <table border="0" cellpadding="0" cellspacing="0" style="width:950px;align:center; vertical-align:middle">
 <tr>
     <td align=right>
-    	<input type="button" id="btnConfirm" value="confirm" onclick="javascript:order();"/>
+    	<input type="button" id="btnConfirm" value="submit" onclick="javascript:order();"/>
     </td>
 </tr>
 </table>
