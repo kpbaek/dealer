@@ -43,7 +43,7 @@
 
 <body  onload="javascript:">
 
-<div id="searchDiv" style="display:">
+<div id="searchDiv" style="display:;text-align:right">
 <form name="searchForm">
 <input type="text" name="page" style="display: none">
 주문확정여부
@@ -86,7 +86,7 @@
 		   	url:targetUrl,
 		   	datatype: "json",
 		   	//colNames:['Inv No','Date', 'Client', 'Amount','Tax','Total','Notes'],
-		   	colNames:['','id', '확정일자', '', 'Country', '바이어', 'Delivery', 'Amount', '할증요율', '담당자', 'Confirm', '', 'P/I', 'P/I NO', 'C/I', '출고전표', 'Packing'],
+		   	colNames:['','id', '확정일자', '', 'Country', '바이어', 'Delivery', 'Amount', '할증요율(%)', '담당자', 'Confirm', '', 'P/I', 'P/I NO', 'C/I', '출고전표', 'Packing'],
 	   	              //, '(1CIS)', '(2CIS)', 'Q(Per 1Unit)', 'Order Price', 'Amount'
 		   	colModel:[
 		   		{name:'chk', index:'chk', width:55,hidden:true,search:true,formatter:'checkbox', editoptions:{value:'1:0'}, formatoptions:{disabled:true}}, 
@@ -96,16 +96,16 @@
 		   		{name:'cntry',index:'cntry', width:60,search:true},
 		        {name:'name',index:'id', width:70, align:"left",search:true},
 		   		{name:'delivery',index:'id', width:70,search:true},
-		   		{name:'price',index:'price', width:70, sortable:false,search:true,align:"right",formatter:'currency', formatoptions:{prefix:"$"}},		
+		   		{name:'price',index:'tax', width:70, sortable:false,search:true,align:"right",formatter:'currency', formatoptions:{prefix:"$"}},		
 		   		{name:'rate',index:'tax', width:80, align:"right",search:true,hidden:false},		
-		   		{name:'worker',index:'worker', width:70, sortable:false,search:true},		
+		   		{name:'worker',index:'worker', width:50, sortable:false,search:true},		
 		   		{name:'qty',index:'qty', width:80, sortable:false,search:true,hidden:false},		
 		   		{name:'c_qty',index:'qty', width:70, sortable:false,search:true,hidden:true},		
 		   		{name:'recomYN',index:'recomYN', width:140, sortable:false,search:true},		
 		   		{name:'pi_no',index:'remark', width:80, sortable:false,search:true},		
 		   		{name:'spareYN',index:'spareYN', width:70, sortable:false,search:true},		
-		   		{name:'wearpartYN',index:'wearpartYN', width:70,align:"right",search:true},		
-		   		{name:'withoutWRT',index:'withoutWRT', width:70, sortable:false,search:true}		
+		   		{name:'rptout',index:'wearpartYN', width:70,align:"right",search:true},		
+		   		{name:'packing',index:'withoutWRT', width:70, sortable:false,search:true}		
 			],
 	        onSelectRow: function(rowid) {
 	        	alert("123");
@@ -132,8 +132,8 @@
                     jQuery("#list").jqGrid('setRowData',ids[i],{qty:c_qty});
                     jQuery("#list").jqGrid('setRowData',ids[i],{recomYN:c_pi});
                     jQuery("#list").jqGrid('setRowData',ids[i],{spareYN:c_ci});
-                    jQuery("#list").jqGrid('setRowData',ids[i],{wearpartYN:c_rptout});
-                    jQuery("#list").jqGrid('setRowData',ids[i],{withoutWRT:c_packing});
+                    jQuery("#list").jqGrid('setRowData',ids[i],{rptout:c_rptout});
+                    jQuery("#list").jqGrid('setRowData',ids[i],{packing:c_packing});
                     if(rowData.qty > 0){
 	                    jQuery("#list").jqGrid('setRowData',ids[i],{chk:'1'});
 					}else{

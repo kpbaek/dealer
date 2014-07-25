@@ -16,10 +16,8 @@ if(isset($_REQUEST["rows"])){
 	$limit = $_REQUEST["rows"];
 }
 //search param
-$searchModel = "";
-if(isset($_REQUEST["searchModel"])){
-	$searchModel = $_REQUEST["searchModel"];
-}
+isset( $_REQUEST['searchModel'] ) ? $searchModel=$_REQUEST['searchModel'] : $searchModel='';
+$searchModel = mysql_real_escape_string( $searchModel );
 
 // include db config
 include_once("/config.php");
@@ -37,14 +35,22 @@ $SQL_WHERE = " WHERE a.client_id=b.client_id
 		and id LIKE concat('%%', '" .$searchModel. "')";
 $SQL_ORDER = "		ORDER BY "
 		 . $sidx . " " . $sord . " LIMIT " . $start . "," . $limit;
-$SQL = $SQL . $SQL_WHERE . $SQL_ORDER;
-$result = mysql_query( $SQL ) or die("Couldn t execute query.".mysql_error());
+$SQL = $SQL . $SQL_WHERE;
+$SQL_SEARCH = $SQL . $SQL_ORDER;
 
-$SQL_CNT = "SELECT COUNT(*) AS count FROM invheader a, clients b";
-$SQL_CNT = $SQL_CNT . $SQL_WHERE;
-$cntResult = mysql_query($SQL_CNT);
-$cntRow = mysql_fetch_array($cntResult,MYSQL_ASSOC);
-$count = $cntRow['count'];
+$result = mysql_query( $SQL_SEARCH ) or die("Couldn t execute query.".mysql_error());
+$count = mysql_num_rows( mysql_query( $SQL ) );
+log_message('debug', "test1 .................");
+log_message('debug', "count:" . $count);
+
+
+// $SQL_CNT = "SELECT COUNT(*) AS count FROM invheader a, clients b";
+// $SQL_CNT = $SQL_CNT . $SQL_WHERE;
+// $cntResult = mysql_query($SQL_CNT);
+// $cntRow = mysql_fetch_array($cntResult,MYSQL_ASSOC);
+// $count = $cntRow['count'];
+// log_message('debug', "test2 .................");
+// log_message('debug', "count:" . $count);
 
 if( $count >0 ) {
 	$total_pages = ceil($count/$limit);

@@ -43,7 +43,7 @@
 
 <body  onload="javascript:">
 
-<div id="searchDiv" style="display:">
+<div id="searchDiv" style="display:;text-align:right">
 <form name="searchForm">
 <input type="text" name="page" style="display: none">
 model<select name="searchModel"></select>
@@ -88,14 +88,14 @@ part name<input type=text name="searchPartName">
 		   	url:targetUrl,
 		   	datatype: "json",
 		   	//colNames:['Inv No','Date', 'Client', 'Amount','Tax','Total','Notes'],
-		   	colNames:['chk','id', 'model', 'CODE', 'Part Name', 'IMAGE', '공급단가', 'qty', 'Qty', 'Amount','unit weight', 'Weight(kg)', 'Remark'],
+		   	colNames:['','id', 'model', 'CODE', 'Part Name', 'IMAGE', '공급단가', 'qty', 'Qty', 'Amount','unit weight', 'Weight(kg)', 'Remark'],
 	   	              //, '(1CIS)', '(2CIS)', 'Q(Per 1Unit)', 'Order Price', 'Amount'
 		   	colModel:[
-		   		{name:'chk', index:'chk', width:55,hidden:false,search:true,formatter:'checkbox', editoptions:{value:'1:0'}, formatoptions:{disabled:true}}, 
+		   		{name:'chk', index:'chk', width:25,hidden:false,search:true,formatter:'checkbox', editoptions:{value:'1:0'}, formatoptions:{disabled:true}}, 
 		   		{name:'id', index:'id', width:55,hidden:true,search:true}, 
 		        {name:'model',index:'model', width:70, align:"right",search:true},
-		   		{name:'code',index:'name', width:100, align:"right",search:true},
-		   		{name:'part_name',index:'part_name', width:70,search:true},
+		   		{name:'code',index:'name', width:70, align:"right",search:true},
+		   		{name:'part_name',index:'part_name', width:120,search:true},
 		   		{name:'c_image',index:'tax', width:50, align:"right",search:true},		
 		   		{name:'price',index:'price', width:70, sortable:false,search:true,formatter:'currency', formatoptions:{prefix:"$"}},		
 		   		{name:'qty',index:'qty', width:70, sortable:false,search:true,hidden:false,editable:true,editrules:{number:true,minValue:0}},		
@@ -413,8 +413,8 @@ part name<input type=text name="searchPartName">
 	   	colModel:[
 	   		{name:'id', index:'id', width:55,hidden:true,search:true}, 
 	        {name:'model',index:'model', width:70, align:"right",search:true},
-	   		{name:'code',index:'name', width:100, align:"right",search:true},
-	   		{name:'part_name',index:'part_name', width:70,search:true},
+	   		{name:'code',index:'name', width:70, align:"right",search:true},
+	   		{name:'part_name',index:'part_name', width:120,search:true},
 	   		{name:'c_image',index:'tax', width:50, align:"right",search:true},		
 	   		{name:'price',index:'price', width:70, sortable:false,search:true,formatter:'currency', formatoptions:{prefix:"$"}},		
 	   		{name:'qty',index:'qty', width:70, sortable:false,search:true,hidden:false,editable:true,editrules:{number:true,minValue:0}},		

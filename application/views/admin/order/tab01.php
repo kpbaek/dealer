@@ -8,9 +8,9 @@
 	<link rel="stylesheet" type="text/css" media="screen" href="/lib/jquery.jqGrid-4.6.0/plugins/searchFilter.css"></link>	
     <link rel="stylesheet" href="/css/multiple-select.css" />
 	<link rel="stylesheet" type="text/css" href="/css/msdropdown/dd.css" />
-	
-	<script src="/js/cmn/common.js" type="text/javascript"></script>
 	<script src="/lib/jquery.jqGrid-4.6.0/js/jquery-1.11.0.min.js" type="text/javascript"></script>
+	<script src="/lib/jquery-ui-1.11.0/jquery-ui.min.js" type="text/javascript"></script>
+	<script src="/js/cmn/common.js" type="text/javascript"></script>
 	<script src="/lib/js/jquery.multiple.select.js"></script>
 	<script src="/lib/js/msdropdown/jquery.dd.js"></script>
 	
@@ -50,24 +50,30 @@
 			<td colspan=10 class="style01">Purchase Order</td>
 		  </tr>
 		  <tr height="5px">
-			<td width="20%" class="style01" colspan=2>Date</td>
-			<td width="30%" colspan=3>2004-03-14</td>
-		  	<td colspan=5></td>
+			<td width="15%" class="style01" colspan=2>Date</td>
+			<td width="10%">2004-03-14</td>
+			<td width="10%"></td>
+			<td width="10%"></td>
+			<td width="15%"></td>
+			<td width="10%"></td>
+			<td width="15%"></td>
+			<td width="10%"></td>
+			<td width="5%"></td>
 		  </tr>
 		  <tr>
-			<td width="20%" class="style01" colspan=2>Company Name</td>
-			<td width="30%" colspan=2>Kosovo - Treo</td>
-			<td width="10%" class="style01">Model</td>
+			<td class="style01" colspan=2>Company Name</td>
+			<td colspan=3>Kosovo - Treo</td>
+			<td class="style01">Model</td>
 			<td width="10%">
 				<select name="model">
 				</select>
 			</td>
-			<td width="30%" colspan=3></td>
+			<td colspan="3"></td>
 		  </tr>
 		  <tr>
 		  	<td class="style01" colspan=2>No.</td>
 			<td>SWM-1204-07</td>
-			<td></td>
+			<td colspan=2></td>
 			<td class="style01">P/O NO.</td>
 			<td><input type="text" id="remark" name="po_no" value="15220" size=10 style="border: 1"></td>
 			<td colspan=3></td>
@@ -75,7 +81,7 @@
 		  <tr>
 			<td class="style01" colspan=2>P/I NO. </td>
 			<td>PI-120403-2</td>
-			<td></td>
+			<td colspan=2></td>
 			<td class="style01">Q'TY</td>
 			<td><input type="text" id="remark" name="qty" value="20" size=10 style="border: 1"></td>
 			<td colspan=3></td>
@@ -85,7 +91,7 @@
 		  	<td colspan=8></td>
 		  </tr>
 		  <tr>
-			<td>
+			<td colspan=3>
 			    <div class="form-group">
 			        <select id="currency" multiple="multiple" class="form-control" style="width: 150px">
 			            <option value="1" selected>CHF</option>
@@ -95,13 +101,12 @@
 			        </select>
 			    </div>
 			</td>
-		  	<td></td>
 			<td class="style01">Serial Number</td>
 			<td class="style01">
 				<select name="srl">
 				</select>
 			</td>
-			<td>
+			<td colspan=3>
 			    <div class="form-group">
 			        <select id="currency2" multiple="multiple" class="form-control" style="width: 150px">
 			            <option value="1" selected>CHF</option>
@@ -114,7 +119,7 @@
 		  </tr>
 		  <tr>
 			<td class="style01" colspan=2>LCD Color</td>
-			<td colspan=2>
+			<td colspan=3>
 				<select name="lcd_color">
 				</select>
 			</td>
@@ -136,8 +141,8 @@
 		  </tr>
 		  <tr class="row18">
 			<td class="style01" colspan=2>Power Cable</td>
-			<td>
-			    <select style="width:200px" name="power_cable" id="power_cable">
+			<td colspan=3>
+			    <select style="width:180px" name="power_cable" id="power_cable">
 			      <option value="006" data-image="/images/common/dropdown/image006.png">220V UK 향</option>
 			      <option value="007" data-image="/images/common/dropdown/image007.png">220V India 향</option>
 			      <option value="008" data-image="/images/common/dropdown/image008.png" name="cd">230V 호주 향</option>
@@ -146,9 +151,8 @@
 			      <option value="013" data-image="/images/common/dropdown/image013.png">220V Israel향</option>
 			    </select>
     		</td>
-		   	<td colspan=1></td>
-			<td class="style01" colspan=2>Other Options</td>
-			<td colspan=3>
+			<td class="style01">Other Options</td>
+			<td colspan=4>
 			    <div class="form-group">
 			        <select id="other_options" multiple="multiple" class="form-control" style="width: 250px">
 			            <option value="1">LAN</option>
@@ -160,9 +164,9 @@
 			</td>
 		  </tr>
 		  <tr>
-			<td class="style01" colspan=2>Accessaries(Bill Guide, Brush)</td>
+			<td class="style01" colspan=2>Accessaries<br>(Bill Guide, Brush)</td>
 			<td class="style02">Serial Printer Cable</td>
-			<td>
+			<td colspan=2>
 				<select name="serial_prn_cable">
 				</select>
 			</td>
@@ -180,11 +184,9 @@
 		  </tr>
 		  <tr>
 			<td class="style01" colspan=2>Shipped by</td>
-			<td>
+			<td colspan=3>
 				<select name="shipped_by1">
 				</select>
-			</td>
-			<td>
 				<select name="shipped_by2">
 				</select>
 			</td>
@@ -194,7 +196,7 @@
 		  </tr>
 		  <tr>
 			<td class="style01" colspan=2>Delivery</td>
-			<td colspan=2><input type="text" id="delivery" name="tel" value="2014-02-05" size=30 style="border: 1"></td>
+			<td colspan=3><input type="text" id="delivery" name="delivery" value="<?php echo date("Y-m-d")?>" size=10 style="border: 1"></td>
 			<td class="style01">Payment</td>
 			<td>
 				<select name="payment">
@@ -209,14 +211,14 @@
 		  </tr>
 		  <tr>
 			<td class="style01" colspan=2>Remark</td>
-			<td colspan=9><textarea id="remark" name="remark" cols=50 rows=5></textarea></td>
+			<td colspan=9><textarea id="remark" name="remark" cols=55 rows=5>Forwarder information or other requests</textarea></td>
 		  </tr>
 		  <tr height=5px>
 			<td colspan=10></td>
 		  </tr>
 		  <tr>
 			<td colspan=10 align=center>
-			<input type="button" value="Forwarder information or other requests" onclick="javascript:createData();"/>
+			<input type="button" value="submit" onclick="javascript:createData();"/>
 			</td>
 		  </tr>
 		</tbody>
@@ -272,6 +274,34 @@ $(document).ready(function(e) {
 	$("#power_cable").msDropdown({roundedBorder:false});
 });
 
+$.datepicker.setDefaults($.datepicker.regional['ko']);
+
+$(function() {
+    $( "#delivery" ).datepicker({
+        constrainInput: true,
+//        showOn: 'both',
+//        buttonImageOnly: 'true',
+//        buttonImage: '/img/calendarBtn.png',
+        showMonthAfterYear: true,
+        dateFormat: 'yy-mm-dd',
+        changeMonth: true,
+        changeYear: true,
+        beforeShow: function(input,inst){inst.dpDiv.css({ 'top': input.offsetHeight+ 'px', 'left': (input.offsetWidth - input.width)+ 'px'});},
+        onSelect: function(dateText, inst) {
+            checkDate(dateText,'from');
+        }
+    });
+});
+
+function checkDate(dateText, inst){
+    var today = "<?php echo date("Y-m-d")?>";
+    if (inst=="from") {
+        if (dateText < today) {
+            alert("현재날짜 이후로 선택하세요.");
+            $("#delivery").val("");
+        }
+    }
+}
 
 </script>
 
