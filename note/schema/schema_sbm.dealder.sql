@@ -1,6 +1,6 @@
 create or replace view v_cm_cdinf AS 
-select c.cd_seq,c.grp_cd,g.grp_nm,c.type_cd,t.type_nm,c.cd_dispnm,c.cd_dscrnm, g.p_grp_cd
-from ((cm_cdgrp g join cm_cdtype t) join cm_cdinf c) where ((c.grp_cd = g.grp_cd) and (c.type_cd = t.type_cd));
+select c.cd_seq,c.grp_cd,g.grp_nm,g.p_grp_cd,c.type_cd,t.type_nm,c.cd_dispnm,c.cd_dscrnm
+from ((cm_cdgrp g join cm_cdtype t on g.use_yn='Y') join cm_cdinf c) where ((c.grp_cd = g.grp_cd) and (c.type_cd = t.type_cd));
 
 CREATE TABLE `cm_cdtype` (
   `type_cd` varchar(4) NOT NULL,
@@ -14,20 +14,21 @@ CREATE TABLE `cm_cdgrp` (
   `grp_cd` varchar(4) NOT NULL,
   `grp_nm` varchar(50) NOT NULL,
   `grp_dscrnm` varchar(200) DEFAULT NULL,
-  `use_yn` char(1) NOT NULL,
+  `use_yn` char(1) NOT NULL DEFAULT 'Y',
   `crt_dt` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `udt_dt` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
+  `p_grp_cd` varchar(4) DEFAULT NULL,
   PRIMARY KEY (`grp_cd`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 CREATE TABLE `cm_cdinf` (
-  `cd_seq` int(11) DEFAULT NULL,
+  `cd_seq` int(11) NOT NULL,
   `grp_cd` varchar(4) NOT NULL,
   `type_cd` varchar(4) NOT NULL,
   `cd_dispnm` varchar(100) DEFAULT NULL,
   `cd_dscrnm` varchar(200) DEFAULT NULL,
   PRIMARY KEY (`grp_cd`,`type_cd`),
-  UNIQUE KEY `cdid` (`cd_seq`)
+  KEY `cd_seq` (`cd_seq`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 CREATE TABLE `cm_attr` (
@@ -35,7 +36,7 @@ CREATE TABLE `cm_attr` (
   `attr_cd` varchar(4) NOT NULL,
   `attr_nm` varchar(100) NOT NULL,
   `attr_dscrnm` varchar(200) DEFAULT NULL,
-  `use_yn` char(1) CHARACTER SET latin1 NOT NULL,
+  `use_yn` char(1) NOT NULL DEFAULT 'Y',
   `ord_num` decimal(11,0) DEFAULT NULL,
   `crt_dt` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `udt_dt` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
