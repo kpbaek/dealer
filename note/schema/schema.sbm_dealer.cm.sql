@@ -11,7 +11,7 @@ CREATE TABLE `cm_cdattr` (
   `atcd_nm` varchar(100) NOT NULL,
   `atcd_dscrnm` varchar(200) DEFAULT NULL,
   `use_yn` char(1) NOT NULL DEFAULT 'Y',
-  `ord_num` decimal(11,0) DEFAULT NULL,
+  `ord_num` smallint(5) DEFAULT NULL,
   `crt_dt` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `udt_dt` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
   `upt_uid` varchar(15) DEFAULT NULL,

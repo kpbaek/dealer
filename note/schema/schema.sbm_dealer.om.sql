@@ -40,6 +40,35 @@ CREATE TABLE `om_dealer` (
   CONSTRAINT `om_dealer_ibfk_1` FOREIGN KEY (`worker_uid`) REFERENCES `om_worker` (`worker_uid`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+CREATE TABLE `om_part` (
+  `part_cd` varchar(10) NOT NULL,
+  `part_nm` varchar(300) NOT NULL,
+  `unit_price` decimal(9,2) NOT NULL,
+  `unit_wgt` decimal(5,2) DEFAULT NULL,
+  `remark` varchar(1000) DEFAULT NULL,
+  `version` varchar(8) NOT NULL,
+  `srl_no` int(11) DEFAULT NULL,
+  `recom_yn` char(1) DEFAULT 'N',
+  `use_yn` char(1) NOT NULL DEFAULT 'Y',
+  `crt_dt` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `udt_dt` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
+  `crt_uid` varchar(15) NOT NULL,
+  `udt_uid` varchar(15) DEFAULT NULL,
+  PRIMARY KEY (`part_cd`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE `om_part_mdl` (
+  `part_cd` varchar(10) NOT NULL,
+  `mdl_atcd` varchar(4) NOT NULL,
+  `disp_yn` char(1) CHARACTER SET latin1 NOT NULL DEFAULT 'Y',
+  `use_yn` char(1) CHARACTER SET latin1 NOT NULL DEFAULT 'Y',
+  `crt_dt` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `udt_dt` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
+  `crt_uid` varchar(15) NOT NULL,
+  `udt_uid` varchar(15) DEFAULT NULL,
+  PRIMARY KEY (`part_cd`,`mdl_atcd`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
 CREATE TABLE `om_sndmail` (
   `seq` int(11) NOT NULL AUTO_INCREMENT,
   `wrk_tp_atcd` varchar(4) DEFAULT NULL,
