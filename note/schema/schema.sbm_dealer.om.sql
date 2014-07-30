@@ -61,8 +61,8 @@ CREATE TABLE `om_part` (
 CREATE TABLE `om_part_mdl` (
   `part_cd` varchar(10) NOT NULL,
   `mdl_atcd` varchar(4) NOT NULL,
-  `disp_yn` char(1) CHARACTER SET latin1 NOT NULL DEFAULT 'Y',
-  `use_yn` char(1) CHARACTER SET latin1 NOT NULL DEFAULT 'Y',
+  `disp_yn` char(1) NOT NULL DEFAULT 'Y',
+  `use_yn` char(1) NOT NULL DEFAULT 'Y',
   `crt_dt` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `udt_dt` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
   `crt_uid` varchar(15) NOT NULL,
@@ -105,11 +105,4 @@ CREATE TABLE `om_worker` (
   `aprv_dt` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`worker_uid`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='담당자정보';
-
-CREATE TABLE `plts_company` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `priority` int(11) NOT NULL,
-  `name` varchar(50) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
