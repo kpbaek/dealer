@@ -1,21 +1,21 @@
-CREATE TABLE `cm_attr` (
-  `cd_seq` int(4) NOT NULL,
-  `attr_cd` varchar(4) NOT NULL,
-  `attr_nm` varchar(100) NOT NULL,
-  `attr_dscrnm` varchar(200) DEFAULT NULL,
-  `use_yn` char(1) NOT NULL DEFAULT 'Y',
-  `ord_num` decimal(11,0) DEFAULT NULL,
-  `crt_dt` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  `udt_dt` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
-  `upt_uid` varchar(15) DEFAULT NULL,
-  PRIMARY KEY (`cd_seq`,`attr_cd`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
 CREATE TABLE `cm_auth_grp` (
   `auth_grp_cd` varchar(2) NOT NULL,
   `auth_grp_nm` varchar(50) NOT NULL,
   `auth_grp_dscrnm` varchar(200) DEFAULT NULL,
   PRIMARY KEY (`auth_grp_cd`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE `cm_cdattr` (
+  `cd_seq` int(4) NOT NULL,
+  `atcd` varchar(4) NOT NULL,
+  `atcd_nm` varchar(100) NOT NULL,
+  `atcd_dscrnm` varchar(200) DEFAULT NULL,
+  `use_yn` char(1) NOT NULL DEFAULT 'Y',
+  `ord_num` decimal(11,0) DEFAULT NULL,
+  `crt_dt` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `udt_dt` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
+  `upt_uid` varchar(15) DEFAULT NULL,
+  PRIMARY KEY (`cd_seq`,`atcd`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 CREATE TABLE `cm_cdgrp` (
