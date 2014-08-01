@@ -8,7 +8,7 @@ CREATE TABLE `om_admin` (
   `crt_dt` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '생성일시',
   `udt_dt` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '수정일시',
   PRIMARY KEY (`adm_uid`),
-  KEY `auth_grp_cd` (`auth_grp_cd`),
+  KEY `om_admin_ibfk_1` (`auth_grp_cd`),
   CONSTRAINT `om_admin_ibfk_1` FOREIGN KEY (`auth_grp_cd`) REFERENCES `cm_auth_grp` (`auth_grp_cd`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='관리자정보';
 
@@ -39,7 +39,8 @@ CREATE TABLE `om_dealer` (
   `udt_dt` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '수정일시',
   `udt_uid` varchar(15) DEFAULT NULL COMMENT '수정자ID',
   PRIMARY KEY (`dealer_seq`),
-  KEY `om_dealer_ibfk_1` (`worker_uid`)
+  KEY `worker_uid` (`worker_uid`),
+  CONSTRAINT `om_dealer_ibfk_1` FOREIGN KEY (`worker_uid`) REFERENCES `om_worker` (`worker_uid`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='딜러정보';
 
 CREATE TABLE `om_part` (
@@ -68,7 +69,8 @@ CREATE TABLE `om_part_mdl` (
   `udt_dt` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '수정일시',
   `crt_uid` varchar(15) NOT NULL COMMENT '생성자ID',
   `udt_uid` varchar(15) DEFAULT NULL COMMENT '수정자ID',
-  PRIMARY KEY (`part_cd`,`mdl_atcd`)
+  PRIMARY KEY (`part_cd`,`mdl_atcd`),
+  CONSTRAINT `om_part_mdl_ibfk_1` FOREIGN KEY (`part_cd`) REFERENCES `om_part` (`part_cd`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='부품모델정보';
 
 CREATE TABLE `om_sndmail` (

@@ -15,7 +15,7 @@ CREATE TABLE `cm_cd` (
   `p_cd` varchar(4) DEFAULT NULL COMMENT '상위코드',
   PRIMARY KEY (`cd`),
   KEY `cm_cd_ibfk_1` (`p_cd`),
-  CONSTRAINT `cm_cd_ibfk_1` FOREIGN KEY (`p_cd`) REFERENCES `cm_cd` (`cd`)
+  CONSTRAINT `cm_cd_ibfk_1` FOREIGN KEY (`p_cd`) REFERENCES `cm_cd` (`cd`) ON DELETE NO ACTION ON UPDATE NO ACTION
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='코드정보';
 
 CREATE TABLE `cm_cd_attr` (
@@ -23,13 +23,14 @@ CREATE TABLE `cm_cd_attr` (
   `atcd` varchar(8) NOT NULL COMMENT '속성코드',
   `atcd_nm` varchar(100) NOT NULL COMMENT '속성코드명',
   `atcd_dscrt` varchar(200) DEFAULT NULL COMMENT '속성코드설명',
-  `disp_yn` char(1) CHARACTER SET latin1 NOT NULL DEFAULT 'Y' COMMENT '디스플레이여부',
-  `use_yn` char(1) CHARACTER SET latin1 NOT NULL DEFAULT 'Y' COMMENT '사용여부',
+  `disp_yn` char(1) NOT NULL DEFAULT 'Y' COMMENT '디스플레이여부',
+  `use_yn` char(1) NOT NULL DEFAULT 'Y' COMMENT '사용여부',
   `ord_num` smallint(5) DEFAULT NULL COMMENT '정렬번호',
   `crt_dt` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '생성일시',
   `udt_dt` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '수정일시',
   `upt_uid` varchar(15) DEFAULT NULL COMMENT '수정자ID',
-  PRIMARY KEY (`cd`,`atcd`)
+  PRIMARY KEY (`cd`,`atcd`),
+  CONSTRAINT `cm_cd_attr_ibfk_1` FOREIGN KEY (`cd`) REFERENCES `cm_cd` (`cd`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='코드속성';
 
 CREATE TABLE `cm_file_grp` (
