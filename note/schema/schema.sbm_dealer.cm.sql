@@ -5,48 +5,32 @@ CREATE TABLE `cm_auth_grp` (
   PRIMARY KEY (`auth_grp_cd`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='권한그룹';
 
+CREATE TABLE `cm_cd` (
+  `cd` varchar(4) NOT NULL COMMENT '코드',
+  `cd_nm` varchar(50) NOT NULL COMMENT '코드명',
+  `cd_dscrt` varchar(200) DEFAULT NULL COMMENT '코드설명',
+  `use_yn` char(1) CHARACTER SET latin1 NOT NULL DEFAULT 'Y' COMMENT '사용여부',
+  `crt_dt` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '생성일시',
+  `udt_dt` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
+  `p_cd` varchar(4) DEFAULT NULL COMMENT '상위코드',
+  PRIMARY KEY (`cd`),
+  KEY `cm_cd_ibfk_1` (`p_cd`),
+  CONSTRAINT `cm_cd_ibfk_1` FOREIGN KEY (`p_cd`) REFERENCES `cm_cd` (`cd`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='코드정보';
+
 CREATE TABLE `cm_cd_attr` (
-  `cd_seq` int(4) NOT NULL COMMENT '코드순번',
-  `atcd` varchar(4) NOT NULL COMMENT '속성코드',
+  `cd` varchar(4) NOT NULL COMMENT '그룹코드',
+  `atcd` varchar(8) NOT NULL COMMENT '속성코드',
   `atcd_nm` varchar(100) NOT NULL COMMENT '속성코드명',
   `atcd_dscrt` varchar(200) DEFAULT NULL COMMENT '속성코드설명',
   `disp_yn` char(1) CHARACTER SET latin1 NOT NULL DEFAULT 'Y' COMMENT '디스플레이여부',
   `use_yn` char(1) CHARACTER SET latin1 NOT NULL DEFAULT 'Y' COMMENT '사용여부',
   `ord_num` smallint(5) DEFAULT NULL COMMENT '정렬번호',
   `crt_dt` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '생성일시',
-  `udt_dt` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
-  `upt_uid` varchar(15) DEFAULT NULL COMMENT '수정자ID',
-  PRIMARY KEY (`cd_seq`,`atcd`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='코드속성';
-
-CREATE TABLE `cm_cd_grp` (
-  `grp_cd` varchar(4) NOT NULL COMMENT '코드그룹 코드',
-  `grp_nm` varchar(50) NOT NULL COMMENT '코드그룹명',
-  `grp_dscrt` varchar(200) DEFAULT NULL COMMENT '코드그룹 설명',
-  `use_yn` char(1) CHARACTER SET latin1 NOT NULL DEFAULT 'Y' COMMENT '사용여부',
-  `crt_dt` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '생성일시',
-  `udt_dt` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
-  `p_grp_cd` varchar(4) DEFAULT NULL COMMENT '상위그룹코드',
-  PRIMARY KEY (`grp_cd`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='코드그룹';
-
-CREATE TABLE `cm_cd_inf` (
-  `cd_seq` int(11) NOT NULL COMMENT '코드순번',
-  `grp_cd` varchar(4) NOT NULL COMMENT '그룹코드',
-  `lang_cd` varchar(4) NOT NULL COMMENT '언어코드',
-  `cd_dispnm` varchar(100) DEFAULT NULL COMMENT '디스플레이명',
-  `cd_dscrnm` varchar(200) DEFAULT NULL COMMENT '코드설명',
-  PRIMARY KEY (`grp_cd`,`lang_cd`),
-  UNIQUE KEY `cd_seq` (`cd_seq`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='공통코드정보';
-
-CREATE TABLE `cm_cd_lang` (
-  `lang_cd` varchar(4) NOT NULL COMMENT '언어코드',
-  `lang_nm` varchar(100) NOT NULL COMMENT '언어명',
-  `crt_dt` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '생성일시',
   `udt_dt` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '수정일시',
-  PRIMARY KEY (`lang_cd`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='코드구분';
+  `upt_uid` varchar(15) DEFAULT NULL COMMENT '수정자ID',
+  PRIMARY KEY (`cd`,`atcd`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='코드속성';
 
 CREATE TABLE `cm_file_grp` (
   `file_grp_seq` int(11) NOT NULL COMMENT '파일그룹순번',
