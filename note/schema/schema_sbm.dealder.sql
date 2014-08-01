@@ -49,7 +49,7 @@ CREATE TABLE `om_admin` (
   `adm_pswd` varchar(15) NOT NULL COMMENT '관리자비밀번호',
   `auth_grp_cd` varchar(2) DEFAULT NULL COMMENT '권한그룹코드',
   `perms_cd` varchar(4) DEFAULT NULL COMMENT '승인코드',
-  `active_yn` char(1) CHARACTER SET latin1 NOT NULL DEFAULT 'N' COMMENT '활성화여부',
+  `active_yn` char(1) NOT NULL DEFAULT 'N' COMMENT '활성화여부',
   `last_logindt` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '최종로그인일시',
   `crt_dt` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '생성일시',
   `udt_dt` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '수정일시',
@@ -89,19 +89,6 @@ CREATE TABLE `om_dealer` (
   CONSTRAINT `om_dealer_ibfk_1` FOREIGN KEY (`worker_uid`) REFERENCES `om_worker` (`worker_uid`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='딜러정보';
 
-CREATE TABLE `om_part_mdl` (
-  `part_cd` varchar(10) NOT NULL COMMENT '부품코드',
-  `mdl_atcd` varchar(8) NOT NULL COMMENT '모델속성코드',
-  `disp_yn` char(1) CHARACTER SET latin1 NOT NULL DEFAULT 'Y' COMMENT '디스플레이여부',
-  `use_yn` char(1) CHARACTER SET latin1 NOT NULL DEFAULT 'Y' COMMENT '사용여부',
-  `crt_dt` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '생성일시',
-  `udt_dt` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '수정일시',
-  `crt_uid` varchar(15) NOT NULL COMMENT '생성자ID',
-  `udt_uid` varchar(15) DEFAULT NULL COMMENT '수정자ID',
-  PRIMARY KEY (`part_cd`,`mdl_atcd`),
-  CONSTRAINT `om_part_mdl_ibfk_1` FOREIGN KEY (`part_cd`) REFERENCES `om_part` (`part_cd`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='부품모델정보';
-
 CREATE TABLE `om_part` (
   `part_cd` varchar(10) NOT NULL COMMENT '부품코드',
   `part_nm` varchar(300) NOT NULL COMMENT '부품명',
@@ -110,14 +97,27 @@ CREATE TABLE `om_part` (
   `remark` varchar(1000) DEFAULT NULL COMMENT '의견',
   `version` varchar(8) NOT NULL COMMENT '버전정보',
   `srl_no` int(11) DEFAULT NULL COMMENT '시리얼번호',
-  `recom_yn` char(1) CHARACTER SET latin1 DEFAULT 'N' COMMENT '추천부품여부',
-  `use_yn` char(1) CHARACTER SET latin1 NOT NULL DEFAULT 'Y' COMMENT '사용여부',
+  `recom_yn` char(1) DEFAULT 'N' COMMENT '추천부품여부',
+  `use_yn` char(1) NOT NULL DEFAULT 'Y' COMMENT '사용여부',
   `crt_dt` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '생성일시',
   `udt_dt` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '수정일시',
   `crt_uid` varchar(15) NOT NULL COMMENT '생성자ID',
   `udt_uid` varchar(15) DEFAULT NULL COMMENT '수정자ID',
   PRIMARY KEY (`part_cd`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='부품정보';
+
+CREATE TABLE `om_part_mdl` (
+  `part_cd` varchar(10) NOT NULL COMMENT '부품코드',
+  `mdl_atcd` varchar(8) NOT NULL COMMENT '모델속성코드',
+  `disp_yn` char(1) NOT NULL DEFAULT 'Y' COMMENT '디스플레이여부',
+  `use_yn` char(1) NOT NULL DEFAULT 'Y' COMMENT '사용여부',
+  `crt_dt` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '생성일시',
+  `udt_dt` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '수정일시',
+  `crt_uid` varchar(15) NOT NULL COMMENT '생성자ID',
+  `udt_uid` varchar(15) DEFAULT NULL COMMENT '수정자ID',
+  PRIMARY KEY (`part_cd`,`mdl_atcd`),
+  CONSTRAINT `om_part_mdl_ibfk_1` FOREIGN KEY (`part_cd`) REFERENCES `om_part` (`part_cd`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='부품모델정보';
 
 CREATE TABLE `om_sndmail` (
   `seq` int(11) NOT NULL AUTO_INCREMENT COMMENT '순번',
@@ -128,7 +128,7 @@ CREATE TABLE `om_sndmail` (
   `email_to` varchar(500) DEFAULT NULL COMMENT '수신자EMAIL',
   `email_cc` varchar(500) DEFAULT NULL COMMENT '참조EMAIL',
   `title` varchar(500) DEFAULT NULL COMMENT '메일제목',
-  `ctnt` text CHARACTER SET latin1 NOT NULL COMMENT '메일내용',
+  `ctnt` text NOT NULL COMMENT '메일내용',
   `crt_dt` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '생성일시',
   `crt_uid` varchar(15) NOT NULL COMMENT '생성자ID',
   PRIMARY KEY (`seq`)
@@ -137,7 +137,7 @@ CREATE TABLE `om_sndmail` (
 CREATE TABLE `om_team_mail` (
   `post_atcd` varchar(8) NOT NULL COMMENT '부서속성코드',
   `team_email` varchar(50) NOT NULL COMMENT '팀EMAIL',
-  `mailing_yn` char(1) CHARACTER SET latin1 NOT NULL COMMENT '메일링여부',
+  `mailing_yn` char(1) NOT NULL DEFAULT 'Y' COMMENT '메일링여부',
   PRIMARY KEY (`post_atcd`,`team_email`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='팀메일정보';
 
@@ -150,7 +150,7 @@ CREATE TABLE `om_worker` (
   `duty_atcd` varchar(8) NOT NULL COMMENT '직무속성코드',
   `extns_num` varchar(4) DEFAULT NULL COMMENT '내선번호',
   `moblie_num` varchar(11) DEFAULT NULL COMMENT '핸드폰번호',
-  `mailing_yn` char(1) CHARACTER SET latin1 NOT NULL DEFAULT 'Y' COMMENT '메일링여부',
+  `mailing_yn` char(1) NOT NULL DEFAULT 'Y' COMMENT '메일링여부',
   `aprv_dt` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '승인일시',
   PRIMARY KEY (`worker_uid`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='담당자정보';
