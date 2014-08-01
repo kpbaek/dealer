@@ -74,7 +74,7 @@ CREATE TABLE `om_part_mdl` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='부품모델정보';
 
 CREATE TABLE `om_sndmail` (
-  `seq` int(11) NOT NULL AUTO_INCREMENT COMMENT '순번',
+  `sndmail_seq` int(11) NOT NULL AUTO_INCREMENT COMMENT '전송메일순번',
   `wrk_tp_atcd` varchar(8) DEFAULT NULL COMMENT '작업구분 속성코드',
   `sender_uid` varchar(15) NOT NULL COMMENT '전송자ID',
   `sender_nm` varchar(50) DEFAULT NULL COMMENT '전송자명',
@@ -85,7 +85,7 @@ CREATE TABLE `om_sndmail` (
   `ctnt` text NOT NULL COMMENT '메일내용',
   `crt_dt` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '생성일시',
   `crt_uid` varchar(15) NOT NULL COMMENT '생성자ID',
-  PRIMARY KEY (`seq`)
+  PRIMARY KEY (`sndmail_seq`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='전송메일정보';
 
 CREATE TABLE `om_team_mail` (
