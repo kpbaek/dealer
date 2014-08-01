@@ -19,7 +19,7 @@ CREATE TABLE `cm_cd` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='内靛沥焊';
 
 CREATE TABLE `cm_cd_attr` (
-  `cd` varchar(4) NOT NULL COMMENT '弊缝内靛',
+  `cd` varchar(4) NOT NULL COMMENT '内靛',
   `atcd` varchar(8) NOT NULL COMMENT '加己内靛',
   `atcd_nm` varchar(100) NOT NULL COMMENT '加己内靛疙',
   `atcd_dscrt` varchar(200) DEFAULT NULL COMMENT '加己内靛汲疙',
