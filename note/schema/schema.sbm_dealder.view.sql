@@ -1,3 +1,5 @@
-create or replace view v_cm_cd_inf AS 
-select c.cd_seq,c.grp_cd,g.grp_nm,g.p_grp_cd,c.lang_cd,t.lang_nm,c.cd_dispnm,c.cd_dscrnm
-from ((cm_cd_grp g join cm_cd_lang t on g.use_yn='Y') join cm_cd_inf c) where ((c.grp_cd = g.grp_cd) and (c.lang_cd = t.lang_cd));
+ create or replace view v_cm_cd_attr
+ as
+ select c.cd, c.cd_nm, c.cd_dscrt, c.use_yn, c.crt_dt, c.udt_dt, c.p_cd
+ , a.atcd, a.atcd_nm, a.atcd_dscrt, a.disp_yn, a.use_yn as attr_use_yn, a.ord_num
+ from (cm_cd c left outer join cm_cd_attr a on c.cd = a.cd);
