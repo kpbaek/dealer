@@ -11,7 +11,7 @@ CREATE TABLE `cm_cd` (
   `cd_dscrt` varchar(200) DEFAULT NULL COMMENT '코드설명',
   `use_yn` char(1) CHARACTER SET latin1 NOT NULL DEFAULT 'Y' COMMENT '사용여부',
   `crt_dt` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '생성일시',
-  `udt_dt` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
+  `udt_dt` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '수정일시',
   `p_cd` varchar(4) DEFAULT NULL COMMENT '상위코드',
   PRIMARY KEY (`cd`),
   KEY `cm_cd_ibfk_1` (`p_cd`),
