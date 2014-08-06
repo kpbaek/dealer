@@ -2,7 +2,8 @@ CREATE TABLE `cm_auth_grp` (
   `auth_grp_cd` varchar(2) NOT NULL COMMENT '권한그룹코드',
   `auth_grp_nm` varchar(50) NOT NULL COMMENT '권한그룹명',
   `auth_grp_dscrt` varchar(200) DEFAULT NULL COMMENT '권한그룹설명',
-  PRIMARY KEY (`auth_grp_cd`)
+  PRIMARY KEY (`auth_grp_cd`),
+  UNIQUE KEY `auth_grp_nm` (`auth_grp_nm`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='권한그룹';
 
 CREATE TABLE `cm_cd` (
