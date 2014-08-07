@@ -11,9 +11,9 @@ CREATE TABLE `cm_cd` (
   `cd_nm` varchar(50) NOT NULL COMMENT '코드명',
   `cd_dscrt` varchar(200) DEFAULT NULL COMMENT '코드설명',
   `use_yn` char(1) CHARACTER SET latin1 NOT NULL DEFAULT 'Y' COMMENT '사용여부',
+  `p_cd` varchar(4) DEFAULT NULL COMMENT '상위코드',
   `crt_dt` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '생성일시',
   `udt_dt` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '수정일시',
-  `p_cd` varchar(4) DEFAULT NULL COMMENT '상위코드',
   PRIMARY KEY (`cd`),
   KEY `cm_cd_ibfk_1` (`p_cd`),
   CONSTRAINT `cm_cd_ibfk_1` FOREIGN KEY (`p_cd`) REFERENCES `cm_cd` (`cd`) ON DELETE NO ACTION ON UPDATE NO ACTION
