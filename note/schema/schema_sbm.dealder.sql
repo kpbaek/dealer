@@ -59,34 +59,6 @@ CREATE TABLE `om_admin` (
   CONSTRAINT `om_admin_ibfk_1` FOREIGN KEY (`auth_grp_cd`) REFERENCES `cm_auth_grp` (`auth_grp_cd`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='관리자정보';
 
-CREATE TABLE `om_invoice` (
-  `pi_no` varchar(7) NOT NULL COMMENT 'PI번호',
-  `prn_qty` int(6) DEFAULT NULL COMMENT '프린터수량',
-  `prn_tot_amt` decimal(8,2) DEFAULT NULL COMMENT '프린터총금액',
-  `repr_qty` int(6) unsigned DEFAULT NULL COMMENT '수리품수량',
-  `repr_tot_amt` decimal(8,2) unsigned DEFAULT NULL COMMENT '수리품총금액',
-  `ship_port_atcd` varchar(8) DEFAULT NULL COMMENT '선적항속성코드',
-  `payment_atcd` varchar(8) NOT NULL COMMENT '지불속성코드',
-  `tot_qty` int(6) unsigned DEFAULT NULL COMMENT '총수량',
-  `tot_amt` decimal(14,2) unsigned DEFAULT NULL COMMENT '총금액',
-  `destnt` varchar(50) DEFAULT NULL COMMENT '목적지',
-  `validity_dt` varchar(8) NOT NULL COMMENT '유효기간일자',
-  `bank_atcd` varchar(8) DEFAULT NULL COMMENT '은행속성코드',
-  `invoice_dt` varchar(8) NOT NULL COMMENT '송장발행일자',
-  `pi_sndmail_seq` int(11) DEFAULT NULL COMMENT 'PI발송메일순번',
-  `ci_sndmail_seq` int(11) DEFAULT NULL COMMENT 'CI발송메일순번',
-  `crt_dt` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '생성일시',
-  `udt_dt` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '수정일시',
-  `crt_uid` varchar(15) NOT NULL COMMENT '생성자ID',
-  `udt_uid` varchar(15) DEFAULT NULL COMMENT '수정자ID',
-  PRIMARY KEY (`pi_no`),
-  KEY `ci_sndmail_seq` (`ci_sndmail_seq`),
-  KEY `pi_sndmail_seq` (`pi_sndmail_seq`),
-  CONSTRAINT `om_invoice_ibfk_1` FOREIGN KEY (`pi_no`) REFERENCES `om_ord_inf` (`pi_no`),
-  CONSTRAINT `om_invoice_ibfk_2` FOREIGN KEY (`pi_sndmail_seq`) REFERENCES `om_sndmail` (`sndmail_seq`),
-  CONSTRAINT `om_invoice_ibfk_3` FOREIGN KEY (`ci_sndmail_seq`) REFERENCES `om_sndmail` (`sndmail_seq`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='송장정보';
-
 CREATE TABLE `om_dealer` (
   `dealer_seq` int(11) NOT NULL COMMENT '딜러순번',
   `dealer_nm` varchar(30) DEFAULT NULL COMMENT '딜러명',
@@ -119,6 +91,43 @@ CREATE TABLE `om_dealer` (
   CONSTRAINT `om_dealer_ibfk_2` FOREIGN KEY (`file_grp_seq`) REFERENCES `cm_file_grp` (`file_grp_seq`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='딜러정보';
 
+CREATE TABLE `om_invoice` (
+  `pi_no` varchar(7) NOT NULL COMMENT 'PI번호',
+  `prn_qty` int(6) DEFAULT NULL COMMENT '프린터수량',
+  `prn_tot_amt` decimal(8,2) DEFAULT NULL COMMENT '프린터총금액',
+  `repr_qty` int(6) unsigned DEFAULT NULL COMMENT '수리품수량',
+  `repr_tot_amt` decimal(8,2) unsigned DEFAULT NULL COMMENT '수리품총금액',
+  `ship_port_atcd` varchar(8) NOT NULL COMMENT '선적항속성코드',
+  `payment_atcd` varchar(8) NOT NULL COMMENT '지불속성코드',
+  `tot_qty` int(6) unsigned NOT NULL COMMENT '총수량',
+  `tot_amt` decimal(14,2) unsigned NOT NULL COMMENT '총금액',
+  `destnt` varchar(50) NOT NULL COMMENT '목적지',
+  `validity` varchar(8) NOT NULL COMMENT '유효기간(YYYYMMDD)',
+  `bank_atcd` varchar(8) NOT NULL COMMENT '은행속성코드',
+  `invoice_dt` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '송장발행일시',
+  `pi_sndmail_seq` int(11) DEFAULT NULL COMMENT 'PI발송메일순번',
+  `ci_sndmail_seq` int(11) DEFAULT NULL COMMENT 'CI발송메일순번',
+  `crt_dt` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '생성일시',
+  `udt_dt` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '수정일시',
+  `crt_uid` varchar(15) NOT NULL COMMENT '생성자ID',
+  `udt_uid` varchar(15) DEFAULT NULL COMMENT '수정자ID',
+  PRIMARY KEY (`pi_no`),
+  KEY `ci_sndmail_seq` (`ci_sndmail_seq`),
+  KEY `om_invoice_ibfk_2` (`pi_sndmail_seq`),
+  CONSTRAINT `om_invoice_ibfk_1` FOREIGN KEY (`pi_no`) REFERENCES `om_ord_inf` (`pi_no`),
+  CONSTRAINT `om_invoice_ibfk_2` FOREIGN KEY (`pi_sndmail_seq`) REFERENCES `om_sndmail` (`sndmail_seq`),
+  CONSTRAINT `om_invoice_ibfk_3` FOREIGN KEY (`ci_sndmail_seq`) REFERENCES `om_sndmail` (`sndmail_seq`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='송장정보';
+
+CREATE TABLE `om_mdl` (
+  `mdl_cd` varchar(4) NOT NULL COMMENT '모델코드',
+  `mdl_nm` varchar(100) NOT NULL COMMENT '모델명',
+  `mdl_stat_atcd` char(1) CHARACTER SET latin1 DEFAULT NULL COMMENT '모델상태속성코드',
+  `net_wgt` decimal(4,1) unsigned DEFAULT NULL COMMENT '순중량',
+  `gross_wgt` decimal(4,1) unsigned DEFAULT NULL COMMENT '총중량',
+  PRIMARY KEY (`mdl_cd`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='모델정보';
+
 CREATE TABLE `om_ord_eqp` (
   `pi_no` varchar(7) NOT NULL COMMENT 'PI번호',
   `po_no` int(11) NOT NULL COMMENT '주문번호',
@@ -147,9 +156,9 @@ CREATE TABLE `om_ord_eqp` (
   `udt_uid` varchar(15) DEFAULT NULL COMMENT '수정자ID',
   PRIMARY KEY (`pi_no`,`po_no`),
   KEY `om_ord_eqp_ibfk_3` (`sndmail_seq`),
-  KEY `om_ord_eqp_ibfk_2` (`mdl_cd`),
+  KEY `mdl_cd` (`mdl_cd`),
   CONSTRAINT `om_ord_eqp_ibfk_1` FOREIGN KEY (`pi_no`) REFERENCES `om_ord_inf` (`pi_no`),
-  CONSTRAINT `om_ord_eqp_ibfk_2` FOREIGN KEY (`mdl_cd`) REFERENCES `cm_cd` (`cd`)
+  CONSTRAINT `om_ord_eqp_ibfk_2` FOREIGN KEY (`mdl_cd`) REFERENCES `om_mdl` (`mdl_cd`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='주문장비정보';
 
 CREATE TABLE `om_ord_eqp_dtl` (
@@ -178,14 +187,15 @@ CREATE TABLE `om_ord_inf` (
   `cnfm_yn` char(1) CHARACTER SET latin1 DEFAULT NULL COMMENT '주문확정여부',
   `cnfm_dt` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '주문확정일시',
   `slip_sndmail_seq` int(11) DEFAULT NULL COMMENT '출고전표발송메일순번',
+  `wrk_tp_atcd` varchar(8) DEFAULT NULL COMMENT '작업유형속성코드',
   `crt_dt` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '생성일시',
   `udt_dt` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '수정일시',
   `crt_uid` varchar(15) NOT NULL COMMENT '생성자ID',
   `udt_uid` varchar(15) DEFAULT NULL COMMENT '수정자ID',
   PRIMARY KEY (`pi_no`),
+  KEY `om_ord_inf_ibfk_3` (`worker_uid`),
   KEY `om_ord_inf_ibfk_1` (`dealer_seq`),
   KEY `om_ord_inf_ibfk_2` (`slip_sndmail_seq`),
-  KEY `om_ord_inf_ibfk_3` (`worker_uid`),
   CONSTRAINT `om_ord_inf_ibfk_1` FOREIGN KEY (`dealer_seq`) REFERENCES `om_dealer` (`dealer_seq`),
   CONSTRAINT `om_ord_inf_ibfk_2` FOREIGN KEY (`slip_sndmail_seq`) REFERENCES `om_sndmail` (`sndmail_seq`),
   CONSTRAINT `om_ord_inf_ibfk_3` FOREIGN KEY (`worker_uid`) REFERENCES `om_worker` (`worker_uid`)
@@ -220,11 +230,10 @@ CREATE TABLE `om_ord_part_dtl` (
   `crt_uid` varchar(15) NOT NULL COMMENT '생성자ID',
   `udt_uid` varchar(15) DEFAULT NULL COMMENT '수정자ID',
   PRIMARY KEY (`pi_no`,`swp_no`,`part_cd`,`mdl_cd`,`part_ver`),
-  KEY `om_ord_part_dtl_ibfk_2` (`part_ver`,`part_cd`),
   KEY `om_ord_part_dtl_ibfk_3` (`part_cd`,`mdl_cd`),
+  KEY `part_ver` (`part_ver`,`part_cd`,`mdl_cd`),
   CONSTRAINT `om_ord_part_dtl_ibfk_1` FOREIGN KEY (`pi_no`, `swp_no`) REFERENCES `om_ord_part` (`pi_no`, `swp_no`),
-  CONSTRAINT `om_ord_part_dtl_ibfk_2` FOREIGN KEY (`part_ver`, `part_cd`) REFERENCES `om_part` (`part_ver`, `part_cd`),
-  CONSTRAINT `om_ord_part_dtl_ibfk_3` FOREIGN KEY (`part_cd`, `mdl_cd`) REFERENCES `om_part_mdl` (`part_cd`, `mdl_cd`)
+  CONSTRAINT `om_ord_part_dtl_ibfk_2` FOREIGN KEY (`part_ver`, `part_cd`, `mdl_cd`) REFERENCES `om_part` (`part_ver`, `part_cd`, `mdl_cd`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='주문부품상세';
 
 CREATE TABLE `om_packing` (
@@ -237,20 +246,21 @@ CREATE TABLE `om_packing` (
   `eqp_gross_wgt` decimal(5,1) unsigned DEFAULT NULL COMMENT '장비총중량',
   `part_gross_wgt` decimal(5,1) unsigned DEFAULT NULL COMMENT '부품총중량',
   `repr_gross_wgt` decimal(5,1) unsigned DEFAULT NULL COMMENT '수리품총중량',
-  `tot_cartons` int(6) unsigned DEFAULT NULL COMMENT '총카톤수',
-  `tot_gross_wgt` decimal(8,2) unsigned DEFAULT NULL COMMENT '총중량',
+  `tot_cartons` int(6) unsigned NOT NULL COMMENT '총카톤수',
+  `tot_gross_wgt` decimal(8,2) unsigned NOT NULL COMMENT '총중량',
   `sndmail_seq` int(11) DEFAULT NULL COMMENT '발송메일순번',
   `crt_dt` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '생성일시',
   `udt_dt` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '수정일시',
   `crt_uid` varchar(15) NOT NULL COMMENT '생성자ID',
   `udt_uid` varchar(15) DEFAULT NULL COMMENT '수정자ID',
   PRIMARY KEY (`pi_no`),
-  KEY `sndmail_seq` (`sndmail_seq`),
+  KEY `om_packing_ibfk_2` (`sndmail_seq`),
   CONSTRAINT `om_packing_ibfk_1` FOREIGN KEY (`pi_no`) REFERENCES `om_invoice` (`pi_no`),
   CONSTRAINT `om_packing_ibfk_2` FOREIGN KEY (`sndmail_seq`) REFERENCES `om_sndmail` (`sndmail_seq`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='Packing List';
 
 CREATE TABLE `om_part` (
+  `mdl_cd` varchar(4) NOT NULL COMMENT '모델코드',
   `part_ver` varchar(8) NOT NULL COMMENT '버전정보',
   `part_cd` varchar(10) NOT NULL COMMENT '부품코드',
   `part_nm` varchar(300) NOT NULL COMMENT '부품명',
@@ -266,23 +276,10 @@ CREATE TABLE `om_part` (
   `udt_dt` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '수정일시',
   `crt_uid` varchar(15) NOT NULL COMMENT '생성자ID',
   `udt_uid` varchar(15) DEFAULT NULL COMMENT '수정자ID',
-  PRIMARY KEY (`part_ver`,`part_cd`)
+  PRIMARY KEY (`part_ver`,`part_cd`,`mdl_cd`),
+  KEY `om_part_ibfk_1` (`mdl_cd`),
+  CONSTRAINT `om_part_ibfk_1` FOREIGN KEY (`mdl_cd`) REFERENCES `om_mdl` (`mdl_cd`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='부품정보';
-
-CREATE TABLE `om_part_mdl` (
-  `part_cd` varchar(10) NOT NULL COMMENT '부품코드',
-  `mdl_cd` varchar(4) NOT NULL COMMENT '모델속성코드',
-  `disp_yn` char(1) NOT NULL DEFAULT 'Y' COMMENT '디스플레이여부',
-  `use_yn` char(1) NOT NULL DEFAULT 'Y' COMMENT '사용여부',
-  `crt_dt` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '생성일시',
-  `udt_dt` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '수정일시',
-  `crt_uid` varchar(15) NOT NULL COMMENT '생성자ID',
-  `udt_uid` varchar(15) DEFAULT NULL COMMENT '수정자ID',
-  PRIMARY KEY (`part_cd`,`mdl_cd`),
-  KEY `mdl_cd` (`mdl_cd`),
-  CONSTRAINT `om_part_mdl_ibfk_1` FOREIGN KEY (`part_cd`) REFERENCES `om_part` (`part_ver`),
-  CONSTRAINT `om_part_mdl_ibfk_2` FOREIGN KEY (`mdl_cd`) REFERENCES `cm_cd` (`cd`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='부품모델정보';
 
 CREATE TABLE `om_part_ship_req` (
   `pi_no` varchar(7) NOT NULL COMMENT 'PI번호',
@@ -334,14 +331,17 @@ CREATE TABLE `om_prd_req_dtl` (
 
 CREATE TABLE `om_sndmail` (
   `sndmail_seq` int(11) NOT NULL COMMENT '발송메일순번',
-  `wrk_tp_atcd` varchar(8) NOT NULL COMMENT '작업구분 속성코드',
+  `wrk_tp_atcd` varchar(8) NOT NULL COMMENT '작업유형속성코드',
+  `auth_grp_cd` varchar(2) NOT NULL COMMENT '권한그룹코드',
   `sender_email` varchar(15) NOT NULL COMMENT '발송자ID',
   `sender_eng_nm` varchar(50) DEFAULT NULL COMMENT '발송자영문명',
   `title` varchar(500) NOT NULL COMMENT '메일제목',
   `ctnt` text NOT NULL COMMENT '메일내용',
   `crt_dt` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '생성일시',
-  `crt_uid` varchar(15) NOT NULL COMMENT '생성자ID',
-  PRIMARY KEY (`sndmail_seq`)
+  `crt_uid` varchar(15) DEFAULT NULL COMMENT '생성자ID',
+  PRIMARY KEY (`sndmail_seq`),
+  KEY `om_sndmail_ibfk_1` (`auth_grp_cd`),
+  CONSTRAINT `om_sndmail_ibfk_1` FOREIGN KEY (`auth_grp_cd`) REFERENCES `cm_auth_grp` (`auth_grp_cd`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='발송메일정보';
 
 CREATE TABLE `om_sndmail_dtl` (
@@ -353,10 +353,10 @@ CREATE TABLE `om_sndmail_dtl` (
   `rcpnt_team_atcd` varchar(8) DEFAULT NULL COMMENT '수신팀속성코드',
   `snd_yn` char(1) NOT NULL DEFAULT 'N' COMMENT '발송여부',
   `crt_dt` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '생성일시',
-  `crt_uid` varchar(15) NOT NULL COMMENT '생성자ID',
+  `crt_uid` varchar(15) DEFAULT NULL COMMENT '생성자ID',
   PRIMARY KEY (`snd_no`),
-  KEY `sndmail_seq` (`sndmail_seq`),
-  KEY `rcpnt_team_atcd` (`rcpnt_team_atcd`),
+  KEY `om_sndmail_dtl_ibfk_1` (`sndmail_seq`),
+  KEY `om_sndmail_dtl_ibfk_2` (`rcpnt_team_atcd`),
   CONSTRAINT `om_sndmail_dtl_ibfk_1` FOREIGN KEY (`sndmail_seq`) REFERENCES `om_sndmail` (`sndmail_seq`),
   CONSTRAINT `om_sndmail_dtl_ibfk_2` FOREIGN KEY (`rcpnt_team_atcd`) REFERENCES `om_team` (`team_atcd`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='발송메일상세';
