@@ -35,7 +35,7 @@ CREATE TABLE `cm_cd_attr` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='코드속성';
 
 CREATE TABLE `cm_file_grp` (
-  `file_grp_seq` int(11) NOT NULL COMMENT '파일그룹순번',
+  `file_grp_seq` int(11) NOT NULL AUTO_INCREMENT COMMENT '파일그룹순번',
   `file_seq` int(11) NOT NULL COMMENT '파일순번',
   `file_nm` varchar(100) NOT NULL COMMENT '파일명',
   `file_size` smallint(11) DEFAULT NULL COMMENT '파일용량',
