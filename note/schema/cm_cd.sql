@@ -1,28 +1,29 @@
-"cd","cd_nm","cd_dscrt","use_yn","p_cd","crt_dt","udt_dt"
-"0010","수신자구분","rcpnt_tp_atcd","Y",,"2014-08-07 15:44:03","2014-08-08 11:58:23"
-"0020","국가","cntry_atcd","Y",,"2014-08-01 18:06:59","2014-08-08 11:58:28"
-"0030","비즈니스영역","biztp_atcd","Y","0100","2014-08-01 18:08:42","2014-08-12 09:28:32"
-"0040","주고객대상","maincust_atcd","Y","0100","2014-08-01 18:07:33","2014-08-12 09:28:24"
-"0050","거래은행","bank_atcd","Y",,"2014-08-01 18:09:47","2014-08-08 11:58:46"
-"0060","SBM부서(팀)","team_atcd","Y",,"2014-08-01 18:13:04","2014-08-08 12:03:24"
-"0070","작업유형","wrk_tp_atcd","Y",,"2014-08-01 18:12:29","2014-08-08 12:03:47"
-"0080","직무","duty_atcd","Y",,"2014-08-01 18:13:52","2014-08-08 11:59:05"
-"0090","통화그룹","CURRENCY GROUP","Y",,"2014-08-04 09:53:12","2014-08-08 11:59:12"
-"0091","CURRENCY","currency_atch","Y","0090","2014-08-04 17:00:11","2014-08-08 11:59:18"
-"0092","SERIAL CURRENCY","serial_currency_atch","Y","0090","2014-08-04 17:00:20","2014-08-08 11:59:25"
-"00A0","OPTION-HW","opt_hw_atcd","Y",,"2014-08-04 10:26:50","2014-08-08 11:59:35"
-"00B0","SERIAL NUMBER","srl_atcd","Y",,"2014-08-04 15:37:55","2014-08-08 11:59:37"
-"00C0","PC Cable","pc_cab_atcd","Y",,"2014-08-04 16:20:37","2014-08-08 11:59:53"
-"00D0","Reject Pocket Type","rjt_pkt_tp_atcd","Y","00A0","2014-08-04 17:25:03","2014-08-08 11:59:58"
-"00E0","Power Cable","pwr_cab_atcd","Y",,"2014-08-04 17:25:23","2014-08-08 12:00:04"
-"00F0","수송방식","shipped_by_atcd","Y",,"2014-08-04 00:00:00","2014-08-08 12:02:00"
-"00F1","특송구분","courrier_atcd","Y","00F0","2014-08-04 00:00:00","2014-08-08 12:00:23"
-"00G0","지불방식","payment_atcd","Y",,"2014-08-04 17:48:38","2014-08-08 12:00:34"
-"00H0","협상조건","incoterms_atcd","Y",,"2014-08-04 17:49:07","2014-08-08 12:00:38"
-"00I0","CIS","cis_atcd","Y",,"2014-08-05 10:24:39","2014-08-08 12:00:44"
-"00J0","OPTION-SW","opt_sw_atcd","Y",,"2014-08-05 10:45:12","2014-08-08 12:00:48"
-"00K0","CF DETECTOR","detector_atcd","Y",,"2014-08-05 00:00:00","2014-08-08 12:00:52"
-"00L0","LCD Color","lcd_color_atcd","Y",,"2014-08-04 17:22:45","2014-08-08 12:00:56"
-"00M0","LCD Language","lcd_lang_atcd","Y",,"2014-08-04 00:00:00","2014-08-08 12:05:45"
-"00N0","사용자메뉴얼언어","manual_lang_atcd","Y",,"2014-08-05 15:42:41","2014-08-08 16:56:03"
-"0100","비즈니스그룹","biztp GROUP","Y",,"2014-08-12 09:27:59","2014-08-12 09:27:59"
+USE sbm;
+
+insert into `cm_cd`(`cd`,`cd_nm`,`cd_dscrt`,`use_yn`,`p_cd`,`crt_dt`,`udt_dt`) values ('0010','수신자구분','rcpnt_tp_atcd','Y',null,'2014-08-07 15:44:03','2014-08-08 11:58:23');
+insert into `cm_cd`(`cd`,`cd_nm`,`cd_dscrt`,`use_yn`,`p_cd`,`crt_dt`,`udt_dt`) values ('0020','국가','cntry_atcd','Y',null,'2014-08-01 18:06:59','2014-08-08 11:58:28');
+insert into `cm_cd`(`cd`,`cd_nm`,`cd_dscrt`,`use_yn`,`p_cd`,`crt_dt`,`udt_dt`) values ('0030','비즈니스영역','biztp_atcd','Y','0100','2014-08-01 18:08:42','2014-08-12 09:28:32');
+insert into `cm_cd`(`cd`,`cd_nm`,`cd_dscrt`,`use_yn`,`p_cd`,`crt_dt`,`udt_dt`) values ('0040','주고객대상','maincust_atcd','Y','0100','2014-08-01 18:07:33','2014-08-12 09:28:24');
+insert into `cm_cd`(`cd`,`cd_nm`,`cd_dscrt`,`use_yn`,`p_cd`,`crt_dt`,`udt_dt`) values ('0050','거래은행','bank_atcd','Y',null,'2014-08-01 18:09:47','2014-08-08 11:58:46');
+insert into `cm_cd`(`cd`,`cd_nm`,`cd_dscrt`,`use_yn`,`p_cd`,`crt_dt`,`udt_dt`) values ('0060','SBM부서(팀)','team_atcd','Y',null,'2014-08-01 18:13:04','2014-08-08 12:03:24');
+insert into `cm_cd`(`cd`,`cd_nm`,`cd_dscrt`,`use_yn`,`p_cd`,`crt_dt`,`udt_dt`) values ('0070','작업유형','wrk_tp_atcd','Y',null,'2014-08-01 18:12:29','2014-08-08 12:03:47');
+insert into `cm_cd`(`cd`,`cd_nm`,`cd_dscrt`,`use_yn`,`p_cd`,`crt_dt`,`udt_dt`) values ('0080','직무','duty_atcd','Y',null,'2014-08-01 18:13:52','2014-08-08 11:59:05');
+insert into `cm_cd`(`cd`,`cd_nm`,`cd_dscrt`,`use_yn`,`p_cd`,`crt_dt`,`udt_dt`) values ('0090','통화그룹','CURRENCY GROUP','Y',null,'2014-08-04 09:53:12','2014-08-08 11:59:12');
+insert into `cm_cd`(`cd`,`cd_nm`,`cd_dscrt`,`use_yn`,`p_cd`,`crt_dt`,`udt_dt`) values ('0091','CURRENCY','currency_atch','Y','0090','2014-08-04 17:00:11','2014-08-08 11:59:18');
+insert into `cm_cd`(`cd`,`cd_nm`,`cd_dscrt`,`use_yn`,`p_cd`,`crt_dt`,`udt_dt`) values ('0092','SERIAL CURRENCY','serial_currency_atch','Y','0090','2014-08-04 17:00:20','2014-08-08 11:59:25');
+insert into `cm_cd`(`cd`,`cd_nm`,`cd_dscrt`,`use_yn`,`p_cd`,`crt_dt`,`udt_dt`) values ('00A0','OPTION-HW','opt_hw_atcd','Y',null,'2014-08-04 10:26:50','2014-08-08 11:59:35');
+insert into `cm_cd`(`cd`,`cd_nm`,`cd_dscrt`,`use_yn`,`p_cd`,`crt_dt`,`udt_dt`) values ('00B0','SERIAL NUMBER','srl_atcd','Y',null,'2014-08-04 15:37:55','2014-08-08 11:59:37');
+insert into `cm_cd`(`cd`,`cd_nm`,`cd_dscrt`,`use_yn`,`p_cd`,`crt_dt`,`udt_dt`) values ('00C0','PC Cable','pc_cab_atcd','Y',null,'2014-08-04 16:20:37','2014-08-08 11:59:53');
+insert into `cm_cd`(`cd`,`cd_nm`,`cd_dscrt`,`use_yn`,`p_cd`,`crt_dt`,`udt_dt`) values ('00D0','Reject Pocket Type','rjt_pkt_tp_atcd','Y','00A0','2014-08-04 17:25:03','2014-08-08 11:59:58');
+insert into `cm_cd`(`cd`,`cd_nm`,`cd_dscrt`,`use_yn`,`p_cd`,`crt_dt`,`udt_dt`) values ('00E0','Power Cable','pwr_cab_atcd','Y',null,'2014-08-04 17:25:23','2014-08-08 12:00:04');
+insert into `cm_cd`(`cd`,`cd_nm`,`cd_dscrt`,`use_yn`,`p_cd`,`crt_dt`,`udt_dt`) values ('00F0','수송방식','shipped_by_atcd','Y',null,'2014-08-04 00:00:00','2014-08-08 12:02:00');
+insert into `cm_cd`(`cd`,`cd_nm`,`cd_dscrt`,`use_yn`,`p_cd`,`crt_dt`,`udt_dt`) values ('00F1','특송구분','courrier_atcd','Y','00F0','2014-08-04 00:00:00','2014-08-08 12:00:23');
+insert into `cm_cd`(`cd`,`cd_nm`,`cd_dscrt`,`use_yn`,`p_cd`,`crt_dt`,`udt_dt`) values ('00G0','지불방식','payment_atcd','Y',null,'2014-08-04 17:48:38','2014-08-08 12:00:34');
+insert into `cm_cd`(`cd`,`cd_nm`,`cd_dscrt`,`use_yn`,`p_cd`,`crt_dt`,`udt_dt`) values ('00H0','협상조건','incoterms_atcd','Y',null,'2014-08-04 17:49:07','2014-08-08 12:00:38');
+insert into `cm_cd`(`cd`,`cd_nm`,`cd_dscrt`,`use_yn`,`p_cd`,`crt_dt`,`udt_dt`) values ('00I0','CIS','cis_atcd','Y',null,'2014-08-05 10:24:39','2014-08-08 12:00:44');
+insert into `cm_cd`(`cd`,`cd_nm`,`cd_dscrt`,`use_yn`,`p_cd`,`crt_dt`,`udt_dt`) values ('00J0','OPTION-SW','opt_sw_atcd','Y',null,'2014-08-05 10:45:12','2014-08-08 12:00:48');
+insert into `cm_cd`(`cd`,`cd_nm`,`cd_dscrt`,`use_yn`,`p_cd`,`crt_dt`,`udt_dt`) values ('00K0','CF DETECTOR','detector_atcd','Y',null,'2014-08-05 00:00:00','2014-08-08 12:00:52');
+insert into `cm_cd`(`cd`,`cd_nm`,`cd_dscrt`,`use_yn`,`p_cd`,`crt_dt`,`udt_dt`) values ('00L0','LCD Color','lcd_color_atcd','Y',null,'2014-08-04 17:22:45','2014-08-08 12:00:56');
+insert into `cm_cd`(`cd`,`cd_nm`,`cd_dscrt`,`use_yn`,`p_cd`,`crt_dt`,`udt_dt`) values ('00M0','LCD Language','lcd_lang_atcd','Y',null,'2014-08-04 00:00:00','2014-08-08 12:05:45');
+insert into `cm_cd`(`cd`,`cd_nm`,`cd_dscrt`,`use_yn`,`p_cd`,`crt_dt`,`udt_dt`) values ('00N0','사용자메뉴얼언어','manual_lang_atcd','Y',null,'2014-08-05 15:42:41','2014-08-08 16:56:03');
+insert into `cm_cd`(`cd`,`cd_nm`,`cd_dscrt`,`use_yn`,`p_cd`,`crt_dt`,`udt_dt`) values ('0100','비즈니스그룹','biztp GROUP','Y',null,'2014-08-12 09:27:59','2014-08-12 09:27:59');
