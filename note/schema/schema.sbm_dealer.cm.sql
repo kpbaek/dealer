@@ -29,7 +29,7 @@ CREATE TABLE `cm_cd_attr` (
   `ord_num` smallint(5) DEFAULT NULL COMMENT '정렬번호',
   `crt_dt` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '생성일시',
   `udt_dt` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '수정일시',
-  `upt_uid` varchar(15) DEFAULT NULL COMMENT '수정자ID',
+  `upt_uid` varchar(50) DEFAULT NULL COMMENT '수정자ID',
   PRIMARY KEY (`cd`,`atcd`),
   CONSTRAINT `cm_cd_attr_ibfk_1` FOREIGN KEY (`cd`) REFERENCES `cm_cd` (`cd`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='코드속성';
@@ -41,7 +41,7 @@ CREATE TABLE `cm_file_grp` (
   `file_size` smallint(11) DEFAULT NULL COMMENT '파일용량',
   `crt_dt` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '생성일시',
   `udt_dt` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '수정일시',
-  `udt_uid` varchar(15) DEFAULT NULL COMMENT '수정자ID',
+  `udt_uid` varchar(50) DEFAULT NULL COMMENT '수정자ID',
   PRIMARY KEY (`file_grp_seq`,`file_seq`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='첨부파일그룹';
 
