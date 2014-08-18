@@ -335,6 +335,7 @@ CREATE TABLE `om_user` (
   `pswd` varchar(15) NOT NULL COMMENT '비밀번호',
   `auth_grp_cd` varchar(2) DEFAULT NULL COMMENT '권한그룹코드',
   `perms_cd` varchar(4) DEFAULT NULL COMMENT '승인코드',
+  `usr_nm` varchar(50) DEFAULT NULL COMMENT '사용자명',
   `usr_email` varchar(50) DEFAULT NULL COMMENT '사용자이메일',
   `gender_atcd` char(1) DEFAULT NULL COMMENT '성별속성코드',
   `nation_atcd` varchar(8) DEFAULT NULL COMMENT '국적속성코드',
