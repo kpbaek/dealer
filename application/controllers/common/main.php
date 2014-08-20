@@ -27,6 +27,11 @@ class Main extends CI_Controller {
 		$this->load->view('/common/listCode');
 	}
 	
+	public function listWorker()
+	{
+		$this->load->view('/common/listWorker');
+	}
+	
 }
 
 /* End of file welcome.php */
