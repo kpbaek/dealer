@@ -12,11 +12,11 @@ CREATE TABLE `om_dealer` (
   `maincust_atcd` varchar(8) DEFAULT NULL COMMENT '주고객 속성코드',
   `comments` varchar(2000) DEFAULT NULL COMMENT '코멘트',
   `mkt_inf` varchar(4000) DEFAULT NULL COMMENT '마케팅정보',
-  `worker_uid` varchar(50) DEFAULT NULL COMMENT '담당자ID',
   `premium_rate` decimal(5,2) DEFAULT NULL COMMENT '딜러할증요율',
   `bank_atcd` varchar(8) DEFAULT NULL COMMENT '은행속성코드',
   `attn` varchar(100) DEFAULT NULL COMMENT '송장 담당자',
   `aprv_yn` char(1) CHARACTER SET latin1 NOT NULL DEFAULT 'N' COMMENT '승인여부',
+  `worker_seq` int(11) DEFAULT NULL COMMENT '담당자순번',
   `file_grp_seq` int(11) DEFAULT NULL COMMENT '파일그룹순번',
   `crt_dt` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '생성일시',
   `crt_uid` varchar(50) NOT NULL COMMENT '생성자ID',
@@ -24,10 +24,10 @@ CREATE TABLE `om_dealer` (
   `udt_uid` varchar(50) DEFAULT NULL COMMENT '수정자ID',
   PRIMARY KEY (`dealer_seq`),
   KEY `om_dealer_ibfk_1` (`dealer_uid`),
-  KEY `om_dealer_ibfk_2` (`worker_uid`),
+  KEY `om_dealer_ibfk_2` (`worker_seq`),
   KEY `om_dealer_ibfk_3` (`file_grp_seq`),
   CONSTRAINT `om_dealer_ibfk_1` FOREIGN KEY (`dealer_uid`) REFERENCES `om_user` (`uid`),
-  CONSTRAINT `om_dealer_ibfk_2` FOREIGN KEY (`worker_uid`) REFERENCES `om_worker` (`worker_uid`),
+  CONSTRAINT `om_dealer_ibfk_2` FOREIGN KEY (`worker_seq`) REFERENCES `om_worker` (`worker_seq`),
   CONSTRAINT `om_dealer_ibfk_3` FOREIGN KEY (`file_grp_seq`) REFERENCES `cm_file_grp` (`file_grp_seq`)
 ) ENGINE=InnoDB AUTO_INCREMENT=70 DEFAULT CHARSET=utf8 COMMENT='딜러정보';
 
@@ -349,6 +349,7 @@ CREATE TABLE `om_user` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='사용자정보';
 
 CREATE TABLE `om_worker` (
+  `worker_seq` int(11) NOT NULL AUTO_INCREMENT COMMENT '담당자순번',
   `worker_uid` varchar(50) NOT NULL COMMENT '담당자ID',
   `kr_nm` varchar(20) NOT NULL COMMENT '담당자명',
   `eng_nm` varchar(50) DEFAULT NULL COMMENT '담당자영문명',
@@ -363,11 +364,11 @@ CREATE TABLE `om_worker` (
   `crt_uid` varchar(50) NOT NULL COMMENT '생성자ID',
   `udt_dt` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP COMMENT '수정일시',
   `udt_uid` varchar(50) DEFAULT NULL COMMENT '수정자ID',
-  PRIMARY KEY (`worker_uid`),
-  KEY `team_atcd` (`team_atcd`),
-  CONSTRAINT `om_worker_ibfk_1` FOREIGN KEY (`worker_uid`) REFERENCES `om_user` (`uid`),
+  PRIMARY KEY (`worker_seq`),
+  UNIQUE KEY `team_atcd` (`team_atcd`,`worker_uid`),
+  KEY `om_worker_ibfk_1` (`worker_uid`),
   CONSTRAINT `om_worker_ibfk_2` FOREIGN KEY (`team_atcd`) REFERENCES `om_team` (`team_atcd`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='담당자정보';
+) ENGINE=InnoDB AUTO_INCREMENT=75 DEFAULT CHARSET=utf8 COMMENT='담당자정보';
 
 CREATE TABLE `cm_auth_grp` (
   `auth_grp_cd` varchar(2) NOT NULL COMMENT '권한그룹코드',
