@@ -1,5 +1,5 @@
 <?php
-$cd = $_REQUEST["cd"];
+$atcd = $_REQUEST["atcd"];
 
 // include db config
 include_once("/config.php");
@@ -8,7 +8,8 @@ include_once("/config.php");
 $db = mysql_connect(PHPGRID_DBHOST, PHPGRID_DBUSER, PHPGRID_DBPASS);
 mysql_select_db(PHPGRID_DBNAME);
 
-$SQL = "SELECT cd, atcd, atcd_nm, USE_YN FROM cm_cd_attr a WHERE a.use_yn = 'Y' and disp_yn = 'Y' and a.cd=".$cd. " order by ord_num";
+#$SQL = "SELECT cd, atcd, atcd_nm, USE_YN FROM cm_cd_attr a WHERE a.use_yn = 'Y' and disp_yn = 'Y' and a.cd=".$cd. " order by ord_num";
+$SQL = "SELECT '" .$atcd. "' cd, worker_seq atcd, kr_nm atcd_nm FROM om_worker a WHERE a.team_atcd = '" .$atcd. "' order by kr_nm";
 $result = mysql_query( $SQL ) or die("Couldn t execute query.".mysql_error());
 
 $responce = "";
