@@ -8,7 +8,7 @@
 		 slbObj.add(new Option(text, value, false)); 
 	} 
 		 
-	//¼±ÅÃ ¿É¼ÇÇ×¸ñÀ» Á¦°Å 
+	//ì„ íƒ ì˜µì…˜í•­ëª©ì„ ì œê±° 
 	function deleteOptionSelElements(sel){ 
 	    sel.options[sel.selectedIndex]=null; 
 	}
@@ -30,6 +30,42 @@
 	    $.getJSON(targetUrl, function(result){
 //	    	$('#postdata').append(result['cd']['name'] + ":" + cd);
 	    	deleteOptionElements(selObj);
+	        addOptionElement(selObj, "", "select");
+	    	for(var i=0; i<result['cdAttr'].length; i++){
+            	addOptionElement(selObj, result['cdAttr'][i]['value'], result['cdAttr'][i]['text']); 
+			}
+	    });
+	}
+	
+	function getWorkerCombo(atcd, selObj) {
+		var opt = "";
+	    if (atcd == "") {
+	        deleteOptionElements(selObj);
+//	        addOptionElement(selObj, "", "----------------------");
+	        return;
+	    }
+		var targetUrl = '/common/main/listWorker?atcd=' + atcd;
+	    $.getJSON(targetUrl, function(result){
+//	    	$('#postdata').append(result['cd']['name'] + ":" + cd);
+	    	deleteOptionElements(selObj);
+//	        addOptionElement(selObj, "", "----------------------");
+	    	for(var i=0; i<result['cdAttr'].length; i++){
+            	addOptionElement(selObj, result['cdAttr'][i]['value'], result['cdAttr'][i]['text']); 
+			}
+	    });
+	}
+	
+	function getModelCombo(atcd, selObj) {
+		var opt = "";
+	    if (atcd == "") {
+	        deleteOptionElements(selObj);
+//	        addOptionElement(selObj, "", "----------------------");
+	        return;
+	    }
+		var targetUrl = '/common/main/listModel?atcd=' + atcd;
+	    $.getJSON(targetUrl, function(result){
+//	    	$('#postdata').append(result['cd']['name'] + ":" + cd);
+	    	deleteOptionElements(selObj);
 //	        addOptionElement(selObj, "", "----------------------");
 	    	for(var i=0; i<result['cdAttr'].length; i++){
             	addOptionElement(selObj, result['cdAttr'][i]['value'], result['cdAttr'][i]['text']); 
@@ -40,7 +76,7 @@
 	function getCodeMultiCombo(cd, selObj, selAr) {
 		var targetUrl = '/common/main/listCode?cd=' + cd;
 	    $.getJSON(targetUrl, function(result){
-	    	$('#postdata').append(result['cd']['name'] + ":" + cd);
+//	    	$('#postdata').append(result['cd']['name'] + ":" + cd);
 	    	for(var i=0; i<result['cdAttr'].length; i++){
 	    		var opt = $("<option />", {
 	                value: result['cdAttr'][i]['value'],
