@@ -6,7 +6,9 @@
 	<link rel="stylesheet" type="text/css" media="screen" href="/lib/jquery.jqGrid-4.6.0/plugins/ui.multiselect.css"></link>	
 	<link rel="stylesheet" type="text/css" media="screen" href="/lib/jquery.jqGrid-4.6.0/css/ui.jqgrid.css"></link>	
 	<link rel="stylesheet" type="text/css" media="screen" href="/lib/jquery.jqGrid-4.6.0/plugins/searchFilter.css"></link>	
- 
+    <link rel="stylesheet" href="/css/multiple-select.css" />
+	<link rel="stylesheet" type="text/css" href="/css/msdropdown/dd.css" />
+    
 	<script src="/lib/jquery.jqGrid-4.6.0/js/jquery-1.11.0.min.js" type="text/javascript"></script>
 	<script src="/lib/jquery.jqGrid-4.6.0/js/i18n/grid.locale-en.js" type="text/javascript"></script>
 	<script src="/lib/jquery.jqGrid-4.6.0/js/jquery.jqGrid.min.js" type="text/javascript"></script>	
@@ -16,6 +18,8 @@
 	<script src="/lib/jquery.jqGrid-4.6.0/plugins/jquery.searchFilter.js" type="text/javascript"></script>
 	<script src="/lib/jquery.jqGrid-4.6.0/plugins/ui.multiselect.js" type="text/javascript"></script>
 	<script src="/js/cmn/common.js" type="text/javascript"></script>
+	<script src="/lib/js/jquery.multiple.select.js"></script>
+	<script src="/lib/js/msdropdown/jquery.dd.js"></script>
 	
 	<style type="text/css">
 	  html { font-family:Calibri, Arial, Helvetica, sans-serif; font-size:11pt; background-color:white }
@@ -82,7 +86,7 @@ Name<input type="text" name="searchId">
 			<td width="18%" class="style01">Name</td>
 			<td width="5%"><sup>★</sup></td>
 			<td width="27%"><input type="text" id="invdate" name="delernm" size=35 style="border: 1"></td>
-			<td width="18%" class="style02">담당부서/담당자</td>
+			<td width="18%" class="style01">담당부서/담당자</td>
 			<td width="5%"><sup></sup></td>
 			<td width="27%">
 				<select name="team_cd">
@@ -95,7 +99,7 @@ Name<input type="text" name="searchId">
 			<td class="style01">Company</td>
 			<td><sup>★</sup></td>
 			<td><input type="text" id="invdate" name="delernm" size=35 style="border: 1"></td>
-			<td width="18%" class="style02">부품할증요율</td>
+			<td width="18%" class="style01">부품할증요율</td>
 			<td width="5%"><sup></sup></td>
 			<td width="27%"><input type="text" id="perDisc" name="perDisc" size=10 style="border: 1">%</td>
 		  </tr>
@@ -103,7 +107,7 @@ Name<input type="text" name="searchId">
 			<td class="style01">Telephone number</td>
 			<td><sup>★</sup></td>
 			<td><input type="text" id="invdate" name="delernm" size=35 style="border: 1"></td>
-			<td width="18%" class="style02">Bank Information</td>
+			<td width="18%" class="style01">Bank Information</td>
 			<td width="5%"><sup></sup></td>
 			<td width="27%">
 				<select name="bank_inf">
@@ -116,21 +120,23 @@ Name<input type="text" name="searchId">
 			<td colspan=4><input type="text" id="invdate" name="delernm" size=119 style="border: 1"></td>
 		  </tr>
 		  <tr>
-			<td class="style01">Country</td>
+			<td class="style01">국적</td>
 			<td><sup>★</sup></td>
 			<td>
-				<select name="cntry">
+				<select name="nation_atcd">
 				</select>
 			</td>
-			<td width="18%" class="style02">Tel</td>
+			<td width="18%" class="style01">Tel</td>
 			<td width="5%"><sup></sup></td>
 			<td width="27%"><input type="text" id="tel" name="tel" size=35 style="border: 1"></td>
 		  </tr>
 		  <tr>
 			<td class="style01">Email address</td>
 			<td><sup>★</sup></td>
-			<td><input type="text" id="invdate" name="delernm" size=35 style="border: 1"></td>
-			<td width="18%" class="style02">fax</td>
+			<td><input type="text" id="invdate" name="delernm" size=35 style="border: 1">
+			<input type="button" value="중복검사" onclick="javascript:chkEmail();"/>
+			</td>
+			<td width="18%" class="style01">fax</td>
 			<td width="5%"><sup></sup></td>
 			<td width="27%"><input type="text" id="fax" name="fax" size=35 style="border: 1"></td>
 		  </tr>
@@ -138,15 +144,25 @@ Name<input type="text" name="searchId">
 			<td class="style01">Job Title</td>
 			<td><sup></sup></td>
 			<td><input type="text" id="invdate" name="delernm" size=35 style="border: 1"></td>
-			<td width="18%" class="style02">attn</td>
+			<td width="18%" class="style01">성별</td>
 			<td width="5%"><sup></sup></td>
-			<td width="27%"><input type="text" id="attn" name="delernm" size=35 style="border: 1"></td>
+			<td width="27%">
+			<input type=radio id="gender_atcd" value="M">남
+			<input type=radio id="gender_atcd" value="F">여
+			</td>
 		  </tr>
 		  <tr>
 			<td class="style01">Homepage</td>
 			<td><sup></sup></td>
 			<td><input type="text" id="invdate" name="delernm" size=35 style="border: 1"></td>
-			<td colspan=3>&nbsp;</td>
+			<td width="18%" class="style01">대상국가</td>
+			<td width="5%"><sup></sup></td>
+			<td width="27%">
+				<div class="form-group">
+			        <select id="cntry_atcd" name="cntry_atcd" multiple="multiple" class="form-control" style="width: 250px">
+			        </select>
+			    </div>
+			</td>
 		  </tr>
 		  <tr>
 			<td class="style01">Expierence in cash handling machine</td>
@@ -191,9 +207,41 @@ Name<input type="text" name="searchId">
 
 </div>
 
+    <input id="refreshInput" type="text" required="required" />
+    <button id="refreshAdd">Add + Refresh</button>
+    <br />
+    <label><input id="refreshSelected" type="checkbox" />Selected?</label>
+    <label><input id="refreshDisabled" type="checkbox" />Disabled?</label>
+    <select id="test" name="test" multiple="multiple">
+    </select>
+    <select id="test2" name="test" multiple="multiple">
+    <option>11111111</option>
+    </select>
+    
 </body>
-
 <script type="text/javascript">
+
+var select = $("#test2"),
+value = "test",
+t1 = $("<option />", {
+		                    value: value,
+		                    text: value
+		                });
+select.append(t1).multipleSelect("refresh");
+
+
+
+
+//        $("select").multipleSelect();
+        $("#refreshAdd").click(function() {
+            var $select = $("select"),
+                value = "test",
+                $opt = $("<option />", {
+						                    value: value,
+						                    text: value
+						                });
+            $select.append($opt).multipleSelect("refresh");
+        });
 
 	jQuery().ready(function () {
 		var targetUrl = "/admin/manage/listDealer";
@@ -202,21 +250,20 @@ Name<input type="text" name="searchId">
 		   	url:targetUrl,
 		   	datatype: "json",
 		   	//colNames:['Inv No','Date', 'Client', 'Amount','Tax','Total','Notes'],
-		   	colNames:['id', 'Name', 'Company', 'Country', 'Business type', 'Job Title',  'Tel number', 'Email', '가입일', '담당부서', '담당자', '부품할증요율'],
+		   	colNames:['id', 'Name', 'Nation', 'Company', 'Tel', 'Email', '가입일', '담당부서', '담당자', '부품할증요율','승인여부'],
 	   	              //, '(1CIS)', '(2CIS)', 'Q(Per 1Unit)', 'Order Price', 'Amount'
 		   	colModel:[
-		   	    {name:'id', index:'id', width:55,hidden:true,search:true}, 
+		   	    {name:'id', index:'id', width:30,hidden:true,search:true}, 
 		        {name:'name',index:'id', width:70, align:"right",search:true},
 		   		{name:'invdate',index:'invdate', width:70,search:true},
 		   		{name:'amount',index:'tax asc, invdate', width:70,search:true},
 		   		{name:'amount',index:'amount', width:70, align:"right",search:true},
-		   		{name:'tax',index:'tax', width:50, align:"right",search:true},		
+		   		{name:'tax',index:'tax', width:70, align:"right",search:true},		
 		   		{name:'total',index:'total', width:70,align:"right",search:true},		
 		   		{name:'total',index:'note', width:70, sortable:false,search:true},		
 		   		{name:'total',index:'note', width:70, sortable:false,search:true},		
 		   		{name:'total',index:'note', width:70, sortable:false,search:true},		
-		   		{name:'total',index:'note', width:70, sortable:false,search:true},		
-		   		{name:'total',index:'note', width:70, sortable:false,search:true}		
+		   		{name:'total',index:'note', width:50, sortable:false,search:true}		
 			],
 	        onSelectRow: function(id) {
 	            var params = {id:id};
@@ -273,7 +320,23 @@ Name<input type="text" name="searchId">
 		initForm();
 	})
 	
-    function printPostData(){
+    $("#cntry_atcd").multipleSelect({
+            selectAll: false
+            ,multipleWidth: 140
+    });	
+    
+	$(function() {
+	    $('#cntry_atcd').change(function() {
+			var opt = $("<option />", {
+	            value: "1111",
+	            text: "2222"
+	        });
+	    	$('#cntry_atcd').append(opt).multipleSelect("refresh");
+		    console.log($(this).val());
+	    }).multipleSelect();
+	});
+
+	function printPostData(){
     	var pd = $("#list").jqGrid('getPostData');
         var r = "";
         $.each(pd, function(i) {
@@ -285,11 +348,20 @@ Name<input type="text" name="searchId">
 	function initForm() {
 		var f = document.addForm;
 		getCodeCombo("02", f.team_cd);
-		getCodeCombo("02", f.cntry);
+		getCodeCombo("0021", f.nation_atcd);
+		var selAr =  ["kr", "fr"];
+		getCodeMultiCombo("0022", $('#cntry_atcd'), selAr);
+/*
+		var $opt = ("<option />", {
+            value: "1111",
+            text: "2222"
+        });
+    	$('#cntry_atcd').append($opt).multipleSelect("refresh");
+*/    	
 		getCodeCombo("02", f.salesworker_id);
 		getCodeCombo("02", f.cdDtl);
-		getCodeCombo("02", f.bank_inf);
-		getCodeCombo("02", f.main_cust);
+		getCodeCombo("0050", f.bank_inf);
+		getCodeCombo("0120", f.main_cust);
 		newForm();
     }
 	
@@ -369,6 +441,7 @@ Name<input type="text" name="searchId">
     	document.getElementById("btnNew").disabled = true;
     	$("#thumbDiv").html("");
     	$("#list").jqGrid('resetSelection');
+    	
 	}
 
     function createData() {
