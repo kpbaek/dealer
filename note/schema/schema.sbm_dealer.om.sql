@@ -16,6 +16,7 @@ CREATE TABLE `om_dealer` (
   `premium_rate` decimal(5,2) DEFAULT NULL COMMENT '딜러할증요율',
   `bank_atcd` varchar(8) DEFAULT NULL COMMENT '은행속성코드',
   `attn` varchar(100) DEFAULT NULL COMMENT '송장 담당자',
+  `aprv_yn` char(1) CHARACTER SET latin1 NOT NULL DEFAULT 'N' COMMENT '승인여부',
   `file_grp_seq` int(11) DEFAULT NULL COMMENT '파일그룹순번',
   `crt_dt` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '생성일시',
   `crt_uid` varchar(50) NOT NULL COMMENT '생성자ID',
@@ -33,15 +34,8 @@ CREATE TABLE `om_dealer` (
 CREATE TABLE `om_dealer_cntry` (
   `dealer_seq` int(11) NOT NULL COMMENT '딜러순번',
   `cntry_atcd` varchar(8) NOT NULL COMMENT '대상국가속성코드',
-  `csn_cmpy_nm` varchar(100) DEFAULT NULL COMMENT '인수회사명',
-  `csn_addr` varchar(300) DEFAULT NULL COMMENT '인수자주소',
-  `csn_tel` varchar(50) DEFAULT NULL COMMENT '인수자전화번호',
-  `csn_fax` varchar(50) DEFAULT NULL COMMENT '인수자팩스',
-  `csn_attn` varchar(100) DEFAULT NULL COMMENT '인수담당자',
   `crt_dt` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '생성일시',
   `crt_uid` varchar(50) NOT NULL COMMENT '생성자ID',
-  `udt_dt` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '수정일시',
-  `udt_uid` varchar(50) DEFAULT NULL COMMENT '수정자ID',
   PRIMARY KEY (`dealer_seq`,`cntry_atcd`),
   CONSTRAINT `om_dealer_cntry_ibfk_1` FOREIGN KEY (`dealer_seq`) REFERENCES `om_dealer` (`dealer_seq`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='딜러대상국가';
@@ -62,6 +56,11 @@ CREATE TABLE `om_invoice` (
   `invoice_dt` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '송장발행일시',
   `pi_sndmail_seq` int(11) DEFAULT NULL COMMENT 'PI발송메일순번',
   `ci_sndmail_seq` int(11) DEFAULT NULL COMMENT 'CI발송메일순번',
+  `csn_cmpy_nm` varchar(100) DEFAULT NULL COMMENT '인수회사명',
+  `csn_addr` varchar(300) DEFAULT NULL COMMENT '인수자주소',
+  `csn_tel` varchar(50) DEFAULT NULL COMMENT '인수자전화번호',
+  `csn_fax` varchar(50) DEFAULT NULL COMMENT '인수자팩스',
+  `csn_attn` varchar(100) DEFAULT NULL COMMENT '인수담당자',
   `crt_dt` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '생성일시',
   `crt_uid` varchar(50) NOT NULL COMMENT '생성자ID',
   `udt_dt` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '수정일시',
@@ -138,7 +137,6 @@ CREATE TABLE `om_ord_inf` (
   `cntry_atcd` varchar(8) NOT NULL COMMENT '대상국가속성코드',
   `dealer_seq` int(11) NOT NULL COMMENT '딜러순번',
   `worker_uid` varchar(15) NOT NULL COMMENT '담당자ID',
-  `cmpy_nm` varchar(50) DEFAULT NULL COMMENT '회사명',
   `premium_rate` decimal(5,2) DEFAULT NULL COMMENT '할증요율',
   `tot_amt` decimal(14,2) DEFAULT NULL COMMENT '주문총금액',
   `cnfm_yn` char(1) CHARACTER SET latin1 DEFAULT NULL COMMENT '주문확정여부',
@@ -151,12 +149,11 @@ CREATE TABLE `om_ord_inf` (
   `udt_uid` varchar(50) DEFAULT NULL COMMENT '수정자ID',
   PRIMARY KEY (`pi_no`),
   KEY `om_ord_inf_ibfk_3` (`worker_uid`),
-  KEY `slip_sndmail_seq` (`slip_sndmail_seq`),
   KEY `dealer_seq` (`dealer_seq`,`cntry_atcd`),
+  KEY `slip_sndmail_seq` (`slip_sndmail_seq`),
   CONSTRAINT `om_ord_inf_ibfk_1` FOREIGN KEY (`dealer_seq`) REFERENCES `om_dealer` (`dealer_seq`),
   CONSTRAINT `om_ord_inf_ibfk_2` FOREIGN KEY (`worker_uid`) REFERENCES `om_worker` (`worker_uid`),
-  CONSTRAINT `om_ord_inf_ibfk_3` FOREIGN KEY (`slip_sndmail_seq`) REFERENCES `om_sndmail` (`sndmail_seq`),
-  CONSTRAINT `om_ord_inf_ibfk_4` FOREIGN KEY (`dealer_seq`, `cntry_atcd`) REFERENCES `om_dealer_cntry` (`dealer_seq`, `cntry_atcd`)
+  CONSTRAINT `om_ord_inf_ibfk_3` FOREIGN KEY (`slip_sndmail_seq`) REFERENCES `om_sndmail` (`sndmail_seq`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='주문정보';
 
 CREATE TABLE `om_ord_part` (
