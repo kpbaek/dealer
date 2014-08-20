@@ -89,9 +89,9 @@ Name<input type="text" name="searchId">
 			<td width="18%" class="style01">담당부서/담당자</td>
 			<td width="5%"><sup></sup></td>
 			<td width="27%">
-				<select name="team_cd">
+				<select name="team_cd" onchange="javascript:getWorkerCombo(this.value, document.addForm.worker_uid);" style="width: 120px;">
 				</select>
-				<select name="salesworker_id">
+				<select name="worker_uid">
 				</select>
 			</td>
 		  </tr>
@@ -110,20 +110,20 @@ Name<input type="text" name="searchId">
 			<td width="18%" class="style01">Bank Information</td>
 			<td width="5%"><sup></sup></td>
 			<td width="27%">
-				<select name="bank_inf">
+				<select name="bank_inf" style="width: 120px;">
 				</select>
 			</td>
 		  </tr>
 		  <tr>
 			<td class="style01">Address</td>
 			<td><sup>★</sup></td>
-			<td colspan=4><input type="text" id="invdate" name="delernm" size=119 style="border: 1"></td>
+			<td colspan=4><input type="text" id="invdate" name="delernm" size=122 style="border: 1"></td>
 		  </tr>
 		  <tr>
 			<td class="style01">국적</td>
 			<td><sup>★</sup></td>
 			<td>
-				<select name="nation_atcd">
+				<select name="nation_atcd" style="width: 240px;">
 				</select>
 			</td>
 			<td width="18%" class="style01">Tel</td>
@@ -159,7 +159,7 @@ Name<input type="text" name="searchId">
 			<td width="5%"><sup></sup></td>
 			<td width="27%">
 				<div class="form-group">
-			        <select id="cntry_atcd" name="cntry_atcd" multiple="multiple" class="form-control" style="width: 250px">
+			        <select id="cntry_atcd" name="cntry_atcd" multiple="multiple" class="form-control" style="width: 250px;">
 			        </select>
 			    </div>
 			</td>
@@ -174,7 +174,7 @@ Name<input type="text" name="searchId">
 			<td class="style01">Main customer</td>
 			<td><sup></sup></td>
 			<td class="column2 style14 s">
-				<select name="main_cust">
+				<select name="main_cust" style="width: 120px;">
 				</select>
 			</td>
 			<td colspan=3></td>
@@ -207,41 +207,9 @@ Name<input type="text" name="searchId">
 
 </div>
 
-    <input id="refreshInput" type="text" required="required" />
-    <button id="refreshAdd">Add + Refresh</button>
-    <br />
-    <label><input id="refreshSelected" type="checkbox" />Selected?</label>
-    <label><input id="refreshDisabled" type="checkbox" />Disabled?</label>
-    <select id="test" name="test" multiple="multiple">
-    </select>
-    <select id="test2" name="test" multiple="multiple">
-    <option>11111111</option>
-    </select>
     
 </body>
 <script type="text/javascript">
-
-var select = $("#test2"),
-value = "test",
-t1 = $("<option />", {
-		                    value: value,
-		                    text: value
-		                });
-select.append(t1).multipleSelect("refresh");
-
-
-
-
-//        $("select").multipleSelect();
-        $("#refreshAdd").click(function() {
-            var $select = $("select"),
-                value = "test",
-                $opt = $("<option />", {
-						                    value: value,
-						                    text: value
-						                });
-            $select.append($opt).multipleSelect("refresh");
-        });
 
 	jQuery().ready(function () {
 		var targetUrl = "/admin/manage/listDealer";
@@ -322,16 +290,11 @@ select.append(t1).multipleSelect("refresh");
 	
     $("#cntry_atcd").multipleSelect({
             selectAll: false
-            ,multipleWidth: 140
+//            ,multipleWidth: "70"
     });	
     
 	$(function() {
 	    $('#cntry_atcd').change(function() {
-			var opt = $("<option />", {
-	            value: "1111",
-	            text: "2222"
-	        });
-	    	$('#cntry_atcd').append(opt).multipleSelect("refresh");
 		    console.log($(this).val());
 	    }).multipleSelect();
 	});
@@ -347,9 +310,10 @@ select.append(t1).multipleSelect("refresh");
 	
 	function initForm() {
 		var f = document.addForm;
-		getCodeCombo("02", f.team_cd);
+		getCodeCombo("0060", f.team_cd);
 		getCodeCombo("0021", f.nation_atcd);
-		var selAr =  ["kr", "fr"];
+		
+		var selAr =  ["kr"];
 		getCodeMultiCombo("0022", $('#cntry_atcd'), selAr);
 /*
 		var $opt = ("<option />", {
@@ -358,7 +322,7 @@ select.append(t1).multipleSelect("refresh");
         });
     	$('#cntry_atcd').append($opt).multipleSelect("refresh");
 */    	
-		getCodeCombo("02", f.salesworker_id);
+//		getWorkerCombo("00600SL0", f.worker_uid);
 		getCodeCombo("02", f.cdDtl);
 		getCodeCombo("0050", f.bank_inf);
 		getCodeCombo("0120", f.main_cust);
