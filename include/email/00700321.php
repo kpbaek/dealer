@@ -334,11 +334,11 @@ body { left-margin: 0.15748031496063in; right-margin: 0.15748031496063in; top-ma
 				<table width=100%>
 				<tr class="row6">
 					<td class="column1 style101 s style101" height="40px">&nbsp;● PI No.</td>
-					<td class="column2 style110 n style110" colspan="2" >PI-131224-1</td>
+					<td class="column2 style110 n style110" colspan="2" >PI-14LB0001</td>
 				</tr>
 				<tr class="row6">
 					<td class="column1 style101 s style101" height="40px">&nbsp;● Ref No.</td>
-					<td class="column2 style109 f style109" colspan="2">SWP-131224-1</td>
+					<td class="column2 style109 f style109" colspan="2">SWP-320001</td>
 				</tr>
 				<tr class="row6">
 					<td class="column1 style101 s style101" height="40px">&nbsp;● SB-1100</td>

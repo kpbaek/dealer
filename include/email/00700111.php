@@ -39,11 +39,11 @@
 		  </tr>
 		  <tr height="5px">
 			<td width="15%" class="style01" colspan=2>Date</td>
-			<td width="10%">2004-03-14</td>
+			<td width="10%">2014-11-11</td>
 			<td width="10%"></td>
 			<td width="10%"></td>
 			<td width="15%" class="style01">Dest Country</td>
-			<td width="10%" colspan=3>Democratic Republic of the Congo (Kinshasa)	
+			<td width="10%" colspan=3>China	
 			</td>
 			<td width="5%"></td>
 		  </tr>
@@ -57,33 +57,43 @@
 		  </tr>
 		  <tr>
 		  	<td class="style01" colspan=2>No.</td>
-			<td>SWM-1204-07</td>
+			<td>SWM-310001</td>
 			<td colspan=2></td>
 			<td class="style01">P/O NO.</td>
-			<td>15220</td>
+			<td>110001</td>
 			<td colspan=3></td>
 		  </tr>
 		  <tr>
 			<td class="style01" colspan=2>P/I NO. </td>
-			<td>PI-120403-2</td>
+			<td>PI-14CN0001</td>
 			<td colspan=2></td>
 			<td class="style01">Q'TY</td>
 			<td>20</td>
 			<td colspan=3></td>
 		  </tr>
 		  <tr>
-			<td rowspan="2" class="style01" colspan=2>Currency</td>
-		  	<td colspan=8>RSD EUR USD GBP CHF RSD EUR USD GBP CHF RSD EUR USD GBP CHF </td>
-		  </tr>
-		  <tr>
-			<td colspan=3>
-			    <div class="form-group">
-			    </div>
+			<td class="style01" colspan=2>Currency</td>
+		  	<td colspan=3>AED
+AFN
+ALL
+AMD
+ANG
+AOA
 			</td>
 			<td class="style01">Serial Number</td>
 			<td class="style01">P-OCR
 			</td>
-			<td colspan=3>RSD EUR USD GBP CHF RSD EUR USD GBP CHF RSD EUR USD GBP CHF
+			<td colspan=3>AED
+AFN
+ALL
+AMD
+ANG
+AOA
+ARS
+AUD
+AWG
+AZN
+BAM
 			</td>
 		  </tr>
 		  <tr>
@@ -128,12 +138,12 @@
 			<td colspan=3>courrier FedEx
 			</td>
 			<td class="style01">Account no</td>
-			<td></td>
-			<td colspan=5>1111</td>
+			<td>1111111111111</td>
+			<td colspan=5></td>
 		  </tr>
 		  <tr>
 			<td class="style01" colspan=2>Delivery</td>
-			<td colspan=3>2014-08-21</td>
+			<td colspan=3>2014-12-21</td>
 			<td class="style01">Payment</td>
 			<td>T/T in advance
 			</td>

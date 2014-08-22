@@ -351,7 +351,7 @@ body { left-margin: 0.43307086614173in; right-margin: 0.39370078740157in; top-ma
 			<td class="column1 style1 s" colspan="8">SB1100 Spare Parts Order Confirmation (Ver.2014.03.14)</td>
 		  </tr>
 		  <tr class="row1">
-			<td class="column1 " colspan=8>P/I NO. : PI-14AG001, &nbsp;&nbsp;&nbsp;&nbsp;Dest Country : Angola</td>
+			<td class="column1 " colspan=8>P/I NO. : PI-14AG0001, &nbsp;&nbsp;&nbsp;&nbsp;Dest Country : Angola</td>
 		  </tr>
 		
 				  
@@ -373,8 +373,8 @@ body { left-margin: 0.43307086614173in; right-margin: 0.39370078740157in; top-ma
 			<td class="column4 style17 n">$ 46.00</td>
 			<td class="column5 style17 n">&nbsp;1</td>
 			<td class="column6 style17 n">$ 46</td>
-			<td class="column7 style17 n">&nbsp;22 Kg</td>
-			<td class="column8 style10 s">&nbsp;11</td>
+			<td class="column7 style17 n">&nbsp;22.0 Kg</td>
+			<td class="column8 style10 s">&nbsp;</td>
 		  </tr>
 
 
@@ -400,15 +400,14 @@ body { left-margin: 0.43307086614173in; right-margin: 0.39370078740157in; top-ma
 		  </tr>
 		  <tr class="row262">
 			<td class="column0 style15 s">SB-1100</td>
-			<td class="column2 style15 s">9000F020XA</td>
-			<td class="column3 style16 s">SNOW_BOX</td>
-			<td class="column4 style17 n">$ 6.00</td>
+			<td class="column2 style15 s">1A00X2038A</td>
+			<td class="column3 style16 s">ASS'Y_SEPARATOR</td>
+			<td class="column4 style17 n">$ 65.00</td>
 			<td class="column5 style17 n">&nbsp;1</td>
-			<td class="column6 style17 n">$ 6</td>
+			<td class="column6 style17 n">$ 65.00</td>
 			<td class="column7 style19 null">&nbsp;</td>
-			<td class="column8 style10 s">&nbsp;</td>
+			<td class="column8 style10 s">Included SHAFT_HINGE_TOP</td>
 		  </tr>
-		  
 		  <tr class="row269">
 			<td class="column0">&nbsp;</td>
 			<td class="column2 style49 null"></td>
@@ -422,10 +421,10 @@ body { left-margin: 0.43307086614173in; right-margin: 0.39370078740157in; top-ma
 		  <tr class="row280">
 			<td class="column0">&nbsp;</td>
 			<td class="column2 style11 s" colspan=2>GRAND TOTAL</td>
-			<td class="column4 style17 n">$ 60</td>
+			<td class="column4 style17 n">$ 129.50</td>
 			<td class="column5 style68 f">6</td>
-			<td class="column6 style63 f">$ 69</td>
-			<td class="column7 style63 f">22 Kg</td>
+			<td class="column6 style63 f">$ 138.00</td>
+			<td class="column7 style63 f">22.0 Kg</td>
 			<td class="column8">&nbsp;</td>
 		  </tr>
 		  <tr class="row270">
@@ -445,18 +444,16 @@ body { left-margin: 0.43307086614173in; right-margin: 0.39370078740157in; top-ma
 			<td class="column0 style10 s">MODEL</td>
 			<td class="column2 style10 s">CODE</td>
 			<td class="column3 style10 s">Part name</td>
-			<td class="column4 style10 s">Ver(P/I NO)</td>
 			<td class="column5 style12 s">Q'ty</td>
-			<td class="column6 style13 s" colspan=2>Dest Country</td>
-			<td class="column8 style10 s">Remark</td>
+			<td class="column6 style13 s" colspan=3>P/I NO or Destination</td>
+			<td class="column8 style10 s" colspan=2>Remark</td>
 		  </tr>
 		  <tr class="row273">
 			<td class="column0 style10 s">&nbsp;</td>
 			<td class="column2 style9 null">&nbsp;</td>
 			<td class="column3 style9 null">&nbsp;</td>
 			<td class="column4 style17 null">&nbsp;</td>
-			<td class="column5 style13 null">&nbsp;</td>
-			<td class="column6 style19 f" colspan=2>&nbsp;</td>
+			<td class="column5 style13 null" colspan=3>&nbsp;</td>
 			<td class="column8 style10 s">&nbsp;</td>
 		  </tr>
 		  <tr class="row274">
@@ -464,8 +461,7 @@ body { left-margin: 0.43307086614173in; right-margin: 0.39370078740157in; top-ma
 			<td class="column2 style9 null">&nbsp;</td>
 			<td class="column3 style9 null">&nbsp;</td>
 			<td class="column4 style17 null">&nbsp;</td>
-			<td class="column5 style13 null">&nbsp;</td>
-			<td class="column6 style19 f" colspan=2>&nbsp;</td>
+			<td class="column5 style13 null" colspan=3>&nbsp;</td>
 			<td class="column8 style10 s">&nbsp;</td>
 		  </tr>
 		  <tr class="row276">

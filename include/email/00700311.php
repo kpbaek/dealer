@@ -65,9 +65,9 @@ body { left-margin: 0.7in; right-margin: 0.7in; top-margin: 0.75in; bottom-margi
 		  </tr>
 		  <tr>
 			<td colspan="3" width=15% class="style01">문서번호</td>
-			<td colspan="5" width="25%" class="style03">SWM-1202-19</td>
+			<td colspan="5" width="25%" class="style03">SWM-310001</td>
 			<td colspan="2" width=10% class="style01">P/I NO. </td>
-			<td colspan="3" class="style03">PI-120210-2</td>
+			<td colspan="3" class="style03">PI-14AT0001</td>
 			<td colspan="2" class="style06">작성일</td>
 			<td colspan="4" class="style03">2012-02-10</td>
 		  </tr>
@@ -79,7 +79,7 @@ body { left-margin: 0.7in; right-margin: 0.7in; top-margin: 0.75in; bottom-margi
 		  </tr>
 		  <tr>
 			<td colspan="3" width=10% class="style01">MODEL</td>
-			<td colspan="10" width="30%" align=center>SB-2000</td>
+			<td colspan="10" width="30%" align=center>SB-7</td>
 			<td colspan="2" class="style01">Q'TY</td>
 			<td colspan="4" align=center>30</td>
 		  </tr>
@@ -216,6 +216,7 @@ body { left-margin: 0.7in; right-margin: 0.7in; top-margin: 0.75in; bottom-margi
 					<TD align=center>X</TD>
 				</TR>
 				<!-- SB-9 -->
+<!-- 				
 				<TR>
 					<TD rowspan=3 class="style01" width=30px>SW</TD>
 					<TD class="style01" width=160px>Dispenser Mode</TD>
@@ -250,7 +251,9 @@ body { left-margin: 0.7in; right-margin: 0.7in; top-margin: 0.75in; bottom-margi
 					<TD class="style01">SDP-7</TD>
 					<TD align=center>X</TD>
 				</TR>
+-->				
 				<!-- SB-2000 -->
+<!--				
 				<TR>
 					<TD rowspan=3 class="style01" width=30px>SW</TD>
 					<TD class="style01" width=160px>Dispenser Mode</TD>
@@ -285,7 +288,9 @@ body { left-margin: 0.7in; right-margin: 0.7in; top-margin: 0.75in; bottom-margi
 					<TD class="style01">SDP-7</TD>
 					<TD align=center>X</TD>
 				</TR>
+-->				
 				<!-- SB-3000 -->
+<!--				
 				<TR>
 					<TD rowspan=3 class="style01" width=30px>SW</TD>
 					<TD class="style01" width=160px>Dispenser Mode</TD>
@@ -324,6 +329,7 @@ body { left-margin: 0.7in; right-margin: 0.7in; top-margin: 0.75in; bottom-margi
 					<TD class="style01">SDP-7</TD>
 					<TD align=center>X</TD>
 				</TR>
+-->				
 				<TR>
 					<TD class="style01" width=35px>기타</TD>
 					<TD class="style01" width=160px>특이사항</TD>
@@ -365,7 +371,7 @@ body { left-margin: 0.7in; right-margin: 0.7in; top-margin: 0.75in; bottom-margi
 		  </tr>
 		  <tr>
 		    <td colspan=5 class="style01">User's Manual</td>
-			<td colspan=13 align=center>영문, SB-2000용
+			<td colspan=13 align=center>영문, SB-7용
 			</td>
 		  </tr>
 		  <tr>

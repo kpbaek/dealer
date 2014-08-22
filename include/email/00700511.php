@@ -132,7 +132,7 @@ body { left-margin: 0.35433070866142in; right-margin: 0.31496062992126in; top-ma
 		  </tr>
 		  <tr class="row2">
 			<td class="column0 style4 null"></td>
-			<td class="column1 style58 f style58" colspan="3" style="text-decoration:underline;">청구 번호 : SWD-140321-7</td>
+			<td class="column1 style58 f style58" colspan="3" style="text-decoration:underline;">청구 번호 : SWD-14LN0001</td>
 			<td class="column6 style59 f style59" colspan="2" style="text-decoration:underline;">출고 일자: &nbsp;2014. 04. 07</td>
 			<td class="column8 style6 null"></td>
 		  </tr>
@@ -181,8 +181,8 @@ body { left-margin: 0.35433070866142in; right-margin: 0.31496062992126in; top-ma
 			<td class="column1 style9 n">1</td>
 			<td class="column2 style10 s">SB-9RL</td>
 			<td class="column3 style9 n">40</td>
-			<td class="column4 style11 n">PI-140321-7</td>
-			<td class="column5 style12 n">SWM-1403-51</td>
+			<td class="column4 style11 n">PI-14LN0001</td>
+			<td class="column5 style12 n">SWM-310001</td>
 			<td class="column6 style13 n"></td>
 			<td class="column7 style14 null"></td>
 			<td class="column8 style6 null"></td>
@@ -195,8 +195,8 @@ body { left-margin: 0.35433070866142in; right-margin: 0.31496062992126in; top-ma
 			<td class="column1 style9 n">2</td>
 			<td class="column2 style10 null">SB-1100</td>
 			<td class="column3 style9 null">3</td>
-			<td class="column4 style11 null">PI-140321-7</td>
-			<td class="column5 style12 null">SWM-1403-52</td>
+			<td class="column4 style11 null">PI-14LN0001</td>
+			<td class="column5 style12 null">SWM-310002</td>
 			<td class="column6 style13 null"></td>
 			<td class="column7 style9 null"></td>
 			<td class="column8 style6 null"></td>

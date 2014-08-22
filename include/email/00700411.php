@@ -524,7 +524,7 @@ body { left-margin: 0.19685039370079in; right-margin: 0.19685039370079in; top-ma
 			<td class="column23 style14 null">6F, Hyunwoo Bld, 206, Anyang-Dong</td>
 			<td class="column23 style11 null"></td>
 			<td class="column24 style1 s">Invoice No :</td>
-			<td class="column31 style217 n style217" width=90px>SWI-140321-7</td>
+			<td class="column31 style217 n style217" width=90px>SWI-14LB0001</td>
 			<td class="column42 style13 null"></td>
 		  </tr>
 		  <tr class="row2">
@@ -538,7 +538,7 @@ body { left-margin: 0.19685039370079in; right-margin: 0.19685039370079in; top-ma
 			<td class="column23 style14 null">430-817, KOREA</td>
 			<td class="column23 style02 null"></td>
 			<td class="column24 style01 s">&nbsp;&nbsp;&nbsp;&nbsp;PI no.:</td>
-			<td class="column31 style01 s">PI-140321-7</td>
+			<td class="column31 style01 s">PI-14LB0001</td>
 			<td class="column42 style13 null"></td>
 		  </tr>
 		  <tr class="row1">
