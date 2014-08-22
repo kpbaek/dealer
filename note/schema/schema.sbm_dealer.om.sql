@@ -83,7 +83,7 @@ CREATE TABLE `om_mdl` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='모델정보';
 
 CREATE TABLE `om_ord_eqp` (
-  `pi_no` varchar(7) NOT NULL COMMENT 'PI번호',
+  `pi_no` varchar(8) NOT NULL COMMENT 'PI번호',
   `po_no` int(11) NOT NULL AUTO_INCREMENT COMMENT '주문번호',
   `mdl_cd` varchar(4) DEFAULT NULL COMMENT '모델코드',
   `srl_atcd` varchar(8) DEFAULT NULL COMMENT '시리얼넘버속성코드',
@@ -117,7 +117,7 @@ CREATE TABLE `om_ord_eqp` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='주문장비정보';
 
 CREATE TABLE `om_ord_eqp_dtl` (
-  `pi_no` varchar(7) NOT NULL COMMENT 'PI번호',
+  `pi_no` varchar(8) NOT NULL COMMENT 'PI번호',
   `po_no` int(11) NOT NULL COMMENT '주문번호',
   `cd` varchar(4) NOT NULL COMMENT '코드',
   `atcd` varchar(8) NOT NULL COMMENT '속성코드',
@@ -133,7 +133,7 @@ CREATE TABLE `om_ord_eqp_dtl` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='주문장비상세';
 
 CREATE TABLE `om_ord_inf` (
-  `pi_no` varchar(7) NOT NULL COMMENT 'PI번호',
+  `pi_no` varchar(8) NOT NULL COMMENT 'PI번호',
   `cntry_atcd` varchar(8) NOT NULL COMMENT '대상국가속성코드',
   `dealer_seq` int(11) NOT NULL COMMENT '딜러순번',
   `worker_seq` int(11) NOT NULL COMMENT '담당자순번',
@@ -152,12 +152,12 @@ CREATE TABLE `om_ord_inf` (
   KEY `dealer_seq` (`dealer_seq`,`cntry_atcd`),
   KEY `slip_sndmail_seq` (`slip_sndmail_seq`),
   CONSTRAINT `om_ord_inf_ibfk_1` FOREIGN KEY (`dealer_seq`) REFERENCES `om_dealer` (`dealer_seq`),
-  CONSTRAINT `om_ord_inf_ibfk_2` FOREIGN KEY (`worker_seq`) REFERENCES `om_dealer` (`dealer_seq`),
+  CONSTRAINT `om_ord_inf_ibfk_2` FOREIGN KEY (`worker_seq`) REFERENCES `om_worker` (`worker_seq`),
   CONSTRAINT `om_ord_inf_ibfk_3` FOREIGN KEY (`slip_sndmail_seq`) REFERENCES `om_sndmail` (`sndmail_seq`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='주문정보';
 
 CREATE TABLE `om_ord_part` (
-  `pi_no` varchar(7) NOT NULL COMMENT 'PI번호',
+  `pi_no` varchar(8) NOT NULL COMMENT 'PI번호',
   `swp_no` int(11) NOT NULL AUTO_INCREMENT COMMENT 'SWP번호',
   `amt` decimal(13,2) unsigned DEFAULT NULL COMMENT '주문금액',
   `wgt` decimal(7,2) unsigned DEFAULT NULL COMMENT '중량',
@@ -169,11 +169,12 @@ CREATE TABLE `om_ord_part` (
   PRIMARY KEY (`pi_no`,`swp_no`),
   UNIQUE KEY `swp_no` (`swp_no`),
   KEY `om_ord_part_ibfk_2` (`sndmail_seq`),
-  CONSTRAINT `om_ord_part_ibfk_1` FOREIGN KEY (`pi_no`) REFERENCES `om_ord_inf` (`pi_no`)
+  CONSTRAINT `om_ord_part_ibfk_1` FOREIGN KEY (`pi_no`) REFERENCES `om_ord_inf` (`pi_no`),
+  CONSTRAINT `om_ord_part_ibfk_2` FOREIGN KEY (`sndmail_seq`) REFERENCES `om_sndmail` (`sndmail_seq`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='주문부품정보';
 
 CREATE TABLE `om_ord_part_dtl` (
-  `pi_no` varchar(7) NOT NULL COMMENT 'PI번호',
+  `pi_no` varchar(8) NOT NULL COMMENT 'PI번호',
   `swp_no` int(11) NOT NULL COMMENT 'SWP번호',
   `mdl_cd` varchar(4) NOT NULL COMMENT '모델코드',
   `part_ver` varchar(8) NOT NULL COMMENT '부품버전',
@@ -193,7 +194,7 @@ CREATE TABLE `om_ord_part_dtl` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='주문부품상세';
 
 CREATE TABLE `om_packing` (
-  `pi_no` varchar(7) NOT NULL COMMENT 'PI번호',
+  `pi_no` varchar(8) NOT NULL COMMENT 'PI번호',
   `eqp_carton_no` varchar(8) DEFAULT NULL COMMENT '장비카톤번호',
   `part_carton_no` varchar(8) DEFAULT NULL COMMENT '부품카톤번호',
   `repr_carton_no` varchar(8) DEFAULT NULL COMMENT '수리품카톤번호',
@@ -238,7 +239,7 @@ CREATE TABLE `om_part` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='부품정보';
 
 CREATE TABLE `om_part_ship_req` (
-  `pi_no` varchar(7) NOT NULL COMMENT 'PI번호',
+  `pi_no` varchar(8) NOT NULL COMMENT 'PI번호',
   `swp_no` int(11) NOT NULL COMMENT 'SWP번호',
   `buyer` varchar(100) NOT NULL COMMENT '바이어',
   `ctnt` varchar(1000) DEFAULT NULL COMMENT '추가내용',
@@ -254,7 +255,7 @@ CREATE TABLE `om_part_ship_req` (
 
 CREATE TABLE `om_prd_req` (
   `swm_no` int(11) NOT NULL AUTO_INCREMENT COMMENT 'SWM번호',
-  `pi_no` varchar(7) NOT NULL COMMENT 'PI번호',
+  `pi_no` varchar(8) NOT NULL COMMENT 'PI번호',
   `po_no` int(11) NOT NULL COMMENT '주문번호',
   `qual_ship_dt` varchar(8) DEFAULT NULL COMMENT '품질출하일',
   `qual_trans_dt` varchar(8) DEFAULT NULL COMMENT '품질이관일',
