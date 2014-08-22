@@ -87,13 +87,13 @@
 	  td.style69 { vertical-align:middle; text-align:center; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; color:#000000; font-family:'Arial'; font-size:10pt; background-color:white }
 	  td.style70 { vertical-align:bottom; text-align:center; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; color:#000000; font-family:'Arial'; font-size:10pt; background-color:white }
 	  td.style71 { vertical-align:bottom; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; color:#000000; font-family:'Arial'; font-size:10pt; background-color:white }
-	  table.sheet0 col.col0 { width:42.69999951pt }
-	  table.sheet0 col.col1 { width:29.82222188pt }
-	  table.sheet0 col.col2 { width:81.3333324pt }
-	  table.sheet0 col.col3 { width:204.68888654pt }
-	  table.sheet0 col.col4 { width:91.49999895pt }
-	  table.sheet0 col.col5 { width:26.43333303pt }
-	  table.sheet0 col.col6 { width:45.41111059pt }
+	  table.sheet0 col.col0 { width:45.69999951pt }
+	  table.sheet0 col.col1 { width:75.82222188pt }
+	  table.sheet0 col.col2 { width:204.3333324pt }
+	  table.sheet0 col.col3 { width:81.68888654pt }
+	  table.sheet0 col.col4 { width:51.49999895pt }
+	  table.sheet0 col.col5 { width:66.43333303pt }
+	  table.sheet0 col.col6 { width:65.41111059pt }
 	  table.sheet0 col.col7 { width:143.01110947pt }
 	  table.sheet0 col.col8 { width:16.94444425pt }
 	  table.sheet0 col.col9 { width:42.69999951pt }
@@ -335,7 +335,7 @@
 @page { left-margin: 0.43307086614173in; right-margin: 0.39370078740157in; top-margin: 0.98425196850394in; bottom-margin: 0.86614173228346in; }
 body { left-margin: 0.43307086614173in; right-margin: 0.39370078740157in; top-margin: 0.98425196850394in; bottom-margin: 0.86614173228346in; }
 </style>
-	<table border="1" cellpadding="0" cellspacing="0" id="sheet0" class="sheet0">
+	<table border="0" cellpadding="0" cellspacing="0" id="sheet0" class="sheet0">
 		<col class="col0">
 		<col class="col1">
 		<col class="col2">
@@ -348,119 +348,69 @@ body { left-margin: 0.43307086614173in; right-margin: 0.39370078740157in; top-ma
 		<col class="col9">
 		<tbody>
 		  <tr class="row0">
-			<td class="column0 style1 s" colspan="8">SB1100 Spare Parts Order Confirmation (20130912)</td>
-			<td class="column8">&nbsp;</td>
-			<td class="column9">&nbsp;</td>
+			<td class="column1 style1 s" colspan="8">SB1100 Spare Parts Order Confirmation (Ver.2014.03.14)</td>
 		  </tr>
 		  <tr class="row1">
-			<td class="column0 style4 s" colspan=9>To order spare parts, please input quantity and send us this form.</td>
-			<td class="column1 style5 null"></td>
+			<td class="column1 " colspan=8>P/I NO. : PI-14AG001, &nbsp;&nbsp;&nbsp;&nbsp;Dest Country : Angola</td>
 		  </tr>
 		
 				  
 		  <tr class="row2">
 			<td class="column0 style9 s">Model</td>
-			<td class="column1 style9 s">S/N</td>
 			<td class="column2 style10 s">CODE</td>
 			<td class="column3 style11 s">Part name</td>
-			<td class="column4 style12 s">@Price<br />
-(EXW)</td>
-			<td class="column5 style10 s">Q'ty</td>
+			<td class="column4 style10 s">@Price(EXW)</td>
+			<td class="column5 style12 s">Q'ty</td>
 			<td class="column6 style13 s">Amount</td>
 			<td class="column7 style10 s">Unit Weight</td>
-			<td class="column8">Remark</td>
-			<td class="column9">&nbsp;</td>
+			<td class="column8 style10 s">Remark</td>
+			
 		  </tr>
 		  <tr class="row3">
 			<td class="column0 style15 s">SB-1100</td>
-			<td class="column1 style15 n">1</td>
 			<td class="column2 style15 s">1A01X3061A</td>
 			<td class="column3 style16 s">ASS`Y_BRAKE_2</td>
 			<td class="column4 style17 n">$ 46.00</td>
-			<td class="column5 style18 null"></td>
-			<td class="column6 style19 f">0</td>
-			<td class="column7 style20 null"></td>
-			<td class="column8">&nbsp;</td>
-			<td class="column9">&nbsp;</td>
+			<td class="column5 style17 n">&nbsp;1</td>
+			<td class="column6 style17 n">$ 46</td>
+			<td class="column7 style17 n">&nbsp;22 Kg</td>
+			<td class="column8 style10 s">&nbsp;11</td>
 		  </tr>
 
 
 		  <tr class="row260">
 			<td class="column0 style15 s">SB-1100</td>
-			<td class="column1 style15 n">258</td>
 			<td class="column2 style15 s">7000B045XA</td>
 			<td class="column3 style16 s">POWER_CORD_220V</td>
 			<td class="column4 style17 n">$ 5.00</td>
-			<td class="column5 style18 null"></td>
-			<td class="column6 style19 f">0</td>
-			<td class="column7 style20 null"></td>
-			<td class="column8">&nbsp;</td>
-			<td class="column9">&nbsp;</td>
+			<td class="column5 style17 n">&nbsp;2</td>
+			<td class="column6 style17 n">$ 10</td>
+			<td class="column7 style19 null">&nbsp;</td>
+			<td class="column8 style10 s">&nbsp;</td>
 		  </tr>
 		  <tr class="row261">
 			<td class="column0 style15 s">SB-1100</td>
-			<td class="column1 style15 n">259</td>
 			<td class="column2 style15 s">7000C046XA</td>
 			<td class="column3 style16 s">SERIAL_CABLE</td>
 			<td class="column4 style17 n">$ 3.50</td>
-			<td class="column5 style18 null"></td>
-			<td class="column6 style19 f">0</td>
-			<td class="column7 style20 null"></td>
-			<td class="column8">&nbsp;</td>
-			<td class="column9">&nbsp;</td>
+			<td class="column5 style17 n">&nbsp;2</td>
+			<td class="column6 style17 n">$ 7</td>
+			<td class="column7 style17 n">&nbsp;</td>
+			<td class="column8 style10 s">&nbsp;</td>
 		  </tr>
 		  <tr class="row262">
 			<td class="column0 style15 s">SB-1100</td>
-			<td class="column1 style15 n">260</td>
 			<td class="column2 style15 s">9000F020XA</td>
 			<td class="column3 style16 s">SNOW_BOX</td>
 			<td class="column4 style17 n">$ 6.00</td>
-			<td class="column5 style18 null"></td>
-			<td class="column6 style19 f">0</td>
-			<td class="column7 style20 null"></td>
-			<td class="column8">&nbsp;</td>
-			<td class="column9">&nbsp;</td>
+			<td class="column5 style17 n">&nbsp;1</td>
+			<td class="column6 style17 n">$ 6</td>
+			<td class="column7 style19 null">&nbsp;</td>
+			<td class="column8 style10 s">&nbsp;</td>
 		  </tr>
-		  <tr class="row263">
-			<td class="column0 style15 s">SB-1100</td>
-			<td class="column1 style15 n">261</td>
-			<td class="column2 style15 s">9001A021XA</td>
-			<td class="column3 style16 s">CARTON_BOX_SB1100(ENG)</td>
-			<td class="column4 style17 n">$ 8.50</td>
-			<td class="column5 style18 null"></td>
-			<td class="column6 style19 f">0</td>
-			<td class="column7 style20 null"></td>
-			<td class="column8">&nbsp;</td>
-			<td class="column9">&nbsp;</td>
-		  </tr>
-		  <tr class="row264">
-			<td class="column0 style15 s">SB-1100</td>
-			<td class="column1 style15 n">262</td>
-			<td class="column2 style45 s">-</td>
-			<td class="column3 style46 s">&nbsp;MOTOR SHADING SHEET</td>
-			<td class="column4 style17 n">$ 0.10</td>
-			<td class="column5 style18 null"></td>
-			<td class="column6 style19 f">0</td>
-			<td class="column7 style20 null"></td>
-			<td class="column8">&nbsp;</td>
-			<td class="column9">&nbsp;</td>
-		  </tr>
-		  <tr class="row265">
-			<td class="column0 style15 s">SB-1100</td>
-			<td class="column1 style15 n">263</td>
-			<td class="column2 style45 s">-</td>
-			<td class="column3 style46 s">&nbsp;CIS SHADING SHEET</td>
-			<td class="column4 style17 n">$ 0.10</td>
-			<td class="column5 style18 null"></td>
-			<td class="column6 style19 f">0</td>
-			<td class="column7 style20 null"></td>
-			<td class="column8">&nbsp;</td>
-			<td class="column9">&nbsp;</td>
-		  </tr>
-
+		  
 		  <tr class="row269">
 			<td class="column0">&nbsp;</td>
-			<td class="column1">&nbsp;</td>
 			<td class="column2 style49 null"></td>
 			<td class="column3 style50 null"></td>
 			<td class="column4 style51 null"></td>
@@ -468,11 +418,18 @@ body { left-margin: 0.43307086614173in; right-margin: 0.39370078740157in; top-ma
 			<td class="column6 style53 null"></td>
 			<td class="column7 style52 null"></td>
 			<td class="column8">&nbsp;</td>
-			<td class="column9">&nbsp;</td>
+		  </tr>
+		  <tr class="row280">
+			<td class="column0">&nbsp;</td>
+			<td class="column2 style11 s" colspan=2>GRAND TOTAL</td>
+			<td class="column4 style17 n">$ 60</td>
+			<td class="column5 style68 f">6</td>
+			<td class="column6 style63 f">$ 69</td>
+			<td class="column7 style63 f">22 Kg</td>
+			<td class="column8">&nbsp;</td>
 		  </tr>
 		  <tr class="row270">
 			<td class="column0">&nbsp;</td>
-			<td class="column1">&nbsp;</td>
 			<td class="column2">&nbsp;</td>
 			<td class="column3">&nbsp;</td>
 			<td class="column4">&nbsp;</td>
@@ -480,68 +437,39 @@ body { left-margin: 0.43307086614173in; right-margin: 0.39370078740157in; top-ma
 			<td class="column6">&nbsp;</td>
 			<td class="column7">&nbsp;</td>
 			<td class="column8">&nbsp;</td>
-			<td class="column9">&nbsp;</td>
 		  </tr>
 		  <tr class="row271">
-			<td class="column0" colspan=2>&nbsp;</td>
-			<td class="column2 style54 s" colspan=3>To order other unlisted parts, please fill in the blank and send us. Codes will be filled by us when confirming the order.</td>
-			<td class="column3 style55 null"></td>
-			<td class="column4 style56 null"></td>
-			<td class="column5 style57 null"></td>
-			<td class="column6 style14 null"></td>
-			<td class="column9">&nbsp;</td>
+			<td class="column2 style54 s" colspan=8>To order other unlisted parts, please fill in the blank and send us. Codes will be filled by us when confirming the order.</td>
 		  </tr>
 		  <tr class="row272">
-			<td class="column0">&nbsp;</td>
-			<td class="column1">&nbsp;</td>
+			<td class="column0 style10 s">MODEL</td>
 			<td class="column2 style10 s">CODE</td>
 			<td class="column3 style10 s">Part name</td>
-			<td class="column4 style10 null"></td>
-			<td class="column5 style10 s">Q'ty</td>
-			<td class="column6 style13 s">Amount</td>
-			<td class="column7 style10 s"></td>
+			<td class="column4 style10 s">Ver(P/I NO)</td>
+			<td class="column5 style12 s">Q'ty</td>
+			<td class="column6 style13 s" colspan=2>Dest Country</td>
 			<td class="column8 style10 s">Remark</td>
-			<td class="column9 style10 s">Remark</td>
 		  </tr>
 		  <tr class="row273">
-			<td class="column0">&nbsp;</td>
-			<td class="column1">&nbsp;</td>
-			<td class="column2 style9 null"></td>
-			<td class="column3 style9 null"></td>
-			<td class="column4 style17 null"></td>
-			<td class="column5 style59 null"></td>
-			<td class="column6 style19 f">0</td>
-			<td class="column7 style60 null"></td>
+			<td class="column0 style10 s">&nbsp;</td>
+			<td class="column2 style9 null">&nbsp;</td>
+			<td class="column3 style9 null">&nbsp;</td>
+			<td class="column4 style17 null">&nbsp;</td>
+			<td class="column5 style13 null">&nbsp;</td>
+			<td class="column6 style19 f" colspan=2>&nbsp;</td>
 			<td class="column8 style10 s">&nbsp;</td>
-			<td class="column9 style10 s">&nbsp;</td>
 		  </tr>
 		  <tr class="row274">
-			<td class="column0">&nbsp;</td>
-			<td class="column1">&nbsp;</td>
-			<td class="column2 style9 null"></td>
-			<td class="column3 style9 null"></td>
-			<td class="column4 style17 null"></td>
-			<td class="column5 style61 null"></td>
-			<td class="column6 style19 f">0</td>
-			<td class="column7 style60 null"></td>
+			<td class="column0 style10 s">&nbsp;</td>
+			<td class="column2 style9 null">&nbsp;</td>
+			<td class="column3 style9 null">&nbsp;</td>
+			<td class="column4 style17 null">&nbsp;</td>
+			<td class="column5 style13 null">&nbsp;</td>
+			<td class="column6 style19 f" colspan=2>&nbsp;</td>
 			<td class="column8 style10 s">&nbsp;</td>
-			<td class="column9 style10 s">&nbsp;</td>
-		  </tr>
-		  <tr class="row275">
-			<td class="column0">&nbsp;</td>
-			<td class="column1">&nbsp;</td>
-			<td class="column2 style10 s">SUB TOTAL</td>
-			<td class="column3 style9 null"></td>
-			<td class="column4 style25 null"></td>
-			<td class="column5 style62 f">0</td>
-			<td class="column6 style63 f">0</td>
-			<td class="column7 style60 null"></td>
-			<td class="column8 style10 s">&nbsp;</td>
-			<td class="column9 style10 s">&nbsp;</td>
 		  </tr>
 		  <tr class="row276">
 			<td class="column0">&nbsp;</td>
-			<td class="column1">&nbsp;</td>
 			<td class="column2 style64 null"></td>
 			<td class="column3 style65 null"></td>
 			<td class="column4 style66 null"></td>
@@ -549,35 +477,9 @@ body { left-margin: 0.43307086614173in; right-margin: 0.39370078740157in; top-ma
 			<td class="column6">&nbsp;</td>
 			<td class="column7 style58 null"></td>
 			<td class="column8">&nbsp;</td>
-			<td class="column9">&nbsp;</td>
-		  </tr>
-		  <tr class="row277">
-			<td class="column0">&nbsp;</td>
-			<td class="column1">&nbsp;</td>
-			<td class="column2 style64 null"></td>
-			<td class="column3 style65 null"></td>
-			<td class="column4 style66 null"></td>
-			<td class="column5 style56 null"></td>
-			<td class="column6">&nbsp;</td>
-			<td class="column7 style58 null"></td>
-			<td class="column8">&nbsp;</td>
-			<td class="column9">&nbsp;</td>
-		  </tr>
-		  <tr class="row278">
-			<td class="column0">&nbsp;</td>
-			<td class="column1">&nbsp;</td>
-			<td class="column2 style64 null"></td>
-			<td class="column3 style65 null"></td>
-			<td class="column4 style66 null"></td>
-			<td class="column5 style56 null"></td>
-			<td class="column6">&nbsp;</td>
-			<td class="column7 style58 null"></td>
-			<td class="column8">&nbsp;</td>
-			<td class="column9">&nbsp;</td>
 		  </tr>
 		  <tr class="row279">
 			<td class="column0">&nbsp;</td>
-			<td class="column1">&nbsp;</td>
 			<td class="column2 style64 null"></td>
 			<td class="column3 style65 null"></td>
 			<td class="column4 style66 null"></td>
@@ -585,23 +487,9 @@ body { left-margin: 0.43307086614173in; right-margin: 0.39370078740157in; top-ma
 			<td class="column6">&nbsp;</td>
 			<td class="column7 style58 null"></td>
 			<td class="column8">&nbsp;</td>
-			<td class="column9">&nbsp;</td>
-		  </tr>
-		  <tr class="row280">
-			<td class="column0">&nbsp;</td>
-			<td class="column1">&nbsp;</td>
-			<td class="column2 style11 s">GRAND TOTAL</td>
-			<td class="column3 style67 null"></td>
-			<td class="column4 style25 null"></td>
-			<td class="column5 style68 f">0</td>
-			<td class="column6 style63 f">0</td>
-			<td class="column7 style60 null"></td>
-			<td class="column8">&nbsp;</td>
-			<td class="column9">&nbsp;</td>
 		  </tr>
 		  <tr class="row281">
 			<td class="column0">&nbsp;</td>
-			<td class="column1">&nbsp;</td>
 			<td class="column2 style64 null"></td>
 			<td class="column3 style64 null"></td>
 			<td class="column4 style56 null"></td>
@@ -609,7 +497,6 @@ body { left-margin: 0.43307086614173in; right-margin: 0.39370078740157in; top-ma
 			<td class="column6">&nbsp;</td>
 			<td class="column7 style58 null"></td>
 			<td class="column8">&nbsp;</td>
-			<td class="column9">&nbsp;</td>
 		  </tr>
 		</tbody>
 	</table>
