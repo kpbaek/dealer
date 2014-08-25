@@ -87,6 +87,12 @@
 	  td.style69 { vertical-align:middle; text-align:center; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; color:#000000; font-family:'Arial'; font-size:10pt; background-color:white }
 	  td.style70 { vertical-align:bottom; text-align:center; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; color:#000000; font-family:'Arial'; font-size:10pt; background-color:white }
 	  td.style71 { vertical-align:bottom; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; color:#000000; font-family:'Arial'; font-size:10pt; background-color:white }
+	  
+	  td.style152 { vertical-align:middle; text-align:center; border-bottom:none #000000; border-top:2px solid #000000; border-left:none #000000; border-right:none #000000; font-weight:bold; color:#000000; font-family:'Arial'; font-size:11pt; background-color:white }
+	  td.style153 { vertical-align:middle; text-align:center; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; color:#000000; font-family:'돋움'; font-size:11pt; background-color:white }
+	  td.style154 { vertical-align:middle; text-align:center; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; color:#000000; font-family:'Arial'; font-size:9pt; background-color:white }
+	  
+	  
 	  table.sheet0 col.col0 { width:45.69999951pt }
 	  table.sheet0 col.col1 { width:75.82222188pt }
 	  table.sheet0 col.col2 { width:204.3333324pt }
@@ -494,6 +500,17 @@ body { left-margin: 0.43307086614173in; right-margin: 0.39370078740157in; top-ma
 			<td class="column7 style58 null"></td>
 			<td class="column8">&nbsp;</td>
 		  </tr>
+		  
+		  <tr class="row51">
+			<td class="column0 style152 s" colspan=10>SBM Co., Ltd.</td>
+		  </tr>
+		  <tr class="row52">
+			<td class="column0 style154 s" colspan=20>6F, Hyunwoo Bld, 206, Anyang7-Dong, Manan-Gu, Anyang-City, Gyeonggi-Do, KOREA . 430-817</td>
+		  </tr>
+		  <tr class="row53">
+			<td class="column0 style154 s" colspan=10>Tel: +82-31-429-0789    Fax: +82-31-429-3607</td>
+		  </tr>
+		  
 		</tbody>
 	</table>
   </body>

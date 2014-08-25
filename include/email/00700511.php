@@ -127,13 +127,13 @@ body { left-margin: 0.35433070866142in; right-margin: 0.31496062992126in; top-ma
 			<td class="column1 style5 s" colspan=2 style="text-decoration:underline;">청구 부서 : 영업팀</td>
 			<td class="column3 style5 null"></td>
 			<td class="column4 style54 s style54" colspan="2" rowspan="2">출고 전표</td>
-			<td class="column6 style57 n style57" colspan="2" style="text-decoration:underline;">청구 일자 : 2014. 04. 07</td>
+			<td class="column6 style57 n style57" colspan="2" style="text-decoration:underline;">청구 일자 : 2014.04.07</td>
 			<td class="column8 style6 null"></td>
 		  </tr>
 		  <tr class="row2">
 			<td class="column0 style4 null"></td>
 			<td class="column1 style58 f style58" colspan="3" style="text-decoration:underline;">청구 번호 : SWD-14LN0001</td>
-			<td class="column6 style59 f style59" colspan="2" style="text-decoration:underline;">출고 일자: &nbsp;2014. 04. 07</td>
+			<td class="column6 style59 f style59" colspan="2" style="text-decoration:underline;">출고 일자: &nbsp;2014.04.07</td>
 			<td class="column8 style6 null"></td>
 		  </tr>
 		  <tr class="row3">

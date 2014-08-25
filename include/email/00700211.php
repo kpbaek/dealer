@@ -174,8 +174,7 @@ body { left-margin: 0.98425196850394in; right-margin: 0.98425196850394in; top-ma
 			<td class="column6">&nbsp;</td>
 		  </tr>
 		  <tr class="row6">
-			<td class="column0 style62 n style62" colspan="3">Date: 21 Mar., 2014</td>
-			<td class="column3 style5 null"></td>
+			<td class="column0 style39 s" colspan="4">Date: 21 Mar., 2014</td>
 			<td class="column4">&nbsp;</td>
 			<td class="column5 style63 n style63" colspan="2">Our Ref: PI-14LB0001</td>
 		  </tr>
@@ -443,13 +442,7 @@ body { left-margin: 0.98425196850394in; right-margin: 0.98425196850394in; top-ma
 		  <tr class="row53">
 			<td class="column0 style54 s" colspan=7>Tel: +82-31-429-0789    Fax: +82-31-429-3607</td>
 		  </tr>
-		  <tr class="row54">
-			<td class="column0 style55 s" colspan=3>SBM-<span style="color:#000000; font-family:'돋움'; font-size:10pt">영업</span><span style="color:#000000; font-family:'Arial'; font-size:10pt">-P-701-02</span></td>
-			<td class="column3 style57 s">㈜에스비엠</td>
-			<td class="column4 style56 null"></td>
-			<td class="column5 style56 null"></td>
-			<td class="column6 style57 s">A4(210 X297mm)</td>
-		  </tr>
+
 		</tbody>
 	</table>
   </body>

@@ -15,6 +15,11 @@
 	  .s { text-align:left }
 	  td.style01 { vertical-align:middle; text-align:center; padding-left:0px; border-bottom:none #000000; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:none #000000; font-weight:bold; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:#A0A0A0 }
 	  td.style02 { vertical-align:middle; text-align:center; padding-left:0px; border-bottom:none #000000; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:none #000000; font-weight:bold; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:#D0A0A0 }
+	  
+	  td.style52 { vertical-align:middle; text-align:center; border-bottom:none #000000; border-top:2px solid #000000; border-left:none #000000; border-right:none #000000; font-weight:bold; color:#000000; font-family:'Arial'; font-size:11pt; background-color:white }
+	  td.style53 { vertical-align:middle; text-align:center; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; color:#000000; font-family:'돋움'; font-size:11pt; background-color:white }
+	  td.style54 { vertical-align:middle; text-align:center; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; color:#000000; font-family:'Arial'; font-size:9pt; background-color:white }
+	  
 	  table.sheet0 col.col0 { width:42pt }
 	  table.sheet0 col.col1 { width:42pt }
 	  table.sheet0 col.col2 { width:42pt }
@@ -159,6 +164,17 @@ BAM
 		  <tr height=5px>
 			<td colspan=10></td>
 		  </tr>
+		  
+		  <tr class="row51">
+			<td class="column0 style52 s" colspan=10>SBM Co., Ltd.</td>
+		  </tr>
+		  <tr class="row52">
+			<td class="column0 style54 s" colspan=20>6F, Hyunwoo Bld, 206, Anyang7-Dong, Manan-Gu, Anyang-City, Gyeonggi-Do, KOREA . 430-817</td>
+		  </tr>
+		  <tr class="row53">
+			<td class="column0 style54 s" colspan=10>Tel: +82-31-429-0789    Fax: +82-31-429-3607</td>
+		  </tr>
+		  
 		</tbody>
 	</table>
 
