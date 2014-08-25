@@ -32,6 +32,21 @@ class Main extends CI_Controller {
 		$this->load->view('/common/listWorker');
 	}
 	
+	public function listModel()
+	{
+		$this->load->view('/common/listModel');
+	}
+	
+	public function sndMail()
+	{
+		$this->load->view('/common/sndMail');
+	}
+	
+	public function sndmail_00700211()
+	{
+		$this->load->view('/common/email/00700211.php');
+	}
+	
 }
 
 /* End of file welcome.php */
