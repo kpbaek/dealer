@@ -27,8 +27,21 @@
 	
 <h1 id="banner"><a href="/admin">수주관리시스템 Admin</a> </h1>
 <div id=loginDiv style="display:">
+<?php
+session_start();
+if(empty($_SESSION['ss_user']['uid']))
+{
+?>
 <h1><a href="/admin">Login</a></h1>
+<?php
+}else{
+?>
+<h1><a href="/common/user/logout">Logout</a></h1>
+<?php
+}
+?>
 </div>
+
 <div id=logoutDiv style="display:none">
 <h1>tester님 <img src="/images/common/btn_gnb_logout.gif"></h1>
 </div>
