@@ -7,14 +7,16 @@
 	<tr><td style="width:220px;vertical-align: top">
 		<div id="left" style="width: 200px;">
 
-<?php include("/include/admin/left.php");?>
-		
-		
+<?php 
+if (isset($_SESSION['ss_user']['uid'])){
+	include("/include/admin/left.php");
+}
+?>
 		</div>
 	</td>
-	<td style="width:800px;align:center; vertical-align:middle">
+	<td style="width:600px;align:center; vertical-align:top">
 		<div id="body">
-<?php include("login.php");?>
+<?php include("home.php");?>
 		</div>	
 	</td>
 	</tr>
