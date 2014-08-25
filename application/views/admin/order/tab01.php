@@ -54,10 +54,11 @@
 			<td width="10%">2004-03-14</td>
 			<td width="10%"></td>
 			<td width="10%"></td>
-			<td width="15%"></td>
-			<td width="10%"></td>
-			<td width="15%"></td>
-			<td width="10%"></td>
+			<td width="15%" class="style01">Dest Country</td>
+			<td width="10%" colspan=3>
+				<select name="cntry_atcd" style="width: 240px;">
+				</select>
+			</td>
 			<td width="5%"></td>
 		  </tr>
 		  <tr>
@@ -93,26 +94,18 @@
 		  <tr>
 			<td colspan=3>
 			    <div class="form-group">
-			        <select id="currency" multiple="multiple" class="form-control" style="width: 150px">
-			            <option value="1" selected>CHF</option>
-			            <option value="2">GBP</option>
-			            <option value="3" selected>USD</option>
-			            <option value="4">EUR</option>
+			        <select id="currency_atch" multiple="multiple" class="form-control" style="width: 180px">
 			        </select>
 			    </div>
 			</td>
 			<td class="style01">Serial Number</td>
 			<td class="style01">
-				<select name="srl">
+				<select name="srl_atcd" style="width: 120px;">
 				</select>
 			</td>
 			<td colspan=3>
 			    <div class="form-group">
-			        <select id="currency2" multiple="multiple" class="form-control" style="width: 150px">
-			            <option value="1" selected>CHF</option>
-			            <option value="2" selected>GBP</option>
-			            <option value="3" selected>USD</option>
-			            <option value="4">EUR</option>
+			        <select id="serial_currency_atch" multiple="multiple" class="form-control" style="width: 180px">
 			        </select>
 			    </div>
 			</td>
@@ -120,12 +113,12 @@
 		  <tr>
 			<td class="style01" colspan=2>LCD Color</td>
 			<td colspan=3>
-				<select name="lcd_color">
+				<select name="lcd_color_atcd">
 				</select>
 			</td>
 			<td class="style01">LCD Language</td>
 			<td>
-				<select name="lcd_lang">
+				<select name="lcd_lang_atcd">
 				</select>
 			</td>
 		   	<td colspan=4></td>
@@ -133,7 +126,7 @@
 		  <tr>
 			<td class="style01" colspan=2>Reject Pocket Type</td>
 			<td colspan=3>
-				<select name="rej_pocket_tp">
+				<select name="rjt_pkt_tp_atcd">
 				</select>
 			</td>
 			
@@ -142,23 +135,19 @@
 		  <tr class="row18">
 			<td class="style01" colspan=2>Power Cable</td>
 			<td colspan=3>
-			    <select style="width:180px" name="power_cable" id="power_cable">
-			      <option value="006" data-image="/images/common/dropdown/image006.png">220V UK 향</option>
-			      <option value="007" data-image="/images/common/dropdown/image007.png">220V India 향</option>
-			      <option value="008" data-image="/images/common/dropdown/image008.png" name="cd">230V 호주 향</option>
-			      <option value="011"  data-image="/images/common/dropdown/image011.png">110V 미국 향</option>
-			      <option value="012" data-image="/images/common/dropdown/image012.png" selected>220V 한국 향</option>
-			      <option value="013" data-image="/images/common/dropdown/image013.png">220V Israel향</option>
+			    <select style="width:180px" name="pwr_cab_atcd" id="pwr_cab_atcd">
+			      <option value="00E00001" data-image="/images/common/dropdown/00E0/00E00001.png">220V UK 향</option>
+			      <option value="00E00002" data-image="/images/common/dropdown/00E0/00E00002.png">220V India 향</option>
+			      <option value="00E00003" data-image="/images/common/dropdown/00E0/00E00003.png" name="cd">230V 호주 향</option>
+			      <option value="00E00004"  data-image="/images/common/dropdown/00E0/00E00004.png">110V 미국 향</option>
+			      <option value="00E00005" data-image="/images/common/dropdown/00E0/00E00005.png" selected>220V (KOREA)</option>
+			      <option value="00E00006" data-image="/images/common/dropdown/00E0/00E00006.png">220V Israel향</option>
 			    </select>
     		</td>
 			<td class="style01">Other Options</td>
 			<td colspan=4>
 			    <div class="form-group">
-			        <select id="other_options" multiple="multiple" class="form-control" style="width: 250px">
-			            <option value="1">LAN</option>
-			            <option value="2">SV-200</option>
-			            <option value="3">Printer</option>
-			            <option value="4">SDP-7</option>
+			        <select id="opt_hw_atcd" name="opt_hw_atcd" multiple="multiple" class="form-control" style="width: 120px">
 			        </select>
 			    </div>
 			</td>
@@ -172,12 +161,12 @@
 			</td>
 			<td class="style02">Calibration Sheet</td>
 			<td>
-				<select name="calibration_sheet">
+				<select name="calib_sheet">
 				</select>
 			</td>
-			<td class="style02">PC Cable (USB A to B)</td>
+			<td class="style02">PC Cable</td>
 			<td>
-				<select name="pc_cable">
+				<select name="pc_cab_atcd">
 				</select>
 			</td>
 			<td colspan=2></td>
@@ -185,9 +174,9 @@
 		  <tr>
 			<td class="style01" colspan=2>Shipped by</td>
 			<td colspan=3>
-				<select name="shipped_by1">
+				<select name="shipped_by_atcd">
 				</select>
-				<select name="shipped_by2">
+				<select name="courrier_atcd">
 				</select>
 			</td>
 			<td class="style01">Account no</td>
@@ -195,19 +184,24 @@
 			<td colspan=5></td>
 		  </tr>
 		  <tr>
-			<td class="style01" colspan=2>Delivery</td>
+			<td class="style01" rowspan=2 colspan=2>Delivery</td>
 			<td colspan=3><input type="text" id="delivery" name="delivery" value="<?php echo date("Y-m-d")?>" size=10 style="border: 1"></td>
 			<td class="style01">Payment</td>
 			<td>
-				<select name="payment">
+				<select name="payment_atcd">
 				</select>
 			</td>
 			<td class="style01">Incoterms</td>
 			<td>
-				<select name="incoterms">
+				<select name="incoterms_atcd">
 				</select>
 			</td>
 		   	<td colspan=3></td>
+		  </tr>
+		  <tr>
+			<td colspan=9>Requested delivery date will be adjusted by production schedule.
+
+General leadtime is 3 weeks from 10 to 100 units</td>
 		  </tr>
 		  <tr>
 			<td class="style01" colspan=2>Remark</td>
@@ -231,47 +225,57 @@
 
 function initForm() {
 		var f = document.addForm;
-		getCodeCombo("02", f.model);
-		getCodeCombo("02", f.srl);
-		getCodeCombo("02", f.lcd_color);
-		getCodeCombo("02", f.lcd_lang);
-		getCodeCombo("02", f.shipped_by1);
-		getCodeCombo("02", f.shipped_by2);
-		getCodeCombo("02", f.payment);
-		getCodeCombo("02", f.incoterms);
-		getCodeCombo("01", f.serial_prn_cable);
-		getCodeCombo("01", f.calibration_sheet);
-		getCodeCombo("01", f.pc_cable);
-//		getCodeCombo("01", f.power_cable);
-		getCodeCombo("01", f.lan);
-		getCodeCombo("01", f.sv200);
-		getCodeCombo("01", f.printer);
-		getCodeCombo("01", f.sdp7);
+		getCodeCombo("0022", f.cntry_atcd);
+		getModelCombo("", f.model);
+		getCodeCombo("00B0", f.srl_atcd);
+		var selAr =  ["CHF","USD"];
+		getCodeMultiCombo("0091", $('#currency_atch'), selAr);
+		
+		getCodeMultiCombo("0092", $('#serial_currency_atch'), selAr);
+		
+		getCodeMultiCombo("00A0", $('#opt_hw_atcd'), selAr);
+		
+		getCodeCombo("00L0", f.lcd_color_atcd);
+		getCodeCombo("00M0", f.lcd_lang_atcd);
+		getCodeCombo("00D0", f.rjt_pkt_tp_atcd, "");
 
-		getCodeCombo("02", f.rej_pocket_tp);
+		$("#pwr_cab_atcd").msDropdown({roundedBorder:false});
+
+		getOXCombo(f.serial_prn_cable);
+		getOXCombo(f.calib_sheet);
+
+		getCodeCombo("00C0", f.pc_cab_atcd);
+		getCodeCombo("00F0", f.shipped_by_atcd);
+		getCodeCombo("00F1", f.courrier_atcd);
+		getCodeCombo("00G0", f.payment_atcd);
+		getCodeCombo("00H0", f.incoterms_atcd);
+		
+//		getCodeCombo("01", f.serial_prn_cable);
+//		getCodeCombo("01", f.calib_sheet);
+//		getCodeCombo("01", f.pwr_cab_atcd);
+
 }
 
 $(function() {
-    $('#currency').change(function() {
+    $('#currency_atch').change(function() {
         console.log($(this).val());
     }).multipleSelect();
 });
 
 $(function() {
-    $('#currency2').change(function() {
+    $('#serial_currency_atch').change(function() {
         console.log($(this).val());
     }).multipleSelect();
 });
 
 $(function() {
-    $('#other_options').change(function() {
+    $('#opt_hw_atcd').change(function() {
         console.log($(this).val());
     }).multipleSelect();
 });
 
 $(document).ready(function(e) {	
 	initForm();
-	$("#power_cable").msDropdown({roundedBorder:false});
 });
 
 $.datepicker.setDefaults($.datepicker.regional['ko']);

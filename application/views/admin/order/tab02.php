@@ -56,14 +56,24 @@ part name<input type=text name="searchPartName">
 <table id="list"></table>
 <div id="pager"></div>
 </div>
+
+<table id="list_d">
 <br>
-<table id="list_d"></table>
+</table>
 <div id="pager_d"></div>
 
 <table border="0" cellpadding="0" cellspacing="0" style="width:950px;align:center; vertical-align:middle">
 <tr>
     <td align=right>
-    	<input type="button" id="btnConfirm" value="submit" onclick="javascript:order();"/>
+    
+	<div id="formDiv" style="display:">
+		<form id="addForm" name="addForm" method="post" accept-charset="utf-8" enctype="multipart/form-data">
+		    	Dest Country
+				<select name="cntry_atcd" style="width: 240px;">
+				</select>
+    		<input type="button" id="btnConfirm" value="submit" onclick="javascript:order();"/>
+		</form>
+	</div>
     </td>
 </tr>
 </table>
@@ -71,11 +81,6 @@ part name<input type=text name="searchPartName">
 
 <div id="postdata"></div>
 <p>
-<div id="formDiv" style="display:none">
-<form id="addForm" name="addForm" method="post" accept-charset="utf-8" enctype="multipart/form-data">
-</form>
-
-</div>
 
 </body>
 
@@ -197,6 +202,9 @@ part name<input type=text name="searchPartName">
 	function initForm() {
 		var f = document.searchForm;
 		getCodeCombo("02", f.searchModel);
+
+		var f_add = document.addForm;
+		getCodeCombo("0022", f_add.cntry_atcd);
 //		newForm();
     }
 	

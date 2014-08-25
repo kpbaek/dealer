@@ -455,6 +455,7 @@ body { left-margin: 0.19685039370079in; right-margin: 0.19685039370079in; top-ma
 	<table border="0" cellpadding="0" cellspacing="0" id="sheet0" style="width: 210mm;" align=center>
 	<tr>
 		<td colspan=10 align=right>
+		<input type="button" value="save" onclick="javascript:save();" disabled/>
 		<input type="button" value="send" onclick="javascript:sendMail();"/>
 		</td>
 	  </tr>
@@ -564,22 +565,24 @@ body { left-margin: 0.19685039370079in; right-margin: 0.19685039370079in; top-ma
 			<td class="column42 style13 null"></td>
 		  </tr>
 		  <tr class="row2">
-			<td class="column23 style14 null">Sahmarani Bldg. – Ground floor, Michel Chiha Street</td>
+			<td class="column23 style14 null">
+			<textarea rows=3 cols=38>Sahmarani Bldg. – Ground floor, Michel Chiha Street Kantari, Beirut, 2022 5803</textarea>
+			</td>
 			<td class="column23 style11 null"></td>
 			<td class="column42 style13 null"></td>
 		  </tr>
 		  <tr class="row2">
-			<td class="column23 style14 null">Kantari, Beirut, 2022 5803, Lebanon </td>
+			<td class="column23 style14 null">, Lebanon</td>
 			<td class="column23 style11 null"></td>
 			<td class="column42 style13 null"></td>
 		  </tr>
 		  <tr class="row2">
-			<td class="column23 style14 null">Tel : +961-1-738-483         Fax : +961-1-737-260</td>
+			<td class="column23 style14 null">Tel : &nbsp;<input type=text value="+961-1-738-483">         <br>Fax : <input type=text value="+961-1-737-260"></td>
 			<td class="column23 style11 null"></td>
 			<td class="column42 style13 null"></td>
 		  </tr>
 		  <tr class="row2">
-			<td class="column23 style14 null">Attn: Mr. Imad Ladkani</td>
+			<td class="column23 style14 null">Attn: <input type=text value="Mr. Imad Ladkani"></td>
 			<td class="column23 style11 null"></td>
 			<td class="column42 style13 null"></td>
 		  </tr>

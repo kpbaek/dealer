@@ -86,7 +86,7 @@
 		   	url:targetUrl,
 		   	datatype: "json",
 		   	//colNames:['Inv No','Date', 'Client', 'Amount','Tax','Total','Notes'],
-		   	colNames:['','id', '확정일자', '', 'Country', '바이어', 'Delivery', 'Amount', '할증요율(%)', '담당자', 'Confirm', '', 'P/I', 'P/I NO', 'C/I', '출고전표', 'Packing'],
+		   	colNames:['','id', '확정일자', '', '대상국가', '바이어', 'Delivery', 'Amount', '할증요율(%)', '담당자', 'Confirm', '', 'P/I', 'P/I NO', 'C/I', '출고전표', 'Packing'],
 	   	              //, '(1CIS)', '(2CIS)', 'Q(Per 1Unit)', 'Order Price', 'Amount'
 		   	colModel:[
 		   		{name:'chk', index:'chk', width:55,hidden:true,search:true,formatter:'checkbox', editoptions:{value:'1:0'}, formatoptions:{disabled:true}}, 
