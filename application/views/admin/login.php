@@ -63,7 +63,7 @@ $(document).ready(function() {
 		{
 			$.ajax({
 			        type: "POST",
-			        url: "/user/ajaxLogin",
+			        url: "/common/user/ajaxLogin",
 			        data: {"uid":uid, "pswd":pswd},
 			        cache: false,
 			        beforeSend: function(){ $("#login").val('Connecting...');},
@@ -102,7 +102,7 @@ $(document).ready(function() {
 		{
 			$.ajax({
 			        type: "POST",
-			        url: "/user/ajaxLogin",
+			        url: "/common/user/ajaxLogin",
 			        data: {"uid":uid, "pswd":pswd},
 			        cache: false,
 			        beforeSend: function(){ $("#login").val('Connecting...');},
