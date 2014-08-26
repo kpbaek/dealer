@@ -27,6 +27,11 @@ class Main extends CI_Controller {
 		$this->load->view('/common/listCode');
 	}
 	
+	public function listCodeImg()
+	{
+		$this->load->view('/common/listCodeImg');
+	}
+	
 	public function listWorker()
 	{
 		$this->load->view('/common/listWorker');

@@ -135,13 +135,14 @@
 		  <tr class="row18">
 			<td class="style01" colspan=2>Power Cable</td>
 			<td colspan=3>
-			    <select style="width:180px" name="pwr_cab_atcd" id="pwr_cab_atcd">
+			    <select style="width:200px" name="pwr_cab_atcd" id="pwr_cab_atcd">
+			    <!-- 
 			      <option value="00E00001" data-image="/images/common/dropdown/00E0/00E00001.png">220V UK 향</option>
 			      <option value="00E00002" data-image="/images/common/dropdown/00E0/00E00002.png">220V India 향</option>
 			      <option value="00E00003" data-image="/images/common/dropdown/00E0/00E00003.png" name="cd">230V 호주 향</option>
 			      <option value="00E00004"  data-image="/images/common/dropdown/00E0/00E00004.png">110V 미국 향</option>
 			      <option value="00E00005" data-image="/images/common/dropdown/00E0/00E00005.png" selected>220V (KOREA)</option>
-			      <option value="00E00006" data-image="/images/common/dropdown/00E0/00E00006.png">220V Israel향</option>
+			      <option value="00E00006" data-image="/images/common/dropdown/00E0/00E00006.png">220V Israel향</option> -->
 			    </select>
     		</td>
 			<td class="style01">Other Options</td>
@@ -239,8 +240,6 @@ function initForm() {
 		getCodeCombo("00M0", f.lcd_lang_atcd);
 		getCodeCombo("00D0", f.rjt_pkt_tp_atcd, "");
 
-		$("#pwr_cab_atcd").msDropdown({roundedBorder:false});
-
 		getOXCombo(f.serial_prn_cable);
 		getOXCombo(f.calib_sheet);
 
@@ -249,6 +248,10 @@ function initForm() {
 		getCodeCombo("00F1", f.courrier_atcd);
 		getCodeCombo("00G0", f.payment_atcd);
 		getCodeCombo("00H0", f.incoterms_atcd);
+
+		getCodeImgCombo("00E0", f.pwr_cab_atcd, "");
+//		$("#pwr_cab_atcd").msDropdown({roundedBorder:false});
+
 		
 //		getCodeCombo("01", f.serial_prn_cable);
 //		getCodeCombo("01", f.calib_sheet);
