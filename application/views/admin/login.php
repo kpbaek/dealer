@@ -6,7 +6,7 @@
 <tr>
         <td>아이디</td>
         <td style='width:10px'></td>
-        <td><input type='text' id="uid" name='uid' size="15" style='width:130px' tabindex='1' maxlength=50/></td>
+        <td><input type='text' id="uid" name='uid' size="50" style='width:200px' tabindex='1' maxlength=50/></td>
         <td style='width:20px'></td>
         <td rowspan='3'>
         <input id="login" type='button' tabindex='3' value='로그인' style='width:70px;height:50px'/>
@@ -19,7 +19,7 @@
 <tr>
         <td>비밀번호</td>
         <td style='width:10px'></td>
-        <td><input type='password' id="pswd" name='pswd' size="15" style='width:130px' tabindex='2' maxlength=15/></td>
+        <td><input type='password' id="pswd" name='pswd' size="15" style='width:200px' tabindex='2' maxlength=15/></td>
         <td style='width:30px'></td>
 </tr>
 <tr>
