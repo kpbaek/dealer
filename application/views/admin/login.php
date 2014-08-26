@@ -37,6 +37,16 @@
 </tr>
 </table>
 
+        <!-- 친구수--> 
+        <div style="text-align:center;padding:10px;"></div> 
+      
+        <table class="table table-striped""> 
+            <tbody> 
+                <!-- 친구 목록 노출 영역--> 
+            </tbody> 
+        </table>   
+
+        
 <script>
 $(document).ready(function() {
     
@@ -63,23 +73,40 @@ $(document).ready(function() {
 		{
 			$.ajax({
 			        type: "POST",
+//			        url: "/user/ajaxLogin",
 			        url: "/common/user/ajaxLogin",
+			        async: false,
+			        dataType: "json",
 			        data: {"uid":uid, "pswd":pswd},
 			        cache: false,
 			        beforeSend: function(){ $("#login").val('Connecting...');},
-			        success: function(result){
-				        if(result)
+//			        success: response_json2 
+			        success: function(result, status, xhr){
+//			            alert(xhr.status);
+			        	var userInfo = result.ss_user; 
+						if(userInfo.active_yn=="Y")
 				        {
-//				        	$("#error").text(result);
-					        location.replace("/admin");
+			        		$.each(userInfo, function(key){ 
+			     		       var html = key + ":" + userInfo[key] + "<br>"; 
+			     		       $("#error").append(html);
+			     		    }); 
+//							$("#error").html("");
+//							$("#login").val('로그인');
+			     		    location.replace("/admin");
 						}
 				        else
 				        {
 				        	$('#box').shake();
 							$("#login").val('로그인');
-							$("#error").html("<span style='color:#cc0000'>Error:</span> Invalid user ID and password. ");
+							$("#error").html("<span style='color:#cc0000'>Error:</span> Inactive user ID. ");
 				        }
-			        }
+			        },
+			        /* ajax options omitted */
+			        error:function(){
+			        	$('#box').shake();
+						$("#login").val('로그인');
+						$("#error").html("<span style='color:#cc0000'>Error:</span> Invalid user ID and password. ");
+					}
 			});
 		
 		}
@@ -103,21 +130,35 @@ $(document).ready(function() {
 			$.ajax({
 			        type: "POST",
 			        url: "/common/user/ajaxLogin",
+			        async: false,
+			        dataType: "json",
 			        data: {"uid":uid, "pswd":pswd},
 			        cache: false,
 			        beforeSend: function(){ $("#login").val('Connecting...');},
-			        success: function(data){
-				        if(data)
+			        success: function(result, status, xhr){
+			        	var userInfo = result.ss_user; 
+						if(userInfo.active_yn=="Y")
 				        {
-					        location.replace("/admin");
+			        		$.each(userInfo, function(key){ 
+			     		       var html = key + ":" + userInfo[key] + "<br>"; 
+//			     		       $("#error").append(html);
+			     		    }); 
+			     		    location.replace("/admin");
 						}
 				        else
 				        {
 				        	$('#box').shake();
 							$("#login").val('로그인');
-							$("#error").html("<span style='color:#cc0000'>Error:</span> Invalid user ID. ");
+							$("#error").html("<span style='color:#cc0000'>Error:</span> Inactive user ID. ");
 				        }
-			        }
+			        },
+			        /* ajax options omitted */
+			        error:function(){
+			        	$('#box').shake();
+						$("#login").val('로그인');
+						$("#error").html("<span style='color:#cc0000'>Error:</span> Invalid user ID and password. ");
+					}
+			        
 			});
 		
 		}
@@ -125,4 +166,78 @@ $(document).ready(function() {
 	});	
 	
 });
+
+function response_json2(json) 
+{ 
+	alert(json);
+	if(json)
+    {
+		var userInfo = json.ss_user; 
+
+		   //친구수 만큼 루프를 돈다 
+		   $.each(userInfo, function(key){ 
+
+		       var html = "<tr>"; 
+		       html += "<td>"+ key + ":" + userInfo[key] +"</td>"; 
+
+		       $("#error").append(html);
+		   }); 
+    
+        location.replace("/admin");
+	}
+    else
+    {
+    	$('#box').shake();
+		$("#login").val('로그인');
+		$("#error").html("<span style='color:#cc0000'>Error:</span> Invalid user ID and password. ");
+    }
+} 
+ 
+function response_json(json) 
+{ 
+   var friend_list = json.UnoFriendList; 
+
+   //친구수
+   var friend_count =friend_list.length; 
+
+//   $("div").html("<b>전체 친구수 : " + friend_count + " 명</b>"); 
+
+   //친구수 만큼 루프를 돈다 
+   $.each(friend_list, function(key){ 
+
+       //친구 1명의 정보를 가진 변수 
+       //{"UnoFriendList":[{"Friend":{친구정보}},{"Friend":{친구정보}}]} 
+       //형태이므로 friend_list 의 배열에서 각 개체를 가져온다. 
+       var friend_info = friend_list[key].Friend; 
+
+       var friend_name = friend_info.name; 
+       var friend_phone = friend_info.phone; 
+       var friend_address = friend_info.address; 
+       var friend_birth = friend_info.birth;    
+
+       //family 의 수만큼 루프를 돌아 이름을 구한다. 
+       var family_name = ""; 
+       var family_list = friend_info.family; 
+
+       //"family":{"family_name_1":"\ucc44\uc724","family_name_2":"\ucc44\ub9ac"} 
+       //idx의 값은  family_name_1 , family_name_2 가 된다.                       
+       $.each(family_list,function(idx){ 
+           family_name += family_list[idx] + "<br/>"; 
+       });                  
+         
+       var friend_date = friend_info.date; 
+                         
+       var html = "<tr>"; 
+       html += "<td>"+ friend_name +"</td>"; 
+       html += "<td>"+ friend_phone +"</td>"; 
+       html += "<td>"+ friend_address +"</td>"; 
+       html += "<td>"+ friend_birth +"</td>";                   
+       html += "<td>"+ family_name + "</td>"; 
+       html += "<td>"+ friend_date +"</td>"; 
+       html += "</tr>"; 
+
+       $("tbody").append(html);                 
+   }); 
+} 
+
 </script>
