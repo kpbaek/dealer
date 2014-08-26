@@ -34,7 +34,13 @@
 
 <ul id="manageTabs" class="shadetabs">
 <li><a href="/admin/manage/tab01" rel="#iframe" class="selected">딜러관리</a></li>
+<?php
+		if($_SESSION['ss_user']['auth_grp_cd']=="SA" || $_SESSION['ss_user']['auth_grp_cd']=="WA"){
+?> 
 <li><a href="/admin/manage/tab02" rel="#iframe">담당자관리</a></li>
+<?php 
+		}
+?>
 </ul>
 
 <div id="manageDiv" style="border:1px solid gray; width:970px; height: 550px; padding: 5px; margin-bottom:1em">
