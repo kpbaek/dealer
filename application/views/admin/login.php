@@ -50,13 +50,13 @@ $(document).ready(function() {
 		
 		if($.trim(uid).length==0)
 		{
-        	$('#box').shake();
+        	$('#error').shake();
 			$("#error").html("<span style='color:#cc0000'>Error:</span> user ID is required. ");
 			return;
 		}
 		if($.trim(pswd).length==0)
 		{
-        	$('#box').shake();
+        	$('#error').shake();
 			$("#error").html("<span style='color:#cc0000'>Error:</span> password is required. ");
 			return;
 		}
@@ -87,14 +87,14 @@ $(document).ready(function() {
 						}
 				        else
 				        {
-				        	$('#box').shake();
+				        	$('#error').shake();
 							$("#login").val('로그인');
 							$("#error").html("<span style='color:#cc0000'>Error:</span> Inactive user ID. ");
 				        }
 			        },
 			        /* ajax options omitted */
 			        error:function(){
-			        	$('#box').shake();
+			        	$('#error').shake();
 						$("#login").val('로그인');
 						$("#error").html("<span style='color:#cc0000'>Error:</span> Invalid user ID and password. ");
 					}
@@ -112,7 +112,7 @@ $(document).ready(function() {
 	
 		if($.trim(uid).length==0)
 		{
-        	$('#box').shake();
+        	$('#error').shake();
 			$("#error").html("<span style='color:#cc0000'>Error:</span> user ID is required. ");
 			return;
 		}
@@ -138,14 +138,14 @@ $(document).ready(function() {
 						}
 				        else
 				        {
-				        	$('#box').shake();
+				        	$('#error').shake();
 							$("#login").val('로그인');
 							$("#error").html("<span style='color:#cc0000'>Error:</span> Inactive dealer ID. ");
 				        }
 			        },
 			        /* ajax options omitted */
 			        error:function(){
-			        	$('#box').shake();
+			        	$('#error').shake();
 						$("#login").val('로그인');
 						$("#error").html("<span style='color:#cc0000'>Error:</span> Invalid dealer ID and password. ");
 					}
