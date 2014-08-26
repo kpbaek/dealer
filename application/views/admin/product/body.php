@@ -20,7 +20,7 @@
 
 <body>
 
-<h3><a href="/admin/product?countrytabs=0">Product</a></h3>
+<h3><a href="/admin/product?producttabs=0">Product</a></h3>
 
 <ul id="productTabs" class="shadetabs">
 <li><a href="/admin/product/tab01" rel="#iframe" class="selected">부품관리</a></li>

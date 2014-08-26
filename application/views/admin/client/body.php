@@ -30,7 +30,7 @@
 
 <body>
 
-<h3><a href="/admin/client?countrytabs=0">신청서</a></h3>
+<h3><a href="/admin/client?clienttabs=0">신청서</a></h3>
 
 <ul id="clientTabs" class="shadetabs">
 <li><a href="/admin/client/tab01" rel="#iframe" class="selected">Find a Dealer</a></li>

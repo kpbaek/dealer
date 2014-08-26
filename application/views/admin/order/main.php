@@ -1,4 +1,5 @@
 <?php 
+require '/include/user/auth.php';
 include("/include/admin/top.php");
 ?>
 <body>

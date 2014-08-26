@@ -28,7 +28,6 @@
 <h1 id="banner"><a href="/admin">수주관리시스템 Admin</a> </h1>
 <div id=loginDiv style="display:">
 <?php
-session_start();
 if(empty($_SESSION['ss_user']['uid']))
 {
 ?>
@@ -36,7 +35,7 @@ if(empty($_SESSION['ss_user']['uid']))
 <?php
 }else{
 ?>
-<h1><a href="/admin/main"><?php echo $_SESSION['ss_user']['uid']?></a>님<a href="/common/user/logout">Logout</a></h1>
+<h1><a href="/admin/main"><?php echo $_SESSION['ss_user']['uid']?></a>님&nbsp;<a href="/common/user/logout">Logout</a></h1>
 <?php
 }
 ?>

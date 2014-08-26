@@ -1,4 +1,5 @@
 <?php 
+session_start();
 include("/include/admin/top.php");
 ?>
 <body>
