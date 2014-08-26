@@ -2,6 +2,11 @@
 $uid = $_REQUEST["uid"];
 $pswd = $_REQUEST["pswd"];
 
+$auth = "";
+if(isset($_POST["auth"])){
+	$auth = $_POST["auth"];
+}
+
 // include db config
 include_once("/config.php");
 
@@ -15,10 +20,14 @@ if(isSet($_POST['uid']) && isSet($_POST['pswd'])){
 	$uid = mysql_real_escape_string($uid);
 	$pswd = mysql_real_escape_string($pswd);
 	
-	$query = "SELECT uid, auth_grp_cd, perms_cd, usr_nm, usr_email, gender_atcd, nation_atcd, active_yn FROM om_user WHERE uid='" .$uid. "' and pswd='" .$pswd. "'";
-#	echo $query;
+	$sql = "SELECT uid, auth_grp_cd, perms_cd, usr_nm, usr_email, gender_atcd, nation_atcd, active_yn FROM om_user WHERE uid='" .$uid. "' and pswd='" .$pswd. "'";
+	if($auth=="UD"){
+		$sql_auth = " and auth_grp_cd='UD'";
+		$sql = $sql . $sql_auth;
+	}
+	#	echo $query;
 	
-	$result=mysql_query($query);
+	$result=mysql_query($sql);
 	$count=mysql_num_rows($result);
 	
 	$row=mysql_fetch_array($result,MYSQL_ASSOC);

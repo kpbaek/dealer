@@ -79,7 +79,7 @@ $(document).ready(function() {
 				        {
 			        		$.each(userInfo, function(key){ 
 			     		       var html = key + ":" + userInfo[key] + "<br>"; 
-			     		       $("#error").append(html);
+//			     		       $("#error").append(html);
 			     		    }); 
 //							$("#error").html("");
 //							$("#login").val('로그인');
@@ -123,7 +123,7 @@ $(document).ready(function() {
 			        url: "/common/user/ajaxLogin",
 			        async: false,
 			        dataType: "json",
-			        data: {"uid":uid, "pswd":pswd},
+			        data: {"auth":"UD","uid":uid, "pswd":pswd},
 			        cache: false,
 			        beforeSend: function(){ $("#login").val('Connecting...');},
 			        success: function(result, status, xhr){
@@ -140,14 +140,14 @@ $(document).ready(function() {
 				        {
 				        	$('#box').shake();
 							$("#login").val('로그인');
-							$("#error").html("<span style='color:#cc0000'>Error:</span> Inactive user ID. ");
+							$("#error").html("<span style='color:#cc0000'>Error:</span> Inactive dealer ID. ");
 				        }
 			        },
 			        /* ajax options omitted */
 			        error:function(){
 			        	$('#box').shake();
 						$("#login").val('로그인');
-						$("#error").html("<span style='color:#cc0000'>Error:</span> Invalid user ID and password. ");
+						$("#error").html("<span style='color:#cc0000'>Error:</span> Invalid dealer ID and password. ");
 					}
 			        
 			});

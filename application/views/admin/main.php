@@ -1,4 +1,7 @@
-<?php include("/include/admin/top.php");?>
+<?php 
+session_start();
+include("/include/admin/top.php");
+?>
 <body>
 
 <div id="main">
@@ -8,9 +11,7 @@
 		<div id="left" style="width: 200px;">
 
 <?php 
-if (isset($_SESSION['ss_user']['uid'])){
 	include("/include/admin/left.php");
-}
 ?>
 		</div>
 	</td>
