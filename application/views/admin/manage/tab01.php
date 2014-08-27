@@ -101,7 +101,7 @@ Name<input type="text" name="searchId">
 			<td><input type="text" id="invdate" name="delernm" size=35 style="border: 1"></td>
 			<td width="18%" class="style01">부품할증요율</td>
 			<td width="5%"><sup></sup></td>
-			<td width="27%"><input type="text" id="perDisc" name="perDisc" size=10 style="border: 1">%</td>
+			<td width="27%"><input type="text" id="perDisc" name="perDisc" size=10 style="border: 1;ime-mode:disabled" onKeyup="fncOnlyDecimal(this);">%</td>
 		  </tr>
 		  <tr>
 			<td class="style01">Telephone number</td>
@@ -126,15 +126,21 @@ Name<input type="text" name="searchId">
 				<select name="nation_atcd" style="width: 240px;">
 				</select>
 			</td>
-			<td width="18%" class="style01">Tel</td>
+			<td width="18%" class="style01">성별</td>
 			<td width="5%"><sup></sup></td>
-			<td width="27%"><input type="text" id="tel" name="tel" size=35 style="border: 1"></td>
+			<td width="27%">
+			  <div id="div_gender_atcd">
+			    <label></label>
+			    <input type="radio" name="gender_atcd" value="M"/> 남성
+			    <input type="radio" name="gender_atcd" value="F"/> 여성
+			  </div>
+			</td>
 		  </tr>
 		  <tr>
 			<td class="style01">Email address</td>
 			<td><sup>★</sup></td>
-			<td><input type="text" id="invdate" name="delernm" size=35 style="border: 1">
-			<input type="button" value="중복검사" onclick="javascript:chkEmail();"/>
+			<td><input type="text" id="usr_email" name="usr_email" size=35 style="border: 1" onchange="$('#btnChkEail').attr('disabled',false);">
+			<input type="button" id="btnChkEail" value="중복검사" onclick="javascript:chkEmail();"/>
 			</td>
 			<td width="18%" class="style01">fax</td>
 			<td width="5%"><sup></sup></td>
@@ -142,17 +148,6 @@ Name<input type="text" name="searchId">
 		  </tr>
 		  <tr>
 			<td class="style01">Job Title</td>
-			<td><sup></sup></td>
-			<td><input type="text" id="invdate" name="delernm" size=35 style="border: 1"></td>
-			<td width="18%" class="style01">성별</td>
-			<td width="5%"><sup></sup></td>
-			<td width="27%">
-			<input type=radio id="gender_atcd" value="M">남
-			<input type=radio id="gender_atcd" value="F">여
-			</td>
-		  </tr>
-		  <tr>
-			<td class="style01">Homepage</td>
 			<td><sup></sup></td>
 			<td><input type="text" id="invdate" name="delernm" size=35 style="border: 1"></td>
 			<td width="18%" class="style01">대상국가</td>
@@ -165,9 +160,15 @@ Name<input type="text" name="searchId">
 			</td>
 		  </tr>
 		  <tr>
+			<td class="style01">Homepage</td>
+			<td><sup></sup></td>
+			<td><input type="text" id="invdate" name="delernm" size=35 style="border: 1"></td>
+			<td colspan=3></td>
+		  </tr>
+		  <tr>
 			<td class="style01">Expierence in cash handling machine</td>
 			<td><sup></sup></td>
-			<td><input type="text" id="invdate" name="delernm" size=5 style="border: 1">years</td>
+			<td><input type="text" id="invdate" name="delernm" size=5 style="border: 1;ime-mode:disabled" onKeyup="fncOnlyNumber(this);">years</td>
 			<td colspan=3>&nbsp;</td>
 		  </tr>
 		  <tr>
@@ -323,9 +324,13 @@ Name<input type="text" name="searchId">
     	$('#cntry_atcd').append($opt).multipleSelect("refresh");
 */    	
 //		getWorkerCombo("00600SL0", f.worker_uid);
-		getCodeCombo("02", f.cdDtl);
 		getCodeCombo("0050", f.bank_inf);
 		getCodeCombo("0120", f.main_cust);
+
+		
+		var gender_atcd = "";
+		setCodeRadio("gender_atcd", gender_atcd);
+		
 		newForm();
     }
 	
@@ -410,6 +415,18 @@ Name<input type="text" name="searchId">
 
     function createData() {
 		var f = document.addForm;
+		if($("input:radio[name=gender_atcd]").is(':checked')==false){
+		}else{
+			var gender_atcd = $(':radio[name="gender_atcd"]:checked').val();
+//			alert(gender_atcd);
+		}			
+
+		if($('#btnChkEail').attr('disabled')!="disabled"){
+			alert("email 중복검사후 등록하세요");
+			return;
+		}
+		return;
+		
 //		f.target ="ifUpload";
 		f.action = "/upload/do_upload";
 		var options = {
@@ -442,7 +459,44 @@ Name<input type="text" name="searchId">
 		return true;
     }
 
+    function chkEmail(){
+		if($("#usr_email").val().length == 0){
+    		$("#usr_email").focus();
+    		return;
+		}
 
+		if(!fncValidEmail($("#usr_email").val())){
+			alert("email 형식이 맞지  않습니다.");
+			return;
+		}
+		
+		$.ajax({
+	        type: "POST",
+//	        url: "/user/ajaxLogin",
+	        url: "/common/user/chkEmail",
+	        async: false,
+	        dataType: "json",
+	        data: {"usr_email":$("#usr_email").val()},
+	        cache: false,
+//	        beforeSend: function(){ $('#btnChkEail').attr('disabled',true);},
+	        success: function(result, status, xhr){
+//	            alert(xhr.status);
+	        	var usr_email = result.usr_email; 
+				if(usr_email.dup_yn=="Y")
+		        {
+	        		alert("기등록된 email입니다.");
+	        		$('#btnChkEail').attr('disabled',false);
+	        		return;
+				}else{
+					$('#btnChkEail').attr('disabled',true);
+				}
+	        }
+		});
+		
+		return true;
+    }
+
+   
 </script>
 
 </html>

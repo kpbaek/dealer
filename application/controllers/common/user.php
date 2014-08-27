@@ -22,4 +22,9 @@ class User extends CI_Controller {
 		$this->load->view('/common/user/logout');
 	}
 
+	public function chkEmail()
+	{
+		$this->load->view('/common/user/chkEmail');
+	}
+
 }

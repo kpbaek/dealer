@@ -249,7 +249,7 @@ function initForm() {
 		getCodeCombo("00G0", f.payment_atcd);
 		getCodeCombo("00H0", f.incoterms_atcd);
 
-		getCodeImgCombo("00E0", f.pwr_cab_atcd, "");
+		getCodeImgCombo("00E0", f.pwr_cab_atcd, "00E00005");
 //		$("#pwr_cab_atcd").msDropdown({roundedBorder:false});
 
 		
