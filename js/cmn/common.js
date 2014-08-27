@@ -35,6 +35,11 @@
 	    });
 	}
 	
+	function setCodeRadio(name, sVal) {
+ 		  $('input:radio[name=' + name + ']:input[value='+ sVal+']').attr("checked", true);
+
+	}
+	
 	function getOXCombo(selObj) {
         addOptionElement(selObj, "", "select");
         addOptionElement(selObj, "O", "O");
@@ -62,7 +67,7 @@
 				$(opt).data("image", result['opt'][i]['image']);
 				selObj.add(opt);
 	    		if(value == sVal){
-	    			selObj.options[i].selected = "selected";
+	    			selObj.options[(i+1)].selected = "selected";
 	    		}
 			}
 			$(selObj).msDropdown({roundedBorder:false});
@@ -126,23 +131,29 @@
 		});
 	}
 
-	function fncOnlyNumber() { 
-		if((event.keyCode<48)||(event.keyCode>57))event.returnValue =false;
-	}
-
-	function fncOnlyNumberVal(val)
-	{
-		return String(val).replace(/\..*|[^\d]/g,'');
-	}
-
-	function fncSetNumberFormat(obj)
-	{
-		var pre = '';
-		if(obj.value.length>0)
-		{
-			if(obj.value.charAt(0)=='-') pre = '-';
+	function fncOnlyNumber(selObj){
+		var value = selObj.value.match('/[^0-9]/g');
+		if(value==null){
+			selObj.value=selObj.value.replace(/[^0-9]/gi,"");
 		}
-		obj.value = pre+(obj.value.replace(/\..*|[^\d]/g,'')).toCommify();
-		alert(obj.value);
+	}
+	
+	function fncOnlyDecimal(selObj) { 
+		if(event.keyCode!="190"){
+		    if((event.keyCode<48) || (event.keyCode>57)){
+				selObj.value=selObj.value.replace(/[^0-9]/gi,"");
+		    }
+		}
+		if(isNaN(selObj.value)){
+			selObj.value="";
+//			selObj.value=selObj.value.replace(/./gi,"");
+		}
+	}
+
+	function fncValidEmail(val)
+	{ 
+		var email = val;
+	    var re=/^[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*\.[a-zA-Z]{2,3}$/i; 
+	    return re.test(email);
 	}
 	
