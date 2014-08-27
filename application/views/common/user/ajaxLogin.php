@@ -43,6 +43,11 @@ if(isSet($_POST['uid']) && isSet($_POST['pswd'])){
 			$_SESSION['ss_user']['gender_atcd'] = $row['gender_atcd'];
 			$_SESSION['ss_user']['nation_atcd'] = $row['nation_atcd'];
 			$_SESSION['ss_user']['active_yn'] = $row['active_yn'];
+			
+			$sql = "UPDATE om_user
+				    SET join_dt =now()
+				    WHERE uid ='" .$uid. "'";
+			mysql_query($sql);
 				
 			echo json_encode($_SESSION);
 		}else{
