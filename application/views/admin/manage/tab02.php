@@ -51,7 +51,7 @@
 <table border="0" cellpadding="0" cellspacing="0" style="width:950px;align:center; vertical-align:middle">
 <tr>
     <td align=right>
-    	<input type="button" id="btnNew" value="승인" onclick="javascript:fnc_aprove();"/>
+    	<input type="button" id="btnNew" value="승인" onclick="javascript:fn_aprove();"/>
     </td>
 </tr>
 </table>
@@ -70,7 +70,6 @@
 		   	url:targetUrl,
 		   	datatype: "json",
 		   	colNames:['ID', 'name(kor/eng)', '부서(kor/eng)', '직무(kor/eng)', '담당자email',  'tel(내선)', 'hp', '승인일시', 'worker_seq', 'w_email', 'extns_num'],
-	   	              //, '(1CIS)', '(2CIS)', 'Q(Per 1Unit)', 'Order Price', 'Amount'
 		   	colModel:[
 //		   	    {name:'id', index:'id', width:50,hidden:true,search:true}, 
 		        {name:'worker_uid',index:'worker_uid', width:100, align:"left",search:true},
@@ -150,7 +149,7 @@
 		printPostData();
 	}
 
-    function fnc_gridReload() {
+    function fn_gridReload() {
 		var targetUrl = "/admin/manage/listWorker";
 		jQuery("#list").jqGrid('setGridParam', {url:targetUrl}).trigger("reloadGrid");
     }
@@ -171,7 +170,7 @@
     	jQuery("#list").jqGrid('setRowData',rowId,{extns_num:value});
 	}
     
-	function fnc_aprove() {
+	function fn_aprove() {
         var ids = $("#list").jqGrid('getGridParam', 'selarrrow');
     	if(!fn_choice(ids)){
 			return;
@@ -225,7 +224,7 @@
 //    		        	alert(qryInfo.result2 + ":" + qryInfo.sql2);
     				}
 	     		}); 
-		        fnc_gridReload();
+		        fn_gridReload();
 		        $("#btnNew").val('승인');
 			}
 		});
