@@ -45,7 +45,7 @@ if(isSet($_POST['uid']) && isSet($_POST['pswd'])){
 			$_SESSION['ss_user']['active_yn'] = $row['active_yn'];
 			
 			$sql = "UPDATE om_user
-				    SET join_dt =now()
+				    SET last_logindt =now()
 				    WHERE uid ='" .$uid. "'";
 			mysql_query($sql);
 				
