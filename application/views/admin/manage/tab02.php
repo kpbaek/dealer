@@ -51,7 +51,7 @@
 <table border="0" cellpadding="0" cellspacing="0" style="width:950px;align:center; vertical-align:middle">
 <tr>
     <td align=right>
-    	<input type="button" id="btnNew" value="승인" onclick="javascript:newForm();"/>
+    	<input type="button" id="btnNew" value="승인" onclick="javascript:fnc_aprove();"/>
     </td>
 </tr>
 </table>
@@ -64,42 +64,44 @@
 <script type="text/javascript">
 
 	jQuery().ready(function () {
-		var targetUrl = "/admin/manage/listDealer";
+		var targetUrl = "/admin/manage/listWorker";
 		var mygrid = jQuery("#list").jqGrid({
 		   	//url:'/test/main/server',
 		   	url:targetUrl,
 		   	datatype: "json",
-		   	//colNames:['Inv No','Date', 'Client', 'Amount','Tax','Total','Notes'],
-		   	colNames:['id', 'user_id', 'name(kor/eng)', '부서(kor/eng)', '직무(kor/eng)', 'email',  'tel(내선)', 'hp', '승인일시'],
+		   	colNames:['ID', 'name(kor/eng)', '부서(kor/eng)', '직무(kor/eng)', '담당자email',  'tel(내선)', 'hp', '승인일시', 'worker_seq', 'w_email', 'extns_num'],
 	   	              //, '(1CIS)', '(2CIS)', 'Q(Per 1Unit)', 'Order Price', 'Amount'
 		   	colModel:[
-		   	    {name:'id', index:'id', width:50,hidden:true,search:true}, 
-		        {name:'model',index:'id', width:50, align:"right",search:true},
-		   		{name:'invdate',index:'invdate', width:120,search:true},
-		   		{name:'amount',index:'tax asc, invdate', width:120,search:true},
-		   		{name:'amount',index:'amount', width:120, align:"right",search:true},
-		   		{name:'email',index:'tax', width:100, align:"right",search:true},		
-		   		{name:'tel',index:'total', width:60,align:"right",search:true},		
-		   		{name:'total',index:'note', width:70, sortable:false,search:true},		
-		   		{name:'total',index:'note', width:70, sortable:false,search:true}		
+//		   	    {name:'id', index:'id', width:50,hidden:true,search:true}, 
+		        {name:'worker_uid',index:'worker_uid', width:100, align:"left",search:true},
+		   		{name:'name',index:'name', width:100, align:"left", search:true},
+		   		{name:'txt_team_atcd',index:'txt_team_atcd', align:"left", width:120,search:true},
+		   		{name:'txt_duty_atcd',index:'txt_duty_atcd', width:70, align:"left",search:true},
+		   		{name:'c_w_email',index:'email', width:100, align:"center",search:true},		
+		   		{name:'c_extns_num',index:'extns_num', width:40,align:"center",search:true},		
+		   		{name:'w_mob',index:'w_mob', width:70, sortable:false,search:true},		
+		   		{name:'aprv_dt',index:'aprv_dt', width:90, sortable:false,search:true},		
+		   	    {name:'worker_seq', index:'worker_seq', width:50,hidden:true,search:true}, 
+		   	    {name:'w_email', index:'w_email', width:50,hidden:true,search:true}, 
+		   	    {name:'extns_num', index:'extns_num', width:50,hidden:true,search:true} 
 			],
 	        onSelectRow: function(id) {
-	            var params = {id:id};
-	            view_detail("#list",params);
-	            printData(params);
+//            alert(id);
+	        var params = {id:id};
+//		        view_detail("#list",params);
+//	            printData(params);
 	        },
 			mtype: "POST",
 //			postData:{id:'2'},
             gridComplete: function(){
                 var ids = jQuery("#list").jqGrid('getDataIDs');
                 for(var i=0;i < ids.length;i++){
-                    var cl = ids[i];
-                    var rowData = jQuery("#list").jqGrid('getRowData',cl);
-                    var cl_id = rowData.id;
-                    c_email = "<input type=text size=20 height='20' name='c_email' value='" + "" + "'>";
-                    c_tel = "<input type=text size=3 height='20' name='c_email' value='" + "" + "' maxlength=3>";
-                    jQuery("#list").jqGrid('setRowData',ids[i],{email:c_email});
-                    jQuery("#list").jqGrid('setRowData',ids[i],{tel:c_tel});
+                    var rowId = ids[i];
+                    var rowData = jQuery("#list").jqGrid('getRowData',rowId);
+                    c_w_email = "<input type=text size=20 height='20' style='ime-mode:disabled' name='c_email' value='" +rowData.w_email+ "' maxlength=50 onchange='setWEmail(" +rowId+ ", this.value);'>";
+                    c_extns_num = "<input type=text size=3 height='20' style='ime-mode:disabled' onKeyup='fncOnlyNumber(this);' name='c_extns_num' value='" +rowData.extns_num+ "' maxlength=3 onchange='setExtnsNum(" +rowId+ ", this.value);'>";
+                    jQuery("#list").jqGrid('setRowData',rowId,{c_w_email:c_w_email});
+                    jQuery("#list").jqGrid('setRowData',rowId,{c_extns_num:c_extns_num});
                 }
             },	            
             
@@ -110,7 +112,7 @@
 		    autowidth: false,
 		    width:950,
 		    height:400,
-		    sortname: 'id',
+		    sortname: 'worker_uid',
 		    sortorder: "desc",
 			toolbar: [true,"top"],
 		    hiddengrid: false,
@@ -140,14 +142,95 @@
 	
 	
     function gridReload() {
-		var targetUrl = "/admin/manage/listDealer";
+		var targetUrl = "/admin/manage/listWorker";
     	var page = document.searchForm.page.value;
-    	var searchId = document.searchForm.searchId.value;
-        $("#list").jqGrid('setPostData', {test:'aa',searchId:searchId});
+        alert("1");
+    	$("#list").jqGrid('setPostData', {test:'aa'});
     	jQuery("#list").jqGrid('setGridParam', {url:targetUrl,page:'1'}).trigger("reloadGrid");
 		printPostData();
 	}
 
+    function fnc_gridReload() {
+		var targetUrl = "/admin/manage/listWorker";
+		jQuery("#list").jqGrid('setGridParam', {url:targetUrl}).trigger("reloadGrid");
+    }
+
+    function fn_choice(ids){
+        if(ids.length==0){
+        	alert("choose item..");
+        	return false;
+        }
+        return true;
+    }
+
+    function setWEmail(rowId, value){
+    	jQuery("#list").jqGrid('setRowData',rowId,{w_email:value});
+	}
+    
+    function setExtnsNum(rowId, value){
+    	jQuery("#list").jqGrid('setRowData',rowId,{extns_num:value});
+	}
+    
+	function fnc_aprove() {
+        var ids = $("#list").jqGrid('getGridParam', 'selarrrow');
+    	if(!fn_choice(ids)){
+			return;
+    	}
+        var arData = [];
+        var arWorkerSeq = [];
+        var arWEmail = [];
+        var arExtnsNum = [];
+        for(var i=0; i < ids.length; i++){
+            var dataInfo = jQuery("#list").jqGrid('getRowData', ids[i]);
+            arData[arData.length] = dataInfo;
+            arWorkerSeq[arWorkerSeq.length]=arData[i].worker_seq;
+            arWEmail[arWEmail.length]=arData[i].w_email;
+            arExtnsNum[arExtnsNum.length]=arData[i].extns_num;
+		}
+		
+        var params = {
+        		"worker_seq":arWorkerSeq,
+                "w_email" : arWEmail,
+                "extns_num" : arExtnsNum
+        };      
+        for(var i=0; i < params.worker_seq.length; i++){
+//        	alert(params.worker_seq[i] + "::" + params.w_email[i] + "::" + params.extns_num[i]);
+		}
+        $.ajaxSettings.traditional = true;
+        
+        $("#btnNew").val('Connecting...');
+        $.ajax({
+	        type: "POST",
+	        url: "/admin/manage/aprvWorker",
+	        async: false,
+	        dataType: "json",
+//	        data: {"worker_seq":ids},
+//	        data: {"worker_seq":arWorkerSeq, "w_email":arWEmail, "extns_num":arExtnsNum},
+	        data: params,
+	        cache: false,
+	        success: function(result, status, xhr){
+	        	var qryInfoList = result.qryInfo;
+        		$.each(qryInfoList, function(key){ 
+        			var qryInfo = qryInfoList[key];
+    				if(qryInfo.result==false)
+    		        {
+            			alert("sql error:" + qryInfo.sql);
+    				}else{
+//    		        	alert(qryInfo.result + ":" + qryInfo.sql);
+    				}
+    				if(qryInfo.result2==false)
+    		        {
+            			alert("sql error:" + qryInfo.sql2);
+    				}else{
+//    		        	alert(qryInfo.result2 + ":" + qryInfo.sql2);
+    				}
+	     		}); 
+		        fnc_gridReload();
+		        $("#btnNew").val('승인');
+			}
+		});
+    }
+    
     function test_detail(list, id) {
         var chk_data = jQuery(list).jqGrid('getRowData',id);
         var targetUrl = '/admin/product/viewPart?id=' + chk_data.id;
